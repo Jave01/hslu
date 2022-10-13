@@ -1,6 +1,7 @@
 /**
  * This is just a sample class.
  * But there is still a lot of documentation which needs to fit here.
+ * Maybe
  */
 public class Foo extends AbstractExample {
 
