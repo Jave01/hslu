@@ -1,0 +1,80 @@
+﻿/* Wichtige STANDARD-WERTE */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+p,
+input,
+textarea,
+select,
+legend,
+fieldset,
+label {
+    color: #333333;
+    font-family: Arial;
+    text-align: left;
+}
+
+/* Formular: Grundlegendes Layout */
+form {
+    width: 400px;
+    margin: 10px 0 10px 20px;
+}
+
+/* Formular: Label */
+label {
+    display: block;
+    font-weight: bold;
+    margin: 0 0 0 10px;
+}
+
+/* Formular: Inputs */
+textarea {
+    width: 300px;
+    height: 125px;
+}
+
+input,
+textarea {
+    border: 1px solid #92cc47;
+    margin: 0 0 0 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #1d6e3c;
+    background: #92cc47;
+    color: #fff;
+}
+
+/* TODO: fieldset */
+fieldset {
+    border-color: #92cc47;
+    margin-top: 0.5rem;
+}
+
+/* TODO: legend */
+legend {
+    background-color: #92cc47;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.3rem 0.5rem;
+    font-weight: bold;
+}
+/* TODO: text inputs and submit button */
+button {
+    background-color: #f0f0f0;
+    border: 1px solid #92cc47;
+    border-radius: 0;
+    padding: 0.5rem;
+    box-shadow: none;
+}
