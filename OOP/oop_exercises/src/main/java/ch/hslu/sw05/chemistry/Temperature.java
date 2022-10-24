@@ -3,9 +3,10 @@ package ch.hslu.sw05.chemistry;
 public class Temperature {
     private float degreeCelsius = 0;
 
+
     
     /** 
-     * @return float
+     * @return temperature in degree celsius
      */
     public float getDegreeCelsius(){
         return this.degreeCelsius;
@@ -13,7 +14,7 @@ public class Temperature {
     
     
     /** 
-     * @return float
+     * @return temperature in kelvin.
      */
     public float getKelvin(){
         return (this.degreeCelsius + 273.15f);
@@ -21,15 +22,15 @@ public class Temperature {
 
     
     /** 
-     * @return int
+     * @return temperature in Fahrenheit.
      */
     public int getFahrenheit(){
-        return 0;
+        return (int)(this.degreeCelsius * 1.8f + 32);
     }
     
     
     /** 
-     * @param temp
+     * @param temp new absolute temperature to be set in degree cels  ius.
      */
     public void setDegreeCelsius(float temp){
         this.degreeCelsius = Math.round(temp*100)/100f;
@@ -37,7 +38,7 @@ public class Temperature {
 
     
     /** 
-     * @param temp
+     * @param temp new absolute temperature in kelvin.
      */
     public void setKelvin(float temp){
         this.degreeCelsius = temp - 273.15f;
@@ -46,39 +47,45 @@ public class Temperature {
 
     
     /** 
-     * @param temp
+     * @param temp new absolute temperature in degree fahrenheit.
      */
     public void setFahrenheit(float temp){
         this.degreeCelsius = temp / 1.8f - 32;
     }
 
     /**
-     * get aggregate state from given element at current temperature
+     * Get aggregate state from given element at current temperature.
      * @param element element to check
-     * @return state
+     * @return aggregate state
      */
-    public String getAggregateState(Element element){
+    public AggregateState getAggregateState(Element element){
         if (this.getKelvin() >= element.getBoilingPoint()){
-            return "gaseous";
+            return AggregateState.GASEOUS;
         } else if (this.getKelvin() >= element.getMeltingPoint()){
-            return "fluid";
+            return AggregateState.FLUID;
         }else {
-            return "solid";
+            return AggregateState.SOLID;
         }
     }
 
-    public String getAggregateState(AbsElement element){
+    /**
+     * Get aggregate state from a specific element class child.
+     * @param element An element which inherited from AbsElement.
+     * @return The aggregate state.
+     */
+    public AggregateState getAggregateState(AbsElement element){
         if (this.getKelvin() >= element.getBoilingPointKelvin()){
-            return "gaseous";
+            return AggregateState.SOLID;
         } else if (this.getKelvin() >= element.getMeltingPointKelvin()){
-            return "fluid";
+            return AggregateState.FLUID;
         }else {
-            return "solid";
+            return AggregateState.GASEOUS;
         }
     }
 
-    /** 
-     * @param temp
+    /**
+     * Increase current temperature by given Kelvin.
+     * @param temp New temperature in kelvin.
      */
     public void addKelvin(float temp){
         this.degreeCelsius += temp;
@@ -86,17 +93,17 @@ public class Temperature {
 
     public Temperature(){}
 
-    public Temperature(float tempValue, String tempType){
-        switch (tempType.toLowerCase()) {
-            case "kelvin":
+    public Temperature(float tempValue, TemperatureType tempType){
+        switch (tempType) {
+            case KELVIN:
                 this.setKelvin(tempValue);
                 break;
         
-            case "celsius":
+            case CELSIUS:
                 this.setDegreeCelsius(tempValue);
                 break;
         
-            case "fahrenheit":
+            case FAHRENHEIT:
                 this.setFahrenheit(tempValue);
                 break;
         
@@ -104,6 +111,4 @@ public class Temperature {
                 break;
         }
     }
-
-
 }

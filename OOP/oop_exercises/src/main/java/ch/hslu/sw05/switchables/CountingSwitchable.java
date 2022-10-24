@@ -1,6 +1,6 @@
 package ch.hslu.sw05.switchables;
 
-public class CountingSwitchable implements Switchable{ //, Named
+public class CountingSwitchable implements Switchable , Named{
     private boolean isOn = false;
     private String name = "";
     private long switchCycles = 0;
@@ -32,13 +32,13 @@ public class CountingSwitchable implements Switchable{ //, Named
         return !this.isSwitchedOn();
     }
 
-//    @Override
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-//
-//    @Override
-//    public String getName() {
-//        return this.name;
-//    }
+    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
+    }
 }

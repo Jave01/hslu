@@ -5,18 +5,29 @@ public class Lead extends AbsElement{
     private int MeltingPointKelvin = 600;
     private int BoilingPointKelvin = 2022;
 
-    @Override
     public int getPteNumber() {
         return pteNumber;
     }
 
-    @Override
     public int getMeltingPointKelvin() {
         return MeltingPointKelvin;
     }
 
     @Override
-    public int getBoilingPointKelvin() {
-        return BoilingPointKelvin;
+    public AggregateState getAggregateState(int tempKelvin) {
+        if (tempKelvin >= this.BoilingPointKelvin){
+            return AggregateState.GASEOUS;
+        } else if (tempKelvin >= MeltingPointKelvin){
+            return AggregateState.FLUID;
+        } else if (tempKelvin > 0){
+            return AggregateState.SOLID;
+        } else {
+            return null;
+        }
     }
+
+    public int getBoilingPointKelvin() {
+        return this.BoilingPointKelvin;
+    }
+
 }

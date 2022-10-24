@@ -5,18 +5,20 @@ public class Nitrogen extends AbsElement{
     private int MeltingPointKelvin = 63;
     private int BoilingPointKelvin = 77;
 
-    @Override
     public int getPteNumber() {
         return pteNumber;
     }
 
-    @Override
     public int getMeltingPointKelvin() {
         return MeltingPointKelvin;
     }
 
-    @Override
     public int getBoilingPointKelvin() {
         return BoilingPointKelvin;
+    }
+
+    @Override
+    public AggregateState getAggregateState(Temperature tempClass) {
+        return null;
     }
 }

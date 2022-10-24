@@ -6,7 +6,7 @@ public class Temperature {
 
     
     /** 
-     * @return float
+     * @return float temperature in degree celsius
      */
     public float getDegreeCelsius(){
         return this.degreeCelsius;
@@ -14,7 +14,7 @@ public class Temperature {
     
     
     /** 
-     * @return float
+     * @return float temperature in kelvin
      */
     public float getKelvin(){
         return (this.degreeCelsius + 273.15f);
@@ -22,7 +22,7 @@ public class Temperature {
 
     
     /** 
-     * @return int
+     * @return int temperature in Fahrenheit
      */
     public int getFahrenheit(){
         return 0;
