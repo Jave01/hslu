@@ -1,0 +1,25 @@
+﻿<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Übung 3a: Idealgewicht</title>
+        <script>
+            function berechneIdealgewicht(geschlecht, groesse) {
+                // Realisierung der Funktion
+
+                // Variablen
+                let idealgewicht = groesse - 100;
+
+                // TODO: Rückgabe Ergebnis
+                return geschlecht === "m" ? idealgewicht : 0.9 * idealgewicht;
+            }
+        </script>
+    </head>
+
+    <body>
+        <script>
+            // TODO: Aufruf der Funktion berechneIdealgewicht mit Beispielwerten und
+            // Ausgabe mit alert
+            console.log(berechneIdealgewicht("w", 180));
+        </script>
+    </body>
+</html>

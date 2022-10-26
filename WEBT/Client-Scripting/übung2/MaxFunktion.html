@@ -12,15 +12,16 @@
             function max(a, b) {
                 if (a == b) {
                     return null;
-                } else if (a > b) {
-                    return a;
-                } else {
-                    return b;
+                    // } else if (a > b) {
+                    //     return a;
+                    // } else {
+                    //     return b;
                 }
+                return a > b ? a : b;
             }
 
-            let a = true;
-            let b = "false";
+            let a = 23;
+            let b = 50;
             let result = max(a, b);
 
             console.log(result); // erwartet: 23
