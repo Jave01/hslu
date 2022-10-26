@@ -3,7 +3,26 @@ package ch.hslu.sw05.chemistry;
 public class Temperature {
     private float degreeCelsius = 0;
 
+    public Temperature(){}
 
+    public Temperature(float tempValue, TemperatureType tempType){
+        switch (tempType) {
+            case KELVIN:
+                this.setKelvin(tempValue);
+                break;
+
+            case CELSIUS:
+                this.setDegreeCelsius(tempValue);
+                break;
+
+            case FAHRENHEIT:
+                this.setFahrenheit(tempValue);
+                break;
+
+            default:
+                break;
+        }
+    }
     
     /** 
      * @return temperature in degree celsius
@@ -75,11 +94,11 @@ public class Temperature {
      */
     public AggregateState getAggregateState(AbsElement element){
         if (this.getKelvin() >= element.getBoilingPointKelvin()){
-            return AggregateState.SOLID;
+            return AggregateState.GASEOUS;
         } else if (this.getKelvin() >= element.getMeltingPointKelvin()){
             return AggregateState.FLUID;
         }else {
-            return AggregateState.GASEOUS;
+            return AggregateState.SOLID;
         }
     }
 
@@ -89,26 +108,5 @@ public class Temperature {
      */
     public void addKelvin(float temp){
         this.degreeCelsius += temp;
-    }
-
-    public Temperature(){}
-
-    public Temperature(float tempValue, TemperatureType tempType){
-        switch (tempType) {
-            case KELVIN:
-                this.setKelvin(tempValue);
-                break;
-        
-            case CELSIUS:
-                this.setDegreeCelsius(tempValue);
-                break;
-        
-            case FAHRENHEIT:
-                this.setFahrenheit(tempValue);
-                break;
-        
-            default:
-                break;
-        }
     }
 }
