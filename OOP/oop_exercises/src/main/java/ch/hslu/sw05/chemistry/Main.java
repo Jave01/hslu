@@ -1,5 +1,8 @@
 package ch.hslu.sw05.chemistry;
 
+/**
+ * Main class of the {@link ch.hslu.sw05.chemistry} package
+ */
 public class Main {
     public static void main(String[] args) {
         // Element Task

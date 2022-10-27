@@ -1,6 +1,10 @@
 package ch.hslu.sw05.shapes;
 import java.lang.Math;
 
+/**
+ * Class for creating circles of different sizes and positions.
+ * Note: this class doesn't support the creating of ellipses.
+ */
 public class Circle extends Shape {
     private int diameter;
 

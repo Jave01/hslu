@@ -53,7 +53,7 @@ public final class Point {
     private final int y;
 
     /**
-     * Konstruktor für Punkt mit Koordinaten.
+     * Constructor for point with coordinates.
      * @param x x-Koordinate.
      * @param y y-Koordinate.
      */
@@ -65,7 +65,7 @@ public final class Point {
     /**
      * Liefert den Quadranten in welchem der Punkt liegt.
      * Liegen die Koordinaten auf den Achsen oder
-     * auf dem Nullpunkt, liefert die Funktion den Wert 0 zurück.
+     * auf dem Nullpunkt, liefert die Funktion den Wert 0 zurueck.
      * @return Nummer des Quadranten.
      */
     public int getQuadrant() {
@@ -109,15 +109,15 @@ public final class Point {
     }
 
     /**
-     * Liefert x-Koordinate zurück.
-     * @return x-Koordinate des Punktes.
+     * Returns x-coordinate.
+     * @return x-coordinate of point.
      */
     public int getX() {
         return this.x;
     }
 
     /**
-     * Liefert y-Koordinate zurück.
+     * Liefert y-Koordinate zurueck.
      * @return y-Koordinate des Punktes.
      */
     public int getY() {
@@ -150,7 +150,7 @@ public final class Point {
     }
 
     /**
-     * Liefert eine String-Repräsentation des Punktes.
+     * Liefert eine String-Repraesentation des Punktes.
      * {@inheritDoc}.
      */
     @Override

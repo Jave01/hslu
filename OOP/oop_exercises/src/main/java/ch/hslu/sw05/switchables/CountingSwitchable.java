@@ -1,19 +1,24 @@
 package ch.hslu.sw05.switchables;
 
+/**
+ * Class for objects who need to count their switching cycles.
+ */
 public class CountingSwitchable implements Switchable , Named{
     private boolean isOn = false;
     private String name = "";
     private long switchCycles = 0;
 
-    public long getSwitchCycles() {
-        return switchCycles;
-    }
-
+    /**
+     * Turn switch off
+     */
     @Override
     public void switchOn() {
         this.isOn = true;
     }
 
+    /**
+     * Turn switch on.
+     */
     @Override
     public void switchOff() {
         if(this.isOn){
@@ -40,5 +45,9 @@ public class CountingSwitchable implements Switchable , Named{
     @Override
     public String getName() {
         return this.name;
+    }
+
+    public long getSwitchCycles() {
+        return switchCycles;
     }
 }

@@ -1,24 +1,13 @@
 package ch.hslu.sw05.chemistry;
 
+/**
+ * Class for creating custom elements.
+ */
 public class Element {
     private String elementName;
     private float meltingPoint = 0;
     private float boilingPoint = 0;
     private float atomicNumber = 0;
-
-    public float getAtomicNumber() { return this.atomicNumber; }
-
-    public String getElementName() {
-        return this.elementName;
-    }
-
-    public float getMeltingPoint() {
-        return this.meltingPoint;
-    }
-
-    public float getBoilingPoint() {
-        return this.boilingPoint;
-    }
 
     /**
      * Element with aggregate thresholds
@@ -37,4 +26,19 @@ public class Element {
         }
         this.elementName = elementName;
     }
+
+    public float getAtomicNumber() { return this.atomicNumber; }
+
+    public String getElementName() {
+        return this.elementName;
+    }
+
+    public float getMeltingPoint() {
+        return this.meltingPoint;
+    }
+
+    public float getBoilingPoint() {
+        return this.boilingPoint;
+    }
+
 }

@@ -1,5 +1,8 @@
 package ch.hslu.sw05.shapes;
 
+/**
+ * Main class of the {@link ch.hslu.sw05.shapes} package
+ */
 public class Main {
     public static void main(String args[]){
         Rectangle r = new Rectangle(0, 0, 0, 0);

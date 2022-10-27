@@ -1,5 +1,8 @@
 package ch.hslu.sw05.shapes;
 
+/**
+ * Class for creating rectangles of different sizes and positions.
+ */
 public class Rectangle extends Shape{
     private int width;
     private int height;
@@ -21,6 +24,14 @@ public class Rectangle extends Shape{
 
     public int getHeight() {
         return height;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
     }
 
     @Override

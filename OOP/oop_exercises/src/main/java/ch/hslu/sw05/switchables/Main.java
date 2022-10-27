@@ -1,5 +1,8 @@
 package ch.hslu.sw05.switchables;
 
+/**
+ * Main class for {@link ch.hslu.sw05.switchables} package
+ */
 public class Main {
     public static void main(String[] args){
         CountingSwitchable cs = new CountingSwitchable();

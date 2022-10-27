@@ -1,5 +1,8 @@
 package ch.hslu.sw05.shapes;
 
+/**
+ * Abstract class for implementing 2-dimensional shape-subclasses.
+ */
 public abstract class Shape {
     private int x;
     private int y;
@@ -22,7 +25,13 @@ public abstract class Shape {
         return y;
     }
 
+    /**
+     * @return int perimeter
+     */
     public abstract int getPerimeter();
 
+    /**
+     * @return int area.
+     */
     public abstract int getArea();
 }
