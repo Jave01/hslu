@@ -1,0 +1,192 @@
+\documentclass[12pt]{scrartcl}
+\usepackage[ngerman]{babel}
+
+\usepackage{amsmath, amssymb}
+
+\usepackage{array}
+
+\usepackage{nameref}
+
+\usepackage{hyperref}
+
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\bibliographystyle{IEEetran}
+
+\author{David Jäggli}
+
+\title{Analysis Differential Rechnung}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+
+\section{Ableitung} 
+\subsection{Ziele der Ableitungen}
+
+Die folgenden drei Punkte werden mittels eine Differentialrechnung erreicht.
+
+\begin{enumerate}
+    \item Das Bestimmen der Tangente in einem Punkt der Kurve $y=f(x)$
+    \item Das Linearisieren einer Funktion $y=f(x)$ (siehe Kapitel \ref{approximation})
+    \item Mit einer neuen Funktion $f'(x)$ (1. Ableitung von $f(x)$ die Steigung an jedem Punkt $x$ von der ursprünglichen Funktion $f(x)$ zu ermitteln.
+    \item Mit einer neuen Funktion $f''(x)$ (2. Ableitung von $f(x)$) zu bestimmen ob sich die ursprüngliche Funktion $f(x)$ an jeder beliebigen Stelle $x$ in einer Links- resp. Rechtskrümmung befindet
+\end{enumerate}
+
+
+\section{Differenzierbarkeit}
+Eine Funktion ist immer dann differenzierbar wenn sie stetig ist und keinen Knick 
+hat.
+
+\subsection{Regeln}
+\subsubsection{Potenzregeln}
+
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+    \begin{tabular}{ | m{10em} | m{10em} | m{10em} | }
+        \hline
+        Ursprungsfunktion & Ableitung & Beispiel \\ 
+        \hline
+        $f(x) = x^n$ & $f'(x) = n \cdot x^{(n-1)} $ & $x^2 \Rightarrow 2x$\\ 
+        \hline
+        $f(x) = c = 2$ (Konst.) & $f'(x) = 0$ & $5 \Rightarrow 0$ \\
+        \hline
+        $f(x) = e^x$ & $f'(x) = e^x$ & $e^x \Rightarrow e^x$ \\
+        \hline
+        $f(x) = a^x$ & $f'(x) = ln(a) \cdot a^x$ & $5^x \Rightarrow ln(5) \cdot 5^x$ \\
+        \hline
+        $f(x) = ln(x)$ & $f'(x) = \frac{1}{x}$ & $ln(x) \Rightarrow \frac{1}{x}$ \\
+        \hline 
+        $f(x) = \frac{a}{(x + n)} $ & $ f'(x) = -\frac{a}{(x+n)^2} $ & $\frac{500}{x + 5} \Rightarrow -\frac{500}{(x+5)^2}$\\
+        \hline 
+        $f(x) = log_a(x) $ & $f'(x) = \frac{1}{x \cdot ln(a)}$ & $log_3(x) \Rightarrow \frac{1}{x * ln(3)}$ \\
+        \hline 
+
+    \end{tabular}
+\end{center}
+
+% -------- begin of chain rules ----------------
+\hspace{0pt} \\
+
+\subsubsection{Regeln für verknüpfte Funktionen}
+
+\begin{center}
+\textbf{Faktorregel \& Beispiel:} 
+\[ f(x) = a \cdot g(x) = a \cdot g'(x)\]
+\[f(x)=2 \cdot x^3 \Rightarrow f'(x)=2 \cdot (x^3)' = 2 \cdot 3 \cdot x^2 = \underline{6x^2}\]
+
+\newpage
+\textbf{Summenregel \& Beispiel:} 
+\[ (f(x) + g(x))' = f'(x) + g'(x) \]
+\[ x^2 + x^3 \Rightarrow \underline{2x + 3x^2}\]
+
+\hspace{0pt} \\
+\hspace{0pt} \\
+\noindent
+\textbf{Produktregel \& Beispiel:} 
+\[ (f(x) \cdot g(x))' =  f'(x) \cdot g(x) + f(x) \cdot g'(x)\]
+\[x^3 \cdot x^3 \Rightarrow 3x^2 \cdot x^3 + x^3 \cdot 3x^2 = 3x^5 + 3x^5 = \underline{6x^5}\]
+
+
+\hspace{0pt} \\
+\hspace{0pt} \\
+\noindent
+\textbf{Quotientenregel \& Beispiel:} 
+\[\left(\frac{f(x)}{g(x)}\right)' = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{(g(x))^2}\]
+\[f(x)= \frac{2x^5}{2x} \Rightarrow f'(x) = \frac{10x^4 \cdot 2x - 2x^5 \cdot 2}{(2x)^2} = \frac{20x^5 - 4x^5}{4x^2} = \frac{16x^5}{4x^2} = \underline{4x^3}\]
+
+\hspace{0pt} \\
+\hspace{0pt} \\
+\noindent
+\textbf{Kettenregel \& Beispiel:} 
+\[f(g(x)) \Rightarrow (f(g(x)))' = f'(g(x)) \cdot g'(x)\]
+\[f(x) = ln(5x^6) = ln(g(x)) \Rightarrow f'(x) = \frac{1}{g(x)}\]
+
+
+\end{center}
+
+% ------ End of chain rules ----------
+\newpage
+
+\section{Tangente \& Normale}
+\subsection{Tangente einer Funktion}
+Die Tangente an einem Punkt $x_0$ in einer Funktion lautet folgendermassen:\\
+$ f'(x_0) \cdot (x - x_0) + y_0$ wobei $y_0 = f(x_0)$\\
+
+\noindent
+Der Winkel einer Geraden (Tangente) zur x-Achse kann mit der tangens resp arctan 
+Funktion berechnet werden: $\alpha = arctan(f'(x_0)) \rightarrow$ an der Stelle 
+$x_0$ hat die Tangente einen Winkel von $\alpha$ zur x-Achse.
+
+
+\subsection{Normale}
+Die Normale oder senkrechte Funktion lässt sich folgendermassen berechnen:\\
+Aus  $g_1 \perp g_2  $ folgt, dass $m_1 \cdot m_2 = -1$ \\ 
+resp. $m_1 = -\frac{1}{m_2}$ \\
+\\ 
+\noindent
+Eine Gerade ist definiert durch: $y = mx + q$. Die Steigung $m$ der Normalen ist wie oben
+beschrieben einfach der negative Kehrwert der Steigung der Tangente. Den $y$-Wert 
+kann man durch Einsetzen des Punktes berechnen. \\
+
+\noindent
+\underline{\textbf{Beispiel:}} \\
+Gegeben: $f(x) = x^2 -2x + 1 \quad \Rightarrow \quad f'(x) = 2x -2$\\
+Gesucht: Tangente und Normale bei $x=0$\\
+Steigung der Tangente: $m_1 = f'(x=0) = -2$ \\
+Steigung der Normale: $m_2 = -\frac{1}{m_1} = 0.5$ \\
+\\
+Für q einfach die Steigung in der Gleichung einsetzen.\\
+Durch $f(x)$ ist definiert, dass bei $x=0 \rightarrow y=1$, heisst:\\
+Für die Tangente: $1 = m_1x + q \Rightarrow 1= -2x + q \Rightarrow q = 1$ weil $x=0$\\
+Für die Normale: $1 = m_2x + q \Rightarrow 1= 0.5x + q \Rightarrow q = 1$ weil $x=0$\\
+\\
+\noindent
+Tangente = \underline{$f(x) = -2x + 1$}\\
+Normale = \underline{$f(x) = 0.5x + 1$}\\
+
+\section{Annäherungen} \label{approximation}
+Oftmals ist es nicht nötig (zu aufwändig/schwierig) oder gar nicht möglich die exakte 
+Funktion zu berechnen (z.B. ln(x)). Um dieses Problem zu beheben, erstellt man eine Annäherungsfunktion
+in einem gewissen Bereich, welche genügend nah an die ursprüngliche Funktion herankommt.
+
+
+\subsection{Lineare Annäherungen}
+
+
+Lineare Annäherung an einem Punkt $x_0$ ist die Tangente der 
+Funktion am Punkt $x_0$
+
+\[ \frac{f'( x_0 )}{1!} ( x - x_0) \Rightarrow f'( x_0 ) ( x - x_0) \] 
+
+\subsection{Quadratische Annäherungen}
+
+Quadratische Annäherung einer Funktion kommt viel näher an die tatsächliche Funktion heran, 
+weil sie die Krümmung berücksichtigt. Eine Quadratische Annäherung kann mit folgender Formel
+erreicht werden:
+\[
+    \frac{f^{(n)} ( x_0 )}{n!} ( x - x_0)^n +
+    \frac{f^{(n-1)} ( x_0 )}{(n - 1)!} ( x - x_0)^{n - 1} + .... +
+    \frac{f'' ( x_0 )}{2!} ( x - x_0)^2 + 
+    \frac{f' ( x_0 )}{1} ( x - x_0)
+\]
+
+\noindent
+Dabei muss aber beachtet werden, dass die Funktion $f(x)$ auch $n$-mal differenzierbar
+ist.
+
+% \bibliography{quantum_ready}
+
+\end{document}
