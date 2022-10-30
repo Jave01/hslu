@@ -1,5 +1,8 @@
 package ch.hslu.sw05.chemistry;
 
+/**
+ * Class for storing and calculating temperatures and aggregate states.
+ */
 public class Temperature {
     private float degreeCelsius = 0;
 

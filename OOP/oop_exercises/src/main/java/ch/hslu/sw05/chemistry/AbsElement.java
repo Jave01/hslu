@@ -1,5 +1,8 @@
 package ch.hslu.sw05.chemistry;
 
+/**
+ * Class for creating individual element subclasses.
+ */
 public abstract class AbsElement {
     private float atomicNumber;
     private float boilingPointKelvin;

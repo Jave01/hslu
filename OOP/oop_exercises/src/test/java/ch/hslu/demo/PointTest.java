@@ -25,7 +25,7 @@ import org.junit.jupiter.api.Test;
 import nl.jqno.equalsverifier.EqualsVerifier;
 
 /**
- * Testfälle für Point.
+ * Testcases for Point.
  */
 @SuppressWarnings("PMD.TooManyMethods")
 final class PointTest {

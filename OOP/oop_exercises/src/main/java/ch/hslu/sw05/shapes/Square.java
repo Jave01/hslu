@@ -1,5 +1,8 @@
 package ch.hslu.sw05.shapes;
 
+/**
+ * Class for creating a 2-dimensional, equally sized rectangle.
+ */
 public class Square extends Shape {
     private int length;
 
@@ -9,11 +12,19 @@ public class Square extends Shape {
         this.length = length;
     }
 
+    /**
+     * Returns the perimeter of the square.
+     * {@inheritDoc}
+     */
     @Override
     public int getPerimeter() {
         return 4 * length;
     }
 
+    /**
+     * Return area of square
+     * {@inheritDoc}
+     */
     @Override
     public int getArea() {
         return length * length;

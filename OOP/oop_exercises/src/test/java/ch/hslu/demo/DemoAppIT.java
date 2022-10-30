@@ -20,8 +20,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.Test;
 
 /**
- * Beispiel für Integrationstests. Namenskonvention 'IT' am Schluss. Werden mit dem Goal
- * integration-test ausgeführt.
+ * Beispiel fuer Integrationstests. Namenskonvention 'IT' am Schluss. Werden mit dem Goal
+ * integration-test ausgefuehrt.
  */
 final class DemoAppIT {
 
