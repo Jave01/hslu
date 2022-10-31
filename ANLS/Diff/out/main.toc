@@ -1,0 +1,15 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Ableitung}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Ziele der Ableitungen}{2}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Differenzierbarkeit}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Regeln}{2}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Potenzregeln}{2}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Regeln für verknüpfte Funktionen}{2}{subsubsection.2.1.2}%
+\contentsline {section}{\numberline {3}Tangente \& Normale}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Tangente einer Funktion}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Normale}{4}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Annäherungen}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Lineare Approximation}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Höhere Approximation (Taylorpolynom)}{5}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Die Monotonie und Krümmung}{6}{section.5}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

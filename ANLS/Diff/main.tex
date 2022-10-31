@@ -9,6 +9,15 @@
 
 \usepackage{hyperref}
 
+\usepackage{pgfplots}
+
+\usepackage{mathrsfs}
+
+\usepackage{graphicx}
+
+\pgfplotsset{compat=1.15}
+
+\usetikzlibrary{arrows}
 
 \hypersetup{
     colorlinks,
@@ -157,35 +166,83 @@ Für die Normale: $1 = m_2x + q \Rightarrow 1= 0.5x + q \Rightarrow q = 1$ weil 
 Tangente = \underline{$f(x) = -2x + 1$}\\
 Normale = \underline{$f(x) = 0.5x + 1$}\\
 
+\newpage
 \section{Annäherungen} \label{approximation}
 Oftmals ist es nicht nötig (zu aufwändig/schwierig) oder gar nicht möglich die exakte 
 Funktion zu berechnen (z.B. ln(x)). Um dieses Problem zu beheben, erstellt man eine Annäherungsfunktion
 in einem gewissen Bereich, welche genügend nah an die ursprüngliche Funktion herankommt.
 
-
-\subsection{Lineare Annäherungen}
-
+\subsection{Lineare Approximation}
 
 Lineare Annäherung an einem Punkt $x_0$ ist die Tangente der 
 Funktion am Punkt $x_0$
 
 \[ \frac{f'( x_0 )}{1!} ( x - x_0) \Rightarrow f'( x_0 ) ( x - x_0) \] 
 
-\subsection{Quadratische Annäherungen}
 
-Quadratische Annäherung einer Funktion kommt viel näher an die tatsächliche Funktion heran, 
-weil sie die Krümmung berücksichtigt. Eine Quadratische Annäherung kann mit folgender Formel
-erreicht werden:
+\subsection{Höhere Approximation (Taylorpolynom)}
+
+Eine quadratische oder qubische Annäherung (Taylorpolynom) einer Funktion kommt viel näher an die tatsächliche Funktion heran, 
+da sie die Krümmung berücksichtigt. Sofern die Ursprungs funktion $f(x)$ n-mal
+differenzierbar ist kann ein Taylorpolynom wie folgt gebildet werden:
 \[
     \frac{f^{(n)} ( x_0 )}{n!} ( x - x_0)^n +
     \frac{f^{(n-1)} ( x_0 )}{(n - 1)!} ( x - x_0)^{n - 1} + .... +
     \frac{f'' ( x_0 )}{2!} ( x - x_0)^2 + 
     \frac{f' ( x_0 )}{1} ( x - x_0)
+    + f(x_0)
 \]
 
-\noindent
-Dabei muss aber beachtet werden, dass die Funktion $f(x)$ auch $n$-mal differenzierbar
-ist.
+
+\newcommand{\drawmisding}{
+    % \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+    %     \begin{axis}[
+    %         x=1cm,y=1cm,
+    %         axis lines=middle,
+    %         ymajorgrids=true,
+    %         xmajorgrids=true,
+    %         xmin=-7,
+    %         xmax=7,
+    %         ymin=-2,
+    %         ymax=11,
+    %         xtick={-12,-11,...,18},
+    %         ytick={-7,-6,...,11},]
+    %         \clip(-12.34,-7.36) rectangle (18.3,11.92);
+    %         \draw [samples=50,rotate around={0:(0,0)},xshift=0cm,yshift=0cm,line width=2pt,domain=-7:7)] plot (\x,{(\x)^2/2/0.5});
+    %         \begin{scriptsize}
+    %         \draw[color=black] (-0.54,1.23) node {$f$};
+    %         \end{scriptsize}
+    %     \end{axis}
+    % \end{tikzpicture}
+    \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+        \clip(-2,-3) rectangle (2,3);
+        \draw[line width=2pt,smooth,samples=200,domain=0.14:2.5] plot(\x,{ln((\x))});
+        \begin{scriptsize}
+            \draw[color=black] (0,-4) node {$f$};
+        \end{scriptsize}
+    \end{tikzpicture}
+}
+
+\newpage
+
+\section{Die Monotonie und Krümmung}
+Ob eine Funktion $f(x)$ am Punk $x_0$ links oder rechtsgekrümmt ist, kann man mit der 2. 
+Ableitung bestimmen. \\
+$f''(x) > 0 \Rightarrow$ \textbf{linksgekrümmt/konvex}\\
+$f''(x) < 0 \Rightarrow$ \textbf{rechtsgekrümmt/konkav}
+
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+    \begin{tabular}{ | p{5em} | p{14em} | b{14em} | }
+        \hline
+         & $f'(x) > 0 \Rightarrow$ wachsend & $f'(x) < 0 \Rightarrow$ fallend\\ 
+        \hline
+        $f''(x) > 0$ \\ konvex & \includegraphics[width=3cm]{img/rising_convex.png} & \drawmisding\\ 
+        \hline
+        $f''(x) < 0$ \\ konkav & &\\ 
+        \hline
+    \end{tabular}
+\end{center}
 
 % \bibliography{quantum_ready}
 
