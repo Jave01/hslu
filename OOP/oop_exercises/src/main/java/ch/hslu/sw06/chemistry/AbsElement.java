@@ -1,4 +1,6 @@
-package ch.hslu.sw05.chemistry;
+package ch.hslu.sw06.chemistry;
+
+import java.util.Objects;
 
 /**
  * Class for creating individual element subclasses.
@@ -18,6 +20,28 @@ public abstract class AbsElement {
         this.atomicNumber = atomicNumber;
         this.meltingPointKelvin = meltingPointKelvin;
         this.boilingPointKelvin = boilingPointKelvin;
+    }
+
+    /**
+     * Get the aggregate state of the element at a given ambient temperature
+     * @param tempKelvin current ambient temperature in kelvin
+     * @return AggregateState the aggregate state of the element at given temperature.
+     */
+    public AggregateState getAggregateState(float tempKelvin) {
+        if (tempKelvin >= this.boilingPointKelvin){
+            return AggregateState.GASEOUS;
+        } else if (tempKelvin >= meltingPointKelvin){
+            return AggregateState.FLUID;
+        } else if (tempKelvin >= 0){
+            return AggregateState.SOLID;
+        } else {
+            return null;
+        }
+    }
+
+    @Override
+    public String toString(){
+        return "Element[atomic number="+this.atomicNumber+", melting point in kelvin="+this.meltingPointKelvin+", boiling point in kelvin="+this.boilingPointKelvin+"]";
     }
 
     /**
@@ -44,20 +68,4 @@ public abstract class AbsElement {
         return meltingPointKelvin;
     }
 
-    /**
-     * Get the aggregate state of the element at a given ambient temperature
-     * @param tempKelvin current ambient temperature in kelvin
-     * @return AggregateState the aggregate state of the element at given temperature.
-     */
-    public AggregateState getAggregateState(float tempKelvin) {
-        if (tempKelvin >= this.boilingPointKelvin) {
-            return AggregateState.GASEOUS;
-        } else if (tempKelvin >= meltingPointKelvin) {
-            return AggregateState.FLUID;
-        } else if (tempKelvin >= 0) {
-            return AggregateState.SOLID;
-        } else {
-            return null;
-        }
-    }
 }
