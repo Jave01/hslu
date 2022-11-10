@@ -41,7 +41,7 @@ public final class Point {
             if (this.x > 0){
                 return Quadrant.QUADRANT_2;
             } else {
-                return  Quadrant.QUADRANT_4;
+                return Quadrant.QUADRANT_4;
             }
         }
     }
@@ -51,17 +51,28 @@ public final class Point {
         this.y += y;
     }
 
+    /**
+     * Move point based on another points location interpreted as a vector
+     * @param point
+     */
     public void moveRelative(Point point){
-        this.x += point.getX();
-        this.y += point.getY();
+//        this.x += point.getX();
+//        this.y += point.getY();
+        this.moveRelative(point.getX(), point.getY());
     }
 
+    /**
+     *
+     * @param angle angle in degrees relative to the x-axis
+     * @param length absolute length of vector
+     */
     public void moveRelative(double angle, int length){
         int delta_x = (int) (Math.cos(angle) * length);
         int delta_y = (int) (Math.sin(angle) * length);
 
-        this.x += delta_x;
-        this.y += delta_y;
+//        this.x += delta_x;
+//        this.y += delta_y;
+        this.moveRelative(delta_x, delta_y);
     }
 
     /**
