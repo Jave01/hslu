@@ -1,0 +1,2 @@
+{"rule":"GERMAN_SPELLER_RULE","sentence":"^\\QOftmals ist es nicht nötig (zu aufwändig/schwierig) oder gar nicht möglich die exakte Funktion zu berechnen (z.B. ln(x)).\\E$"}
+{"rule":"DE_CASE","sentence":"^\\QEigenschaft Mathematische Bedingung\\E$"}

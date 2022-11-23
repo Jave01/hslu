@@ -2,46 +2,45 @@ package ch.hslu.sw07;
 
 import java.util.Objects;
 
-public class Person {
+public final class Person implements Comparable<Person>{
+    private final int id;
+    private final String lastname;
+    private final String firstname;
+
+    public Person(int id, String firstname, String lastname){
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
+
+    public String getLastName() {
+        return lastname;
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
 
         if (!(o instanceof Person person)) return false;
 
-        return  id == person.id &&
-                lastName.equals(person.lastName) &&
-                surname.equals(person.surname);
+        return  this.id == person.id;
     }
 
     @Override
+    public String toString(){
+        return "Person[" + this.firstname + " " + this.lastname + ", " + this.id;
+    }
+    @Override
     public int hashCode() {
-        return Objects.hash(id, lastName, surname);
+        return Objects.hash(this.id);
     }
 
-    private final int id;
-    private String lastName;
-    private String surname;
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public Person(int id, String surname, String lastName){
-        this.id = id;
-        this.surname = surname;
-        this.lastName = lastName;
+    @Override
+    public int compareTo(Person other){
+        return CharSequence.compare((this.lastname + this.firstname), (other.lastname + other.firstname));
     }
 }

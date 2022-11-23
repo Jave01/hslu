@@ -1,0 +1,145 @@
+\documentclass[12pt]{scrartcl}
+\usepackage[ngerman]{babel}
+
+
+\usepackage{amsmath, amssymb}
+
+\usepackage{ulem} % double underline
+
+\usepackage{array}  % for the tables
+
+\usepackage{nameref}  % for referencing with name
+
+\usepackage{hyperref}  % for hyperlinks
+
+\usepackage{mathrsfs}
+
+\usepackage{graphicx}  % for the images
+
+\usepackage{glossaries}
+
+\usepackage{xcolor, colortbl}
+
+\usepackage{lmodern}
+\usepackage{tcolorbox}
+
+\definecolor{Gray}{gray}{0.85}
+
+% hyperlinks
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\bibliographystyle{IEEetran}
+
+
+
+
+\author{David Jäggli}
+
+\title{Analysis Integralrechnung}
+
+
+
+% ---------- Begin Main Document ----------- %
+
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+\section{Das unbestimmte Integral}
+Bei der Integralrechnung haben wir die umgekehrte Aufgabenstellung als bei der Differenzialrechnung.
+Anstatt Ableitung (quasi Aufleitung).\\
+Fragenstellung: welche Funktion $F'(x)$ gibt abgeleitet $f(x)$.\\
+\textbf{Beispiel:}\\
+\[f(x) = x^3+2x^2+5x-6 \]
+\[F(x) = \frac{1}{4}x^4+\frac{2}{3}x^3+\frac{5}{2}x^2-6x+c\] \\
+\[ \int \sqrt[5]{x^4} \, dx = \int x^{\frac{4}{5}} = \frac{x^{\frac{4}{5} + 1}}{\frac{4}{5} + 1} = \frac{x^{\frac{9}{5}}}{\frac{9}{5}} = \uuline{\frac{9}{5} \cdot x^{\frac{5}{9}}}\]
+\\
+Wobei: $F(x) = \int f(x) \,dx$
+
+
+Weil Konstante c fehlt ist es ein unbestimmtes Integral.
+
+Nicht jede Funktion hat eine Stammfunktion.
+\\
+
+
+\renewcommand{\arraystretch}{1.5}
+\begin{tcolorbox}
+    \textbf{Man bezeichnet:}\\
+    \begin{tabular}{cl}
+        $f(x)$            & als \textbf{Integrand} = Funktion die hinter/unter dem Integral steht\\
+        $\int f(x) \, dx$ & als \textbf{unbestimmtes Integral} \\
+        $F(x) + c$        & als \textbf{Stammfunktion} \\
+        $x$               & die \textbf{Integrationsvariable} \\
+        $c$               & als \textbf{Integrationskonstante} \\
+    \end{tabular}
+\end{tcolorbox}
+
+\subsection{Multiplikation von Funktionen}
+Ein Produkt von Funktionen kann nicht einfach voneinander getrennt werden wie bei der Summe\\
+Heisst:
+\[\int f(x) \cdot g(x) \, dx \neq \int f(x) \, dx \cdot \int g(x) \, dx\]
+
+\newpage
+
+\subsection{Integration von weiteren Elementen}
+Exponentielle Funktionen:
+\begin{center}
+    \renewcommand{\arraystretch}{2}
+    \begin{tabular}{| m{5em} | m{25em} | }
+        \hline
+        $E_1$ & $\int e^x \, dx = e^x + c$ \\
+        \hline
+        $E_2$ & $\int e^{ax + b} \, dx = \frac{1}{a} \cdot e^{ax+b} + c$ \\
+        \hline
+        $E_3$ & $\int a^x \, dx = \frac{a^x}{ln(a)} + c$ \\
+        \hline
+    \end{tabular}
+\end{center}
+Logarithmische Funktionen:
+\begin{center}
+    \renewcommand{\arraystretch}{2}
+    \begin{tabular}{| m{5em} | m{25em} | }
+        \hline
+        $L_1$ & $\int ln(x) \, dx = x \cdot ln(x) - x + c$ für $x \in \mathbb{R}_{+}^{*} $\\
+        \hline
+        $L_2$ & $\int ln(ax + b) \, dx = \frac{1}{a}[(ax + b) \cdot ln(ax+b) - (ax + b)] + c$ \\
+        \hline
+        $L_3$ & $\int log_ax \, dx = \frac{1}{ln(a)}(x \cdot ln(x) - x) + c$ für $x \in \mathbb{R}_{+}^{*}$ \\
+        \hline
+    \end{tabular}
+\end{center}
+
+\newpage
+
+\section{Das bestimmte Integral}
+\subsection{Die Berechnung des bestimmten Integrals}
+
+% \renewcommand{\arraystretch}{1.5}
+% \begin{center}
+%     \begin{tabular}{ | m{12em} | m{12em} | m{12em} | }
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%     \end{tabular}
+% \end{center}
+
+
+% \bibliography{quantum_ready}
+
+\end{document}

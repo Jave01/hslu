@@ -1,0 +1,7 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Das unbestimmte Integral}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Multiplikation von Funktionen}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Integration von weiteren Elementen}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Das bestimmte Integral}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Die Berechnung des bestimmten Integrals}{4}{subsection.2.1}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
