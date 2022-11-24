@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Übung 1: Geräteposition</title>
+        <meta charset="utf8" />
+    </head>
+
+    <body>
+        <h2>Die aktuelle Geräteposition</h2>
+        <p>Breite:<span id="latitude"></span></p>
+        <p>Länge:<span id="longitude"></span></p>
+        <p>
+            <a id="maps" href="https://google.ch/maps" target="_blank"
+                >Zeige Position auf Google Maps</a
+            >
+        </p>
+        <button onclick="show()">Abfragen der aktuellen Geräteposition</button>
+        <script>
+            function zeigePosition(position) {
+                // TODO: Zeigen Sie die Position in den entsprechenden Feldern
+                let latitude = document.getElementById("latitude");
+                let longitude = document.getElementById("longitude");
+
+                let new_latitude = position.coords.latitude;
+                let new_longitude = position.coords.longitude;
+
+                latitude.innerHTML = new_latitude;
+                longitude.innerHTML = new_longitude;
+                // TODO: Passen Sie den Link zu Google Maps an
+
+                let link_element = document.getElementById("maps");
+                let new_link =
+                    "https://www.google.com/maps/search/?api=1&query=" +
+                    new_latitude +
+                    "," +
+                    new_longitude;
+                link_element.href = new_link;
+            }
+
+            function zeigeFehler(error) {
+                let text;
+                switch (error.code) {
+                    case error.PERMISSION_DENIED:
+                        text = "Benutzer verweigert Zugriff";
+                        break;
+                    case error.TIMEOUT:
+                        text = "Wartezeit überschritten";
+                        break;
+                    case error.POSITION_UNAVAILABLE:
+                        text = "Position nicht verfügbar";
+                        break;
+                    default:
+                        text = "Unbekannter Fehler aufgetreten";
+                }
+                document.getElementById("latitude").innerHTML = text;
+            }
+
+            function show() {
+                // TODO: Übergeben Sie die Funktionen zeigePosition und zeigeFehler als Parameter
+                navigator.geolocation.getCurrentPosition(
+                    zeigePosition,
+                    zeigeFehler
+                );
+            }
+        </script>
+    </body>
+</html>

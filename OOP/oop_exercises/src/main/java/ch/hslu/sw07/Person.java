@@ -2,31 +2,23 @@ package ch.hslu.sw07;
 
 import java.util.Objects;
 
-public class Person implements Comparable<Person>{
+public final class Person implements Comparable<Person>{
     private final int id;
-    private String lastName;
-    private String surname;
+    private final String lastname;
+    private final String firstname;
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public Person(int id, String firstname, String lastname){
+        this.id = id;
+        this.firstname = firstname;
+        this.lastname = lastname;
     }
 
     public String getLastName() {
-        return lastName;
+        return lastname;
     }
 
-    public String getSurname() {
-        return surname;
-    }
-
-    public Person(int id, String surname, String lastName){
-        this.id = id;
-        this.surname = surname;
-        this.lastName = lastName;
+    public String getFirstname() {
+        return firstname;
     }
 
     @Override
@@ -39,11 +31,16 @@ public class Person implements Comparable<Person>{
     }
 
     @Override
+    public String toString(){
+        return "Person[" + this.firstname + " " + this.lastname + ", " + this.id;
+    }
+    @Override
     public int hashCode() {
-        return Objects.hash(id);
+        return Objects.hash(this.id);
     }
 
-    public int compareTo(Person other) {
-        return Integer.compare(other.id, this.id);
+    @Override
+    public int compareTo(Person other){
+        return CharSequence.compare((this.lastname + this.firstname), (other.lastname + other.firstname));
     }
 }
