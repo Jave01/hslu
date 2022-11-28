@@ -15,8 +15,9 @@
         <?php 
         $zahl = random_int(1, 100);
 
-        // TODO: Paragraph mit Zahl ($zahl) ausgeben. Klasse gruen, falls < 50 sonst Klasse rot.  
-        
+        // TODO: Paragraph mit Zahl ($zahl) ausgeben. Klasse gruen, falls < 50 sonst Klasse rot.
+        $class = $zahl > 50 ? "red" : "green";  
+        echo("<p class='" . $class . "'>" . $class . "</p>")
         ?>
         <button type="submit">berechne Zufallszahl</button>
     </form>

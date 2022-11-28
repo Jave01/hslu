@@ -95,7 +95,7 @@ hat.
 \end{center}
 
 % -------- begin of chain rules ----------------
-\hspace{0pt} \\
+\newpage
 
 \subsubsection{Weiterführende Regeln}
 
@@ -122,7 +122,7 @@ hat.
 \noindent
 \textbf{Quotientenregel \& Beispiel:} 
 \[\left(\frac{f(x)}{g(x)}\right)' = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{(g(x))^2}\]
-\[f(x)= \frac{2x^5}{2x} \Rightarrow f'(x) = \frac{10x^4 \cdot 2x - 2x^5 \cdot 2}{(2x)^2} = \frac{20x^5 - 4x^5}{4x^2} = \frac{16x^5}{4x^2} = \underline{4x^3}\]
+\[f(x)= \frac{e^x}{x^2} \Rightarrow f'(x) = \frac{e^x}{(2x)^2} = \frac{20x^5 - 4x^5}{4x^2} = \frac{16x^5}{4x^2} = \underline{4x^3}\]
 
 \hspace{0pt} \\
 \hspace{0pt} \\
@@ -253,6 +253,7 @@ $f''(x) = 0 \Rightarrow$ \textbf{Wendepunkt}
 \end{center}
 
 
+\newpage
 \section{Kurvendiskussion}
 
 \subsection{Berechnungen ohne Differenzialrechnung}
@@ -262,16 +263,68 @@ $f''(x) = 0 \Rightarrow$ \textbf{Wendepunkt}
         \rowcolor{Gray}
         \textbf{Eigenschaft}            & \textbf{Mathematische Bedingung} \\
         \hline
-        Schnittpunkt mit der y-Achse    & Lorem ipsum \\
+        Schnittpunkt mit der y-Achse    & Die Funktion $y=f(x)$ an $x=0$ resp. $f(0)$ ausrechnen $\Rightarrow$ $P=(0, f(x))$ \\
         \hline
-        Nullstellen                     & Lorem ipsum \\
+        Nullstellen                     & Lösung der Gleichung $f(x)=0$. \\
         \hline
-        Vertikale Asymptote (ein Pol)   & Lorem \\
+        Vertikale Asymptote (ein Pol)   & In diesem Fall lautet die Gleichung \newline $y = f(x) = \frac{g(x)}{h(x)}$ und beim Pol ist $h(x)=0$\\
         \hline
         Symmetrien (gerade resp. ungerade Funktionen) & Für \textbf{gerade} Funktionen $f(x) = f(-x)$ \newline Für \textbf{ungerade} Funktionen $f(x) = -f(-x)$ \newline \quad \quad \quad resp. $-f(x) = f(-x)$ \\
         \hline
     \end{tabular}
 \end{center}
+
+\subsection{Lokale Extremwerte}
+\subsubsection{Extremalwert}
+Ein Extremalwert ist immer dort, wo keine Steigung herrscht, also $f'(x) = 0$ \\
+Ein Minimalwert ist bei einer Linkskurve, also $f''(x) > 0$. Und ein Maximalwert
+bei einer Rechtskurve, also $f''(x) < 0$.
+
+\begin{center}
+    \begin{tabular}{|p{7em}|p{9em}|p{18em}|}
+        \hline
+        \rowcolor{Gray}
+        \textbf{Eigenschaft} & \textbf{99 \% Regel} & \textbf{100 \% resp. Ausnahmeregel}\\
+        \hline
+        Generel: & $f'(x_0) = 0$ & $f'(x_0) = f''(x_0) \dots f^{(n - 1)}(x_0) = 0$\\
+        \hline
+        Maximum: & $f''(x_0) < 0$ & für n gerade ist $f^{(n)}(x_0) < 0$\\
+        \hline
+        Minimum: & $f''(x_0) > 0$ & für n gerade ist $f^{(n)}(x_0) > 0$\\
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsubsection{Wendepunkte}
+Ein Wendepunkt ist dort wo die Kurve keine Krümmung hat, also $f''(x) = 0$.
+\begin{center}
+    \begin{tabular}{|p{7em}|p{9em}|p{18em}|}
+        \hline
+        \rowcolor{Gray}
+        \textbf{Eigenschaft} & \textbf{99 \% Regel} & \textbf{100 \% resp. Ausnahmeregel}\\
+        \hline
+        Generel: & $f''(x_0) = 0$ & $f''(x_0) = \dots f^{(n - 1)}(x_0) = 0$\\
+        \hline
+        Zusätzlich: & $f'''(x_0) \neq 0$ & für n ungerade ist $f^{(n)}(x_0) \neq 0$\\
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsubsection{Terrassenpunkte}
+Ein Terrassenpunkt ist ein Wendepunkt mit horizontaler Tangente an der Stelle $x_0$.
+\begin{center}
+    \begin{tabular}{|p{7em}|p{9em}|p{18em}|}
+        \hline
+        \rowcolor{Gray}
+        \textbf{Eigenschaft} & \textbf{99 \% Regel} & \textbf{100 \% resp. Ausnahmeregel}\\
+        \hline
+        Generel: & $f'(x_0) = f''(x_0) = 0$ & $f'(x_0) = f''(x_0) \dots f^{(n - 1)}(x_0) = 0$\\
+        \hline
+        Zusätzlich: & $f'''(x_0) \neq 0$ & für n ungerade ist $f^{(n)}(x_0) \neq 0$\\
+        \hline
+    \end{tabular}
+\end{center}
+
 
 % \bibliography{quantum_ready}
 

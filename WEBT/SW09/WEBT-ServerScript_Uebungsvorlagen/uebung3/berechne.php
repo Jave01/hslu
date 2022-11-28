@@ -33,11 +33,12 @@
 
             if (pruefeParameter()) {
                 // TODO: Parameter auslesen und Berechnung des Idealgewichts
-
+                berechneIdealgewicht();
                 // TODO: Ausgabe des Idealgewichts
+                echo($idealgewicht)
             }
             echo "<p>Parameter 'name' nicht gesetzt</p>";
-            berechneIdealgewicht();
+            
         ?>
     <h1>Test</h1>
     <a href="IdealgewichtForm.html">Zurück zum Formular</a>

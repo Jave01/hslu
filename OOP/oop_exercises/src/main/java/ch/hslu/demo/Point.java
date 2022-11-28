@@ -89,7 +89,6 @@ public final class Point {
     }
 
     public int getQuadrant1(){
-        int quadrant = NO_QUADRANT;
         if (this.x == 0 && this.y == 0)
             return NO_QUADRANT;
 
