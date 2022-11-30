@@ -8,6 +8,7 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * Simple class for simulating a motor
@@ -101,9 +102,22 @@ public class Motor implements Switchable{
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Motor other)) return false;
+        return startRpm == other.startRpm;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(startRpm);
+    }
+
     private void firePropertyChangeEvent(final PropertyChangeEvent pcEvent){
         for(PropertyChangeListener listener : this.changeListeners){
             listener.propertyChange(pcEvent);
         }
     }
+
 }
