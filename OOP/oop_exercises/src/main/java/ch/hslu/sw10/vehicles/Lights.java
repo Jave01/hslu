@@ -1,4 +1,4 @@
-package ch.hslu.sw10;
+package ch.hslu.sw10.vehicles;
 
 import ch.hslu.sw04.Switchable;
 

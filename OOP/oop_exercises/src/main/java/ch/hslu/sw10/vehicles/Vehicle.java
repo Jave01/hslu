@@ -1,4 +1,4 @@
-package ch.hslu.sw10;
+package ch.hslu.sw10.vehicles;
 
 import ch.hslu.sw04.Switchable;
 import org.apache.logging.log4j.LogManager;
@@ -25,6 +25,9 @@ public final class Vehicle implements Switchable, PropertyChangeListener {
         this.lightFrontLeft.addPropertyChangeListener(this);
     }
 
+    /**
+     * Switches on the car and its components.
+     */
     @Override
     public void switchOn() {
         if(this.isSwitchedOff()) {
@@ -32,9 +35,14 @@ public final class Vehicle implements Switchable, PropertyChangeListener {
             this.motor.switchOn();
             this.lightFrontRight.switchOn();
             this.lightFrontLeft.switchOn();
+        } else {
+            this.logger.info("Already switched on");
         }
     }
 
+    /**
+     * Switches off the car and its components.
+     */
     @Override
     public void switchOff() {
         if(this.isSwitchedOn()) {
@@ -42,6 +50,8 @@ public final class Vehicle implements Switchable, PropertyChangeListener {
             this.motor.switchOff();
             this.lightFrontRight.switchOff();
             this.lightFrontLeft.switchOff();
+        } else {
+            this.logger.info("Already switched off");
         }
     }
 

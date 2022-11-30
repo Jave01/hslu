@@ -1,4 +1,4 @@
-package ch.hslu.sw10;
+package ch.hslu.sw10.vehicles;
 
 public enum LightsPosition {
     FRONT_LEFT("front left"), FRONT_RIGHT("front right");
@@ -10,6 +10,6 @@ public enum LightsPosition {
     }
 
     public String getPos(){
-        return this.getPos();
+        return this.pos;
     }
 }

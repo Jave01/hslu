@@ -21,9 +21,21 @@
 \usepackage{xcolor, colortbl}
 
 \usepackage{lmodern}
+
 \usepackage{tcolorbox}
 
+\usepackage{pgfplots}
+
+\pgfplotsset{compat=1.15}
+
+\usetikzlibrary{arrows}
+
 \definecolor{Gray}{gray}{0.85}
+
+\setlength{\parindent}{0pt}
+
+\definecolor{qqwwzz}{rgb}{0,0.4,0.6}
+\definecolor{qqwuqq}{rgb}{0,0.39,0}
 
 % hyperlinks
 \hypersetup{
@@ -33,6 +45,10 @@
     linkcolor=black,
     urlcolor=black
 }
+
+% for coloring in text %
+
+\newcommand{\red}[1]{\textcolor{red}{#1}}
 
 \bibliographystyle{IEEetran}
 
@@ -65,13 +81,14 @@ Fragenstellung: welche Funktion $F'(x)$ gibt abgeleitet $f(x)$.\\
 \[F(x) = \frac{1}{4}x^4+\frac{2}{3}x^3+\frac{5}{2}x^2-6x+c\] \\
 \[ \int \sqrt[5]{x^4} \, dx = \int x^{\frac{4}{5}} = \frac{x^{\frac{4}{5} + 1}}{\frac{4}{5} + 1} = \frac{x^{\frac{9}{5}}}{\frac{9}{5}} = \uuline{\frac{9}{5} \cdot x^{\frac{5}{9}}}\]
 \\
-Wobei: $F(x) = \int f(x) \,dx$
+Wobei: $F(x) = \int f(x) \,dx$ \\
 
-
-Weil Konstante c fehlt ist es ein unbestimmtes Integral.
-
-Nicht jede Funktion hat eine Stammfunktion.
-\\
+\noindent
+\textbf{Weiter zu beachten:}
+\begin{itemize}
+    \item Weil Konstante c fehlt, ist es ein unbestimmtes Integral.
+    \item Nicht jede Funktion hat eine Stammfunktion.
+\end{itemize}
 
 
 \renewcommand{\arraystretch}{1.5}
@@ -86,14 +103,32 @@ Nicht jede Funktion hat eine Stammfunktion.
     \end{tabular}
 \end{tcolorbox}
 
-\subsection{Multiplikation von Funktionen}
+
+\newpage
+\subsection{Integrationsregeln}\label{Integrationsregeln unb. Integrale}
+Bei allen Integrationen immer ganz am Schluss noch die Konstante $c$ hinschreiben.
+
+\subsubsection{Potenz}
+\[\int x^n \, dx = \frac{1}{n + 1}x^{n + 1}\]
+
+\subsubsection{Faktoren}
+Ein konstanter Faktor kann vor das Integrationszeichen genommen werden.
+\[\int a \cdot f(x) \, dx = a \cdot \int f(x) \, dx\]
+
+
+\subsubsection{Summe}
+Das Integral aus einer Summe von Funktion ist gleich der Summe der Integrale
+der einzelnen Funktionen.
+\[\int f(x) + g(x) \, dx = \int f(x)\, dx + \int g(x) \, dx\]
+
+\subsubsection{Multiplikation}
 Ein Produkt von Funktionen kann nicht einfach voneinander getrennt werden wie bei der Summe\\
 Heisst:
 \[\int f(x) \cdot g(x) \, dx \neq \int f(x) \, dx \cdot \int g(x) \, dx\]
 
-\newpage
 
-\subsection{Integration von weiteren Elementen}
+\newpage
+\subsection{Integration von weiteren elementaren Funktionen}
 Exponentielle Funktionen:
 \begin{center}
     \renewcommand{\arraystretch}{2}
@@ -103,7 +138,7 @@ Exponentielle Funktionen:
         \hline
         $E_2$ & $\int e^{ax + b} \, dx = \frac{1}{a} \cdot e^{ax+b} + c$ \\
         \hline
-        $E_3$ & $\int a^x \, dx = \frac{a^x}{ln(a)} + c$ \\
+        $E_3$ & $\int a^x \, dx = \frac{a^x}{ln(a)} + c$ \qquad \qquad \quad für $a \in \mathbb{R}_{+}^{*}$ und $a \neq 1$\\
         \hline
     \end{tabular}
 \end{center}
@@ -125,6 +160,104 @@ Logarithmische Funktionen:
 
 \section{Das bestimmte Integral}
 \subsection{Die Berechnung des bestimmten Integrals}
+Mithilfe der Integralrechnung kann man z.B. eine Fläche unter einer Kurve in einem 
+gewissen Abschnitt berechnen. \\
+\noindent
+Es gilt: 
+
+\[\int_{a}^{b} f(x) \, dx = F(b) - F(a)\]
+
+Wobei F die Stammfunktion von f(x) ist.\\
+
+\noindent
+\textbf{Vorgehensweise für die Berechnung des bestimmten Integrals} 
+\begin{itemize}
+    \item Bestimmung der Stammfunktion $F(x)$
+    \item Bilden der zwei eingesetzten Werte $F(a)$ und $F(b)$
+    \item Subtraktion der von $F(b) - F(a)$ ergibt das gesuchte Integral.
+\end{itemize}
+Die Integrationskonstante c im bestimmten Integral fällt weg und muss somit nicht
+berücksichtigt werden.
+
+
+\subsection{Bestimmtes Integral und Flächeninhalt}
+Das bestimmte Integral kann jedoch nicht uneingeschränkt mit dem Flächeninhalt gleichgesetzt 
+werden. Geht die Ursprungsfunktion in den negativen y-Wertebereich
+ergeben sich negative Flächen, was nicht sehr sinnvoll ist.\\
+\noindent
+Will man die gesamte Fläche zwischen der Funktionskurve und der x-Achse herausfinden, muss man
+die einzelnen Flächen zwischen den Nullpunkten einzeln berechnen und den Absolutwert
+davon nehmen.\\
+
+\noindent
+\textbf{Vorgehensweise für die Berechnung der Fläche}
+\begin{enumerate}
+    \item Berechnen der Nullstellen von $f(x)$.
+    \item Die Integrale einzeln rechen.
+    \item Die Beträge aller Resultate addieren.
+\end{enumerate}
+
+\newpage
+
+\noindent
+{\textbf{Anschaungs-Beispiel:} \\
+Bei folgendem Beispiel ist die Kurve $-x^2 + 6x$ gegeben. Die Fläche würde man mit folgender Formel
+berechnen:
+\[{\int_{0}^{6}  -x^2 + 6x\,dx }\]
+resp.
+\[F(6) - F(0)\]
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+    \begin{axis}[
+    x=1.5cm,y=0.75cm,
+    axis lines=middle,
+    ymajorgrids=true,
+    xmajorgrids=true,
+    xmin=-1,
+    xmax=8,
+    ymin=-2,
+    ymax=10,
+    xtick={-1,0,...,8},
+    ytick={-2, 0,...,10},]
+    \clip(-2.3866006234132833,-10.726450007228292) rectangle (8.78724606115888,24.428863974258505);
+    \draw[line width=0.8pt,color=qqwwzz,fill=qqwwzz,fill opacity=0.1, smooth,samples=50,domain=0:6] plot(\x,{0-(\x)^(2)+6*(\x)}) -- (6,0) -- (0,0) -- cycle;
+    \draw[line width=2pt,color=qqwuqq,smooth,samples=100,domain=-2.3866006234132833:8.78724606115888] plot(\x,{0-(\x)^(2)+6*(\x)});
+    \begin{scriptsize}
+    \draw[color=qqwuqq] (-1.4019600865874071,-10.015320730631826) node {$f$};
+    \end{scriptsize}
+    \end{axis}
+\end{tikzpicture}
+
+
+\newpage
+\subsection{Integrationsregeln für bestimmte Integrale}
+Für Faktor- und Additionsregel siehe auch Kapitel \ref{Integrationsregeln unb. Integrale}
+
+
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+    \begin{tabular}{ | m{10em} m{26em} | }
+        \hline
+        Faktorregel: &  \[\int_a^b c \cdot f(x) dx = c \cdot \int_a^b f(x) dx\]\\ 
+        \hline
+        Additionsregel: & \[\int_a^b f(x) \pm g(x) dx = \int_a^b f(x) \pm \int_a^b g(x) dx\] \\ 
+        \hline
+        Vertauschungsregel: & \[\int_{\red{a}}^{\red{b}} f(x) dx = \red{-}\int_{\red{b}}^{\red{a}} f(x) dx\] \\ 
+        \hline
+        Zerlegungsregel \newline für $a < c < b$ gilt: & \[\int_a^b f(x) dx = \int_a^c f(x) dx + \int_c^b f(x)\] \\ 
+        \hline
+        Vergleichsregel \newline [Bedingung\footnotemark{}] & \[\int_a^b g(x) dx \leq \int_a^b f(x) dx\] \\ 
+        \hline
+        Fläche einer Linie: & \[\int_a^a f(x) dx = 0\] \\ 
+        \hline
+    \end{tabular}
+\end{center}
+
+\footnotetext{Wenn $f(x)$ und $g(x)$ im Intervall $a\leq x \leq b$ stetig sind und im Intervall gilt immer $f(x) < g(x)$}
+
+\subsection{Integrationsvariable ungleich 'x'}
+Die Integrationsvariable muss nicht immer x sein. Nach welcher Variabel integriert wird, 
+wird am Schluss mit 'd' angegeben. Also $dx$ für $x$ oder $dy$ für $y$.
+
 
 % \renewcommand{\arraystretch}{1.5}
 % \begin{center}

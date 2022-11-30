@@ -1,6 +1,8 @@
-package ch.hslu.sw10;
+package ch.hslu.sw10.vehicles;
 
 import ch.hslu.sw04.Switchable;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -15,6 +17,7 @@ public class Motor implements Switchable{
     private final int startRpm = 1600;
     private int rpm = 0;
 
+    private static Logger logger = LogManager.getLogger(Motor.class);
     private final List<PropertyChangeListener> changeListeners = new ArrayList<>();
 
     /**
@@ -35,16 +38,27 @@ public class Motor implements Switchable{
         this.rpm += acceleration * time;
     }
 
+    /**
+     * Add a property change listener.
+     * @param listener
+     */
     public void addPropertyChangeListener(final PropertyChangeListener listener) {
         if(listener != null) {
             this.changeListeners.add(listener);
         }
     }
 
+    /**
+     * Remove a property change listener.
+     * @param listener
+     */
     public void removePropertyChangeListener(final PropertyChangeListener listener) {
         this.changeListeners.remove(listener);
     }
 
+    /**
+     * Switch motor on.
+     */
     @Override
     public void switchOn(){
         this.isOn = true;
@@ -54,6 +68,9 @@ public class Motor implements Switchable{
         this.firePropertyChangeEvent(pcEvent);
     }
 
+    /**
+     * Switch motor off.
+     */
     @Override
     public void switchOff(){
         if(this.isSwitchedOn()) {

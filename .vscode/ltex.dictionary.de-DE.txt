@@ -8,3 +8,5 @@ Strassensteigung
 Tangenswert
 Tangenswerte
 heisst
+Faktorregel
+Zerlegungsregel
