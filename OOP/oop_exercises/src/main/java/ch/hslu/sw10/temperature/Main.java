@@ -26,10 +26,14 @@ public class Main{
             System.out.print("> ");
             input = scanner.nextLine();
             if("status".equals(input) || "exit".equals(input)){
-                logger.info("Count: " + tHistory.getCount() + ", " +
-                        "average: " + Math.round(100 * tHistory.getAverageKelvin()) / 100 + " K, " +
-                        "min: " + tHistory.getMinKelvin() + " K, " +
-                        "max: " + tHistory.getMaxKelvin() + " K");
+                if(tHistory.getCount() > 0) {
+                    logger.info("Count: " + tHistory.getCount() + ", " +
+                            "average: " + Math.round(100 * tHistory.getAverageKelvin()) / 100 + " K, " +
+                            "min: " + tHistory.getMinKelvin() + " K, " +
+                            "max: " + tHistory.getMaxKelvin() + " K");
+                }else {
+                    logger.info("Count: 0, average: 0, min: 0, max: 0");
+                }
             }
             else {
                 try {
