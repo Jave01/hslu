@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.*;
 
 public class TemperatureHistory {
-    private Set<Temperature> temps = new HashSet<>();
+    private final Set<Temperature> temps = new HashSet<>();
 
     private float currentMaxKelvin = 0;
 
@@ -60,9 +60,8 @@ public class TemperatureHistory {
         final int count = this.getCount();
         if (count != 0) {
             double sum = 0;
-            Iterator<Temperature> i = this.temps.iterator();
-            while(i.hasNext()){
-                sum += i.next().getDegreeCelsius();
+            for (Temperature temp : this.temps) {
+                sum += temp.getDegreeCelsius();
             }
             return sum / count;
         } else {
@@ -72,15 +71,6 @@ public class TemperatureHistory {
 
     public double getAverageKelvin(){
         return this.getAverageCelsius() + Temperature.kelvinOffset;
-    }
-
-    public double getAverageWithoutZeroCheck(){
-        double sum = 0;
-        Iterator<Temperature> i = this.temps.iterator();
-        while(i.hasNext()){
-            sum += i.next().getDegreeCelsius();
-        }
-        return sum / 0;//this.getCount();
     }
 
     public void addTemperatureChangeListener(TemperatureChangeListener tcListener){
@@ -98,18 +88,16 @@ public class TemperatureHistory {
     @Override
     public String toString(){
         String s = "Temperature history: ";
-        Iterator<Temperature> i = this.temps.iterator();
-        while (i.hasNext()){
-            s += i.next().toString() + ", ";
+        for (Temperature temp : this.temps) {
+            s += temp.toString() + ", ";
         }
         return s;
     }
 
     /**
      * Fires a temperature change event if an extreme changed.
-     * Compares the stored max and min value with the new max and min values. Calls fireTemperatureChangeEvent
-     * if there's a change.
-     * @return Temperature event type max or min
+     * Compares the stored max and min value with the new measured max and min values.
+     * Calls {@link #fireTemperatureChangeEvent(TemperatureChangeEvent)} if there's a change.
      */
     private void handleNewExtremes(){
         if(this.getCount() > 0) {

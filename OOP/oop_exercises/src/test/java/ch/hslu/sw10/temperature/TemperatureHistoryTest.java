@@ -63,7 +63,7 @@ class TemperatureHistoryTest {
             }
         });
         tHistory.add(Temperature.createFromKelvin(10));
-        assertTrue(this.eventTriggered);
+        assertTrue(TemperatureHistoryTest.eventTriggered);
     }
 
     @Test
