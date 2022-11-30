@@ -3,22 +3,29 @@ package ch.hslu.sw10.temperature;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.beans.PropertyChangeListener;
 import java.util.*;
 
 public class TemperatureHistory {
     private Set<Temperature> temps = new HashSet<>();
 
-    private final List<PropertyChangeListener> pcListeners = new ArrayList<>();
+    private float currentMaxKelvin = 0;
+
+    private float currentMinKelvin = Float.MAX_VALUE;
+
+    private final List<TemperatureChangeListener> tcListeners = new ArrayList<>();
 
     private static final Logger logger = LogManager.getLogger();
 
     public boolean add(Temperature t){
-        return this.temps.add(t);
+        final boolean addedSuccessfully = this.temps.add(t);
+        this.handleNewExtremes();
+        return addedSuccessfully;
     }
 
     public boolean remove(Temperature t){
-        return this.temps.remove(t);
+        final boolean removedSuccessfully = this.temps.remove(t);
+        this.handleNewExtremes();
+        return removedSuccessfully;
     }
 
     public int getCount(){
@@ -76,23 +83,15 @@ public class TemperatureHistory {
         return sum / 0;//this.getCount();
     }
 
-    public void propertyChange(TemperatureChangeEvent evt) {
-        if (evt.tempEventType == TemperatureEventType.MAX){
-            this.logger.info("New max value in history: " + this.getMaxKelvin() + " K");
-        } else if (evt.tempEventType == TemperatureEventType.MIN){
-            this.logger.info("New min value in history: " + this.getMinKelvin() + " K");
+    public void addTemperatureChangeListener(TemperatureChangeListener tcListener){
+        if (tcListener != null){
+            this.tcListeners.add(tcListener);
         }
     }
 
-    public void addPropertyChangeListener(PropertyChangeListener pcListener){
+    public void removeTemperatureChangeListener(TemperatureChangeListener pcListener){
         if (pcListener != null){
-            this.pcListeners.add(pcListener);
-        }
-    }
-
-    public void removePropertyChangeListener(PropertyChangeListener pcListener){
-        if (pcListener != null){
-            this.pcListeners.remove(pcListener);
+            this.tcListeners.remove(pcListener);
         }
     }
 
@@ -104,5 +103,37 @@ public class TemperatureHistory {
             s += i.next().toString() + ", ";
         }
         return s;
+    }
+
+    /**
+     * Fires a temperature change event if an extreme changed.
+     * Compares the stored max and min value with the new max and min values. Calls fireTemperatureChangeEvent
+     * if there's a change.
+     * @return Temperature event type max or min
+     */
+    private void handleNewExtremes(){
+        if(this.getCount() > 0) {
+            final float max = this.getMaxKelvin();
+            final float min = this.getMinKelvin();
+            // Check if there's a new max or min
+            if (max != this.currentMaxKelvin) {
+                this.currentMaxKelvin = max;
+                this.fireTemperatureChangeEvent(new TemperatureChangeEvent(this, TemperatureEventType.MAX));
+            }
+            if (min != this.currentMinKelvin) {
+                this.currentMinKelvin = min;
+                this.fireTemperatureChangeEvent(new TemperatureChangeEvent(this, TemperatureEventType.MIN));
+            }
+        }
+    }
+
+    /**
+     * Calls every listener with the given event.
+     * @param evt specification which kind of event (max or min)
+     */
+    private void fireTemperatureChangeEvent(final TemperatureChangeEvent evt){
+        for(TemperatureChangeListener tcListener : this.tcListeners){
+            tcListener.temperatureChange(evt);
+        }
     }
 }
