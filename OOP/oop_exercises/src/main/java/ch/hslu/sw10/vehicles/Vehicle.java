@@ -20,7 +20,7 @@ public final class Vehicle implements Switchable, PropertyChangeListener {
         this.lightFrontRight = new Lights();
         this.lightFrontLeft = new Lights();
 
-        this.motor.addPropertyChangeListener(this);
+        this.motor.addPropertyChangeListener((PropertyChangeListener) this);
         this.lightFrontRight.addPropertyChangeListener(this);
         this.lightFrontLeft.addPropertyChangeListener(this);
     }

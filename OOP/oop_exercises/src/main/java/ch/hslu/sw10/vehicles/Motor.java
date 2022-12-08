@@ -13,7 +13,7 @@ import java.util.Objects;
 /**
  * Simple class for simulating a motor
  */
-public class Motor implements Switchable{
+public final class Motor implements Switchable{
     private boolean isOn = false;
     private final int startRpm = 1600;
     private int rpm = 0;
@@ -31,12 +31,16 @@ public class Motor implements Switchable{
 
     /**
      * Increase or decrease motor speed
-     * @param acceleration  acceleration in rpm/s
-     * @param time          time in seconds
+     * @param acceleration  acceleration in rpm
      */
-    public void accelerate(int acceleration, int time) {
-
-        this.rpm += acceleration * time;
+    public void accelerate(int acceleration) {
+        if(((float)this.rpm + acceleration) < 0 || this.isSwitchedOff()){
+            this.rpm = 0;
+        }else if((float)this.rpm + acceleration > Integer.MAX_VALUE){
+            this.rpm = Integer.MAX_VALUE;
+        } else {
+            this.rpm += acceleration;
+        }
     }
 
     /**
@@ -70,7 +74,7 @@ public class Motor implements Switchable{
     }
 
     /**
-     * Switch motor off.
+     * Switch motor off and trigger a {@link PropertyChangeEvent}.
      */
     @Override
     public void switchOff(){
@@ -114,6 +118,10 @@ public class Motor implements Switchable{
         return Objects.hash(startRpm);
     }
 
+    /**
+     * Execute the propertyChange method on every registered listener.
+     * @param pcEvent the event which will be transmitted.
+     */
     private void firePropertyChangeEvent(final PropertyChangeEvent pcEvent){
         for(PropertyChangeListener listener : this.changeListeners){
             listener.propertyChange(pcEvent);

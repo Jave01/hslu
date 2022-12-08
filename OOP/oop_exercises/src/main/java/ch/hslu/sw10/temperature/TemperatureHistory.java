@@ -16,18 +16,33 @@ public class TemperatureHistory {
 
     private static final Logger logger = LogManager.getLogger();
 
+    /**
+     * Add a temperature to the history.
+     * @param t a Temperature object.
+     * @return indicator if the addition was successful.
+     */
     public boolean add(Temperature t){
         final boolean addedSuccessfully = this.temps.add(t);
         this.handleNewExtremes();
         return addedSuccessfully;
     }
 
+    /**
+     * Remove a temperature from the history.
+     * If there is a temperature in the history which .equals() Method returns true, it will be removed.
+     * @param t a Temperature object.
+     * @return indicator if the removal was successful.
+     */
     public boolean remove(Temperature t){
         final boolean removedSuccessfully = this.temps.remove(t);
         this.handleNewExtremes();
         return removedSuccessfully;
     }
 
+    /**
+     * Return number of elements in the history.
+     * @return number of elements in history.
+     */
     public int getCount(){
         return this.temps.size();
     }
@@ -56,6 +71,11 @@ public class TemperatureHistory {
         return Collections.max(this.temps).getFahrenheit();
     }
 
+    /**
+     * Returns the average temperature value in degree Celsius.
+     * If there are no elements in the history in returns Float.NaN.
+     * @return average temperature in degree Celsius.
+     */
     public double getAverageCelsius(){
         final int count = this.getCount();
         if (count != 0) {
@@ -73,18 +93,34 @@ public class TemperatureHistory {
         return this.getAverageCelsius() + Temperature.kelvinOffset;
     }
 
-    public void addTemperatureChangeListener(TemperatureChangeListener tcListener){
+    /**
+     * Add a listener for all the implemented class events.
+     * @param tcListener the listener to add.
+     * @return indicator if the addition was successful.
+     */
+    public boolean addTemperatureChangeListener(TemperatureChangeListener tcListener){
         if (tcListener != null){
-            this.tcListeners.add(tcListener);
+            return this.tcListeners.add(tcListener);
         }
+        return false;
     }
 
-    public void removeTemperatureChangeListener(TemperatureChangeListener pcListener){
+    /**
+     * Remove a listener.
+     * @param pcListener the listener which will be removed.
+     * @return indicator if removal was successful.
+     */
+    public boolean removeTemperatureChangeListener(TemperatureChangeListener pcListener){
         if (pcListener != null){
-            this.tcListeners.remove(pcListener);
+            return this.tcListeners.remove(pcListener);
         }
+        return false;
     }
 
+    /**
+     * Returns a concatenation of the string values from each temperature in history.
+     * @return all the temperature string values concatenated.
+     */
     @Override
     public String toString(){
         String s = "Temperature history: ";
@@ -106,11 +142,11 @@ public class TemperatureHistory {
             // Check if there's a new max or min
             if (max != this.currentMaxKelvin) {
                 this.currentMaxKelvin = max;
-                this.fireTemperatureChangeEvent(new TemperatureChangeEvent(this, TemperatureEventType.MAX));
+                this.fireTemperatureChangeEvent(new TemperatureChangeEvent(this, TemperatureEventType.MAX, max));
             }
             if (min != this.currentMinKelvin) {
                 this.currentMinKelvin = min;
-                this.fireTemperatureChangeEvent(new TemperatureChangeEvent(this, TemperatureEventType.MIN));
+                this.fireTemperatureChangeEvent(new TemperatureChangeEvent(this, TemperatureEventType.MIN, min));
             }
         }
     }
