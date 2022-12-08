@@ -13,11 +13,7 @@ public class Main{
         String input;
         boolean running = true;
         TemperatureHistory tHistory = new TemperatureHistory();
-        tHistory.addTemperatureChangeListener(new TemperatureChangeListener() {
-            public void temperatureChange(TemperatureChangeEvent evt) {
-                logger.info("New " + evt.tempEventType + " temperature");
-            }
-        });
+        tHistory.addTemperatureChangeListener(evt -> logger.info("New " + evt.tempEventType + " temperature"));
 
 
         System.out.println("Enter temperature values in Kelvin or 'exit' for quitting:");

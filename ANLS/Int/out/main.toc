@@ -11,4 +11,9 @@
 \contentsline {subsection}{\numberline {2.2}Bestimmtes Integral und Flächeninhalt}{5}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Integrationsregeln für bestimmte Integrale}{7}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Integrationsvariable ungleich 'x'}{7}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Substitutionsmethoden}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Lineare Substitution}{8}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Spezialfall: die logarithmische Integration}{8}{subsubsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.2}Da fäut no äppis}{8}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Partielle Integration}{9}{section.4}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

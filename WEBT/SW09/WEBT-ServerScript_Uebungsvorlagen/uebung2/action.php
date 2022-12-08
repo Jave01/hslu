@@ -12,9 +12,9 @@
     if (!isset($_GET['name']))  {
 
         // TODO: (1) Ausgabe des Parameters 'name'
-        <p> Hey there . $_GET['name'] . </p>);
+        echo("<p> Hey there" . $_GET['name'] . "</p>");
     } else {
-        <p>Parameter 'name' nicht gesetzt
+        echo ("<p>Parameter 'name' nicht gesetzt</p>");
     }
     ?>
 </body>

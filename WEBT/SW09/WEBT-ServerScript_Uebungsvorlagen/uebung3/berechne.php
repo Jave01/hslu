@@ -29,13 +29,14 @@
                     echo "<p>Parameter 'groesse' wird benötigt</p>";
                     return false;
                 }
-                return true;}
+                return true;
+            }
 
             if (pruefeParameter()) {
                 // TODO: Parameter auslesen und Berechnung des Idealgewichts
                 berechneIdealgewicht();
                 // TODO: Ausgabe des Idealgewichts
-                echo($idealgewicht)
+                echo ($idealgewicht);
             }
             echo "<p>Parameter 'name' nicht gesetzt</p>";
             

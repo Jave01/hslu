@@ -38,13 +38,10 @@ class TemperatureHistoryTest {
     @Test
     public void testNewMax(){
         TemperatureHistory tHistory = new TemperatureHistory();
-        tHistory.addTemperatureChangeListener(new TemperatureChangeListener(){
-            @Override
-            public void temperatureChange(TemperatureChangeEvent evt) {
-                float measuredMaxKelvin = ((TemperatureHistory)evt.getSource()).getMaxKelvin();
-                assertEquals(5, measuredMaxKelvin);
-                TemperatureHistoryTest.eventTriggered = true;
-            }
+        tHistory.addTemperatureChangeListener(evt -> {
+            float measuredMaxKelvin = ((TemperatureHistory)evt.getSource()).getMaxKelvin();
+            assertEquals(5, measuredMaxKelvin);
+            TemperatureHistoryTest.eventTriggered = true;
         });
         tHistory.add(Temperature.createFromKelvin(5));
         assertTrue(TemperatureHistoryTest.eventTriggered);
@@ -54,13 +51,10 @@ class TemperatureHistoryTest {
     public void testNewMin(){
         TemperatureHistory tHistory = new TemperatureHistory();
         tHistory.add(Temperature.createFromKelvin(50));
-        tHistory.addTemperatureChangeListener(new TemperatureChangeListener(){
-            @Override
-            public void temperatureChange(TemperatureChangeEvent evt) {
-                float measuredMinKelvin = ((TemperatureHistory)evt.getSource()).getMinKelvin();
-                assertEquals(10, measuredMinKelvin);
-                TemperatureHistoryTest.eventTriggered = true;
-            }
+        tHistory.addTemperatureChangeListener(evt -> {
+            float measuredMinKelvin = ((TemperatureHistory)evt.getSource()).getMinKelvin();
+            assertEquals(10, measuredMinKelvin);
+            TemperatureHistoryTest.eventTriggered = true;
         });
         tHistory.add(Temperature.createFromKelvin(10));
         assertTrue(TemperatureHistoryTest.eventTriggered);
@@ -72,13 +66,10 @@ class TemperatureHistoryTest {
         tHistory.add(Temperature.createFromKelvin(50));
         tHistory.add(Temperature.createFromKelvin(30));
         tHistory.add(Temperature.createFromKelvin(20));
-        TemperatureChangeListener tcListener = new TemperatureChangeListener(){
-            @Override
-            public void temperatureChange(TemperatureChangeEvent evt) {
-                float measuredMinKelvin = ((TemperatureHistory)evt.getSource()).getMinKelvin();
-                assertEquals(30, measuredMinKelvin);
-                TemperatureHistoryTest.eventTriggered = true;
-            }
+        TemperatureChangeListener tcListener = evt -> {
+            float measuredMinKelvin = ((TemperatureHistory)evt.getSource()).getMinKelvin();
+            assertEquals(30, measuredMinKelvin);
+            TemperatureHistoryTest.eventTriggered = true;
         };
         tHistory.addTemperatureChangeListener(tcListener);
         tHistory.remove(Temperature.createFromKelvin(20));
@@ -92,13 +83,10 @@ class TemperatureHistoryTest {
         tHistory.add(Temperature.createFromKelvin(50));
         tHistory.add(Temperature.createFromKelvin(30));
         tHistory.add(Temperature.createFromKelvin(20));
-        TemperatureChangeListener tcListener = new TemperatureChangeListener(){
-            @Override
-            public void temperatureChange(TemperatureChangeEvent evt) {
-                float measuredMaxKelvin = ((TemperatureHistory)evt.getSource()).getMaxKelvin();
-                assertEquals(30, measuredMaxKelvin);
-                TemperatureHistoryTest.eventTriggered = true;
-            }
+        TemperatureChangeListener tcListener = evt -> {
+            float measuredMaxKelvin = ((TemperatureHistory)evt.getSource()).getMaxKelvin();
+            assertEquals(30, measuredMaxKelvin);
+            TemperatureHistoryTest.eventTriggered = true;
         };
         tHistory.addTemperatureChangeListener(tcListener);
         tHistory.remove(Temperature.createFromKelvin(50));
