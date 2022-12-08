@@ -35,14 +35,14 @@ function versendeMails($conn, $betreff, $text, $kategorie) {
     //       Resultat in $res speichern
 
 
-    if ($res) {
-        // TODO: Für jeden Eintrag (while-loop):
-        // * (1d) die Emailadresse ausgeben
-        // * (1e) das Mail verschicken (Aufruf der Funktion mail)
+    // if ($res) {
+    //     // TODO: Für jeden Eintrag (while-loop):
+    //     // * (1d) die Emailadresse ausgeben
+    //     // * (1e) das Mail verschicken (Aufruf der Funktion mail)
 
-    } else {
-        echo "<p>Ein Fehler ist aufgetreten.</p>";
-    }
+    // } else {
+    //     echo "<p>Ein Fehler ist aufgetreten.</p>";
+    // }
 }
 
 // main

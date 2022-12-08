@@ -200,7 +200,7 @@ davon nehmen.\\
 \newpage
 
 \noindent
-{\textbf{Anschaungs-Beispiel:} \\
+\textbf{Anschaungs-Beispiel:} \\
 Bei folgendem Beispiel ist die Kurve $-x^2 + 6x$ gegeben. Die Fläche würde man mit folgender Formel
 berechnen:
 \[{\int_{0}^{6}  -x^2 + 6x\,dx }\]
@@ -258,6 +258,61 @@ Für Faktor- und Additionsregel siehe auch Kapitel \ref{Integrationsregeln unb. 
 Die Integrationsvariable muss nicht immer x sein. Nach welcher Variabel integriert wird, 
 wird am Schluss mit 'd' angegeben. Also $dx$ für $x$ oder $dy$ für $y$.
 
+\newpage
+\section{Substitutionsmethoden}
+\subsection{Lineare Substitution}
+
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+    \begin{tabular}{ | m{18em} | m{18em} | }
+        \hline
+        Zu berechnendes Integral: & $\int (ax + b)^n dx$ \\ 
+        \hline
+        Berechnung von z:  & $z = ax + b$ \\ 
+        \hline
+        Integral berechnen:  & $\frac{1}{a}\int z^n dz = \frac{1}{a \cdot (n+1)}z^{n+1}$ \\ 
+        \hline
+        Zurücksubstituieren: & $\frac{1}{a \cdot (n + 1)}(ax+b)^{n + 1} + c$ \\
+        \hline
+    \end{tabular}
+\end{center}
+
+Allgemeine finale Formel:
+\[ \frac{1}{a \cdot (n + 1)}(ax+b)^{n + 1} + c\]
+
+
+Formelsammlung für einzelne Fälle:
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+    \begin{tabular}{ | m{18em} | m{18em} | }
+        \hline
+        \textbf{\underline{Fall}} & \textbf{\underline{Lösung}} \\ 
+        \hline
+        $\int (ax + b)^n \, dx$  & $\frac{1}{a \cdot (n+1)}(ax + b)^{n+1} + c$ \\ 
+        \hline
+        $\int \sqrt{ax + b} \,\,dx$  & $\frac{2}{3a}(ax + b)^{\frac{3}{2}} + c$ \\ 
+        \hline
+        $\int e^{ax + b} \, dx$ & $\frac{1}{a} \cdot e^{ax + b} + c$ \\
+        \hline
+    \end{tabular}
+\end{center}
+
+
+
+\subsubsection{Spezialfall: die logarithmische Integration}
+Falls die Substitution z von der Form z = $\frac{1}{g(x)}$ ist, oder wenn der Integrand
+die Form $\frac{g^(x)}{g(x)} dx$ hat, ergibt sich für die Lösung eine allgemeine Formel.
+
+\[\int \frac{g'(x)}{g(x)} dx = ln|g(x)| + c\]
+
+Funktioniert auch, wenn im Zähler ein Vielfaches von der Ableitung steht $\rightarrow$ Vielfaches 
+aus der Integration herausnehmen.
+
+
+\subsection{Da fäut no äppis}
+
+\newpage
+\section{Partielle Integration}
 
 % \renewcommand{\arraystretch}{1.5}
 % \begin{center}

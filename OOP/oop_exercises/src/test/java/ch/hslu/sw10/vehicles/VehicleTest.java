@@ -19,20 +19,20 @@ class VehicleTest {
     public void testOnToOn(){
         Vehicle car = new Vehicle();
         car.switchOn();
-        assertEquals(true, true);
+        assertTrue(true);
     }
 
     @Test
     public void testOnToOff(){
         Vehicle car = new Vehicle();
         car.switchOn();
-        assertEquals(true, true);
+        assertTrue(true);
     }
 
     @Test
     public void testOffToOff(){
         Vehicle car = new Vehicle();
         car.switchOn();
-        assertEquals(true, true);
+        assertTrue(true);
     }
 }
