@@ -1,7 +1,5 @@
 package ch.hslu.sw10.temperature;
 
-import ch.hslu.sw08.access_modifier.Temperature;
-
 import java.util.EventObject;
 
 public class TemperatureChangeEvent extends EventObject {
@@ -16,11 +14,11 @@ public class TemperatureChangeEvent extends EventObject {
         this.eventTempValueKelvin = eventTempValueKelvin;
     }
 
-    public TemperatureEventType getTempEventType(){
+    public TemperatureEventType getTempEventType() {
         return this.tempEventType;
     }
 
-    public float getEventTempValueKelvin(){
+    public float getEventTempValueKelvin() {
         return this.eventTempValueKelvin;
     }
 }
