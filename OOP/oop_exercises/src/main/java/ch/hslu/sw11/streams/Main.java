@@ -7,7 +7,8 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
-        final String fPath = "./src/main/java/ch/hslu/sw11/test.txt";
+//        final String fPath = "./src/main/java/ch/hslu/sw11/test.txt";
+        final String fPath = ".\\src\\main\\java\\ch\\hslu\\sw11\\test.txt";
         try(DataInputStream dis = new DataInputStream(new FileInputStream(fPath))) {
             System.out.println(dis.readDouble());
         } catch (FileNotFoundException e) {

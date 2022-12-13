@@ -201,7 +201,7 @@ davon nehmen.\\
 
 \noindent
 \textbf{Anschaungs-Beispiel:} \\
-Bei folgendem Beispiel ist die Kurve $-x^2 + 6x$ gegeben. Die Fläche würde man mit folgender Formel
+Bei folgendem Beispiel ist die Kurve $-x^2 + 6x$ gegeben. Die blaue Fläche würde man mit folgender Formel
 berechnen:
 \[{\int_{0}^{6}  -x^2 + 6x\,dx }\]
 resp.
@@ -309,11 +309,50 @@ Funktioniert auch, wenn im Zähler ein Vielfaches von der Ableitung steht $\righ
 aus der Integration herausnehmen.
 
 
-\subsection{Da fäut no äppis}
+\subsection{Da fäut no öppis}
+TODO
 
 \newpage
 \section{Partielle Integration}
+TODO
 
+
+\newpage
+\section{Wichtige Formeln}
+\subsection{Fläche zwischen zwei Funktionskurven}
+Beispiel: gesucht ist der Flächeninhalt, der von den beiden Funktionen $f(x) = x^2 + 1$ & $g(x) = -x^2 + 2x + 5$
+begrenzt ist.\\
+
+
+\textbf{Vorgehensweise:}
+\begin{enumerate}
+    \item Bestimmen der x-Koordinaten der Schnittpunkte.
+    \item Die Fläche bestimmen.
+    \item Betrag der Fläche bestimmen.
+\end{enumerate}
+
+\hfill \break
+
+\textbf{Beispiel:}\\
+\textbf{1. Schritt - Schnittpunkte}
+\begin{enumerate}
+    \item $x^2 + 1 = -x^2 + 2x + 5 \Rightarrow$
+    \item $2x^2 -2x -4 = 0 \Rightarrow $
+    \item $x^2 - x - 2 = 0 \Rightarrow$
+    \item $(x-2)(x+1) = 0 \Rightarrow$
+    \item \underline{$x_1 = 2$, $x_2 = -1$}
+\end{enumerate}
+
+\hfill \break
+\textbf{2. Schritt - Fläche}
+
+Die Fläche ist gleich der Fläche unter $g(x)$ minus die Fläche unter $f(x)$.\\
+Somit gilt:
+$A = \int_{-1}^{2} g(x)\, dx - \int_{-1}^{2} f(x)\, dx \Rightarrow$
+\[ \int_{-1}^{2} g(x) - f(x)\, dx \]
+
+
+% tabular example
 % \renewcommand{\arraystretch}{1.5}
 % \begin{center}
 %     \begin{tabular}{ | m{12em} | m{12em} | m{12em} | }

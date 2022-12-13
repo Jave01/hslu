@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.29)  5 DEC 2022 17:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.29)  12 DEC 2022 16:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -835,7 +835,6 @@ LaTeX Font Info:    ... okay on input line 68.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
 LaTeX Font Info:    ... okay on input line 68.
 Package hyperref Info: Link coloring ON on input line 68.
- (C:\dev\hslu\ANLS\Int\out\main.out) (C:\dev\hslu\ANLS\Int\out\main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -906,19 +905,20 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 71.
  (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) (C:\dev\hslu\ANLS\Int\out\main.toc
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 3.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 3.
 )
+No file main.toc.
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [1
+[1
 
 
 {C:/Users/david/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 78.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 78.
+
 Underfull \hbox (badness 10000) in paragraph at lines 76--80
 
  []
@@ -947,26 +947,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--191
  []
 
 [5] [6]
+
+LaTeX Warning: Reference `Integrationsregeln unb. Integrale' on page 7 undefined on input line 233.
+
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 255.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 255.
- [7] [8] [9] (C:\dev\hslu\ANLS\Int\out\main.aux)
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+[7] [8] [9]
+c:/dev/hslu/ANLS/Int/main.tex:323: Misplaced alignment tab character &.
+l.323 ... den beiden Funktionen $f(x) = x^2 + 1$ &
+                                                   $g(x) = -x^2 + 2x + 5$
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--325
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
+
+ []
+
+[10] (C:\dev\hslu\ANLS\Int\out\main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 44201 strings out of 475385
- 1033920 string characters out of 2776906
- 1603719 words of memory out of 3000000
- 64829 multiletter control sequences out of 15000+600000
+ 44203 strings out of 475385
+ 1033667 string characters out of 2776906
+ 1602719 words of memory out of 3000000
+ 64826 multiletter control sequences out of 15000+600000
  516053 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,14n,106p,10647b,2126s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}<C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (9 pages, 290667 bytes).
+Output written on main.pdf (10 pages, 292308 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 149 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 241 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 165 words of extra memory for PDF output out of 10000 (max. 10000000)
 
