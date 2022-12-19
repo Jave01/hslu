@@ -320,7 +320,7 @@ TODO
 \newpage
 \section{Wichtige Formeln}
 \subsection{Fläche zwischen zwei Funktionskurven}
-Beispiel: gesucht ist der Flächeninhalt, der von den beiden Funktionen $f(x) = x^2 + 1$ & $g(x) = -x^2 + 2x + 5$
+Beispiel: gesucht ist der Flächeninhalt, der von den beiden Funktionen $f(x) = x^2 + 1$ und $g(x) = -x^2 + 2x + 5$
 begrenzt ist.\\
 
 
@@ -351,6 +351,36 @@ Somit gilt:
 $A = \int_{-1}^{2} g(x)\, dx - \int_{-1}^{2} f(x)\, dx \Rightarrow$
 \[ \int_{-1}^{2} g(x) - f(x)\, dx \]
 
+\section{Volumen von Körpern aus Kurvenrotationen}
+Mit nachfolgenden Formeln, kann das Volumen von Körpern berechnet werden, welche entstehen, wenn ein
+Funktionskurve um eine Achse gedreht wird.
+ 
+
+\subsection{Rotation um die x-Achse}
+Das Volumen eines Körpers, der entsteht, wenn sich eine Kurve um die x-Achse dreht 
+kann mit folgender Formel berechnet werden:
+\[V_x = \pi \int_{a}^{b}{f(x)^2} \, dx\]
+
+Wobei:
+\begin{itemize}
+    \item $f(x)$ = Stammfunktion
+    \item $a$ = Startpunkt des Graphs
+    \item $b$ = Endpunkt des Graphs
+\end{itemize}
+
+\subsection{Rotation um die y-Achse}
+Erfolgt die Rotation einer Kurve um die y-Achse, muss einfach zuerst die Umkehrfunktion 
+der Stammfunktion errechnet werden $\rightarrow$ nach y auflösen. Dies ergibt dann
+\[ V_y = \pi \int_{c}^{d}{g(y)^2} \, dy \]
+
+Wobei:
+\begin{itemize}
+    \item $g(y)$ = Kehrfunktion von $f(x)$
+    \item $c$ = Startpunkt des Graphs
+    \item $d$ = Endpunkt des Graphs 
+\end{itemize}
+
+$c$ und $d$ müssen unter Umständen berechnet werden mit $f(x)$ an den Stellen $x_1, x_2$.
 
 % tabular example
 % \renewcommand{\arraystretch}{1.5}
