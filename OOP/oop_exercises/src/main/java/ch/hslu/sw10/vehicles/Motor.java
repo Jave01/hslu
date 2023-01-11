@@ -18,7 +18,7 @@ public final class Motor implements Switchable{
     private final int startRpm = 1600;
     private int rpm = 0;
 
-    private static Logger logger = LogManager.getLogger(Motor.class);
+    private static final Logger logger = LogManager.getLogger(Motor.class);
     private final List<PropertyChangeListener> changeListeners = new ArrayList<>();
 
     /**

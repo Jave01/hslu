@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf8">
+    <title>Übung 2: Hello World in AJAX</title>
+</head>
+
+<body>
+    <h1>Übung 2: Hello World in AJAX</h1>
+    
+    <p>Mitteilung: <span id="message"></span></p>
+    <button onclick="doRequest()">Zeige Mitteilung</button>
+    <script>
+        function doRequest() {
+            let xhr = new XMLHttpRequest();
+
+            // TODO: neuer HTTP-Request nach GET-Methode mit 
+            //       URL zu hello.json (relative URLs gehen auch) und
+            //       als asynchroner Request (dritter Parameter auf true)
+
+
+            // TODO: Aktion beim erfolgreichem Request (onload)
+            //       1. responseText (JSON) in JavaScript-Objekt einlesen
+            //       2. message aus dem JavaScript-Objekte auslesen und
+            //       3. in das Element mit ID "message" einsetzen (innerHTML).
+
+            // Fehlerbehandlung (onerror / ontimeout): jeweils alert() mit entsprechender Info
+            xhr.onerror   = function() { alert("Fehler beim Abfragen der Mitteilung"); }
+            xhr.ontimeout = function() { alert("Zeitüberschreitung beim Abfragen der Mitteilung"); }
+
+            // TODO: Request absenden
+
+        }
+    </script>
+</body>
+
+</html>

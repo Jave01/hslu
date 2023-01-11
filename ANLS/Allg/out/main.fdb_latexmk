@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1669588342 "c:/dev/hslu/ANLS/Allg/main.tex" "main.pdf" "main" 1669588345
+["pdflatex"] 1673441068 "c:/dev/hslu/ANLS/Allg/main.tex" "main.pdf" "main" 1673441072
   "C:/Users/david/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1669582183 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/david/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1666711546 14064 6c8499da728846afd25976282ad50d43 ""
   "C:/Users/david/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1667138804 688 37338d6ab346c2f1466b29e195316aa4 ""
@@ -255,14 +255,15 @@
   "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/xfor/xfor.sty" 1233849756 2689 44855b72da58344b1c1d9b3087bce6ca ""
   "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "C:/dev/hslu/ANLS/Allg/out/main.aux" 1669588345 3547 c1bf8d71b2af3c709b0598d6a2fa87e3 ""
+  "C:/dev/hslu/ANLS/Allg/out/main.aux" 1673441072 3988 1cf138b6a03ed3ff883fc9f6c38caf92 ""
   "C:/dev/hslu/ANLS/Allg/out/main.out" 0 -1 0 ""
-  "C:/dev/hslu/ANLS/Allg/out/main.toc" 1669588345 666 a705cd75b048416d659a9cbf2c3312be ""
-  "c:/dev/hslu/ANLS/Allg/main.tex" 1669588341 4467 26a322f4a18fe9a956748634bdfd477b ""
+  "C:/dev/hslu/ANLS/Allg/out/main.toc" 1673441072 746 e4378f2bd5b3d051f3668ba986bfbdfd ""
+  "c:/dev/hslu/ANLS/Allg/main.tex" 1673441015 4184 309c8c5e803ed81040d2a38d43c902bf ""
+  "img/Wirtschaftstabeue-math.png" 1673441062 100147 4ccc83e5a8c235ae7f371578fe93f099 ""
   "img/rechtw_dreieck.png" 1669580396 7767 cc365dcb3717d0b0d974c33264bf69f4 ""
-  "out/main.aux" 1669588345 3547 c1bf8d71b2af3c709b0598d6a2fa87e3 "pdflatex"
+  "out/main.aux" 1673441072 3988 1cf138b6a03ed3ff883fc9f6c38caf92 "pdflatex"
   "out/main.out" 0 -1 0 "pdflatex"
-  "out/main.toc" 1669588345 666 a705cd75b048416d659a9cbf2c3312be "pdflatex"
+  "out/main.toc" 1673441072 746 e4378f2bd5b3d051f3668ba986bfbdfd "pdflatex"
   (generated)
   "main.pdf"
   "out/main.aux"

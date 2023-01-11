@@ -26,6 +26,8 @@
 
 \usepackage{pgfplots}
 
+\usepackage{tabto}
+
 \pgfplotsset{compat=1.15}
 
 \usetikzlibrary{arrows}
@@ -123,9 +125,10 @@ der einzelnen Funktionen.
 
 \subsubsection{Multiplikation}
 Ein Produkt von Funktionen kann nicht einfach voneinander getrennt werden wie bei der Summe\\
-Heisst:
+Das heisst:\\
 \[\int f(x) \cdot g(x) \, dx \neq \int f(x) \, dx \cdot \int g(x) \, dx\]
-
+\vspace*{20px}\\
+\textbf{siehe stattdessen: \hyperref[sec:Partielle-Integration]{Kapitel \ref{sec:Partielle-Integration} Partielle Integration}}
 
 \newpage
 \subsection{Integration von weiteren elementaren Funktionen}
@@ -309,18 +312,68 @@ Funktioniert auch, wenn im Zähler ein Vielfaches von der Ableitung steht $\righ
 aus der Integration herausnehmen.
 
 
-\subsection{Da fäut no öppis}
-TODO
+\newpage
+\section{Integrierbarkeit}
+Im Gegensatz zu der Differenzialrechnung sind endliche Sprünge und Knicke kein Problem.
+Nur bei Polen kann nicht integriert werden.
+
+\subsection{Endlicher Sprung und Knick}
+Folgende 2 Beispiele sind integrierbar. Dafür muss jeweils die Stammfunktion der
+einzelnen Funktionen gebildet, Fläche berechnet und addiert werden.
+\begin{center}
+    \includegraphics[width=12cm]{img/finite-jump.png}\\
+    \vspace*{10px}
+    \includegraphics[width=12cm]{img/kink.png}
+\end{center}
+
 
 \newpage
-\section{Partielle Integration}
-TODO
+\subsection{Pole}
+Beide Funktionen, sowohl die Rote wie auch die Blaue, können nicht komplett integriert werden, 
+da sie einen Pol (unendlicher Sprung in der y-Achse) haben. Vor und nach dem Pol sind die Funktionen
+jedoch problemlos integrierbar.
+
+\begin{center}
+    \includegraphics[width=13cm]{img/two-poles.png}
+\end{center}
+
+\newpage
+\section{Partielle Integration} \label{sec:Partielle-Integration}
+\subsection{Einleitung}
+Die Produktregel der Diff. rechnung: \tab $(f(x) \cdot g(x))' = f'(x) \cdot g(x) + f(x) \cdot g'(x)$.
+\vspace*{10px}
+
+Umgeformt ergibt sich: \tab $f(x) \cdot g'(x) = (f(x) \cdot g(x))' - f'(x) \cdot g(x)$
+\vspace*{10px}
+
+Integriert \& vereinfacht: \tab $ \int f(x) \cdot g'(x) \, dx = f(x) \cdot g(x) - \int f'(x) \cdot g(x) \, dx $
+\vspace*{25px}
+
+\subsection{Anleitung mit Beispiel}
+Ziel: Das Integral von $I = \int x \cdot 3^x \, dx$ berechnen.
+
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+    \begin{tabular}{ | m{18em} | m{18em} | }
+        \hline
+        1) Festlegen von $f(x)$ und $g'(x)$ (ist "die grosse Kunst") & $f(x) = x$ \newline $ g'(x) = 3^x $ \\ 
+        \hline
+        2) Berechnen von $f'(x)$ und $g(x)$ & $f'(x) = 1$ \newline $g(x) = \frac{1}{ln(3)} \cdot 3^x $ \\ 
+        \hline
+        3) Einsetzen & $I = \frac{1}{ln(3)} \cdot x \cdot 3^x - \int 1 \cdot \frac{1}{ln(3)} \cdot 3^x \, dx$ \\ 
+        \hline
+        3 & 2 \\ 
+        \hline
+        3 & 2 \\ 
+        \hline
+    \end{tabular}
+\end{center}
 
 
 \newpage
 \section{Wichtige Formeln}
 \subsection{Fläche zwischen zwei Funktionskurven}
-Beispiel: gesucht ist der Flächeninhalt, der von den beiden Funktionen $f(x) = x^2 + 1$ & $g(x) = -x^2 + 2x + 5$
+Beispiel: gesucht ist der Flächeninhalt, der von den beiden Funktionen $f(x) = x^2 + 1$ \& $g(x) = -x^2 + 2x + 5$
 begrenzt ist.\\
 
 

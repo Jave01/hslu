@@ -1,9 +1,10 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {section}{\numberline {1}Trigonometrie}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Tangens}{2}{subsection.1.1}%
-\contentsline {section}{\numberline {2}Funktionen}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Allgemein}{3}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}Schnittpunkte}{3}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Symmetrien}{3}{subsubsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.1.3}Abschnittsweise definierte Funktionen}{3}{subsubsection.2.1.3}%
+\contentsline {section}{\numberline {1}Zusammenfassende Tabelle}{3}{section.1}%
+\contentsline {section}{\numberline {2}Trigonometrie}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Tangens}{4}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Funktionen}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Allgemein}{5}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Schnittpunkte}{5}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Symmetrien}{5}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Abschnittsweise definierte Funktionen}{5}{subsubsection.3.1.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
