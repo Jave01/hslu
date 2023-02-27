@@ -1,1 +1,15 @@
-site_name: My Docs
+site_name: Semester notes
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: indigo
+    accent: purple
+  features:
+    - navigation.tabs
+plugins:
+  - offline
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences

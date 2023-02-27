@@ -15,9 +15,10 @@ public final class Temperature implements Comparable<Temperature> {
 
     private static final float kelvinOffset = 273.15f;
 
-    public Temperature(){}
+    public Temperature() {
+    }
 
-    public Temperature(float tempValue, TemperatureType tempType){
+    public Temperature(float tempValue, TemperatureType tempType) {
         switch (tempType) {
             case KELVIN:
                 this.setKelvin(tempValue);
@@ -35,90 +36,88 @@ public final class Temperature implements Comparable<Temperature> {
                 break;
         }
     }
-    
-    /** 
+
+    /**
      * @return temperature in degree celsius
      */
-    public float getDegreeCelsius(){
+    public float getDegreeCelsius() {
         return this.degreeCelsius;
     }
-    
-    
-    /** 
+
+    /**
      * @return temperature in kelvin.
      */
-    public float getKelvin(){
-        return (this.degreeCelsius + 273.15f);
+    public float getKelvin() {
+        return (this.degreeCelsius + Temperature.kelvinOffset);
     }
 
-    
-    /** 
+    /**
      * @return temperature in Fahrenheit.
      */
-    public int getFahrenheit(){
-        return (int)(this.degreeCelsius * 1.8f + 32);
-    }
-    
-    
-    /** 
-     * @param temp new absolute temperature to be set in degree cels  ius.
-     */
-    public void setDegreeCelsius(float temp){
-        this.degreeCelsius = Math.round(temp*100)/100f;
+    public int getFahrenheit() {
+        return (int) (this.degreeCelsius * 1.8f + 32);
     }
 
-    
-    /** 
+    /**
+     * @param temp new absolute temperature to be set in degree cels ius.
+     */
+    public void setDegreeCelsius(float temp) {
+        this.degreeCelsius = Math.round(temp * 100) / 100f;
+    }
+
+    /**
      * @param temp new absolute temperature in kelvin.
      */
-    public void setKelvin(float temp){
+    public void setKelvin(float temp) {
         this.degreeCelsius = temp - 273.15f;
-        this.degreeCelsius = Math.round(this.degreeCelsius *100)/100f;
+        this.degreeCelsius = Math.round(this.degreeCelsius * 100) / 100f;
     }
 
-    
-    /** 
+    /**
      * @param temp new absolute temperature in degree fahrenheit.
      */
-    public void setFahrenheit(float temp){
+    public void setFahrenheit(float temp) {
         this.degreeCelsius = temp / 1.8f - 32;
     }
 
     /**
      * Get aggregate state from given element at current temperature.
+     * 
      * @param element element to check
      * @return aggregate state
      */
-    public AggregateState getAggregateState(Element element){
-        if (this.getKelvin() >= element.getBoilingPoint()){
+    public AggregateState getAggregateState(Element element) {
+        if (this.getKelvin() >= element.getBoilingPoint()) {
             return AggregateState.GASEOUS;
-        } else if (this.getKelvin() >= element.getMeltingPoint()){
+        } else if (this.getKelvin() >= element.getMeltingPoint()) {
             return AggregateState.FLUID;
-        }else {
+        } else {
             return AggregateState.SOLID;
         }
     }
 
     /**
      * Get aggregate state from a specific element class child.
+     * 
      * @param element An element which inherited from AbsElement.
      * @return The aggregate state.
      */
-    public AggregateState getAggregateState(AbsElement element){
-        if (this.getKelvin() >= element.getBoilingPointKelvin()){
+    public AggregateState getAggregateState(AbsElement element) {
+        if (this.getKelvin() >= element.getBoilingPointKelvin()) {
             return AggregateState.GASEOUS;
-        } else if (this.getKelvin() >= element.getMeltingPointKelvin()){
+        } else if (this.getKelvin() >= element.getMeltingPointKelvin()) {
             return AggregateState.FLUID;
-        }else {
+        } else {
             return AggregateState.SOLID;
         }
     }
 
     /**
      * Increase current temperature by given Kelvin.
+     * 
      * @param temp New temperature in kelvin.
      */
-    public void addKelvin(float temp){
+    public void addKelvin(float temp) {
         this.degreeCelsius += temp;
     }
 
@@ -129,8 +128,10 @@ public final class Temperature implements Comparable<Temperature> {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Temperature other)) return false;
+        if (this == o)
+            return true;
+        if (!(o instanceof Temperature other))
+            return false;
         return Float.compare(other.degreeCelsius, this.degreeCelsius) == 0;
     }
 
@@ -140,7 +141,7 @@ public final class Temperature implements Comparable<Temperature> {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Temperatur: " + this.degreeCelsius + "C";
     }
 }

@@ -1,9 +1,6 @@
 package ch.hslu.sw06.testing;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
-import java.lang.reflect.Array;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -13,7 +10,7 @@ class MainTest {
     @Test
     void max() {
         int ref = 0;
-        int values[] = {-2000000, -150, -5, -0, 5, 150, 200000};
+        int values[] = { -2000000, -150, -5, -0, 5, 150, 200000 };
 
         this.main = new Main();
         assertEquals(ref, this.main.max(ref, values[0]));

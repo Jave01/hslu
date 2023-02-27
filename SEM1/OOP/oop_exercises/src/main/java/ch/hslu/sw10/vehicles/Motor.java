@@ -1,8 +1,6 @@
 package ch.hslu.sw10.vehicles;
 
 import ch.hslu.sw04.Switchable;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
@@ -13,16 +11,16 @@ import java.util.Objects;
 /**
  * Simple class for simulating a motor
  */
-public final class Motor implements Switchable{
+public final class Motor implements Switchable {
     private boolean isOn = false;
     private final int startRpm = 1600;
     private int rpm = 0;
 
-    private static final Logger logger = LogManager.getLogger(Motor.class);
     private final List<PropertyChangeListener> changeListeners = new ArrayList<>();
 
     /**
      * Returns current rotations per minute
+     * 
      * @return rpm
      */
     public int getRpm() {
@@ -31,12 +29,13 @@ public final class Motor implements Switchable{
 
     /**
      * Increase or decrease motor speed
-     * @param acceleration  acceleration in rpm
+     * 
+     * @param acceleration acceleration in rpm
      */
     public void accelerate(int acceleration) {
-        if(((float)this.rpm + acceleration) < 0 || this.isSwitchedOff()){
+        if (((float) this.rpm + acceleration) < 0 || this.isSwitchedOff()) {
             this.rpm = 0;
-        }else if((float)this.rpm + acceleration > Integer.MAX_VALUE){
+        } else if ((float) this.rpm + acceleration > Integer.MAX_VALUE) {
             this.rpm = Integer.MAX_VALUE;
         } else {
             this.rpm += acceleration;
@@ -45,16 +44,18 @@ public final class Motor implements Switchable{
 
     /**
      * Add a property change listener.
+     * 
      * @param listener
      */
     public void addPropertyChangeListener(final PropertyChangeListener listener) {
-        if(listener != null) {
+        if (listener != null) {
             this.changeListeners.add(listener);
         }
     }
 
     /**
      * Remove a property change listener.
+     * 
      * @param listener
      */
     public void removePropertyChangeListener(final PropertyChangeListener listener) {
@@ -65,7 +66,7 @@ public final class Motor implements Switchable{
      * Switch motor on.
      */
     @Override
-    public void switchOn(){
+    public void switchOn() {
         this.isOn = true;
         this.rpm = this.startRpm;
 
@@ -77,8 +78,8 @@ public final class Motor implements Switchable{
      * Switch motor off and trigger a {@link PropertyChangeEvent}.
      */
     @Override
-    public void switchOff(){
-        if(this.isSwitchedOn()) {
+    public void switchOff() {
+        if (this.isSwitchedOn()) {
             this.isOn = false;
             this.rpm = 0;
 
@@ -88,12 +89,12 @@ public final class Motor implements Switchable{
     }
 
     @Override
-    public boolean isSwitchedOn(){
+    public boolean isSwitchedOn() {
         return this.isOn;
     }
 
     @Override
-    public boolean isSwitchedOff(){
+    public boolean isSwitchedOff() {
         return !this.isOn;
     }
 
@@ -108,8 +109,10 @@ public final class Motor implements Switchable{
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Motor other)) return false;
+        if (this == o)
+            return true;
+        if (!(o instanceof Motor other))
+            return false;
         return startRpm == other.startRpm;
     }
 
@@ -120,10 +123,11 @@ public final class Motor implements Switchable{
 
     /**
      * Execute the propertyChange method on every registered listener.
+     * 
      * @param pcEvent the event which will be transmitted.
      */
-    private void firePropertyChangeEvent(final PropertyChangeEvent pcEvent){
-        for(PropertyChangeListener listener : this.changeListeners){
+    private void firePropertyChangeEvent(final PropertyChangeEvent pcEvent) {
+        for (PropertyChangeListener listener : this.changeListeners) {
             listener.propertyChange(pcEvent);
         }
     }

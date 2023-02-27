@@ -15,7 +15,7 @@ public final class Vehicle implements Switchable, PropertyChangeListener {
 
     private static Logger logger = LogManager.getLogger(Vehicle.class);
 
-    public Vehicle(){
+    public Vehicle() {
         this.motor = new Motor();
         this.lightFrontRight = new Lights();
         this.lightFrontLeft = new Lights();
@@ -30,13 +30,13 @@ public final class Vehicle implements Switchable, PropertyChangeListener {
      */
     @Override
     public void switchOn() {
-        if(this.isSwitchedOff()) {
+        if (this.isSwitchedOff()) {
             this.isOn = true;
             this.motor.switchOn();
             this.lightFrontRight.switchOn();
             this.lightFrontLeft.switchOn();
         } else {
-            this.logger.info("Already switched on");
+            Vehicle.logger.info("Already switched on");
         }
     }
 
@@ -45,7 +45,7 @@ public final class Vehicle implements Switchable, PropertyChangeListener {
      */
     @Override
     public void switchOff() {
-        if(this.isSwitchedOn()) {
+        if (this.isSwitchedOn()) {
             this.isOn = false;
             this.motor.switchOff();
             this.lightFrontRight.switchOff();
@@ -67,21 +67,21 @@ public final class Vehicle implements Switchable, PropertyChangeListener {
 
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
-        if(evt.getSource() == this.motor){
+        if (evt.getSource() == this.motor) {
             this.handleMotorEvent(evt);
         } else if (evt.getSource() == this.lightFrontLeft) {
             this.handleLightEvent(evt, LightsPosition.FRONT_LEFT);
-        } else if (evt.getSource() == this.lightFrontRight){
+        } else if (evt.getSource() == this.lightFrontRight) {
             this.handleLightEvent(evt, LightsPosition.FRONT_RIGHT);
         }
     }
 
-    private void handleMotorEvent(PropertyChangeEvent evt){
+    private void handleMotorEvent(PropertyChangeEvent evt) {
         String output = "Motor state: " + evt.getOldValue() + " -> " + evt.getNewValue();
         this.logger.info(output);
     }
 
-    private void handleLightEvent(PropertyChangeEvent evt, LightsPosition place){
+    private void handleLightEvent(PropertyChangeEvent evt, LightsPosition place) {
         String output = place.getPos() + " light: " + evt.getOldValue() + " -> " + evt.getNewValue();
         this.logger.info(output);
     }
