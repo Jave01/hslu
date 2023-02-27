@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1669579671 "c:/dev/hslu/ANLS/Diff/main.tex" "main.pdf" "main" 1669579675
-  "C:/Users/david/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1667906949 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1671206554 "c:/dev/hslu/ANLS/Diff/main.tex" "main.pdf" "main" 1671206557
+  "C:/Users/david/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1669582183 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/david/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1667138804 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/david/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1667138805 684 3a51bd4fd9600428d5264cf25f04bb9a ""
   "C:/Users/david/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1667070004 10788011 9288d06f74a40ea21a8f271ca2b42ef9 ""
@@ -255,14 +255,14 @@
   "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/xfor/xfor.sty" 1233849756 2689 44855b72da58344b1c1d9b3087bce6ca ""
   "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "C:/dev/hslu/ANLS/Diff/out/main.aux" 1669579675 8672 05c81bfd8ab904228eadb6709bc83f44 ""
+  "C:/dev/hslu/ANLS/Diff/out/main.aux" 1671206557 8672 41e709dee6656cf3f99693eb5b510b56 ""
   "C:/dev/hslu/ANLS/Diff/out/main.out" 0 -1 0 ""
-  "C:/dev/hslu/ANLS/Diff/out/main.toc" 1669579675 1685 f6f3a959a5416fd1b8ca20929597d66d ""
-  "c:/dev/hslu/ANLS/Diff/main.tex" 1669579667 11588 631feb8c462be8546d5d5a41629e3d59 ""
+  "C:/dev/hslu/ANLS/Diff/out/main.toc" 1671206557 1685 2d2b80163120994012f1f5bcc1eeff4e ""
+  "c:/dev/hslu/ANLS/Diff/main.tex" 1671206549 11588 85742a8efc539bda62106ddc42398060 ""
   "img/rising_convex.png" 1667146064 221013 3e8930cd2124d40cd98778c55650b5ab ""
-  "out/main.aux" 1669579675 8672 05c81bfd8ab904228eadb6709bc83f44 "pdflatex"
+  "out/main.aux" 1671206557 8672 41e709dee6656cf3f99693eb5b510b56 "pdflatex"
   "out/main.out" 0 -1 0 "pdflatex"
-  "out/main.toc" 1669579675 1685 f6f3a959a5416fd1b8ca20929597d66d "pdflatex"
+  "out/main.toc" 1671206557 1685 2d2b80163120994012f1f5bcc1eeff4e "pdflatex"
   (generated)
   "main.pdf"
   "out/main.aux"

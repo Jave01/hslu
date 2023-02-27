@@ -1425,6 +1425,13 @@ INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
 OUTPUT C:\dev\hslu\ANLS\Allg\out\main.toc
+INPUT .\img\Wirtschaftstabeue-math.png
+INPUT .\img\Wirtschaftstabeue-math.png
+INPUT img\Wirtschaftstabeue-math.png
+INPUT .\img\Wirtschaftstabeue-math.png
+INPUT .\img\Wirtschaftstabeue-math.png
+INPUT .\img\Wirtschaftstabeue-math.png
+INPUT .\img\Wirtschaftstabeue-math.png
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT .\img\rechtw_dreieck.png
 INPUT .\img\rechtw_dreieck.png

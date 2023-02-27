@@ -26,6 +26,10 @@
 
 \usepackage{pgfplots}
 
+\usepackage{tabto}
+
+\usepackage{setspace}
+
 \pgfplotsset{compat=1.15}
 
 \usetikzlibrary{arrows}
@@ -123,9 +127,10 @@ der einzelnen Funktionen.
 
 \subsubsection{Multiplikation}
 Ein Produkt von Funktionen kann nicht einfach voneinander getrennt werden wie bei der Summe\\
-Heisst:
+Das heisst:\\
 \[\int f(x) \cdot g(x) \, dx \neq \int f(x) \, dx \cdot \int g(x) \, dx\]
-
+\vspace*{20px}\\
+\textbf{siehe stattdessen: \hyperref[sec:Partielle-Integration]{Kapitel \ref{sec:Partielle-Integration} Partielle Integration}}
 
 \newpage
 \subsection{Integration von weiteren elementaren Funktionen}
@@ -201,7 +206,7 @@ davon nehmen.\\
 
 \noindent
 \textbf{Anschaungs-Beispiel:} \\
-Bei folgendem Beispiel ist die Kurve $-x^2 + 6x$ gegeben. Die Fläche würde man mit folgender Formel
+Bei folgendem Beispiel ist die Kurve $-x^2 + 6x$ gegeben. Die blaue Fläche würde man mit folgender Formel
 berechnen:
 \[{\int_{0}^{6}  -x^2 + 6x\,dx }\]
 resp.
@@ -309,11 +314,112 @@ Funktioniert auch, wenn im Zähler ein Vielfaches von der Ableitung steht $\righ
 aus der Integration herausnehmen.
 
 
-\subsection{Da fäut no äppis}
+\newpage
+\section{Integrierbarkeit}
+Im Gegensatz zu der Differenzialrechnung sind endliche Sprünge und Knicke kein Problem.
+Nur bei Polen kann nicht integriert werden.
+
+\subsection{Endlicher Sprung und Knick}
+Folgende 2 Beispiele sind integrierbar. Dafür muss jeweils die Stammfunktion der
+einzelnen Funktionen gebildet, Fläche berechnet und addiert werden.
+\begin{center}
+    \includegraphics[width=12cm]{img/finite-jump.png}\\
+    \vspace*{10px}
+    \includegraphics[width=12cm]{img/kink.png}
+\end{center}
+
 
 \newpage
-\section{Partielle Integration}
+\subsection{Pole}
+Beide Funktionen, sowohl die Rote wie auch die Blaue, können nicht komplett integriert werden, 
+da sie einen Pol (unendlicher Sprung in der y-Achse) haben. Vor und nach dem Pol sind die Funktionen
+jedoch problemlos integrierbar.
 
+\begin{center}
+    \includegraphics[width=13cm]{img/two-poles.png}
+\end{center}
+
+\newpage
+\section{Partielle Integration} \label{sec:Partielle-Integration}
+\subsection{Einleitung}
+Die Produktregel der Diff. rechnung: \tab $(f(x) \cdot g(x))' = f'(x) \cdot g(x) + f(x) \cdot g'(x)$.
+\vspace*{10px}
+
+Umgeformt ergibt sich: \tab $f(x) \cdot g'(x) = (f(x) \cdot g(x))' - f'(x) \cdot g(x)$
+\vspace*{10px}
+
+Integriert \& vereinfacht: \tab $ \int f(x) \cdot g'(x) \, dx = f(x) \cdot g(x) - \int f'(x) \cdot g(x) \, dx $
+\vspace*{25px}
+
+\subsection{Anleitung mit Beispiel}
+Ziel: Das Integral von $I = \int x \cdot 3^x \, dx$ berechnen.
+
+
+\renewcommand{\arraystretch}{1.5}
+\setstretch{1.5}
+\begin{center}
+    \begin{tabular}{ | m{18em} | m{18em} | }
+        \hline
+        1) Festlegen von $f(x)$ und $g'(x)$ (ist "die grosse Kunst") & $f(x) = x$ \newline $ g'(x) = 3^x $ \\ 
+        \hline
+        2) Berechnen von $f'(x)$ und $g(x)$ & $f'(x) = 1$ \newline $g(x) = \frac{1}{ln(3)} \cdot 3^x $ \\ 
+        \hline
+        3) Einsetzen & $I = \frac{1}{ln(3)} \cdot x \cdot 3^x - \int 1 \cdot \frac{1}{ln(3)} \cdot 3^x \, dx$ \\ 
+        \hline
+        4) Fertig rechnen & $\frac{1}{ln(3)} \cdot x \cdot 3^x - \int 3^x =$ \newline 
+                            $\frac{1}{ln(3)} \cdot x \cdot 3^x - \frac{1}{ln(3)} \cdot \frac{1}{ln(3)} \cdot 3^x$ \newline 
+                            $\frac{1}{ln(3)} \cdot 3^x (x - \frac{1}{ln(3)}) + c$ \\ 
+        \hline
+        5) Kontrolle (Ableitung bilden) &   $\left(\frac{1}{ln(3)} \cdot 3^x \cdot \left(x - \frac{1}{ln(3)}\right) + c\right)'$ = \newline
+                                            $\frac{1}{ln(3)} \cdot 3^x \cdot ln(3) \cdot \left(x - \frac{1}{ln(3)}\right) + \frac{1}{ln(3)} \cdot 3^x$ = \newline
+                                            $3^x \left(x - \frac{1}{ln(3)}\right) + \frac{1}{ln(3)} \cdot 3^x$ = \newline
+                                            $x \cdot 3^x$ \checkmark\\ 
+        \hline
+    \end{tabular}
+\end{center}
+\setstretch{1}
+
+Die Lösung ist somit: $\uuline{\frac{1}{ln(3)} \cdot 3^x (x - \frac{1}{ln(3)}) + c}$\\
+\newline
+\uline{\textbf{Wichtig:}} $c$ nicht vergessen, aber immer erst am Schluss!
+
+
+\newpage
+\section{Wichtige Formeln}
+\subsection{Fläche zwischen zwei Funktionskurven}
+Beispiel: gesucht ist der Flächeninhalt, der von den beiden Funktionen $f(x) = x^2 + 1$ \& $g(x) = -x^2 + 2x + 5$
+begrenzt ist.\\
+
+
+\textbf{Vorgehensweise:}
+\begin{enumerate}
+    \item Bestimmen der x-Koordinaten der Schnittpunkte.
+    \item Die Fläche bestimmen.
+    \item Betrag der Fläche bestimmen.
+\end{enumerate}
+
+\hfill \break
+
+\textbf{Beispiel:}\\
+\textbf{1. Schritt - Schnittpunkte}
+\begin{enumerate}
+    \item $x^2 + 1 = -x^2 + 2x + 5 \Rightarrow$
+    \item $2x^2 -2x -4 = 0 \Rightarrow $
+    \item $x^2 - x - 2 = 0 \Rightarrow$
+    \item $(x-2)(x+1) = 0 \Rightarrow$
+    \item \underline{$x_1 = 2$, $x_2 = -1$}
+\end{enumerate}
+
+\hfill \break
+\textbf{2. Schritt - Fläche}
+
+Die Fläche ist gleich der Fläche unter $g(x)$ minus die Fläche unter $f(x)$.\\
+Somit gilt:
+$A = \int_{-1}^{2} g(x)\, dx - \int_{-1}^{2} f(x)\, dx \Rightarrow$
+\[ \int_{-1}^{2} g(x) - f(x)\, dx \]
+
+
+% tabular example
 % \renewcommand{\arraystretch}{1.5}
 % \begin{center}
 %     \begin{tabular}{ | m{12em} | m{12em} | m{12em} | }
