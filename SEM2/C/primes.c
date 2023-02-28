@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
 
     printf("All prime numbers up to 100: ");
 
-    bool denominator_found;
+    char denominator_found;
     for (int i = 5; i <= range; i += 2){
         denominator_found = false;
         for (int j = 2; j <= i / 2; j++){

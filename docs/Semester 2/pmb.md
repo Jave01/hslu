@@ -1,27 +1,27 @@
 # PMB
 
-# MEP
+## Administratives
+
+### MEP
 
 - 30% Übungen
 - 70% Prüfung
 - 50-70min
 
-## Übungen
-
-## Testat
+### Testat
 
 - MEP Probeprüfung
 - Präsentation
 
-# Administration
-
-## Literatur
+### Literatur
 
 Projektmanagement - Das Wissen für eine erfolgreiche Karriere, Jenny B.
 
-# Grundlagen
+## Inhalt
 
-## Projekt
+### Grundlagen
+
+#### Projekte
 
 **Projektcharakter:**
 
@@ -40,12 +40,12 @@ Projektmanagement - Das Wissen für eine erfolgreiche Karriere, Jenny B.
 **Projekterfolg**:  
 Das Projekt gilt als erfolgreich, wenn das Ziel in dem vorgegebenen Zeit- und Kostenrahmen realisiert wurde.
 
-## Magisches Dreieck
+#### Magisches Dreieck
 
 - Ziet
 - Kosten
 - Leistung
 
-## Hermes
+#### Hermes
 
 isch gloub no wichtig

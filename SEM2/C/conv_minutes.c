@@ -5,7 +5,7 @@
 #include <string.h>
 
 /* Function prototypes */
-bool isnum(char* str);
+char isnum(char* str);
 
 
 int main(int argc, char const *argv[])
@@ -40,8 +40,8 @@ int main(int argc, char const *argv[])
 
 
 /* function declarations */
-bool isnum(char* str){
-    bool comma_occured = false;
+char isnum(char* str){
+    char comma_occured = false;
 
     int len = strlen(str);
     for (int i = 0; i < len; i++)

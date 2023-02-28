@@ -1,18 +1,22 @@
 # NETW2
 
-# Prüfung
+## Administratives
+
+### Prüfung
 
 - Hilfsmittel: 16 A5 Seiten (single-sided, ausgedruckt)
 - Abschlussprüfung ist 100%
 
-# Important Commands
+## Inhalt
 
-## General
+### Important Commands
+
+#### General
 
     $ no shutdown
     $ exit
 
-## Show commands
+#### Show commands
 
     $ show ip interface brief
     $ show ipv6 interface brief
@@ -21,32 +25,32 @@
     $ show version
     $ show ip route
 
-## Configuration
+#### Configuration
 
     $ enable secret <pw>
     $ service password-encryption
     $ copy running-config startup-config
 
-# Switches
+### Switches
 
-## Layer 3 Switches
+#### Layer 3 Switches
 
 These are just switches (Layer 2) with an integrated router.
 
-## Micro Segmentation
+#### Micro Segmentation
 
 - bi-directional communication
 - automatic speed adjustment
 
-## Management
+#### Management
 
 To prepare a switch for remote management access, the switch must be configured with an IP address.
 
-## Switch Virtual Interface (SVI)
+#### Switch Virtual Interface (SVI)
 
 All switches are per default in VLAN-1
 
-## Network Access Layer Issues
+#### Network Access Layer Issues
 
 | Error Type      | Description                                                               |
 | --------------- | ------------------------------------------------------------------------- |

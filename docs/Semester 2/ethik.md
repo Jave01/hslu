@@ -1,8 +1,10 @@
 # ETHIK
 
+## Administratives
+
 Gruppenarbeit und Diskussionen mitmachen
 
-## Leistungsnachweise
+### Leistungsnachweise
 
 - Festlegung der ethischen Fragestellung oder der Titel des Films zu LN1
 - 60% Abgabe Positionspapier zu ethischer Fragestellung, inkl. 1 Interview
@@ -10,17 +12,19 @@ Gruppenarbeit und Diskussionen mitmachen
 
 [Leistungsnachweise PDF](https://elearning.hslu.ch/ilias/goto.php?target=file_5797365_download&client_id=hslu)
 
-## Deadlines
+### Deadlines
 
-- 7. April: Festlegung Fragestellung
-- 16. Juni: Positionspapier
--
+- 13\. März: Diskussion
+- 7\. April: Festlegung Fragestellung
+- 16\. Juni: Positionspapier
 
-## Warum Ethik?
+## Inhalt
+
+### Warum Ethik?
 
 Wir wollen ... dazu anleiten, nicht nur darüber nachzudenken, welche Systeme sie bauen könnten, sondern auch darüber, ob sie diese Systeme bauen sollten und wie sie diese Systeme gestalten sollten.
 
-## Werte und Normen
+### Werte und Normen
 
 Normen sind oft Verhaltensregeln
 
@@ -33,7 +37,7 @@ Werte
 - Wert
 - Glück
 
-## Sweatshops
+### Sweatshops
 
 Arbeitsstätten mit sehr schlechten Bedingungen
 
@@ -46,7 +50,7 @@ Arbeitsstätten mit sehr schlechten Bedingungen
 
 - Unmenschliche Zustände
 
-## Drei Ethiksansätze
+### Drei Ethiksansätze
 
 - Tugendethik (was ich kann)
   - Charakter/Können: mutig sein, grosszügig sein

@@ -1,8 +1,20 @@
 # PRIVACY
 
-# Class Content
+## Administratives
 
-## Big Data
+### Leistungsnachweis
+
+- 30% Gruppenarbeit
+  - 10% Executive Summary
+  - 10% Präsentation
+  - 10% Executive Summary (Recht)
+- 70% Prüfung (Form: TBD)
+
+Gruppenarbeit Note ist eine Gruppennote
+
+## Inhalt
+
+### Big Data
 
 collect massive amounts of (different) data from many different people.
 
@@ -23,17 +35,7 @@ collect massive amounts of (different) data from many different people.
 - Veracity (quality of data)
 - Value (commercial value of data)
 
-# Leistungsnachweis
-
-- 30% Gruppenarbeit
-  - 10% Executive Summary
-  - 10% Präsentation
-  - 10% Executive Summary (Recht)
-- 70% Prüfung (Form: TBD)
-
-Gruppenarbeit Note ist eine Gruppennote
-
-## Privacy
+### Privacy
 
 1. **Personal privacy**  
    Schutz einer Person vo unangemessenen Eingriffen die ihr moralisches Empfinden und Privatsphäre verletzen

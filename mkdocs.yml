@@ -3,7 +3,7 @@ theme:
   name: material
   palette:
     scheme: slate
-    primary: indigo
+    primary: teal
     accent: purple
   features:
     - navigation.tabs
@@ -13,3 +13,5 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+extra:
+  generator: false
