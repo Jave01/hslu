@@ -1,28 +1,31 @@
 site_name: Semester notes
 theme:
-    name: material
-    palette:
-        scheme: slate
-        primary: teal
-        accent: purple
-    features:
-        - navigation.tabs
+  name: material
+  palette:
+    scheme: slate
+    primary: teal
+    accent: purple
+  features:
+    - navigation.tabs
+plugins:
+  - search
+  - markmap
 markdown_extensions:
-    - pymdownx.highlight:
-          anchor_linenums: true
-          use_pygments: true
-          auto_title: true
-    - admonition
-    - pymdownx.details
-    - pymdownx.superfences
-    - pymdownx.superfences:
-          custom_fences:
-              - name: mermaid
-                class: mermaid
-                format: !!python/name:pymdownx.superfences.fence_code_format
-    - def_list
-    - pymdownx.tasklist:
-          custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
+      auto_title: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 extra:
-    generator: false
+  generator: false
