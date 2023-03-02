@@ -199,6 +199,10 @@ Man schreibt dann \(p \Leftrightarrow q\) oder
 \subsection{Logische Äquivalenzregeln}
 \includegraphics[width=14cm]{img/logic_equivalence_rules.png}
 
+Weiterführend:\\
+$p \rightarrow q \equiv \lnot p \lor q$
+
+
 \newpage
 \textbf{Beispiel angewandte logische Äquivalenzregeln}\\
 Beispiel 1:\\
@@ -250,10 +254,132 @@ Die Reihenfolge der Quantoren ist wesentlich; ausser alle Quantoren sind vom gle
     \item Ein Satz (Theorem) ist eine Aussage, von der man zeigen kann, dass sie wahr ist.
     \item Um zu zeigen, dass ein Satz wahr ist, verwendet man eine Abfolge (Sequenz) von Aussagen, die zusammen ein Argument, genannt Beweis ergeben.
     \item Aussagen können Axiome oder Postulate enthalten (grundlegende Annahmen der mathematischen Strukturen).
-    \item Durch logisches (also gewissn Regeln gehorchendes) Schliessen werden Folgerungen gemacht, die zusammen den Beweis ergeben.
+    \item Durch logisches (also gewissen Regeln gehorchendes) schliessen werden Folgerungen gemacht, die zusammen den Beweis ergeben.
     \item Ein Lemma ist ein einfacher Satz, der in Beweisen von komplizierteren Sätzen verwendet wird.
     \item Ein Korollar ist eine einfache Folgerung eines Satzes.
 \end{itemize}
+
+
+% ----------- Mengen ----------- %
+
+\newpage
+\section{Mengen}
+
+Eine Menge ist eine ungeordnete Zusammenfassung wohldefinierter, unterscheidbarer
+Objekte, genannt \textit{Elemente}, zu einem Ganzen. Für irgendein Objekt $x$ 
+gilt dann bezüglich der Menge $A$ entweder $x \in A$ oder dann $x \notin A$.
+
+\textbf{Beispiel:}\\
+Endliche Mengen lassen sich durch Aufschreiben der in ihnen enthaltenen Elemente beschreiben.
+z.B. die Menge aller natürlichen Zahlen kleiner als 101:\\
+$A = {0, 1, 2, ..., 99, 100}$ (aufzählend notiert)\\
+$99 \in A$ aber $101 \notin A$ (beschreibend notiert)\\
+
+andere Schreibweisen sind: \\
+
+$A = {n \in \mathbb{N} | n < 101} = {n \in \mathbb{N} : n <= 100} = {n|n \in \mathbb{N} \land n <= 100}$\\
+
+\subsection{Gleichheit, elementare Mengen}
+Zwei Mengen $A$ und $B$ sind \textbf{gleich} ($A = B$), falls sie dieselben Elemente enthalten.
+$(A \subset B) \land (B \subset A)$\\
+
+\textbf{Einige bekannte Mengen:}\\
+$\mathbb{N}$ - \quad Menge der natürlichen Zahlen $(\mathbb{N}^* = \mathbb{N} \setminus \{0\})$\\
+$\mathbb{Z}$ - \quad Menge der ganzen Zahlen\\
+$\mathbb{Z}^+$ - \quad Menge der positiven ganzen Zahlen\\
+$\mathbb{Q}$ - \quad Menge der Brüche\\
+$\mathbb{R}$ - \quad Menge der reellen Zahlen\\
+$\mathbb{C}$ - \quad Menge der komplexen Zahlen\\
+
+\subsection{Spezielle Mengen}
+\textbf{Teilmenge:} $A$ ist Teilmenge von $B$, geschrieben $A \subset B$, genau dann, wenn
+$\forall x (x \in A \rightarrow x \in B)$: es gilt $A \subset A$!\\
+
+\textbf{Leere Menge:} Für jede Menge $A$ gilt: $\emptyset \subset A$.\\
+
+\textbf{Kardinalität:} Ist $S$ eine endliche Menge, dann bezeichnet $|S|$ die Kardinalität. Die
+Kardinalität ist die Anzahl Elemente von $S$.\\
+
+\textbf{Potenzmenge}: Die Potenzmenge $P(S)$ oder $2^S$ der Menge $S$ besteht aus der Menge aller
+Teilmengen $A \subset S$.\\
+
+\textbf{Beispiel:}\\
+Bestimmen Sie die Potenzmenge von $S= \{1,2\}$\\
+$S = \{1,2\}$\\
+\quad $P(S) = 2^S = \{\emptyset, \{1\}, \{2\}, \{1, 2\}\}$\\
+Es gilt allgemein $|2^S| = 2^{|S|}$
+
+
+\subsection{Das Kreuzprodukt zweier Mengen / kartesisches Produkt}
+$ A \times B = \{(a, b)|a \in A \land b \in B\}$\\
+Reihenfolge ist entscheidend, $A \times B \neq B \times A$\\
+$|A \times B| = |A| \cdot |B|$\\
+
+\textbf{Beispiel:}
+$A \times B = \{(1,a), (2,a), (3,a), (1,b), (2,b), (3, b)\}$
+
+
+\subsection{Mengenoperationen}
+\subsubsection{Komplement}
+Ist $A$ eine Teilmenge der Menge $M$, so bezeichnet\\
+
+$A^c = \overline{A} =  \{m \in M | m \notin A\}$\\
+
+das Komplement von $A$ bezüglich $M$.
+
+\subsubsection{Durchschnitt}
+Sind $A$ und $B$ Teilmengen einer Menge $M$, so bezeichnet\\
+
+$A \cap B = \{m \in M | m \in A \land m \in B\}$\\
+
+den  Durchschnitt von $A$ und $B$.
+
+
+\subsubsection{Vereinigung}
+Sind $A$ und $B$ Teilmengen einer Menge $M$, so bezeichnet\\
+
+$A \cup B = \{m \in M | m \in A \lor m \in B\}$\\
+
+die Vereinigung von $A$ und $B$.
+
+
+\newpage
+\subsubsection{Differenz}
+Sind $A$ und $B$ Teilmengen einer Menge $M$, so bezeichnet \\
+
+$B \setminus A = \{m \in M | m \in B \land m \notin A\}$\\
+
+die Differenz
+
+
+\subsection{Set Operatoren}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{ | m{7em} | m{7em} | }
+    \hline
+    Allg. Operator & Set Operator \\ 
+    \hline
+    $p \lor q$ & $A \cup B$ \\ 
+    \hline
+    $p \land q$ & $A \cap B$ \\ 
+    \hline
+    $\lnot p$ & $\overline{A} $ \\ 
+    \hline
+\end{tabular}
+
+\subsubsection{Rechenregeln}
+\includegraphics[width=15cm]{img/Rechenregeln_mit_mengen.png}
+
+\subsubsection{Mengen Identitäten}
+\includegraphics[width=15cm]{img/set_identities.png }
+
+
+
+
+\section{Funktionen}
+Wird jedem Element $x$ einer Menge $X$ genau ein Element $y$ einer Menge
+$Y$ zugeordnet, so heisst die Zuordnung \textbf{Funktion}.
+
+
 % tabular example 3 columns
 % \renewcommand{\arraystretch}{1.5}
 % \begin{center}

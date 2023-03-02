@@ -10,3 +10,4 @@ Tangenswerte
 heisst
 Faktorregel
 Zerlegungsregel
+schliessen
