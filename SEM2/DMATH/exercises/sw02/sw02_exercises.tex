@@ -1,0 +1,150 @@
+\documentclass[12pt]{scrartcl}
+\usepackage[ngerman]{babel}
+
+
+\usepackage{amsmath, amssymb}
+
+\usepackage{array}  % for the tables
+
+\usepackage{nameref}  % for referencing with name
+
+\usepackage{hyperref}  % for hyperlinks
+
+\usepackage{mathrsfs}
+
+\usepackage{graphicx}  % for the images
+
+\usepackage{xcolor, colortbl}
+
+\usepackage{gensymb} % for \degree
+
+\usepackage{pgfplots}
+
+\usepackage{tabto}
+
+\usepackage{ulem} % \uuline
+
+\usetikzlibrary{arrows}
+
+% \usepgfplotslibrary{external}
+
+% \tikzexternalize
+
+\definecolor{Gray}{gray}{0.85}
+
+\setlength{\parindent}{0cm}
+
+\newcommand{\RomanNumeralCaps}[1]
+    {\MakeUppercase{\romannumeral #1}}
+
+% hyperlinks
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\bibliographystyle{IEEetran}
+
+
+
+
+\author{David Jäggli}
+
+\title{Diskrete Mathematik - Übungen SW01}
+
+
+
+% ---------- Begin Main Document ----------- %
+
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+\section{Funktionen}
+\textbf{I.)}\\
+$\mathbb{D} = \mathbb{R}$\\
+$\mathbb{W} = \mathbb{N}$\\
+
+\textbf{Korrektur I.)}\\
+$\mathbb{D} =$ alle binäre Strings\\
+$\mathbb{W} = 2\mathbb{N}$\\
+
+
+\textbf{II.)}\\
+Gegeben:\\
+$f(x) = x^2 + 1$\\
+$g(x) = x + 2$\\
+whereas $\mathbb{R} \mapsto \mathbb{R}$\\
+
+Gesucht:
+\begin{enumerate}
+    \item $f \circ g$
+    \item $g \circ f$
+    \item $f + g$
+    \item $f \cdot g$\\
+\end{enumerate}
+
+$f \circ g = f(x + 2) = (x + 2)^2 + 1 =$ \underline{$x^2 + 4x + 5$}\\
+$g \circ f = g(x^2 + 1) = (x^2 + 1) + 2 =$ \underline{$x^2 + 3$}\\
+$f + g = (x^2 + 1) + (x + 2) =$ \underline{$x^2 + x + 3$}\\
+$f \cdot g = (x^2 + 1) \cdot (x + 2) =$ \underline{$x^3 + 2x^2 + x + 2$}\\
+
+
+\textbf{III.)}\\
+a)\\
+$\displaystyle{\prod_{i=0}^{10} i} = 0$\\
+
+b)\\
+
+$\displaystyle{\prod_{i=5}^{8} i} = 1680$\\
+
+c)\\
+
+$\displaystyle{\prod_{i=1}^{100} (-1)^i} = -1$\\
+
+d)\\
+
+$\displaystyle{\prod_{i=1}^{100} (-1)^i} = -1$\\
+
+\textbf{Korrektur:}\\
+c)
+% tabular example 3 columns
+% \renewcommand{\arraystretch}{1.5}
+% \begin{center}
+%     \begin{tabular}{ | m{12em} | m{12em} | m{12em} | }
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%     \end{tabular}
+% \end{center}
+
+
+% tabular example 2 columns
+% \renewcommand{\arraystretch}{1.5}
+% \begin{center}
+%     \begin{tabular}{ | m{17em} | m{17em} | }
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%     \end{tabular}
+% \end{center}
+
+% \bibliography{}
+
+\end{document}

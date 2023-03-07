@@ -30,4 +30,16 @@
 \contentsline {subsubsection}{\numberline {6.5.1}Rechenregeln}{11}{subsubsection.6.5.1}%
 \contentsline {subsubsection}{\numberline {6.5.2}Mengen Identitäten}{12}{subsubsection.6.5.2}%
 \contentsline {section}{\numberline {7}Funktionen}{13}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Die ceiling- und floorfunction}{13}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Injektive Funktionen}{13}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Surjektive Funktionen}{13}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Bijektive Funktionen}{13}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Zusammengesetzte Funktionen}{13}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Die Caesar-Chiffre}{13}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}Umkehrfunktionen}{14}{subsection.7.7}%
+\contentsline {section}{\numberline {8}Folgen}{15}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Definition}{15}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Die geometrische Folge}{15}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Summen}{15}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Produkte}{16}{subsection.8.4}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

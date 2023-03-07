@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.29)  3 MAR 2023 15:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.29)  3 MAR 2023 15:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/dev/hslu/SEM2/DMATH/Formelsammlung/Formelsammlung.tex
-(c:/dev/hslu/SEM2/DMATH/Formelsammlung/Formelsammlung.tex
+**c:/dev/hslu/SEM2/DMATH/exercises/sw02/sw02_exercises.tex
+(c:/dev/hslu/SEM2/DMATH/exercises/sw02/sw02_exercises.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-09-28> (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrartcl.cls
 Document Class: scrartcl 2022/10/12 v3.38 KOMA-Script document class (article)
@@ -593,42 +593,53 @@ File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 Package: tabto 2018/12/28  v 1.4  Another tabbing mechanism
 \CurrentLineWidth=\dimen279
 \TabPrevPos=\dimen280
+) (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
+\UL@box=\box69
+\UL@hyphenbox=\box70
+\UL@skip=\skip70
+\UL@hook=\toks40
+\UL@height=\dimen281
+\UL@pe=\count314
+\UL@pixel=\dimen282
+\ULC@box=\box71
+Package: ulem 2019/11/18
+\ULdepth=\dimen283
 ) (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\arrowsize=\dimen281
+\arrowsize=\dimen284
 ))
-Package hyperref Info: Option `colorlinks' set `true' on input line 44.
+Package hyperref Info: Option `colorlinks' set `true' on input line 47.
  (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count314
-\l__pdf_internal_box=\box69
-) (C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.aux)
-\openout1 = `Formelsammlung.aux'.
+\l__color_backend_stack_int=\count315
+\l__pdf_internal_box=\box72
+) (C:\dev\hslu\SEM2\DMATH\exercises\sw02\out\sw02_exercises.aux)
+\openout1 = `sw02_exercises.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-Package hyperref Info: Link coloring ON on input line 61.
- (C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out) (C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+Package hyperref Info: Link coloring ON on input line 64.
+ (C:\dev\hslu\SEM2\DMATH\exercises\sw02\out\sw02_exercises.out) (C:\dev\hslu\SEM2\DMATH\exercises\sw02\out\sw02_exercises.out)
 \@outlinefile=\write4
-\openout4 = `Formelsammlung.out'.
+\openout4 = `sw02_exercises.out'.
 
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
@@ -637,252 +648,140 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 61.
+(scrartcl)           before \begin{document} on input line 64.
  (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count315
+\BKM@id=\count316
 )) (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count316
-\scratchdimen=\dimen282
-\scratchbox=\box70
-\nofMPsegments=\count317
-\nofMParguments=\count318
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count319
-\MPscratchDim=\dimen283
-\MPnumerator=\count320
-\makeMPintoPDFobject=\count321
-\everyMPtoPDFconversion=\toks41
+\scratchcounter=\count317
+\scratchdimen=\dimen285
+\scratchbox=\box73
+\nofMPsegments=\count318
+\nofMParguments=\count319
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count320
+\MPscratchDim=\dimen286
+\MPnumerator=\count321
+\makeMPintoPDFobject=\count322
+\everyMPtoPDFconversion=\toks42
 ) (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \celsius on input line 61.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 61.
+LaTeX Info: Redefining \celsius on input line 64.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 64.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 61.
-Package gensymb Info: Using \Omega for \ohm on input line 61.
+LaTeX Info: Redefining \ohm on input line 64.
+Package gensymb Info: Using \Omega for \ohm on input line 64.
 
 Package gensymb Warning: Not defining \micro.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
- on input line 61.
+ on input line 64.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 67.
 (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 67.
  (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 64.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 67.
  (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) (C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.toc [1
-
-
-{C:/Users/david/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}])
+) (C:\dev\hslu\SEM2\DMATH\exercises\sw02\out\sw02_exercises.toc)
 \tf@toc=\write5
-\openout5 = `Formelsammlung.toc'.
+\openout5 = `sw02_exercises.toc'.
 
- [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 152--155
+ [1
 
- []
 
-[4]
-<img/logic_equivalence_rules.png, id=117, 1153.30875pt x 664.4825pt>
-File: img/logic_equivalence_rules.png Graphic file (type png)
-<use img/logic_equivalence_rules.png>
-Package pdftex.def Info: img/logic_equivalence_rules.png  used on input line 202.
-(pdftex.def)             Requested size: 398.33858pt x 229.50018pt.
- [5 <./img/logic_equivalence_rules.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 209--219
+{C:/Users/david/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 72--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--219
+Underfull \hbox (badness 10000) in paragraph at lines 76--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--219
+Underfull \hbox (badness 10000) in paragraph at lines 81--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--230
-
- []
-
-[6] [7] [8]
-Overfull \hbox (0.98622pt too wide) in paragraph at lines 270--273
-\OT1/cmr/m/n/12 Ob-jek-te, ge-nannt \OT1/cmr/m/it/12 Ele-men-te\OT1/cmr/m/n/12 , zu ei-nem Gan-zen. F[]ur ir-gend-ein Ob-jekt $\OML/cmm/m/it/12 x$ \OT1/cmr/m/n/12 gilt dann bez[]uglich
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 274--279
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
+Underfull \hbox (badness 10000) in paragraph at lines 95--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--287
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--295
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--299
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--304
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 305--307
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 316--319
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--327
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 333--334
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 335--336
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 341--342
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 343--344
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 352--353
-
- []
-
-<img/Rechenregeln_mit_mengen.png, id=150, 1241.38782pt x 611.28375pt>
-File: img/Rechenregeln_mit_mengen.png Graphic file (type png)
-<use img/Rechenregeln_mit_mengen.png>
-Package pdftex.def Info: img/Rechenregeln_mit_mengen.png  used on input line 372.
-(pdftex.def)             Requested size: 426.79134pt x 210.15625pt.
-<img/set_identities.png, id=151, 531.48563pt x 720.44156pt>
-File: img/set_identities.png Graphic file (type png)
-<use img/set_identities.png>
-Package pdftex.def Info: img/set_identities.png  used on input line 375.
-(pdftex.def)             Requested size: 426.79134pt x 578.54164pt.
-[11 <./img/Rechenregeln_mit_mengen.png>] [12 <./img/set_identities.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 386--388
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 397--399
-
- []
-
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 414.
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
-File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 414.
- [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 431--434
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 435--437
-
- []
-
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 478--479
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 483--484
-
- []
-
-[16] (C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.aux)
-Package rerunfilecheck Info: File `Formelsammlung.out' has not changed.
+[3] (C:\dev\hslu\SEM2\DMATH\exercises\sw02\out\sw02_exercises.aux)
+Package rerunfilecheck Info: File `sw02_exercises.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 34887 strings out of 475385
- 830874 string characters out of 2776906
- 1396801 words of memory out of 3000000
- 55648 multiletter control sequences out of 15000+600000
- 479156 words of font info for 67 fonts, out of 8000000 for 9000
+ 34800 strings out of 475385
+ 828974 string characters out of 2776906
+ 1387801 words of memory out of 3000000
+ 55620 multiletter control sequences out of 15000+600000
+ 478284 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,12n,106p,10674b,673s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\david\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Formelsammlung.pdf (16 pages, 580142 bytes).
+ 108i,8n,106p,10674b,609s stack positions out of 10000i,1000n,20000p,200000b,80000s
+<C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on sw02_exercises.pdf (3 pages, 105847 bytes).
 PDF statistics:
- 397 PDF objects out of 1000 (max. 8388607)
- 64 named destinations out of 1000 (max. 500000)
- 372 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 85 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
