@@ -44,6 +44,16 @@
 
     toupper()
     tolower()
-
-
 ```
+
+### Pointers
+
+**Void pointers**
+
+- mostly used for function paramaters, function can accept any data type.
+- must first be explicitly cast to a data type before use.
+
+### Dynamic Memory
+
+If you want to allocate memory on an address without creating a variable, you can manually allocate it with some functions.  
+For example if you want a pointer to an address with some storage without first creating a variable, which allocates the needed storage.

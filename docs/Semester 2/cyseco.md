@@ -41,6 +41,9 @@ Es ist der erste Eindruck der Arbeit -> quasi das Einzige was zählt.
     * Form - Füllwörter auslassen.
     * Kurz - ideal eine Seite lang.
     * Resultate sollten den Hauptteil darstellen lassen.
+    * Fette Wörter vermeiden
+    * Unterteilungen / Absätze machen
+    * MAX 2 A4 SEITEN!
     * Vorgehen
         1. Text lesen
         2. Inhalt gedanklich rekapitulieren
@@ -54,7 +57,5 @@ Es ist der erste Eindruck der Arbeit -> quasi das Einzige was zählt.
         2. Einzelne Punkte zu detailliert
         3. Es braucht weitere Dokumente statt vollständige Übersicht
         4. Kein Korrekturlesen
-
-#### Übung MS
 
 - Ist das MS zu kurz kann die Fehlerquote zu hoch sein / zu Missverständnissen führen.

@@ -106,3 +106,7 @@ see slides SW02
 | Akteur             | User              |
 | Trigger            | Button press      |
 | Success Guarantees | Hot coffee in cup |
+
+### Security and Safety
+
+Security is the process which ensures our safety
