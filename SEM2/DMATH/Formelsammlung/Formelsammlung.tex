@@ -464,6 +464,8 @@ Addiert man die Glieder einer arithmetischen Folge ($a_k$), entsteht die \textbf
         \hline
         Summe & geschlossene Form \\
         \hline
+        $\sum_{k=0}^{n} x^k$                        & $\frac{x^{n + 1} - 1}{x - 1}$               \\ 
+        $\sum_{k=0}^{n} 2^k$                        & $2^{k + 1} - 1$               \\ 
         $\sum_{k=1}^{n} k$                          & $\dfrac{n(n + 1)}{2}$         \\ 
         $\sum_{k=1}^{n} k^2$                        & $\dfrac{n(n + 1)(2n + 1)}{6}$ \\ 
         $\sum_{k=1}^{n} k^3$                        & $\dfrac{n^2(n + 1)^2}{4}$     \\ 
@@ -486,6 +488,97 @@ Die Fakultät lässt sich mithilfe des Produktzeichens wie folgt schreiben:\\
     1 & n=0 \\
     n(n - 1)(n - 2) \dots 2 \cdot 1 = \prod_{k=1}^{n}k & n > 0
 \end{cases}\]
+
+
+Nützliche Abkürzung:
+\[\prod_{i=1}^{n} i = \frac{n \cdot (n + 1)}{2}\]
+
+
+\newpage
+\section{Algorithmen}
+
+Ein Algorithmus ist eine endliche Menge von präzisen Instruktionen mit deren Hilfe
+eine Berechnung ausgeführt oder ein Problem gelöst wird.
+
+\textbf{Algorithmen haben folgende Eigenschaften:}
+\begin{enumerate}
+    \item einen genau spezifizierten Input und daraus berechneten Output
+    \item die Instruktionen sind präzise, korrekt für jeden möglichen Input und in endlicher Zeit durchführbar
+\end{enumerate}
+
+
+Greedy Algorithmen wählen in jedem Schritt, die zu diesem Zeitpunkt die effizienteste ist.
+
+
+\newpage
+\section{Wachstum von Funktionen}
+
+\subsection{Definition}
+Seien $f$ und $g$ Funktion von $\mathbb{Z}$ oder ($\mathbb{R}$). Dann sagt man "$f(x)$ ist $\mathcal{O}(g(x))$", falls es
+Konstanten $C$ und $k$ gibt, so dass gilt:
+
+$|f(x)| \leq C|g(x)|$, $\forall x > k$ Lies: "f(x) ist gross-O von g(x), man schreibt: $f(x) \in \mathcal{O}(g(x))$.
+
+\begin{itemize}
+    \item Meist ist f eine komplizierte Funktion, wie z.B. $f(x) = (x^2 + 1) ln x + (2^x + x^4)$
+    \item Man möchte für g eine möglichst einfache, nicht zu schnell wachsende Funktion, wie z.B. $x$, $x^2$ \dots
+    \item Ziel ist es herauszufinden, wie sich f(x) für sehr, sehr grosse $x$ verhält, und zwar verglichen mit der einfacheren Funktion $g$.
+    \item k ist der kleinste Wert von $x$, für den die obige Ungleichung noch gilt!
+\end{itemize}
+
+Also wir wollen für sehr grosse $x$, eine einfachere Funktion zu finden.
+
+
+\subsection{Example}
+Für $f(x) = x^2 + 2x + 1$ ist $\mathcal{O}(x^2)$.\\
+Das heisst bei sehr grossen $x$ entspricht die Funktion $f(x) =  x^2$
+
+\includegraphics[width=15cm]{img/wachstum_example_1.png}
+\newpage
+\includegraphics[width=15cm]{img/wachstum_example_2.png}
+
+
+\subsection{Polynome}
+Für das Polynom $\sum_{k=0}^n a_k x^k$ gilt $f(x)$ ist $\mathcal{O}(x^n)$. Das heisst
+die höchste Potenz von x gibt den Ton an.\\
+
+\textbf{Beispiel:}\\
+Es gilt immer: $|a + b| \leq |a| + |b|$\\
+
+$f(x) = 5x^6 - 3x^2 + x - 10$\\
+$|f(x)| \leqslant 5x^6 + 3x^2 + x + 10$\\
+$|f(x)| \leqslant 5x^6 + 3x^6 + x^6 + 10x^6$\\
+$|f(x)| \leqslant 5x^6 + 3x^6 + x^6 + 10x^6$ für $x \geqslant 1$\\
+$|f(x)| = 19x^6$\\
+
+also $f$ ist $\mathcal{O}(x^6)$ mit Zeugen $k=1$ und $C = 19$
+
+
+\newpage
+\section{Zahlen und Division}
+\subsection{Definition}
+Falls $a$, $b \in \mathbb{Z}$ mit $a \neq 0$ dann sagt man: $a$ \textit{teilt} $b$, falls $\exists c (b = ac)$
+in der Universalmenge $\mathbb{Z}$. Dann ist $a$ ein \textit{Faktor} von $b$ und $b$ ein \textit{Vielfaches}
+von $a$. Man schreibt dann $a \mid b$ und anderenfalls $a \nmid b$\\
+
+\textbf{Theorem:}\\
+Falls a, b, c $\in \mathbb{Z}$\\
+(a) $a \mid  b  \land a \mid c \rightarrow a \mid (b + c)$, $\rightarrow 6 \mid 12 \land 6 \mid 24 \rightarrow 6 \mid (12+24)$ \\  
+(b) $a \mid b  \rightarrow \forall c(a \mid bc) $,\\  
+(c) $a \mid b  \land b \mid c \rightarrow a \mid c$,\\  
+
+\newpage
+\section{Der Euklidische Algorithmus}
+
+
+
+\section{Matrizen}
+
+
+
+\section{Null-Eins Matrizen}
+
+
 
 
 % tabular example 3 columns

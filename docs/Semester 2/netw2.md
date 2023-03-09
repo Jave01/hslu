@@ -13,33 +13,35 @@
 
 ### Important Commands
 
-!!! abstract "General commands"
+???+ abstract "General commands"
 
     ```sh title=""
     no shutdown
     exit
     ```
 
-!!! abstract "show commands"
+???+ abstract "show commands"
 
-    ```sh title=""
-    $ show ip interface brief
-    $ show ipv6 interface brief
-    $ show startup config
-    $ show running config
-    $ show version
-    $ show ip route
-    $ show interfaces port-channel
-    $ show etherchannel summary
-    $ show etherchannel port-channel
+    ```sh title=""  linenums="1"
+    show ip interface brief
+    show ipv6 interface brief
+    show startup config
+    show running config
+    show version
+    show ip route
+    show interfaces port-channel
+    show etherchannel summary
+    show etherchannel port-channel
 
     ```
 
 #### Configuration
 
-$ enable secret <pw>
-$ service password-encryption
-$ copy running-config startup-config
+```sh title=""
+enable secret <pw>
+service password-encryption
+copy running-config startup-config
+```
 
 ### Switches
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.29)  3 MAR 2023 15:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.29)  8 MAR 2023 16:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -701,7 +701,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--155
  []
 
 [4]
-<img/logic_equivalence_rules.png, id=117, 1153.30875pt x 664.4825pt>
+<img/logic_equivalence_rules.png, id=137, 1153.30875pt x 664.4825pt>
 File: img/logic_equivalence_rules.png Graphic file (type png)
 <use img/logic_equivalence_rules.png>
 Package pdftex.def Info: img/logic_equivalence_rules.png  used on input line 202.
@@ -821,12 +821,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 352--353
 
  []
 
-<img/Rechenregeln_mit_mengen.png, id=150, 1241.38782pt x 611.28375pt>
+<img/Rechenregeln_mit_mengen.png, id=170, 1241.38782pt x 611.28375pt>
 File: img/Rechenregeln_mit_mengen.png Graphic file (type png)
 <use img/Rechenregeln_mit_mengen.png>
 Package pdftex.def Info: img/Rechenregeln_mit_mengen.png  used on input line 372.
 (pdftex.def)             Requested size: 426.79134pt x 210.15625pt.
-<img/set_identities.png, id=151, 531.48563pt x 720.44156pt>
+<img/set_identities.png, id=171, 531.48563pt x 720.44156pt>
 File: img/set_identities.png Graphic file (type png)
 <use img/set_identities.png>
 Package pdftex.def Info: img/set_identities.png  used on input line 375.
@@ -858,31 +858,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 435--437
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 478--479
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--484
+Underfull \hbox (badness 10000) in paragraph at lines 485--486
 
  []
 
-[16] (C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.aux)
+[16] [17]
+<img/wachstum_example_1.png, id=212, 871.00406pt x 472.76625pt>
+File: img/wachstum_example_1.png Graphic file (type png)
+<use img/wachstum_example_1.png>
+Package pdftex.def Info: img/wachstum_example_1.png  used on input line 536.
+(pdftex.def)             Requested size: 426.79134pt x 231.65027pt.
+ [18 <./img/wachstum_example_1.png>]
+<img/wachstum_example_2.png, id=218, 852.93657pt x 479.54156pt>
+File: img/wachstum_example_2.png Graphic file (type png)
+<use img/wachstum_example_2.png>
+Package pdftex.def Info: img/wachstum_example_2.png  used on input line 538.
+(pdftex.def)             Requested size: 426.79134pt x 239.95313pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 542--544
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 545--547
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 548--553
+
+ []
+
+[19 <./img/wachstum_example_2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 560--563
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--569
+
+ []
+
+[20] [21] (C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.aux)
 Package rerunfilecheck Info: File `Formelsammlung.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 34887 strings out of 475385
- 830874 string characters out of 2776906
+ 34931 strings out of 475385
+ 831564 string characters out of 2776906
  1396801 words of memory out of 3000000
- 55648 multiletter control sequences out of 15000+600000
+ 55673 multiletter control sequences out of 15000+600000
  479156 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,12n,106p,10674b,673s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\david\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Formelsammlung.pdf (16 pages, 580142 bytes).
+Output written on Formelsammlung.pdf (21 pages, 977423 bytes).
 PDF statistics:
- 397 PDF objects out of 1000 (max. 8388607)
- 64 named destinations out of 1000 (max. 500000)
- 372 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 478 PDF objects out of 1000 (max. 8388607)
+ 81 named destinations out of 1000 (max. 500000)
+ 462 words of extra memory for PDF output out of 10000 (max. 10000000)
 

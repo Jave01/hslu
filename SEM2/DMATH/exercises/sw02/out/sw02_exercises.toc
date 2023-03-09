@@ -1,3 +1,4 @@
 \babel@toc {ngerman}{}\relax 
 \contentsline {section}{\numberline {1}Funktionen}{2}{section.1}%
+\contentsline {section}{\numberline {2}Folgen, Reihen, Summen- und Produktzeichen}{3}{section.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

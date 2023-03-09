@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1677852942 "c:/dev/hslu/SEM2/DMATH/Formelsammlung/Formelsammlung.tex" "Formelsammlung.pdf" "Formelsammlung" 1677852945
+["pdflatex"] 1678288203 "c:/dev/hslu/SEM2/DMATH/Formelsammlung/Formelsammlung.tex" "Formelsammlung.pdf" "Formelsammlung" 1678288206
   "C:/Users/david/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1673529487 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/david/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1666711546 14064 6c8499da728846afd25976282ad50d43 ""
   "C:/Users/david/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1667138804 688 37338d6ab346c2f1466b29e195316aa4 ""
@@ -227,16 +227,18 @@
   "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1654690828 12694 4770336659ba563be5de2e0739d61ddc ""
   "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "C:/dev/hslu/SEM2/DMATH/Formelsammlung/out/Formelsammlung.aux" 1677852945 17129 65e802ead111c8b760ca65e6c287a13b ""
+  "C:/dev/hslu/SEM2/DMATH/Formelsammlung/out/Formelsammlung.aux" 1678288206 20578 57b696fa0d134d8a2199ceb1994ac50d ""
   "C:/dev/hslu/SEM2/DMATH/Formelsammlung/out/Formelsammlung.out" 0 -1 0 ""
-  "C:/dev/hslu/SEM2/DMATH/Formelsammlung/out/Formelsammlung.toc" 1677852945 3632 0f5b5bef94b85697c6c880965a7ea076 ""
-  "c:/dev/hslu/SEM2/DMATH/Formelsammlung/Formelsammlung.tex" 1677852941 16579 ea7df314a6d4c1071cef0c6aa1deae9e ""
+  "C:/dev/hslu/SEM2/DMATH/Formelsammlung/out/Formelsammlung.toc" 1678288206 4401 fae72e42df9eb22caf66b14bb17e55d0 ""
+  "c:/dev/hslu/SEM2/DMATH/Formelsammlung/Formelsammlung.tex" 1678288199 19902 137c81c46bd7ef2137e978d58210b1a0 ""
   "img/Rechenregeln_mit_mengen.png" 1677676822 197206 d7157c9f83f83851a1dff1925c4f0f05 ""
   "img/logic_equivalence_rules.png" 1677598643 168417 beb2ae306ee77a11cd54f358772be689 ""
   "img/set_identities.png" 1677676982 139230 4824b2975330c62a41d4ec572d6d839c ""
-  "out/Formelsammlung.aux" 1677852945 17129 65e802ead111c8b760ca65e6c287a13b "pdflatex"
+  "img/wachstum_example_1.png" 1678278181 241115 24b5bb3f417ed34b39b8857887a1b099 ""
+  "img/wachstum_example_2.png" 1678278800 192700 135f1f673abe69596e41ee8b44ae8ad0 ""
+  "out/Formelsammlung.aux" 1678288206 20578 57b696fa0d134d8a2199ceb1994ac50d "pdflatex"
   "out/Formelsammlung.out" 0 -1 0 "pdflatex"
-  "out/Formelsammlung.toc" 1677852945 3632 0f5b5bef94b85697c6c880965a7ea076 "pdflatex"
+  "out/Formelsammlung.toc" 1678288206 4401 fae72e42df9eb22caf66b14bb17e55d0 "pdflatex"
   (generated)
   "Formelsammlung.pdf"
   "out/Formelsammlung.aux"
