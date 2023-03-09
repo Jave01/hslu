@@ -11,12 +11,12 @@
 
 ???+ abstract "Termine"
 
-    - 07\. März: MS Coaching
-    - 13\. März: Abgabe Management Summary
-    - 28\. März: Abgabe Mängelrüge
-    - 18\. April: Abgabe Vulnerability Report
-    - 02\. Mai: Abgabe DSG Vorfall
-    - 16\. Mai: Abgabe Pressemitteilung
+    - [x] 07\. März: MS Coaching
+    - [ ] 13\. März: Abgabe Management Summary
+    - [ ] 28\. März: Abgabe Mängelrüge
+    - [ ] 18\. April: Abgabe Vulnerability Report
+    - [ ] 02\. Mai: Abgabe DSG Vorfall
+    - [ ] 16\. Mai: Abgabe Pressemitteilung
 
 ## Inhalt
 
@@ -57,5 +57,9 @@ Es ist der erste Eindruck der Arbeit -> quasi das Einzige was zählt.
         2. Einzelne Punkte zu detailliert
         3. Es braucht weitere Dokumente statt vollständige Übersicht
         4. Kein Korrekturlesen
+
+- Ist das MS zu kurz kann die Fehlerquote zu hoch sein / zu Missverständnissen führen.
+
+#### Übung MS
 
 - Ist das MS zu kurz kann die Fehlerquote zu hoch sein / zu Missverständnissen führen.

@@ -88,3 +88,47 @@ Ein Subjekt ist anonym gegenüber einem Angreifer, wenn der Angreifer das Subjek
 
 **Absolute Anonymisierung**  
 Diese liegt vor, wenn niemand mehr in der Lage ist, den Personenbezug wiederherzustellen. Dies kann bspw. durch die Löschung von Identifikationsmerkmalen in einer Datenbank erfolgen.
+
+### Tracking
+
+#### Cookies
+
+-   Werden unter den Domainnamen des Webservers abgespeichert und bei jeder neuen Abfrage an diesen Webserver zurückgeschickt.
+-   Zweck: HTTP selbst ist zustandslos
+
+**1st Party cookies**
+
+-   von der Website gesetzt auf der ein User gerade surft
+-   werden von Browsern nicht
+
+**3rd Party Cookies**
+
+-   Durch einen Dritten gesetzt, also nicht durch die eigentliche Website, auf der man sich befindet.
+-   Häufig von Advertisern gespeichert, die Werbung auf
+
+**Cookie syncing**
+
+-   Firmenübergreifende Daten, gespeichert mit Cookies
+
+#### Fingerprint
+
+**Browser-Fingerprinting**
+
+-   Reguläre Web-Interatkionen werden benutzt um Informationen über dich zu sammeln und dich zu identifizieren
+
+**Vermeiden**
+
+-   Javascript deaktivieren
+-   Cookies deaktivieren
+-
+
+#### Mobile Tracking
+
+!!! warning "do not track"
+
+    [website](https://donottrack-doc.com/en/intro)
+
+#### Location Tracking
+
+TPEG-Zugriff (Transpoort Protocol Experts Group)  
+ist eine Serie von Datenprotokollen für die Übertragung von Verkehrs- und Reiseinformationen.

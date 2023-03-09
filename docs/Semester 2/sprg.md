@@ -107,6 +107,26 @@ see slides SW02
 | Trigger            | Button press      |
 | Success Guarantees | Hot coffee in cup |
 
-### Security and Safety
+### Models
 
-Security is the process which ensures our safety
+#### Waterfall
+
+- Strict linear
+- simple definition of milestones
+- little freedom for developers
+
+#### Agile Software Development
+
+**Core description**:
+
+- Individuals and interactions over processes and tools
+- Working software over comprehensive documentation
+- Customer collaboration over contrract negotiation
+- Responding to change over following a plan
+
+- Reuse existing resources multiple times
+- keep it small and simple
+- collective code ownership
+- functional and customer-oriented
+
+Deliver your product in pieces, present your process to the client -> faster reaction if sth isn't how the client wants it.

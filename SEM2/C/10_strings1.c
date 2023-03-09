@@ -3,40 +3,66 @@
 #include <stdbool.h>
 
 
-int slen(char *str);
-char* scat(const char str1[], const char str2[]){
-int slen(char *str){
-
+int slen(const char *str);
+void scat(char result[], const char str1[], const char str2[]);
+bool scmp(const char str1[], const char str2[]);
 
 int main(int argc, char const *argv[])
 {
-    char s1[] = "Hi there I'm Tim ";
-    char s2[] = "Hi Tim I'm a door";
-    char *result;
-    result = scat(s1, s2);
+    // char s1[] = "Hi there I'm Tim ";
+    // char s2[] = "Hi Tim I'm a door";
+    char s1[] = "1234";
+    char s2[] = "1234";
+
+    printf("%d\n", scmp(s1, s2));
     return 0;
 }
 
 
-int slen(char *str){
+int slen(const char *str){
     int len = 0;
     int i = 0;
 
-    while (*str != 0)
+    while (str[i] != '\0')
     {
         i++;
-        break;
     }
     return i;
 }
 
 
-char* scat(const char str1[], const char str2[]){
+void scat(char result[], const char str1[], const char str2[]){
     char c;
-    char result[len];
+    int len1 = slen(str1);
+    int len2 = slen(str2);
 
-    for (size_t i = 0; i < count; i++)
+    for (int i = 0; i <= slen(str1); i++)
     {
-        
-    }    
+        result[i] = str1[i];
+    }
+    for (int i = 0; i < slen(str2); i++)
+    {
+        result[len1 + i] = str2[i];
+    }
+    result[len1 + len2 + 1] = '\0';
+}
+
+
+bool scmp(const char str1[], const char str2[]){
+    char c;
+    int i = 0;
+
+    while (true)
+    {
+        if (str1[i] == str2[i])
+        {
+            if (str1[i] == '\0')
+            {
+                return true;
+            }
+        } else {
+            return false;
+        }
+        i++;
+    }
 }

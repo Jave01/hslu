@@ -22,6 +22,8 @@
 
 \usepackage{tabto}
 
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
 \usetikzlibrary{arrows}
 
 % \usepgfplotslibrary{external}
@@ -378,6 +380,205 @@ die Differenz
 \section{Funktionen}
 Wird jedem Element $x$ einer Menge $X$ genau ein Element $y$ einer Menge
 $Y$ zugeordnet, so heisst die Zuordnung \textbf{Funktion}.
+
+
+\subsection{Die ceiling- und floorfunction}
+$\lceil \cdot \rceil$ :  $\mathbb{R} \rightarrow \mathbb{Z}$, $x \mapsto \lceil x \rceil =$ min$\{n \in \mathbb{Z} | x \leq n\}$\\
+$\lfloor \cdot \rfloor$ :  $\mathbb{R} \rightarrow \mathbb{Z}$, $x \mapsto \lfloor x \rfloor =$ max$\{n \in \mathbb{Z} | n \leq x\}$\\
+
+
+\subsection{Injektive Funktionen}
+Eine Funktion heisst injektiv, wenn jedes $x$ auf eine eigenes $y$ zeigt.
+
+\subsection{Surjektive Funktionen}
+Eine Funktion heisst surjektiv, falls für jedes Element $y$ ein Element $x$ existiert, so dass $f(x) = y$ gilt.
+
+\subsection{Bijektive Funktionen}
+Eine Funktion heisst bijektiv, falls sie injektiv und surjektiv ist. Das bedeutet, dass jedes Element $y$ genau
+ein zugehöriges Element $x$ hat.\\
+
+Bijektive Funktionen sind umkehrbar. Man muss einfach die Pfeile umkehren und damit entsteht
+aus $f$ die Umkehrfunktion $f^{-1}$.
+
+
+\subsection{Zusammengesetzte Funktionen}
+Gegeben seien zwei Funktionen, so dass der Wertebereich von $g$ im Definitionsbereich von $f$ enthalten ist.
+Dann kann man die so genannte \textbf{zusammengesetzte Funktion} oder \textbf{Komposition} von $f$
+und $g$ bilden:\\
+$F = f \circ g$ : $X \longmapsto Y$, $x \longmapsto f(g(x))$
+
+
+\subsection{Die Caesar-Chiffre}
+\begin{enumerate}
+    \item \textbf{Kodierung:} Buchstaben auf Zahlen abbilden\\
+    K:\{$a$,$b$,$c$,...,$z$\} $\mapsto$ \{0,1,2,...,25\}, wobei $a \mapsto 0$,$b \mapsto 1$,$c \mapsto 2$,$z \mapsto 25$
+    \item \textbf{Verschlüsseln:} die eigentliche Caesar-Verschlüsselung\\
+    V:\{0,1,2,...,25\} $\mapsto$ \{0,1,2,...,25\}, $m \mapsto c := (m + 3)$ mod 26.
+    \item \textbf{Dekodierung:} Zahlen auf Buchstaben abbilden\\
+    D:\{0,1,2,...,25\} $\mapsto$ \{0,1,2,...,25\}, wobei $0 \mapsto a$,$1 \mapsto b$,$2 \mapsto c$,$25 \mapsto z$
+\end{enumerate}
+
+
+\subsection{Umkehrfunktionen}
+Wenn man die Umkehrfunktion auf das Ergebnis der Ursprungsfunktion mit einem $x$-Wert anwendet
+erhält man wieder $x$. Heisst:\\
+$f^{-1}(f(x)) = x$
+
+
+\newpage
+\section{Folgen}
+\subsection{Definition}
+Eine \textbf{Folge} ist eine Abbildung von $\mathbb{N}$ (oder auch $\mathbb{N}^* = \mathbb{N} \setminus \{0\}$) in eine Menga $A$:\\
+$\{\cdot\}$:$\mathbb{N} \mapsto A$, $n \mapsto a_n$\\
+Man nennt $a_n$ das Glied der Folge mit der Nummer $n$. Die Folge wird auch mit \{$a_n$\} oder ($a_n$) bezeichnet.\\
+
+\textbf{Example:}\\
+Man schreibe die ersten sechs Glieder der Folge auf, deren k. Glied gegeben ist durch $a_k = \frac{1}{k}$. \\
+
+$a_k = \left(1,  \dfrac{1}{2}, \dfrac{1}{3}, \dfrac{1}{4}, \dfrac{1}{5}\dots\right)$
+
+
+\subsection{Die geometrische Folge}
+Bei einer geometrischen Folge ist der Quotient zweier aufeinander folgender Glieder immer
+gleich, nämlich q. Das bedeutet, dass $\frac{a_{k+1}}{a_k}$ immer gleich ist.
+
+
+\subsection{Summen}
+Dank Summenzeichen lassen sich Summen einfacher schreiben:
+\[\sum_{j=m}^{n} a_j = a_m + a_{m+1} + a_{m+2} + \dots + a_n\]
+
+\[\sum_{j=m}^{n} a_j = \sum_{i=0}^{n-m} a_{m+i} = \sum_{k=1}^{n-m+1} a_{m+k-1}\]
+
+
+Addiert man die Glieder einer arithmetischen Folge ($a_k$), entsteht die \textbf{arithmetische Reihe:}
+
+\[\sum_{k=0}^{n-1} a_k = n \frac{a_0 + a_{n-1}}{2}\]
+
+
+\newpage
+\textbf{Nützliche Summenformeln:}
+
+\renewcommand{\arraystretch}{2.5}
+\begin{center}
+    \begin{tabular}{  m{10em} | P{10em} }
+        \hline
+        Summe & geschlossene Form \\
+        \hline
+        $\sum_{k=0}^{n} x^k$                        & $\frac{x^{n + 1} - 1}{x - 1}$               \\ 
+        $\sum_{k=0}^{n} 2^k$                        & $2^{k + 1} - 1$               \\ 
+        $\sum_{k=1}^{n} k$                          & $\dfrac{n(n + 1)}{2}$         \\ 
+        $\sum_{k=1}^{n} k^2$                        & $\dfrac{n(n + 1)(2n + 1)}{6}$ \\ 
+        $\sum_{k=1}^{n} k^3$                        & $\dfrac{n^2(n + 1)^2}{4}$     \\ 
+        $\sum_{k=0}^{\infty} x^k$, $|x| < 1$        & $\dfrac{1}{1 - x}$            \\ 
+        $\sum_{k=1}^{\infty} kx^{k-1}$, $|x| < 1$   & $\dfrac{1}{(1-x)^2}$          \\ 
+        \hline
+    \end{tabular}
+\end{center}
+
+
+\subsection{Produkte}
+Dank dem Produktzeichen lassen sich Produkte einfacher schreiben:\\
+
+
+\[a_m \cdot a_{m+1} \cdot a_{m+2} \dots a_n = \prod_{j=m}^{n} a_j \quad\quad n \geqslant m\]
+
+Die Fakultät lässt sich mithilfe des Produktzeichens wie folgt schreiben:\\
+\[n! = 
+\begin{cases}
+    1 & n=0 \\
+    n(n - 1)(n - 2) \dots 2 \cdot 1 = \prod_{k=1}^{n}k & n > 0
+\end{cases}\]
+
+
+Nützliche Abkürzung:
+\[\prod_{i=1}^{n} i = \frac{n \cdot (n + 1)}{2}\]
+
+
+\newpage
+\section{Algorithmen}
+
+Ein Algorithmus ist eine endliche Menge von präzisen Instruktionen mit deren Hilfe
+eine Berechnung ausgeführt oder ein Problem gelöst wird.
+
+\textbf{Algorithmen haben folgende Eigenschaften:}
+\begin{enumerate}
+    \item einen genau spezifizierten Input und daraus berechneten Output
+    \item die Instruktionen sind präzise, korrekt für jeden möglichen Input und in endlicher Zeit durchführbar
+\end{enumerate}
+
+
+Greedy Algorithmen wählen in jedem Schritt, die zu diesem Zeitpunkt die effizienteste ist.
+
+
+\newpage
+\section{Wachstum von Funktionen}
+
+\subsection{Definition}
+Seien $f$ und $g$ Funktion von $\mathbb{Z}$ oder ($\mathbb{R}$). Dann sagt man "$f(x)$ ist $\mathcal{O}(g(x))$", falls es
+Konstanten $C$ und $k$ gibt, so dass gilt:
+
+$|f(x)| \leq C|g(x)|$, $\forall x > k$ Lies: "f(x) ist gross-O von g(x), man schreibt: $f(x) \in \mathcal{O}(g(x))$.
+
+\begin{itemize}
+    \item Meist ist f eine komplizierte Funktion, wie z.B. $f(x) = (x^2 + 1) ln x + (2^x + x^4)$
+    \item Man möchte für g eine möglichst einfache, nicht zu schnell wachsende Funktion, wie z.B. $x$, $x^2$ \dots
+    \item Ziel ist es herauszufinden, wie sich f(x) für sehr, sehr grosse $x$ verhält, und zwar verglichen mit der einfacheren Funktion $g$.
+    \item k ist der kleinste Wert von $x$, für den die obige Ungleichung noch gilt!
+\end{itemize}
+
+Also wir wollen für sehr grosse $x$, eine einfachere Funktion zu finden.
+
+
+\subsection{Example}
+Für $f(x) = x^2 + 2x + 1$ ist $\mathcal{O}(x^2)$.\\
+Das heisst bei sehr grossen $x$ entspricht die Funktion $f(x) =  x^2$
+
+\includegraphics[width=15cm]{img/wachstum_example_1.png}
+\newpage
+\includegraphics[width=15cm]{img/wachstum_example_2.png}
+
+
+\subsection{Polynome}
+Für das Polynom $\sum_{k=0}^n a_k x^k$ gilt $f(x)$ ist $\mathcal{O}(x^n)$. Das heisst
+die höchste Potenz von x gibt den Ton an.\\
+
+\textbf{Beispiel:}\\
+Es gilt immer: $|a + b| \leq |a| + |b|$\\
+
+$f(x) = 5x^6 - 3x^2 + x - 10$\\
+$|f(x)| \leqslant 5x^6 + 3x^2 + x + 10$\\
+$|f(x)| \leqslant 5x^6 + 3x^6 + x^6 + 10x^6$\\
+$|f(x)| \leqslant 5x^6 + 3x^6 + x^6 + 10x^6$ für $x \geqslant 1$\\
+$|f(x)| = 19x^6$\\
+
+also $f$ ist $\mathcal{O}(x^6)$ mit Zeugen $k=1$ und $C = 19$
+
+
+\newpage
+\section{Zahlen und Division}
+\subsection{Definition}
+Falls $a$, $b \in \mathbb{Z}$ mit $a \neq 0$ dann sagt man: $a$ \textit{teilt} $b$, falls $\exists c (b = ac)$
+in der Universalmenge $\mathbb{Z}$. Dann ist $a$ ein \textit{Faktor} von $b$ und $b$ ein \textit{Vielfaches}
+von $a$. Man schreibt dann $a \mid b$ und anderenfalls $a \nmid b$\\
+
+\textbf{Theorem:}\\
+Falls a, b, c $\in \mathbb{Z}$\\
+(a) $a \mid  b  \land a \mid c \rightarrow a \mid (b + c)$, $\rightarrow 6 \mid 12 \land 6 \mid 24 \rightarrow 6 \mid (12+24)$ \\  
+(b) $a \mid b  \rightarrow \forall c(a \mid bc) $,\\  
+(c) $a \mid b  \land b \mid c \rightarrow a \mid c$,\\  
+
+\newpage
+\section{Der Euklidische Algorithmus}
+
+
+
+\section{Matrizen}
+
+
+
+\section{Null-Eins Matrizen}
+
+
 
 
 % tabular example 3 columns
