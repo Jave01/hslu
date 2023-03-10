@@ -19,13 +19,18 @@ Abgabe der Laborberichte anschliessend als PDF im Abgabeordner auf Ilias innerha
 - Einer- oder Zweiergruppen
 - 6 Laborberichte während Laborzeit ausfüllen und danach hochladen.
 
+### Literatur
+
+- [Computernetzwerke](https://www.orellfuessli.ch/suche?sq=978-3-86894-137-1)
+- [Wireshark](https://www.orellfuessli.ch/suche?sq=978-3-+95845-683-9)
+
 ## Inhalt
 
 ### Kreatives Denken
 
 - [Manager Magazin](http://www.manager-magazin.de/lifestyle/artikel/sieben-methoden-zum-innovativen-denken-a-1072513.html)
 - [Adversial Thinking](https://www.smokescreen.io/adversarial-thinking-improving-cybersecurity-with-ants-and-barcodes/)
-- Buch - ISBN: 978-3-8423-5956-7
+- [Quergedacht](https://www.orellfuessli.ch/suche?sq=978-3-8423-5956-7)
 
 #### Modes of Thinking
 
@@ -96,3 +101,19 @@ Eine der wichtigsten Methoden. Die Lösung provokativ anders anzuschauen.
 
    1. Das Handy braucht keinen Strom
    1. Die Schüler brauchen keinen Lehrer.
+
+### Netzwerke
+
+#### Angriffsflächen des Internets
+
+- **Sniffing** - abhören von Informationen
+- **Manipulation** von Informationen
+- **Maskerading** - Verstecken hinter falscher Identität
+- **Replay** - wiedereinspielung von Informationen
+- **Umleiten** - um Daten besser abzuhören
+- **DoS** - Kommunikationssystem stören
+- **Hijacking** - Kommunikationsverbindung übernehmen
+
+#### Analysatoren
+
+-> Just use Wireshark

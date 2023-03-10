@@ -567,16 +567,88 @@ Falls a, b, c $\in \mathbb{Z}$\\
 (b) $a \mid b  \rightarrow \forall c(a \mid bc) $,\\  
 (c) $a \mid b  \land b \mid c \rightarrow a \mid c$,\\  
 
+
+\subsection{ggt kgV}
+Der ggT von a und b beschreibt das grösste $d$ für welches gilt $d \mid a$ und $d \mid b$.\\
+Zwei zahlen sind teilerfremd (relaitv prim) falls ggT(a,b) = 1, dann schreibt man
+$a \perp b$. \\
+
+Das kgV zweier Zahlen $a$ und $b$ ist die kleinste positive Zahl, welche durch
+$a$ und $b$ teilbar ist. Es gilt:\\
+
+ab = ggT(a,b) $\cdot$ kgV(a,b)\\
+
+\textbf{Für ggT finden:}
+\begin{enumerate}
+    \item a und b jeweils in Primfaktoren zerlegen
+    \item alle gemeinsamen Primfaktoren multiplizieren
+\end{enumerate}
+
+
+\subsection{Modulare Arithmetik}
+Sei $m \in \mathbb{N} \backslash \{0\}$, dann nennt man zwei ganze Zahlen a und b kongruent modulo m, falls $m\mid (a - b)$
+Das heisst a und b liegen ein Vielfaches von m auseinander. Man schreibt dann $a \equiv b$ mod $m$ und sagt:
+"a ist kongruent zu b modulo m".\\
+
+$13 \equiv 1$ mod 4 denn $4 \mid (13 - 1)$\\
+$13 \equiv 1$ mod 3 denn $3 \mid (13 - 1)$\\
+$13 \not\equiv  1$ mod 5 denn $5 \nmid (13 - 1)$\\
+
+
 \newpage
-\section{Der Euklidische Algorithmus}
+\subsection{Der Euklidische Algorithmus}
+Effiziente Methode um ggT zu finden.
 
+\includegraphics[width=15cm]{img/euqlidic_algorithm.png}
 
+ggT ist jeweils 1 und 3.
 
 \section{Matrizen}
+\subsection{Definition}
+Eine m $\times$ n-Matrix ist eine rechteckige Anordnung von Zahlen in m Zeilen und n
+Spalten.\\
+
+\textbf{A} = 
+$
+\begin{bmatrix}
+    a_{1,1} & a_{1,2} & \cdots & a_{1,n}\\
+    a_{2,1} & a_{2,2} & \cdots & a_{2,n}\\
+    \vdots & \vdots & \ddots & \vdots\\
+    a_{m,1} & a_{m,2} & \cdots & a_{m,n}
+\end{bmatrix}$\\
 
 
+Kurzschreibform: \textbf{A} = [$a_{i,j}$]
 
-\section{Null-Eins Matrizen}
+
+\subsection{Addition von Matrizen}
+
+Addition von Matrizen erfolgt jeweils durch die Addition der einzelnen Positionen
+
+
+\subsection{Multiplikation mit einer Zahl}
+Einfach jede Zahl multiplizieren.
+
+
+\subsection{Matrixmultiplikation}
+\textbf{C = AB}, wobei die Anzahl Spalten in \textbf{A} gleich der Anzahl Reihen in \textbf{B}
+sein muss
+
+\includegraphics[width=15cm]{img/matrizenmultiplikation.png}
+
+\subsection{Transporierte Matrix}
+Eine transponierte Matrix ist eine, bei der die Spalten und Reihen vertauscht wurden.\\
+
+\includegraphics[width=15cm]{img/transponierte_matrix.png}
+
+\subsection{Matrizen Eigenschaften}
+Keywords: symmetrisch, antisymmetrisch, Einheitsmatrix, k-te Potenz
+
+\includegraphics[width=16cm]{img/matrizen_eigenschaften.png}
+
+TODO: Inverse Matrix und Matrizen Eigenschaften allgemein
+
+\subsection{Null-Eins Matrizen}
 
 
 
