@@ -1,0 +1,4 @@
+master:hello_friend
+next:next_entry
+third:third_entry
+key4:val4

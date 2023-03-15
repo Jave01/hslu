@@ -4,29 +4,35 @@
 
 ### Templates
 
-- SW02 s.119
+-   SW02 s.119
 
 ### MEP
 
-- type of exam TBD
+-   type of exam TBD
 
 ### Testat
 
-- Threat analysis
+-   Threat analysis
 
 ### Resources
 
-- [ISSS](https://www.isss.ch/de/)
-- [SANS](https://www.sans.org)
-- [ISC2](https://www.isc2.org)
+-   [ISSS](https://www.isss.ch/de/)
+-   [SANS](https://www.sans.org)
+-   [ISC2](https://www.isc2.org)
 
 ## Inhalt
+
+### Data flow diagramm
+
+4 elements:
+
+![data flow diagram](../assets/dfd.png)
 
 ### Approach
 
 Rule of thumb:
 
-- the effort spent for RE should be inverse to the risk that your're able to manage
+-   the effort spent for RE should be inverse to the risk that your're able to manage
 
 ### Requirements
 
@@ -56,45 +62,45 @@ see slides SW02
 #### How to "find" requirements?
 
 1. Elicitation
-   - Documentation
-   - validation and negotiation
+    - Documentation
+    - validation and negotiation
 2. Management
 
 **Elicitation**:
 
-- List and analyze stakeholders
-  - Who is the customer?
-  - Who are the users?
-  - Who are the deciders?
-  - External systems or organiztions involved?
-  - Regulatory constraints/requirements?
-- Stakeholder Map
+-   List and analyze stakeholders
+    -   Who is the customer?
+    -   Who are the users?
+    -   Who are the deciders?
+    -   External systems or organiztions involved?
+    -   Regulatory constraints/requirements?
+-   Stakeholder Map
 
 **Stakeholder:**
 
-- Stakeholders:
-  - Consumers
-  - Buyers
-  - The ones with money
-- Examine the individual needs of the different stakeholders
+-   Stakeholders:
+    -   Consumers
+    -   Buyers
+    -   The ones with money
+-   Examine the individual needs of the different stakeholders
 
 ### Brainstorming technique
 
 6-3-5
 
-- 6 people
-- 3 suggestions
-- 5 minutes
+-   6 people
+-   3 suggestions
+-   5 minutes
 
 ### Questions
 
-- open
-  - Was für langfristige Ziele haben sie mit dem Produkt (z.B. Weiterentwicklung, Support für Kunden)
-  - Was würden Sie ändern?
-- closed
-  - Maximales Budget
-  - Dimensionen
-  - Welche Zielgruppe
+-   open
+    -   Was für langfristige Ziele haben sie mit dem Produkt (z.B. Weiterentwicklung, Support für Kunden)
+    -   Was würden Sie ändern?
+-   closed
+    -   Maximales Budget
+    -   Dimensionen
+    -   Welche Zielgruppe
 
 #### Use case exercise
 
@@ -111,22 +117,41 @@ see slides SW02
 
 #### Waterfall
 
-- Strict linear
-- simple definition of milestones
-- little freedom for developers
+-   Strict linear
+-   simple definition of milestones
+-   little freedom for developers
 
 #### Agile Software Development
 
 **Core description**:
 
-- Individuals and interactions over processes and tools
-- Working software over comprehensive documentation
-- Customer collaboration over contrract negotiation
-- Responding to change over following a plan
+-   Individuals and interactions over processes and tools
+-   Working software over comprehensive documentation
+-   Customer collaboration over contrract negotiation
+-   Responding to change over following a plan
 
-- Reuse existing resources multiple times
-- keep it small and simple
-- collective code ownership
-- functional and customer-oriented
+-   Reuse existing resources multiple times
+-   keep it small and simple
+-   collective code ownership
+-   functional and customer-oriented
 
 Deliver your product in pieces, present your process to the client -> faster reaction if sth isn't how the client wants it.
+
+### Software development life cycle (SDLC)
+
+Also known as software development process.
+
+```mermaid
+flowchart LR
+a[planning] --> b[defining] --> c[designing] --> d[building] --> e[testing] --> f[deployment]
+f --> a
+```
+
+### Security Testing Principles
+
+-   Confidentiality
+-   Integrity
+-   Authentication
+-   Authorization
+-   Availability
+-   Non-repudiation

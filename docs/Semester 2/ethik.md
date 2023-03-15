@@ -14,7 +14,7 @@ Gruppenarbeit und Diskussionen mitmachen
 
 ### Deadlines
 
--   [ ] 13\. März: Diskussion
+-   [x] 13\. März: Diskussion
 -   [ ] 7\. April: Festlegung Fragestellung
 -   [ ] 16\. Juni: Positionspapier
 
@@ -50,20 +50,17 @@ Arbeitsstätten mit sehr schlechten Bedingungen
 
 -   Unmenschliche Zustände
 
-### Drei Ethiksansätze
+### Drei Ethikansätze
 
--   Tugendethik (was ich kann)
-    -   Charakter/Können: mutig sein, grosszügig sein
--   Folgenethik (Was ich will)
-    -   Abwägen Nutzen / Schaden
--   Pflichenethik (Was ich soll)
-    -   Du sollst, du darfst nicht
+| Tugendethik                                                | Folgenethik                            | Pflichenethik                            |
+| ---------------------------------------------------------- | -------------------------------------- | ---------------------------------------- |
+| was ich kann: Charakter/Können: mutig sein grosszügig sein | Was ich will: Abwägen Nutzen / Schaden | Was ich soll: Du sollst, du darfst nicht |
 
-drei Wege, welche einen Menschen bewegen etwas zu tun:
+-   drei Wege, welche einen Menschen bewegen etwas zu tun:
 
--   aus innerer Einsicht
--   aus Nützlichkeitserwägungen
--   aus Vermeidung vor Strafe
+    -   aus innerer Einsicht
+    -   aus Nützlichkeitserwägungen
+    -   aus Vermeidung vor Strafe
 
 ### Was ist Ethik
 
@@ -99,7 +96,7 @@ Recht auf Selbstbestimmung/Autonomie:
 
     - Ethische Fragen zu Technologie selbst, u.a.:
     - Datenethische Fragen: z.B. Verhältnismässigkeit, Transparenz, Einwilligung
-    - Algorithmenethische Fragen bzw. Ethik der KI: z.B. Nachvollziehbarkeit, Biases, Qualität von Trainingsdaten
+    - Algorithmenethische Fragen bzw. Ethik der KI: z.B. Nachvollziehbarkeit, , Biases, Qualität von Trainingsdaten
     - Vertrauenswürdigkeit
     - Menschenwürde
 
@@ -116,3 +113,58 @@ Recht auf Selbstbestimmung/Autonomie:
     - (Willens-)Freiheit
     - Mensch/Maschine und deren Interaktion
     - Natur/Artefakt/Biofakt
+
+### KI Notizen
+
+!!! warning
+
+    Zämefassig mache!
+
+John McCarthy (1927, 2011) ist der Vater von KI als akademisches Fachgebiet.
+
+#### Grundbegriffe KI
+
+**Weak AI:**
+
+-   Simulation des menschlichen Denkens
+-   Machine Learning
+-   Basieren auf statistischen Modellen
+
+**Strong AI:**
+
+-   Ability to think
+
+Turing-Test
+
+**Ein Versuch die Intelligenz zu definieren:**
+
+-   There is no such thing as artifical intelligence.
+-   Die Intelligenz ist das Vermögen, die Regeln und Überzeugungen des Augenblickes zu brechen.
+-   Innovative Menschen bringen sich freiwillig in unbequeme Situationen, indem sie sich mit Menschen aus völlig anderen Fachbereichen oder mit komplett anderen Ansichten austauschen
+
+-   Menschliches Verhalten gegenüber rationalem Verhalten
+-   Denken gegenüber Handeln
+
+**Ziel der Künstlichen Intelligenz:**
+
+#### Warum digitale Ethik?
+
+Grundfragen der Ethik:
+
+-   Was ist das gute Leben?
+-   Was soll ich tun?
+
+implizieren:
+
+-   Idee der menschlichen Freiheit
+-   Idee der Nicht-Gleichgültigkeit verschiedener Handlungsweisen
+
+#### Analyse nach Haupttheorien der Ethik
+
+Anwendung von Moral ist Ethik
+
+#### Neutralität von Algorithmen und Daten
+
+#### Schlussfolgerung
+
+KI soll unterstützen und nicht ersetzen.

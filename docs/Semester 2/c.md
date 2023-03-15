@@ -50,8 +50,8 @@
 
 **Void pointers**
 
-- mostly used for function paramaters, function can accept any data type.
-- must first be explicitly cast to a data type before use.
+-   mostly used for function paramaters, function can accept any data type.
+-   must first be explicitly cast to a data type before use.
 
 ### Dynamic Memory
 
@@ -126,7 +126,7 @@ char myChar = fgetc(myFile);
 
 returns `EOF` if character could not be read correctly.
 
-for reading a string the `fgets(char* str, int nchars, FILE* fptr)` function can be used, where the arguments are the string (char \*) where it is written to in memory, the length of the string to read and the file. It reads either until `'\n'` is detected or nchars are read. If read correctly it returns the pointer to the str otherwise NULL.
+for reading a string the `fgets(char* str, int nchars, FILE* fptr)` function can be used, where the arguments are the string (char \*) where it is written to in memory, the length of the string to read and the file. It reads either until a whitespace is detected or nchars are read. If read correctly it returns the pointer to the str otherwise NULL.
 
 ```c title=""
 char* sptr = fgets(myBuffer, 50, myFile);
@@ -264,12 +264,12 @@ fpos_t here;
 fgetpos(fp, &here);
 ```
 
-For setting the position you can use `seek(FILE *fp, long offset, int origin);` the second offset determines the offset
+For setting the position you can use `fseek(FILE *fp, long offset, int origin);` the second offset determines the offset
 in bytes based on the origin given in the 3rd argument. Valid origin values are:
 
-- SEEK_SET - beginning of file
-- SEEK_CUR - current position
-- SEEK_END - end of file
+-   SEEK_SET - beginning of file
+-   SEEK_CUR - current position
+-   SEEK_END - end of file
 
 ```c title="Example" linenums="1"
 FILE* fp = fopen("file.txt", "w+");
@@ -279,4 +279,5 @@ FILE* fp = fopen("file.txt", "w+");
 seek(fp, 0, SEEK_SET); // set cursor to beginning of file
 ```
 
-or you can use `fsetpos(FILE* pfile, fpost_t *position)`
+Or you can use `fsetpos(FILE* pfile, fpost_t *position)` where the struct is of the type you get from `fgetpos()`.
+`fsetpos()` can bring you only to a position you have been before. `fseek()` can bring you anywhere in the file.

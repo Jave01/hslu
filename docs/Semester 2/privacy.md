@@ -15,7 +15,7 @@ Gruppenarbeit Note ist eine Gruppennote
 ### Deadlines
 
 -   [x] 03\. März: Gruppenbildung
--   [ ] 10\. März: Executive Summaries
+-   [x] 10\. März: Executive Summaries
 
 ## Inhalt
 
@@ -132,3 +132,12 @@ Diese liegt vor, wenn niemand mehr in der Lage ist, den Personenbezug wiederherz
 
 TPEG-Zugriff (Transpoort Protocol Experts Group)  
 ist eine Serie von Datenprotokollen für die Übertragung von Verkehrs- und Reiseinformationen.
+
+#### Gesichtserkennung
+
+1. Gesichtsfindung
+2. Referenzpunktdetektor (Augen, Nase, Mund, etc.)
+3. Gesichtserkennung
+    - Identifikation
+    - Verifikation
+    - Analyse
