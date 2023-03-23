@@ -137,7 +137,7 @@ Mängel müssen detailliert nach 2 Tagen vorliegen.
 
 Vorgehen:
 
--   Erfsasen der Ausgangslage
+-   Erfassen der Ausgangslage
 -   Aufgabe umfasst folgendes:
     -   Gemäss Prüfschema durchgehen (Welche Art von Vertrag liegt vor?)
     -   Schreiben aufsetzen
@@ -145,3 +145,8 @@ Vorgehen:
 -   Coaching Termin gem. Liste
 -   Abgabe von maximal 4 Seiten an andrehenry.kuhn@hslu.ch
 -   Abgabetermin: 28. März
+
+!!!abstract "Beachten"
+
+    - Korrektheit der rechtlichen Ausdrücke
+    - Art des Vertrages bestimmen (kein richtig oder falsch, nur gut begründen)

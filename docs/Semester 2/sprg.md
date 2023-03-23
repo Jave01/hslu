@@ -106,12 +106,12 @@ see slides SW02
 
 | Description        | Example           |
 | ------------------ | ----------------- |
-| Use Case Name      | pour Coffee       |
-| Use Cases          | Pour Coffe        |
-| System             | Coffee machine    |
-| Akteur             | User              |
-| Trigger            | Button press      |
-| Success Guarantees | Hot coffee in cup |
+| Use Case Name      | pour coffee       |
+| Use Cases          | pour coffee       |
+| System             | coffee machine    |
+| Akteur             | user              |
+| Trigger            | button press      |
+| Success Guarantees | hot coffee in cup |
 
 ### Models
 
@@ -155,3 +155,78 @@ f --> a
 -   Authorization
 -   Availability
 -   Non-repudiation
+
+### STRIDE
+
+A framework for analyzing cyber security threats.
+
+-   **S**poofing
+-   **T**tampering: Refers to the ability of an attacker to modify or alter data or code within a system or application.
+-   **R**repudiation: Refers to the ability of an attacker to deny their involvement or actions within a system or application.
+-   **I**information disclosure: Refers to the ability of an attacker to access sensitive information that they should not have access to.
+-   **D**denial of service
+-   **E**elevation of privilege
+
+### DREAD
+
+A methology for risk rating
+
+-   **D**amage - how bad would an attack be
+-   **R**eproducability - how easy is it to reproduce the attack
+-   **E**xploitability - how much work is it to launch the attack
+-   **A**ffected users - how many people will be impacted
+-   **D**iscoverability - how easy is it to discover the threat
+
+DREAD rating is giving every 'character' a rating from 1-3, adding the numbers together and evaluate:
+
+| Naming | Points |
+| ------ | ------ |
+| High   | 12-15  |
+| Medium | 8-11   |
+| Low    | 5-7    |
+
+Example:
+
+| Threat        | D   | R   | E   | A   | D   | Total | Level |
+| ------------- | --- | --- | --- | --- | --- | ----- | ----- |
+| SQL Injection | 3   | 3   | 3   | 3   | 2   | 14    | High  |
+
+### Mitigate
+
+**Inventing Mitigation is hard**
+
+-   Mitigations are an area of expertise, such as networking, databases or cryptography
+-   Amateurs make mistakes, but so do pros
+-   Mitigation failures may appear to work... until they don't...
+-   When you need to invent mitigations, get expert support
+-   Always write a detailed Threat Model (protocol, port, everything you found out)
+
+#### Cheat Sheet: different threats in DFD
+
+![asdf](../assets/cheat_sheet_sprg_threats.png)
+
+#### How to address threats
+
+4 ways to address threats
+
+1. Redesign to eliminate
+2. Appliy standard mitigations
+    - what has worked for similar software packages
+3. Invent new mitigations (riskier)
+4. Accept vulnerability in design
+    - Example: using closed source OS
+    - Can be covered by insurance
+
+### Attack Trees
+
+Visualize a threat and the possibilities on how to execute it, including some details like price and effort.
+
+-   Steal customer data
+    -   obtain backup media
+    -   intercept email
+        -   bribe admin at ISP
+        -   hack remote user's home system
+        -   hack SMTP gateway
+    -   Hack into fileserver
+        -   hack through firewall into internal network
+

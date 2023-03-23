@@ -168,3 +168,14 @@ Anwendung von Moral ist Ethik
 #### Schlussfolgerung
 
 KI soll unterstützen und nicht ersetzen.
+
+### Recht
+
+Ist Recht immer ethisch / vice versa.
+
+Recht ist nicht überall gleich.
+
+#### Ethische Abwägungen
+
+-   Deontologie (Pflichtenethik): du sollst nicht töten -> überall gleich.
+-   Utilitarismus (Nutzethik)

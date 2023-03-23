@@ -1,12 +1,19 @@
-#ifndef PW_MANAGER_MAIN_H
-#define PW_MANAGER_MAIN_H
+#ifndef _MAIN_H
+#define _MAIN_H
 
 /**********************************************************************************************
  * Includes 
  **********************************************************************************************/
 #include <stdbool.h>
 #include <stdlib.h>
-#include "file_handler.h"
+
+
+/**********************************************************************************************
+ * Constants 
+ **********************************************************************************************/
+#define MAX_KEY_LEN     30
+#define MAX_VAL_LEN     50
+#define MAX_LINE_LEN    MAX_KEY_LEN + MAX_VAL_LEN + 2 //!< Key + Value + ':' + '\n'
 
 
 /**********************************************************************************************
@@ -31,4 +38,4 @@ bool set_entry(pw_list_t* pw_list, char* key, char* val);
 
 
 
-#endif /* PW_MANAGER_MAIN_H */
+#endif /* _MAIN_H */

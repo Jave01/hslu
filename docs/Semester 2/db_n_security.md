@@ -126,6 +126,11 @@ Data Management comprises all methods related to creating value from data as a r
     - Data Modelling
     - Database Schema
 
-
 ### Datenbankmodellierig
 
+Lessons learned:
+
+1. Verständliche Tabellennamen
+2. Verständliche Spaltennamen
+3. Verständliche Datenwerte
+4. Bei Referenzen: Fremdschlüssel dokumentieren (DBMS / Doku)
