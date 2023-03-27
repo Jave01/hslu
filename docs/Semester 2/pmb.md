@@ -143,3 +143,11 @@ P-Mitarbeiter unterstehen nach wie vor den Linienvorgesetzten (fachlich, diszipl
     unterstützt korrektes Vorgehen und stellt die Qualität sicher
 -   **Scrum Team**  
     Entwickler:innen, die selbstorganisiert und eigenverantwortlich in den Sprints die Software entwerfen, erstellen und testen
+
+### SMART
+
+-   **S**pezifisch
+-   **M**essbar
+-   **A**ttraktiv
+-   **R**ealisierbar
+-   **T**erminiert

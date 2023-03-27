@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1678380297 "/home/dave/Documents/hslu/SEM2/DMATH/Formelsammlung/Formelsammlung.tex" "Formelsammlung.pdf" "Formelsammlung" 1678380299
+["pdflatex"] 1679573759 "/home/dave/Documents/hslu/SEM2/DMATH/Formelsammlung/Formelsammlung.tex" "Formelsammlung.pdf" "Formelsammlung" 1679573762
   "/etc/texmf/web2c/texmf.cnf" 1677070188 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/dave/Documents/hslu/SEM2/DMATH/Formelsammlung/Formelsammlung.tex" 1678380297 21557 d387b299be407605b8ab9c7f08817774 ""
+  "/home/dave/Documents/hslu/SEM2/DMATH/Formelsammlung/Formelsammlung.tex" 1679573759 21555 dbc9c8409e963715468b85db8ba5ea61 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -230,10 +230,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1677071006 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1677071038 2801667 df63f65a3ae4d30d6bfed24b773e030c ""
-  "Formelsammlung.aux" 1678380299 24016 0638affc4c054a8a924bc44262535d70 "pdflatex"
-  "Formelsammlung.out" 1678380298 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Formelsammlung.tex" 1678380297 21557 d387b299be407605b8ab9c7f08817774 ""
-  "Formelsammlung.toc" 1678380299 5121 66c0fa147e4785e9f8083ea956d30024 "pdflatex"
+  "Formelsammlung.aux" 1679573762 24016 0638affc4c054a8a924bc44262535d70 "pdflatex"
+  "Formelsammlung.out" 1679573760 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Formelsammlung.tex" 1679573759 21555 dbc9c8409e963715468b85db8ba5ea61 ""
+  "Formelsammlung.toc" 1679573762 5121 66c0fa147e4785e9f8083ea956d30024 "pdflatex"
   "img/Rechenregeln_mit_mengen.png" 1677741380 197206 d7157c9f83f83851a1dff1925c4f0f05 ""
   "img/euqlidic_algorithm.png" 1678377694 79041 3988bf64d9ad534b7d60d8a077ac0ec6 ""
   "img/logic_equivalence_rules.png" 1677162750 168417 beb2ae306ee77a11cd54f358772be689 ""
