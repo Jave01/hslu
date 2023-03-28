@@ -11,3 +11,4 @@ heisst
 Faktorregel
 Zerlegungsregel
 schliessen
+folgendermassen

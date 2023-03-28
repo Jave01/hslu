@@ -608,6 +608,7 @@ ggT ist jeweils 1 und 3.
 Eine m $\times$ n-Matrix ist eine rechteckige Anordnung von Zahlen in m Zeilen und n
 Spalten.\\
 
+\renewcommand{\arraystretch}{1}
 \textbf{A} = 
 $
 \begin{bmatrix}
@@ -646,12 +647,162 @@ Keywords: symmetrisch, antisymmetrisch, Einheitsmatrix, k-te Potenz
 
 \includegraphics[width=16cm]{img/matrizen_eigenschaften.png}
 
-TODO: Inverse Matrix und Matrizen Eigenschaften allgemein
+TODO: (SW03) Inverse Matrix und Matrizen Eigenschaften allgemein \& Rechenregeln mit Matrizen.
 
 \subsection{Null-Eins Matrizen}
+Auch boolesche Matrizen genannt.\\
+
+Boolesches Matrizen Produkt wird folgendermassen geschrieben: $\mathbf{A} \odot  \mathbf{B}$.\\
+
+\includegraphics[width=15cm]{img/boolesches_produkt.png}
+
+\newpage
+Eine quadratische Matrix kann auch eine Potenz haben:\\
+$\mathbf{A}^{[r]} = \mathbf{A} \odot \mathbf{A} \dots \odot \mathbf{A}$:\\
+
+\renewcommand{\arraystretch}{1}
+$\mathbf{A} = 
+\begin{bmatrix}
+    0 & 0 & 1\\
+    1 & 0 & 0\\
+    1 & 1 & 0
+\end{bmatrix}\quad\quad \mathbf{A}^2 = \mathbf{A} \odot \mathbf{A} = 
+\begin{bmatrix}
+    0 & 0 & 1\\
+    1 & 0 & 0\\
+    1 & 1 & 0
+\end{bmatrix} 
+\odot
+\begin{bmatrix}
+    0 & 0 & 1\\
+    1 & 0 & 0\\
+    1 & 1 & 0
+\end{bmatrix}$
+
+\newpage
+\section{Mathematisches Begründen}
+Bekannte Beweismethoden:
+\begin{itemize}
+    \item \textbf{Direkter Beweis:} Man zeigt, dass $p \rightarrow q$ wahr ist.
+    \item \textbf{Beweis durch Kontraposition:} Man verwendet, dass $p \rightarrow q$ äquivalent ist zur Kontraposition
+            $\lnot q \rightarrow \lnot q$.
+    \item \textbf{Beweis durch Widerspruch:} Wir möchten zeigen, dass $p$ wahr ist indem\dots
+\end{itemize}
+
+
+\subsection{Mathematische Induktion}
+
+\begin{enumerate}
+    \item \textbf{Induktionsverankerung:} Für die kleinste Zahl zeigen, dass die Formel wahr ist (1 bei $n \in \mathbb{N}$).
+    \item \textbf{Induktionsschritt:} Es wird gezeigt, dass die Implikation $P(k) \rightarrow P(k+1)$ wahr ist $\forall k \geq 1$.
+\end{enumerate}
+
+Beispiel: Dominosteine $\rightarrow$ falls der erste fällt, muss der 2. auch fallen. Falls der 2.
+fällt muss der 3. auch fallen.\\
+
+\textbf{Hinweis:} Immer zuerst überlegen was am Schluss herauskommen sollte, falls der Beweis mit Induktion
+bewiesen werden kann, dann fällt auch das Beweisen leichter.
+
+
+\subsection{Rekursiv definierte Funktionen}
+Wenn eine Funktion mit Definitionsbereich $D(f) = \mathbb{N}$ für die f(0) definiert ist und
+bei welcher f(k) durch f(k-1), f(k-2) \dots f(1), f(0) berechnet wird.
+\textbf{Beispiel:} Fibonacci Folge.\\
+
+Diese kann man auch mit Induktion beweisen.
+
+
+\subsection{Beispiel Türme von Hanoi}
+Vermutung: $f(n) = 2^n - 1$\\
+Das heisst $f(n+1) = 2^{n+1} - 1$\\
+
+
+$f(1) = 2 - 1 = 1$: stimmt\\
+Es braucht $2^n$ Züge um einen Turm zu bewegen.\\
+Dann brauch es +1 um die unterste Scheibe (n+1 Scheibe) zu verschieben.\\
+Und schlussendlich noch einmal $2^n + 1$\\
+Das ergibt: $2* (2^n-1) + 1 = 2^{n+1} - 2 + 1 = 2^{n+1} - 1$ \\
+\underline{Vermutung stimmt.}
+
+\section{Grundlagen des Zählens}
+\subsection{Zusammenfassung}
+\includegraphics[width=15cm]{img/wahrscheinlichkeiten.png}
+
+
+\subsection{Schubfachprinzip}
+Es gibt wenigstens ein Fach in das mehr als 2 Objekte reingehen.\\
+
+\textbf{Beispiel:} In jeder Menge von 5 Zahlen gibt es 2, welche bei einer
+Division durch 4 den gleichen Rest geben.\\
+Bei einer Divison durch 4 gibt es Reste von 0, 1, 2 oder 3. Man hat 5 Zahlen, heisst
+2 Zahlen müssen sich denselben Rest teilen.\\
+
+
+\subsection{Permutationen}
+Eine Permutation von $n$ verschiedenen Elementen ist eine geordnete Anordnung dieser $n$ Elemente.\\
+Das heisst die Anordnung (3,1,2) der Menge S={1,2,3} ist eine Permutation von $S$.\\
+3-Permutationen ((1,2,3), (1,3,2), (2,1,3), (2,3,1), (3,1,2), (3,2,1)): 3!\\
+2-Permutationen ((1,2), (1,3), (2,1), (2,3), (3,1), (3,2)): $2 \cdot 3$\\
+
+Allgemeine Formel für Anzahl r-Permutationen einer Menge von n Elementen:\\
+
+\[P(n, r) = \frac{n!}{(n-r)!}\text{, } \quad 0 \leq r \leq n \in \mathbb{N}\]
+
+n = die Anzahl Elemente\\
+r = die Anzahl Elemente im Tuple\\
+
+Die Reihenfolge \textbf{spielt} eine Rolle.
+
+
+\newpage
+\subsection{Permutation nicht unterscheidbarer Objekte}
+Die Anzahl verschiedener Permutationen von n Objekten, von denen $n_1$ Objekte der Art 1, $n_2$ Objekte der Art 2, 
+\dots, $n_k$ Objekte der Art k sind, ist gegeben durch:
+
+\[\frac{n!}{n_1!n_2! \dots n_k!} \text{, wobei } n = \sum_{i=1}^{k} n_i\]
+
+\textbf{Beispiel:}\\
+wie viele Wörter kann man aus den Zeichen von SUCCESS machen?\\
+$n = SUCCESS = 7$\\
+$n_1 = S = 3$\\
+$n_2 = U = 1$\\
+$n_3 = C = 1$\\
+$n_4 = E = 2$\\
+
+Ergibt: $\displaystyle{\frac{7!}{3!2!1!1!} = \frac{7!}{3 \cdot 2 \cdot 2} = 420}$
+
+\subsection{Kombinationen}
+
+Für $S = \{1, 2, 3, 4\}$ ist \{1, 3, 4\} eine 3-Kombination von S. Beachte, dass \{3, 1, 4\} die selbe
+3-Kombination von S ist.\\
+
+Die Reihenfolge spielt \textbf{keine} Rolle.\\
+
+Die Anzahl von $r$-Kombinationen einer Menge von $n \geq 0$ Elementen isst gegeben durch:
+
+\[C(n, r) = \frac{n!}{r!(n-r)!} = \binom{n}{r} = C(n, n-r)\]
+
+n = die Anzahl Elemente\\
+r = die Anzahl Elemente im Set\\
 
 
 
+
+\subsection{Kombinationen mit Wiederholungen}
+\textbf{Beispiel:} Wie viele verschiedene Früchteschalen kann man mit Äpfeln, Orangen und Birnen
+machen, wenn immer 4 Früchte verwendet werden?\\
+AAAA, AAAO, AAAB, AAOO, AAOB \dots\\
+
+\[C(n+r-1, r) = \binom{n+r-1}{r}\]
+
+
+% Matrix example
+% $
+% \begin{bmatrix}
+%     a_{1,1} & a_{1,2} & a_{1,n}\\
+%     a_{2,1} & a_{2,2} & a_{2,n}\\
+%     a_{m,1} & a_{m,2} & a_{m,n}
+% \end{bmatrix}$\\
 
 % tabular example 3 columns
 % \renewcommand{\arraystretch}{1.5}

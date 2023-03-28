@@ -1,0 +1,4 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Vollständige Induktion}{2}{section.1}%
+\contentsline {section}{\numberline {2}Rekursiv definierte Funktionen}{4}{section.2}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

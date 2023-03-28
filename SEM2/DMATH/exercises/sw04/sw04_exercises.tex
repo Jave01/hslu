@@ -1,0 +1,197 @@
+\documentclass[12pt]{scrartcl}
+\usepackage[ngerman]{babel}
+
+
+\usepackage{amsmath, amssymb}
+
+\usepackage{array}  % for the tables
+
+\usepackage{nameref}  % for referencing with name
+
+\usepackage{hyperref}  % for hyperlinks
+
+\usepackage{mathrsfs}
+
+\usepackage{graphicx}  % for the images
+
+\usepackage{xcolor, colortbl}
+
+\usepackage{gensymb} % for \degree
+
+\usepackage{pgfplots}
+
+\usepackage{tabto}
+
+\usepackage{ulem} % \uuline
+
+\usetikzlibrary{arrows}
+
+% \usepgfplotslibrary{external}
+
+% \tikzexternalize
+
+\definecolor{Gray}{gray}{0.85}
+
+\setlength{\parindent}{0cm}
+
+\newcommand{\RomanNumeralCaps}[1]
+    {\MakeUppercase{\romannumeral #1}}
+
+% hyperlinks
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\bibliographystyle{IEEetran}
+
+
+
+
+\author{David Jäggli}
+
+\title{Diskrete Mathematik - Übungen SW04}
+
+
+
+% ---------- Begin Main Document ----------- %
+
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+\section{Vollständige Induktion}
+\textbf{I.)}\\
+Folgende Aussage beweisen: $H_{2n} \geq 1+\displaystyle{\frac{n}{2}}$, $\quad\forall n \in \mathbb{N}$.\\
+
+1. \textbf{IV:} für $n=0$: $\quad1 \geq 1 = $ wahr.\\
+2. \textbf{IS:} \\
+\[H_{2^{n+1}} \geq 1 + \frac{n}{2} = 1 + \frac{1}{4} + \frac{1}{8} + \dots + \frac{1}{2^n} + \frac{1}{2^{n+1}} = H_{2^n} + \frac{1}{2^{n+1}}\] 
+
+{\huge \color{red}{$\times$}\par}
+
+Keine Ahnung warum $H_{2^{n+1}}$ so definiert ist, wie in den Lösungen.\\
+
+
+\textbf{II.)}\\
+
+\[\binom{a}{k} =
+\begin{cases}
+    \frac{a \cdot (a-1) \cdot \dots \cdot (a-k-1)}{k!} & k>0\\
+    1 & k=0
+\end{cases}
+\]
+
+$\displaystyle{\binom{2n+1}{n} > 2^{n+1}}$\\
+
+\textbf{Induktionsverankerung:}\\
+
+$a=2$, $\quad\displaystyle{\binom{4+1}{2} > 2^{2+1} = \frac{5 \cdot 4 \cdot 3 \cdot 2}{2}} > 8$\\
+$a=3$, $\quad\displaystyle{\binom{6+1}{3} > 2^{3+1} = \frac{7 \cdot 6 \cdot 5 \cdot 4 \cdot 3   }{6}} > 16$\\
+
+Alle wahr\\
+
+\textbf{Induktionsschritt:}\\
+
+$\quad\displaystyle{\binom{2(n+1)+1}{n+1} = \binom{2n+3}{n+1} > 2^{n+2}}$\\
+
+\[\binom{2n+3}{n+1} = \frac{(2n+3) \cdot (2n+2) \cdot (n+3) \dots (n+1) \cdot 1}{1 \cdot 2 \cdot 3 \dots n \cdot (n+1)}\]
+
+Ganz ehrlich: wie man von hier auf die richtige Lösung kommt, ist absolut random.
+
+\newpage
+\textbf{III.)}\\
+
+Es gilt folgendes zu beweisen:\\
+
+$\displaystyle{\sum_{k=0}^{n} (2k+1)^2 = \frac{(n+1)(2n+1)(2n+3)}{3}}$, $\quad n \in \mathbb{N}$\\
+
+\textbf{Induktionsverankerung:}\\
+
+$\displaystyle{1^2 = \frac{1 \cdot 1 \cdot 3}{3}} = $ true\\
+
+$\displaystyle{1^2 + 3^2 = \frac{2 \cdot 3 \cdot 5}{3}} = $ true\\
+
+
+\textbf{Induktionsschritt:}\\
+
+$\displaystyle{1^2 + 3^2 + 5^2 + \dots + (2n + 1)^2 + (2n + 3)^2 = \frac{(n+1)(2n+1)(2n+3)}{3} + \frac{3 \cdot (2n + 3)^2}{3}} = $\\
+
+$\displaystyle{\frac{4n^3 + 12n^2 + 11n + 3 + 12n^2 + 36n + 27}{3} = \frac{4n^3 + 24n^2 + 47n + 30}{3}} = $\\
+
+$\displaystyle{\frac{(n+2)(2n+3)(2n+5)}{3}}$
+
+
+
+\newpage
+\section{Rekursiv definierte Funktionen}
+\textbf{V.)}\\
+
+$H1: \forall x [f(x) \rightarrow r(x) \lor s(x)]$\\
+$H2: f(DI) \lor f(DO)$\\
+$H3: \lnot (r(DI) \lor s(DI)))$\\
+$H4: \lnot s(DO)$\\
+
+H1: $f(DI) \rightarrow (r(DI) \lor s(DI))$ zusammen mit H3 = $\lnot f(DI)$\\
+Dann muss H2: $f(DO)$\\
+
+H1: $f(DO) \rightarrow r(DO) \lor s(DO)$ zusammen mit H4 und obigem Ergebniss: $r(DO)$\\
+
+Ergibt gesamthaft:
+\begin{enumerate}
+    \item $\lnot f(DI)$: Dienstag regnet es nicht
+    \item $f(DO)$: Ich nehme am Donnerstag frei
+    \item $r(DO)$: Es regnet am Donnerstag
+\end{enumerate}
+
+
+% Matrix example
+% \textbf{Korrektur:}\\
+% $\mathbf{A} \odot \mathbf{B} =
+% \begin{bmatrix}
+%     1 & 1 & 1 \\
+%     1 & 1 & 1 \\
+%     1 & 0 & 1 \\
+% \end{bmatrix}
+% $
+
+% tabular example 3 columns
+% \renewcommand{\arraystretch}{1.5}
+% \begin{center}
+%     \begin{tabular}{ | m{12em} | m{12em} | m{12em} | }
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%     \end{tabular}
+% \end{center}
+
+
+% tabular example 2 columns
+% \renewcommand{\arraystretch}{1.5}
+% \begin{center}
+%     \begin{tabular}{ | m{17em} | m{17em} | }
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%     \end{tabular}
+% \end{center}
+
+% \bibliography{}
+
+\end{document}
