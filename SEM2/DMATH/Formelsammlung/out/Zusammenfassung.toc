@@ -66,8 +66,9 @@
 \contentsline {subsection}{\numberline {13.3}Beispiel Türme von Hanoi}{26}{subsection.13.3}%
 \contentsline {section}{\numberline {14}Grundlagen des Zählens}{27}{section.14}%
 \contentsline {subsection}{\numberline {14.1}Zusammenfassung}{27}{subsection.14.1}%
-\contentsline {subsection}{\numberline {14.2}Permutationen}{27}{subsection.14.2}%
-\contentsline {subsection}{\numberline {14.3}Permutation nicht unterscheidbarer Objekte}{28}{subsection.14.3}%
-\contentsline {subsection}{\numberline {14.4}Kombinationen}{28}{subsection.14.4}%
-\contentsline {subsection}{\numberline {14.5}Kombinationen mit Wiederholungen}{28}{subsection.14.5}%
+\contentsline {subsection}{\numberline {14.2}Schubfachprinzip}{27}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3}Permutationen}{27}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4}Permutation nicht unterscheidbarer Objekte}{29}{subsection.14.4}%
+\contentsline {subsection}{\numberline {14.5}Kombinationen}{29}{subsection.14.5}%
+\contentsline {subsection}{\numberline {14.6}Kombinationen mit Wiederholungen}{29}{subsection.14.6}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

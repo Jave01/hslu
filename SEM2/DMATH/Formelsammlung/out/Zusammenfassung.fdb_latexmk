@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1679663900 "c:/dev/hslu/SEM2/DMATH/Formelsammlung/Zusammenfassung.tex" "Zusammenfassung.pdf" "Zusammenfassung" 1679663904
+["pdflatex"] 1680012536 "c:/dev/hslu/SEM2/DMATH/Formelsammlung/Zusammenfassung.tex" "Zusammenfassung.pdf" "Zusammenfassung" 1680012540
   "C:/Users/david/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1673529487 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/david/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1666711546 14064 6c8499da728846afd25976282ad50d43 ""
   "C:/Users/david/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1667138804 688 37338d6ab346c2f1466b29e195316aa4 ""
@@ -229,10 +229,10 @@
   "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1654690828 12694 4770336659ba563be5de2e0739d61ddc ""
   "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "C:/dev/hslu/SEM2/DMATH/Formelsammlung/out/Zusammenfassung.aux" 1679663904 28550 7e1e7d96e35957be086f6182af766dfd ""
+  "C:/dev/hslu/SEM2/DMATH/Formelsammlung/out/Zusammenfassung.aux" 1680012540 28924 a3e395220f82888f44bea275fb4dba69 ""
   "C:/dev/hslu/SEM2/DMATH/Formelsammlung/out/Zusammenfassung.out" 0 -1 0 ""
-  "C:/dev/hslu/SEM2/DMATH/Formelsammlung/out/Zusammenfassung.toc" 1679663904 6035 afa5483bbd01d534f2095594f5720e4a ""
-  "c:/dev/hslu/SEM2/DMATH/Formelsammlung/Zusammenfassung.tex" 1679663896 27098 9f803e5b22a6220eea89c7ca5efd51e6 ""
+  "C:/dev/hslu/SEM2/DMATH/Formelsammlung/out/Zusammenfassung.toc" 1680012540 6120 033f4506e99fd372a6d088c2133df35c ""
+  "c:/dev/hslu/SEM2/DMATH/Formelsammlung/Zusammenfassung.tex" 1680012530 27458 8e734795b2a425f77e107763be5ac37f ""
   "img/Rechenregeln_mit_mengen.png" 1677676822 197206 d7157c9f83f83851a1dff1925c4f0f05 ""
   "img/boolesches_produkt.png" 1678882148 249265 0d068732947184efb4b7c3f538381472 ""
   "img/euqlidic_algorithm.png" 1678450686 79041 3988bf64d9ad534b7d60d8a077ac0ec6 ""
@@ -244,9 +244,9 @@
   "img/wachstum_example_1.png" 1678278181 241115 24b5bb3f417ed34b39b8857887a1b099 ""
   "img/wachstum_example_2.png" 1678278800 192700 135f1f673abe69596e41ee8b44ae8ad0 ""
   "img/wahrscheinlichkeiten.png" 1679663882 129936 6e4496747f6273de6362f6612154a029 ""
-  "out/Zusammenfassung.aux" 1679663904 28550 7e1e7d96e35957be086f6182af766dfd "pdflatex"
+  "out/Zusammenfassung.aux" 1680012540 28924 a3e395220f82888f44bea275fb4dba69 "pdflatex"
   "out/Zusammenfassung.out" 0 -1 0 "pdflatex"
-  "out/Zusammenfassung.toc" 1679663904 6035 afa5483bbd01d534f2095594f5720e4a "pdflatex"
+  "out/Zusammenfassung.toc" 1680012540 6120 033f4506e99fd372a6d088c2133df35c "pdflatex"
   (generated)
   "Zusammenfassung.pdf"
   "out/Zusammenfassung.aux"

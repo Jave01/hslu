@@ -15,7 +15,7 @@ Gruppenarbeit Note ist eine Gruppennote
 ### Deadlines
 
 -   [x] 03\. März: Gruppenbildung
--   [ ] 10\. März: Executive Summaries
+-   [x] 10\. März: Executive Summaries
 
 ## Inhalt
 
@@ -124,7 +124,7 @@ Diese liegt vor, wenn niemand mehr in der Lage ist, den Personenbezug wiederherz
 
 #### Mobile Tracking
 
-!!! warning "do not track"
+!!! warning "informative website 'do not track'"
 
     [website](https://donottrack-doc.com/en/intro)
 
@@ -132,3 +132,41 @@ Diese liegt vor, wenn niemand mehr in der Lage ist, den Personenbezug wiederherz
 
 TPEG-Zugriff (Transpoort Protocol Experts Group)  
 ist eine Serie von Datenprotokollen für die Übertragung von Verkehrs- und Reiseinformationen.
+
+#### Gesichtserkennung
+
+1. Gesichtsfindung
+2. Referenzpunktdetektor (Augen, Nase, Mund, etc.)
+3. Gesichtserkennung
+    - Identifikation
+    - Verifikation
+    - Analyse
+
+### RFID
+
+| Short | meaning                        |
+| ----- | ------------------------------ |
+| RFID  | radio frequency identification |
+| NFC   | near field contact             |
+
+#### E-Passport
+
+Für das Auslesen von Fingerabdrücken / einfordern von sensiblen Daten wird ein Auslesezertifikat benötigt.
+
+#### Access Control
+
+Basic Access Control (BAC) ermöglich den Zugriff auf grundlegende Passdaten, während Extended Access Control (EAC) verschlüsselte Kommunikation und Zugriff auf biometrische Daten ermöglicht.
+
+#### Crowds
+
+Webanfragen hinter anderen Crowds Diensbenutzer verbergen. Jeder Benutzer hat eine Applikation installiert (Jondos). Der Traffic wird über zufällige "Jondos" weitergeleitet.
+
+#### Mix
+
+Nachricht wird nicht direkt an Empfänger gesendet, stattdessen werden sie über zufällige Mixes gesendet.  
+**Grundfunktionen**:
+
+1. Löschen von Duplikaten
+2. Sammeln von Nachrichten
+3. Umkodierung der Nachrichten
+4. Umsortieren der Nachrichten

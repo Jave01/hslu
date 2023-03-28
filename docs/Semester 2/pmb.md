@@ -166,3 +166,11 @@ P-Mitarbeiter unterstehen nach wie vor den Linienvorgesetzten (fachlich, diszipl
 -   Testable -> muss testbar sein
 
 From above: INVEST
+
+### SMART
+
+-   **S**pezifisch
+-   **M**essbar
+-   **A**ttraktiv
+-   **R**ealisierbar
+-   **T**erminiert

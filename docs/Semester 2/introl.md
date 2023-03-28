@@ -7,57 +7,57 @@ Abgabe der Laborberichte anschliessend als PDF im Abgabeordner auf Ilias innerha
 
 ### Testatbedingungen
 
-- 6 Laborberichte
-- Testatabgabe "Open your Mind" (Präsentationen der Ergebnisse in der letzten Semesterwoche)
+-   6 Laborberichte
+-   Testatabgabe "Open your Mind" (Präsentationen der Ergebnisse in der letzten Semesterwoche)
 
 ### MEP
 
-- Elektronische Schlussprüfung
+-   Elektronische Schlussprüfung
 
 ### Labor
 
-- Einer- oder Zweiergruppen
-- 6 Laborberichte während Laborzeit ausfüllen und danach hochladen.
+-   Einer- oder Zweiergruppen
+-   6 Laborberichte während Laborzeit ausfüllen und danach hochladen.
 
 ### Literatur
 
-- [Computernetzwerke](https://www.orellfuessli.ch/suche?sq=978-3-86894-137-1)
-- [Wireshark](https://www.orellfuessli.ch/suche?sq=978-3-+95845-683-9)
+-   [Computernetzwerke](https://www.orellfuessli.ch/suche?sq=978-3-86894-137-1)
+-   [Wireshark](https://www.orellfuessli.ch/suche?sq=978-3-+95845-683-9)
 
 ## Inhalt
 
 ### Kreatives Denken
 
-- [Manager Magazin](http://www.manager-magazin.de/lifestyle/artikel/sieben-methoden-zum-innovativen-denken-a-1072513.html)
-- [Adversial Thinking](https://www.smokescreen.io/adversarial-thinking-improving-cybersecurity-with-ants-and-barcodes/)
-- [Quergedacht](https://www.orellfuessli.ch/suche?sq=978-3-8423-5956-7)
+-   [Manager Magazin](http://www.manager-magazin.de/lifestyle/artikel/sieben-methoden-zum-innovativen-denken-a-1072513.html)
+-   [Adversial Thinking](https://www.smokescreen.io/adversarial-thinking-improving-cybersecurity-with-ants-and-barcodes/)
+-   [Quergedacht](https://www.orellfuessli.ch/suche?sq=978-3-8423-5956-7)
 
 #### Modes of Thinking
 
 Convergent thinking:
 
-- Schuldenken
-- Using logic
-- also called:
+-   Schuldenken
+-   Using logic
+-   also called:
 
-  - Linear thinking
-  - Analytical thinking
-  - Vertical thinking
-  - Critical thinking
+    -   Linear thinking
+    -   Analytical thinking
+    -   Vertical thinking
+    -   Critical thinking
 
 Divergent thinking
 
-- Using imagination
-- Be creative
-- also called:
+-   Using imagination
+-   Be creative
+-   also called:
 
-  - Creative thinking
-  - Horizontal thinking
+    -   Creative thinking
+    -   Horizontal thinking
 
 Lateral thinking
 
-- Both convergent and divergent
-- Think "outside the box"
+-   Both convergent and divergent
+-   Think "outside the box"
 
 [Ted Talk](https://www.youtube.com/watch?v=gyM6rx69iqg)
 
@@ -80,40 +80,141 @@ Eine der wichtigsten Methoden. Die Lösung provokativ anders anzuschauen.
 
 1. Verfälschung
 
-   1. Das Basketballfeld ist schief
+    1. Das Basketballfeld ist schief
 
 2. Umkehrung
 
-   1. Der Hund geht mit dem Mensch gassi.
-   1. Der Schüler lehrt den Professor
+    1. Der Hund geht mit dem Mensch gassi.
+    1. Der Schüler lehrt den Professor
 
 3. Idealfall
 
-   1. Es gibt keinen Fehler
-   1. Die Batterie ist nie lehr
+    1. Es gibt keinen Fehler
+    1. Die Batterie ist nie lehr
 
 4. Übertreibung
 
-   1. Das Auto ist 20 Meter lang.
-   1. Der Tag hat 50 Stunden.
+    1. Das Auto ist 20 Meter lang.
+    1. Der Tag hat 50 Stunden.
 
 5. Aufhebung von Annahmen
 
-   1. Das Handy braucht keinen Strom
-   1. Die Schüler brauchen keinen Lehrer.
+    1. Das Handy braucht keinen Strom
+    1. Die Schüler brauchen keinen Lehrer.
 
 ### Netzwerke
 
+Commands:
+
+    nslookup 8.8.8.8 // lookup for public google DNS server
+
 #### Angriffsflächen des Internets
 
-- **Sniffing** - abhören von Informationen
-- **Manipulation** von Informationen
-- **Maskerading** - Verstecken hinter falscher Identität
-- **Replay** - wiedereinspielung von Informationen
-- **Umleiten** - um Daten besser abzuhören
-- **DoS** - Kommunikationssystem stören
-- **Hijacking** - Kommunikationsverbindung übernehmen
+-   **Sniffing** - abhören von Informationen
+-   **Manipulation** von Informationen
+-   **Maskerading** - Verstecken hinter falscher Identität
+-   **Replay** - wiedereinspielung von Informationen
+-   **Umleiten** - um Daten besser abzuhören
+-   **DoS** - Kommunikationssystem stören
+-   **Hijacking** - Kommunikationsverbindung übernehmen
 
 #### Analysatoren
 
 -> Just use Wireshark
+
+## Wireshark
+
+### TCP
+
+Seq number basiert auf irgendeiner Startnummer, welche als 0 (initiator) behandelt wird. Die nächste seq Nummer ist jeweils die jetzige Nummer + die Länge des Packets.
+
+### Features
+
+#### Statistics
+
+-   Flow Graph -> Visualisiert die Kommunikation zwischen 2 Endpunkten (z.B. TCP)
+-   I/O Graph -> wann wie viele Packete kommuniziert wurden
+-   Verbindungen -> paralelle Verbindungen visualisiert
+
+### IPv6
+
+IP: Ermöglicht die Kommunikation zwischen verschiedenen Netzwerken / LAN's  
+Vorteile von IPv6:
+
+1. Effizienteres Routing ohne Fragmentierung von Paketen
+2. Eingebaute QoS
+3. Eliminierung von NAT zur Erweiterung des Adressraums von 32 auf 128 Bit
+4. Eingebaute Sicherheit auf Netzwerkschicht (IPsec)
+5. Zustandslose Adressen-Autokonfiguration für einfachere Netzwerkverwaltung
+6. Verbesserte Header-Struktur mit weniger Verarbeitungsaufwand
+
+Erfinder von IP: Vinton G. Cerf zusammen mit Robert Kahn (Anfang 1974 spezifizierung, Ende 1974 RFC), ARPANET (erste Umsetzung 1983)
+
+| IPv | One to many | Sammlung von Computern mit demselben Prefix (nähster Server wird gewählt) | Header  |
+| --- | ----------- | ------------------------------------------------------------------------- | ------- |
+| 6   | Multycast   | Anycast                                                                   | 128 Bit |
+| 4   | Broadcast   | Auf IP Layer nicht möglich -> DNS                                         | 32      |
+
+Subnet and interface are always 64 bits long.  
+Für Subnet: 46 bit global routing prefix & 16 bit subnet.  
+Global routing prefix: 0-12bit RIR (registrare), 0-32 bit (ISP), 0-48 bit (site).
+
+```mermaid
+stateDiagram-v2
+
+    state IPv6 {
+        [*] --> Subnet(64bit)
+        [*] --> Address(64bit)
+
+        state Subnet(64bit) {
+            [*] --> RPR
+            [*] --> ISP
+            [*] --> SUB
+
+            state RPR {
+                [*] --> lorem
+            }
+
+            state ISP {
+                [*] --> lorem2
+            }
+
+            state SUB {
+                [*] --> lorem3
+            }
+        }
+
+        state Address(64bit){
+
+        }
+    }
+```
+
+Subnet(64bit) --> RPR
+Subnet(64bit) --> ISP
+Subnet(64bit) --> personal<span> <\span>subnet
+
+-   Registrare: ke ahnig
+-   ISP: Swisscom
+-   Site: site/allgemeines Subnet von Swisscom
+-   Subnet: dein eigenes Subnet
+
+| Name                 | IPv6          | IPv4                |
+| -------------------- | ------------- | ------------------- |
+| Loopback             | ::1           | Localhost 127.0.0.1 |
+| **RIPE**             | 2001:0600:... |                     |
+| **ARIN**             | 2001:04xx:... |                     |
+| **APNIC**            | 2001:02xx:... |                     |
+| Link-Local           | fe80::...     |                     |
+| Site-Local           | FEc0::...     |                     |
+| Multicast            | FF::...       | Broadcast           |
+| all-router Multicast | FF02::...     |                     |
+
+Link-Local funktioniert nur im lokalen LAN (Alternative zu DHCP). For generating Link-Local addresses, SLAAC can be used (like DHCP in IPv4). ARP not required, MAC address is part of SLAAC protocol.
+
+**SLAAC:**
+
+1. Generate address
+2. Is address used? yes -> go to 1, no -> use address
+
+Hat Sicherheitslücken -> ev. DHCPv6 brauchen.
