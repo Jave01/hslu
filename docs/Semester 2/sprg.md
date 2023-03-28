@@ -161,11 +161,11 @@ f --> a
 A framework for analyzing cyber security threats.
 
 -   **S**poofing
--   **T**tampering: Refers to the ability of an attacker to modify or alter data or code within a system or application.
--   **R**repudiation: Refers to the ability of an attacker to deny their involvement or actions within a system or application.
--   **I**information disclosure: Refers to the ability of an attacker to access sensitive information that they should not have access to.
--   **D**denial of service
--   **E**elevation of privilege
+-   **T**ampering: Refers to the ability of an attacker to modify or alter data or code within a system or application.
+-   **R**epudiation: Refers to the ability of an attacker to deny their involvement or actions within a system or application.
+-   **I**nformation disclosure: Refers to the ability of an attacker to access sensitive information that they should not have access to.
+-   **D**enial of service
+-   **E**levation of privilege
 
 ### DREAD
 
@@ -230,3 +230,19 @@ Visualize a threat and the possibilities on how to execute it, including some de
     -   Hack into fileserver
         -   hack through firewall into internal network
 
+### Interfaces as Special Problems
+
+Why are systems vulnerable?
+
+-   independant developed components
+-   input data
+-   exchange data
+
+Components need interfaces
+
+-   The rules for the input data
+-   define a language
+-   the language must be defined exactly
+-   must be interpreted the same way on both sides
+
+Everything should be defined as detailed as possible, everything has to be checked at runtime.

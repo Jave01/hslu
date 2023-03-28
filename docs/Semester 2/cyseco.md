@@ -13,7 +13,7 @@
 
     - [x] 07\. März: MS Coaching
     - [x] 13\. März: Abgabe Management Summary
-    - [ ] 28\. März: Abgabe Mängelrüge
+    - [x] 28\. März: Abgabe Mängelrüge
     - [ ] 18\. April: Abgabe Vulnerability Report
     - [ ] 02\. Mai: Abgabe DSG Vorfall
     - [ ] 16\. Mai: Abgabe Pressemitteilung
@@ -150,3 +150,68 @@ Vorgehen:
 
     - Korrektheit der rechtlichen Ausdrücke
     - Art des Vertrages bestimmen (kein richtig oder falsch, nur gut begründen)
+
+### Vulnerability Reports
+
+[Folien](https://elearning.hslu.ch/ilias/goto.php?target=file_5832238_download&client_id=hslu)
+
+#### Arten von Fehler
+
+-   Compilerfehler (;)
+-   Runtime-Fehler
+
+#### Schutzgut & Vulnerability
+
+**Keywords:**
+
+-   Schutzgut
+-   Vulnerability
+-   Schutzgut
+-   Risiko
+-   Was braucht es für eine Risiko?
+-   Exploit
+
+![Cyseco Schutzgut](../assets/cyseco_schutzgut.png)
+
+#### Common Vulnerability Scoring System (CVSS)
+
+-   Exploitability
+    -   Attack Vector
+    -   Attack Complexity
+    -   Privileges Required
+    -   User Interaction
+-   Impact
+    -   Scope Changed
+    -   Confidentiality
+    -   Integrity
+    -   Availability
+
+#### Lifecycle Vulnerability
+
+1. Creation
+2. Discovery
+3. Exploit
+4. Disclosure
+5. Path from vendor
+6. Patch installed
+
+#### ISO Standards
+
+-   ISO 29147
+-   ISO 30111
+
+#### Vulnerability Disclosure detailed info
+
+[Example on Github](https://github.com/ukncsc/Vulnerability-Disclosure)
+
+#### Vulnerability Discolosure Report obligatorischer Inhalt
+
+![obligatorischer Inhalt](../assets/vulnerability_report_obligatorischer_inhalt.png)
+
+#### Wichtige Dokumente
+
+[Folie](https://elearning.hslu.ch/ilias/goto.php?target=file_5832238_download&client_id=hslu)
+
+-   S. 52-54 Beispiel
+-   S. 56 Zusammenfassung
+-   S. 57 Bewertung
