@@ -1,0 +1,21 @@
+# Fdb version 3
+["pdflatex"] 1667314638 "c:/dev/hslu/testing/testing.tex" "testing.pdf" "testing" 1667314638
+  "C:/Users/david/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1667236581 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+  "C:/Users/david/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1667314381 11548 fa11e3eef904b7d530849a2258f76965 ""
+  "C:/Users/david/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1667070004 10788011 9288d06f74a40ea21a8f271ca2b42ef9 ""
+  "C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1000.tfm" 993062508 1436 c7f957a372ef2fbe93c0982f96625e12 ""
+  "C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247596667 36281 c355509802a035cadc5f15869451dcee ""
+  "C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
+  "C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/base/article.cls" 1657041432 20144 7555b7429d80bef287ebb82117811acc ""
+  "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/base/inputenc.sty" 1657041432 5048 84b05796b49b69e2d4257d537721c960 ""
+  "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/base/size10.clo" 1657041432 8448 e0391042ca0932ede1098ae14ada60ba ""
+  "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1664388628 30426 b4bd1ea7df6c51902df8edf551809fb7 ""
+  "C:/dev/hslu/testing/out/testing.aux" 1667314638 32 3985256e7290058c681f74d7a3565a19 ""
+  "c:/dev/hslu/testing/testing.tex" 1667314637 374 9875faef59e904cda02ceb17757b6d47 ""
+  "out/testing.aux" 1667314638 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  (generated)
+  "out/testing.aux"
+  "out/testing.log"
+  "testing.pdf"

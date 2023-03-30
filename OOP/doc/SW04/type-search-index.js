@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"SW04","l":"Motor"},{"p":"SW04","l":"Switchable"}];updateSearchResults();
