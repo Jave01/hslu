@@ -51,7 +51,7 @@ public final class Vehicle implements Switchable, PropertyChangeListener {
             this.lightFrontRight.switchOff();
             this.lightFrontLeft.switchOff();
         } else {
-            this.logger.info("Already switched off");
+            Vehicle.logger.info("Already switched off");
         }
     }
 
@@ -78,11 +78,11 @@ public final class Vehicle implements Switchable, PropertyChangeListener {
 
     private void handleMotorEvent(PropertyChangeEvent evt) {
         String output = "Motor state: " + evt.getOldValue() + " -> " + evt.getNewValue();
-        this.logger.info(output);
+        Vehicle.logger.info(output);
     }
 
     private void handleLightEvent(PropertyChangeEvent evt, LightsPosition place) {
         String output = place.getPos() + " light: " + evt.getOldValue() + " -> " + evt.getNewValue();
-        this.logger.info(output);
+        Vehicle.logger.info(output);
     }
 }

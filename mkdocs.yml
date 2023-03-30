@@ -1,15 +1,17 @@
 site_name: Semester notes
 theme:
-  name: material
-  palette:
-    scheme: slate
-    primary: indigo
-    accent: purple
-  features:
-    - navigation.tabs
+    name: material
+    palette:
+        scheme: slate
+        primary: teal
+        accent: purple
+    features:
+        - navigation.tabs
 plugins:
-  - offline
+    - search
+    - glightbox
 markdown_extensions:
+<<<<<<< HEAD
   - admonition
   - pymdownx.details
   - pymdownx.superfences
@@ -31,3 +33,23 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+=======
+    - pymdownx.highlight:
+          anchor_linenums: true
+          use_pygments: true
+          auto_title: true
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - def_list
+    - pymdownx.superfences:
+          custom_fences:
+              - name: mermaid
+                class: mermaid
+                format: !!python/name:pymdownx.superfences.fence_code_format
+    - pymdownx.tasklist:
+          custom_checkbox: true
+
+extra:
+    generator: false
+>>>>>>> 9ef7eff6693071e17c1fbf9affe6fbe59f0c61d6

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.19)  13 MAR 2023 16:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2022.12.19)  30 MAR 2023 16:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -597,7 +597,7 @@ File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \arrowsize=\dimen281
 ))
-Package hyperref Info: Option `colorlinks' set `true' on input line 42.
+Package hyperref Info: Option `colorlinks' set `true' on input line 44.
  (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count314
@@ -605,25 +605,25 @@ File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 ) (Formelsammlung.aux)
 \openout1 = `Formelsammlung.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-Package hyperref Info: Link coloring ON on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+Package hyperref Info: Link coloring ON on input line 61.
  (Formelsammlung.out) (Formelsammlung.out)
 \@outlinefile=\write4
 \openout4 = `Formelsammlung.out'.
@@ -635,7 +635,7 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 59.
+(scrartcl)           before \begin{document} on input line 61.
  (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
@@ -660,86 +660,331 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \celsius on input line 59.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 59.
+LaTeX Info: Redefining \celsius on input line 61.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 61.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 59.
-Package gensymb Info: Using \Omega for \ohm on input line 59.
+LaTeX Info: Redefining \ohm on input line 61.
+Package gensymb Info: Using \Omega for \ohm on input line 61.
 
 Package gensymb Warning: Not defining \micro.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
- on input line 59.
+ on input line 61.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 64.
 (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 64.
  (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 62.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 64.
  (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) (Formelsammlung.toc)
+) (Formelsammlung.toc [1
+
+
+{C:/Users/david/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}])
 \tf@toc=\write5
 \openout5 = `Formelsammlung.toc'.
 
- [1
-
-
-{C:/Users/david/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 150--153
+ [2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 152--155
 
  []
 
-[3]
-<img/logic_equivalence_rules.png, id=63, 1153.30875pt x 664.4825pt>
+[4]
+<img/logic_equivalence_rules.png, id=153, 1153.30875pt x 664.4825pt>
 File: img/logic_equivalence_rules.png Graphic file (type png)
 <use img/logic_equivalence_rules.png>
-Package pdftex.def Info: img/logic_equivalence_rules.png  used on input line 200.
+Package pdftex.def Info: img/logic_equivalence_rules.png  used on input line 202.
 (pdftex.def)             Requested size: 398.33858pt x 229.50018pt.
- [4 <./img/logic_equivalence_rules.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 203--213
+ [5 <./img/logic_equivalence_rules.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 209--219
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--213
+Underfull \hbox (badness 10000) in paragraph at lines 209--219
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--213
+Underfull \hbox (badness 10000) in paragraph at lines 209--219
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--224
+Underfull \hbox (badness 10000) in paragraph at lines 220--230
 
  []
 
-[5] [6] [7] (Formelsammlung.aux)
+[6] [7] [8]
+Overfull \hbox (0.98622pt too wide) in paragraph at lines 270--273
+\OT1/cmr/m/n/12 Ob-jek-te, ge-nannt \OT1/cmr/m/it/12 Ele-men-te\OT1/cmr/m/n/12 , zu ei-nem Gan-zen. F[]ur ir-gend-ein Ob-jekt $\OML/cmm/m/it/12 x$ \OT1/cmr/m/n/12 gilt dann bez[]uglich
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--279
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--295
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--299
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--304
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--307
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 316--319
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 326--327
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--329
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--336
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
+
+ []
+
+<img/Rechenregeln_mit_mengen.png, id=186, 1241.38782pt x 611.28375pt>
+File: img/Rechenregeln_mit_mengen.png Graphic file (type png)
+<use img/Rechenregeln_mit_mengen.png>
+Package pdftex.def Info: img/Rechenregeln_mit_mengen.png  used on input line 372.
+(pdftex.def)             Requested size: 426.79134pt x 210.15625pt.
+<img/set_identities.png, id=187, 531.48563pt x 720.44156pt>
+File: img/set_identities.png Graphic file (type png)
+<use img/set_identities.png>
+Package pdftex.def Info: img/set_identities.png  used on input line 375.
+(pdftex.def)             Requested size: 426.79134pt x 578.54164pt.
+[11 <./img/Rechenregeln_mit_mengen.png>] [12 <./img/set_identities.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 386--388
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--399
+
+ []
+
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 414.
+(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 414.
+ [13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 431--434
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--437
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 480--481
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 485--486
+
+ []
+
+[16] [17]
+<img/wachstum_example_1.png, id=228, 871.00406pt x 472.76625pt>
+File: img/wachstum_example_1.png Graphic file (type png)
+<use img/wachstum_example_1.png>
+Package pdftex.def Info: img/wachstum_example_1.png  used on input line 536.
+(pdftex.def)             Requested size: 426.79134pt x 231.65027pt.
+ [18 <./img/wachstum_example_1.png>]
+<img/wachstum_example_2.png, id=234, 852.93657pt x 479.54156pt>
+File: img/wachstum_example_2.png Graphic file (type png)
+<use img/wachstum_example_2.png>
+Package pdftex.def Info: img/wachstum_example_2.png  used on input line 538.
+(pdftex.def)             Requested size: 426.79134pt x 239.95313pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 542--544
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 545--547
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 548--553
+
+ []
+
+[19 <./img/wachstum_example_2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 560--563
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--569
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--575
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 576--578
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 579--580
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 589--592
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--596
+
+ []
+
+[20]
+<img/euqlidic_algorithm.png, id=247, 1042.89626pt x 437.635pt>
+File: img/euqlidic_algorithm.png Graphic file (type png)
+<use img/euqlidic_algorithm.png>
+Package pdftex.def Info: img/euqlidic_algorithm.png  used on input line 602.
+(pdftex.def)             Requested size: 426.79134pt x 179.09761pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 608--610
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 611--619
+
+ []
+
+[21 <./img/euqlidic_algorithm.png>]
+<img/matrizenmultiplikation.png, id=253, 1367.1075pt x 320.19624pt>
+File: img/matrizenmultiplikation.png Graphic file (type png)
+<use img/matrizenmultiplikation.png>
+Package pdftex.def Info: img/matrizenmultiplikation.png  used on input line 637.
+(pdftex.def)             Requested size: 426.79134pt x 99.95847pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 640--641
+
+ []
+
+<img/transponierte_matrix.png, id=254, 1062.97125pt x 324.21124pt>
+File: img/transponierte_matrix.png Graphic file (type png)
+<use img/transponierte_matrix.png>
+Package pdftex.def Info: img/transponierte_matrix.png  used on input line 642.
+(pdftex.def)             Requested size: 426.79134pt x 130.1769pt.
+<img/matrizen_eigenschaften.png, id=255, 1096.095pt x 618.31pt>
+File: img/matrizen_eigenschaften.png Graphic file (type png)
+<use img/matrizen_eigenschaften.png>
+Package pdftex.def Info: img/matrizen_eigenschaften.png  used on input line 647.
+(pdftex.def)             Requested size: 455.24408pt x 256.81087pt.
+
+Overfull \hbox (7.11313pt too wide) in paragraph at lines 647--648
+[][] 
+ []
+
+[22 <./img/matrizenmultiplikation.png> <./img/transponierte_matrix.png>] [23 <./img/matrizen_eigenschaften.png>] (Formelsammlung.aux)
 Package rerunfilecheck Info: File `Formelsammlung.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 34777 strings out of 475281
- 828732 string characters out of 2774064
- 1396555 words of memory out of 3000000
- 55684 multiletter control sequences out of 15000+600000
+ 34981 strings out of 475281
+ 832495 string characters out of 2774064
+ 1398555 words of memory out of 3000000
+ 55811 multiletter control sequences out of 15000+600000
  479156 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,10n,106p,10681b,609s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\david\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Formelsammlung.pdf (7 pages, 244460 bytes).
+ 108i,12n,106p,10681b,677s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\david\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Formelsammlung.pdf (23 pages, 1558285 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 500000)
- 162 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 538 PDF objects out of 1000 (max. 8388607)
+ 93 named destinations out of 1000 (max. 500000)
+ 546 words of extra memory for PDF output out of 10000 (max. 10000000)
 

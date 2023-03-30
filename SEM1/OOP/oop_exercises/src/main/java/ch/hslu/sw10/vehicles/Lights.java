@@ -9,12 +9,11 @@ import java.util.List;
 
 public class Lights implements Switchable {
     private boolean isOn = false;
-    private int cycles;
     private final List<PropertyChangeListener> changeListeners = new ArrayList<>();
 
     @Override
     public void switchOn() {
-        if(this.isSwitchedOff()) {
+        if (this.isSwitchedOff()) {
             this.isOn = true;
 
             PropertyChangeEvent pcEvent = new PropertyChangeEvent(this, "status", "off", "on");
@@ -24,9 +23,8 @@ public class Lights implements Switchable {
 
     @Override
     public void switchOff() {
-        if (this.isSwitchedOn()){
+        if (this.isSwitchedOn()) {
             this.isOn = false;
-            this.cycles += 1;
 
             PropertyChangeEvent pcEvent = new PropertyChangeEvent(this, "status", "on", "off");
             this.firePropertyChangeEvent(pcEvent);
@@ -51,8 +49,8 @@ public class Lights implements Switchable {
         this.changeListeners.remove(listener);
     }
 
-    public void firePropertyChangeEvent(final PropertyChangeEvent pcEvent){
-        for(PropertyChangeListener listener : this.changeListeners){
+    public void firePropertyChangeEvent(final PropertyChangeEvent pcEvent) {
+        for (PropertyChangeListener listener : this.changeListeners) {
             listener.propertyChange(pcEvent);
         }
     }

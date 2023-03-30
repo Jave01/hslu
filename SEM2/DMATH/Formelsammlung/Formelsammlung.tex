@@ -22,6 +22,8 @@
 
 \usepackage{tabto}
 
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
 \usetikzlibrary{arrows}
 
 % \usepgfplotslibrary{external}
@@ -199,6 +201,10 @@ Man schreibt dann \(p \Leftrightarrow q\) oder
 \subsection{Logische Äquivalenzregeln}
 \includegraphics[width=14cm]{img/logic_equivalence_rules.png}
 
+Weiterführend:\\
+$p \rightarrow q \equiv \lnot p \lor q$
+
+
 \newpage
 \textbf{Beispiel angewandte logische Äquivalenzregeln}\\
 Beispiel 1:\\
@@ -250,14 +256,399 @@ Die Reihenfolge der Quantoren ist wesentlich; ausser alle Quantoren sind vom gle
     \item Ein Satz (Theorem) ist eine Aussage, von der man zeigen kann, dass sie wahr ist.
     \item Um zu zeigen, dass ein Satz wahr ist, verwendet man eine Abfolge (Sequenz) von Aussagen, die zusammen ein Argument, genannt Beweis ergeben.
     \item Aussagen können Axiome oder Postulate enthalten (grundlegende Annahmen der mathematischen Strukturen).
-    \item Durch logisches (also gewissn Regeln gehorchendes) Schliessen werden Folgerungen gemacht, die zusammen den Beweis ergeben.
+    \item Durch logisches (also gewissen Regeln gehorchendes) schliessen werden Folgerungen gemacht, die zusammen den Beweis ergeben.
     \item Ein Lemma ist ein einfacher Satz, der in Beweisen von komplizierteren Sätzen verwendet wird.
     \item Ein Korollar ist eine einfache Folgerung eines Satzes.
 \end{itemize}
 
 
-$5 \times 3 \cdot 12 = 27$
+% ----------- Mengen ----------- %
 
+\newpage
+\section{Mengen}
+
+Eine Menge ist eine ungeordnete Zusammenfassung wohldefinierter, unterscheidbarer
+Objekte, genannt \textit{Elemente}, zu einem Ganzen. Für irgendein Objekt $x$ 
+gilt dann bezüglich der Menge $A$ entweder $x \in A$ oder dann $x \notin A$.
+
+\textbf{Beispiel:}\\
+Endliche Mengen lassen sich durch Aufschreiben der in ihnen enthaltenen Elemente beschreiben.
+z.B. die Menge aller natürlichen Zahlen kleiner als 101:\\
+$A = {0, 1, 2, ..., 99, 100}$ (aufzählend notiert)\\
+$99 \in A$ aber $101 \notin A$ (beschreibend notiert)\\
+
+andere Schreibweisen sind: \\
+
+$A = {n \in \mathbb{N} | n < 101} = {n \in \mathbb{N} : n <= 100} = {n|n \in \mathbb{N} \land n <= 100}$\\
+
+\subsection{Gleichheit, elementare Mengen}
+Zwei Mengen $A$ und $B$ sind \textbf{gleich} ($A = B$), falls sie dieselben Elemente enthalten.
+$(A \subset B) \land (B \subset A)$\\
+
+\textbf{Einige bekannte Mengen:}\\
+$\mathbb{N}$ - \quad Menge der natürlichen Zahlen $(\mathbb{N}^* = \mathbb{N} \setminus \{0\})$\\
+$\mathbb{Z}$ - \quad Menge der ganzen Zahlen\\
+$\mathbb{Z}^+$ - \quad Menge der positiven ganzen Zahlen\\
+$\mathbb{Q}$ - \quad Menge der Brüche\\
+$\mathbb{R}$ - \quad Menge der reellen Zahlen\\
+$\mathbb{C}$ - \quad Menge der komplexen Zahlen\\
+
+\subsection{Spezielle Mengen}
+\textbf{Teilmenge:} $A$ ist Teilmenge von $B$, geschrieben $A \subset B$, genau dann, wenn
+$\forall x (x \in A \rightarrow x \in B)$: es gilt $A \subset A$!\\
+
+\textbf{Leere Menge:} Für jede Menge $A$ gilt: $\emptyset \subset A$.\\
+
+\textbf{Kardinalität:} Ist $S$ eine endliche Menge, dann bezeichnet $|S|$ die Kardinalität. Die
+Kardinalität ist die Anzahl Elemente von $S$.\\
+
+\textbf{Potenzmenge}: Die Potenzmenge $P(S)$ oder $2^S$ der Menge $S$ besteht aus der Menge aller
+Teilmengen $A \subset S$.\\
+
+\textbf{Beispiel:}\\
+Bestimmen Sie die Potenzmenge von $S= \{1,2\}$\\
+$S = \{1,2\}$\\
+\quad $P(S) = 2^S = \{\emptyset, \{1\}, \{2\}, \{1, 2\}\}$\\
+Es gilt allgemein $|2^S| = 2^{|S|}$
+
+
+\subsection{Das Kreuzprodukt zweier Mengen / kartesisches Produkt}
+$ A \times B = \{(a, b)|a \in A \land b \in B\}$\\
+Reihenfolge ist entscheidend, $A \times B \neq B \times A$\\
+$|A \times B| = |A| \cdot |B|$\\
+
+\textbf{Beispiel:}
+$A \times B = \{(1,a), (2,a), (3,a), (1,b), (2,b), (3, b)\}$
+
+
+\subsection{Mengenoperationen}
+\subsubsection{Komplement}
+Ist $A$ eine Teilmenge der Menge $M$, so bezeichnet\\
+
+$A^c = \overline{A} =  \{m \in M | m \notin A\}$\\
+
+das Komplement von $A$ bezüglich $M$.
+
+\subsubsection{Durchschnitt}
+Sind $A$ und $B$ Teilmengen einer Menge $M$, so bezeichnet\\
+
+$A \cap B = \{m \in M | m \in A \land m \in B\}$\\
+
+den  Durchschnitt von $A$ und $B$.
+
+
+\subsubsection{Vereinigung}
+Sind $A$ und $B$ Teilmengen einer Menge $M$, so bezeichnet\\
+
+$A \cup B = \{m \in M | m \in A \lor m \in B\}$\\
+
+die Vereinigung von $A$ und $B$.
+
+
+\newpage
+\subsubsection{Differenz}
+Sind $A$ und $B$ Teilmengen einer Menge $M$, so bezeichnet \\
+
+$B \setminus A = \{m \in M | m \in B \land m \notin A\}$\\
+
+die Differenz
+
+
+\subsection{Set Operatoren}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{ | m{7em} | m{7em} | }
+    \hline
+    Allg. Operator & Set Operator \\ 
+    \hline
+    $p \lor q$ & $A \cup B$ \\ 
+    \hline
+    $p \land q$ & $A \cap B$ \\ 
+    \hline
+    $\lnot p$ & $\overline{A} $ \\ 
+    \hline
+\end{tabular}
+
+\subsubsection{Rechenregeln}
+\includegraphics[width=15cm]{img/Rechenregeln_mit_mengen.png}
+
+\subsubsection{Mengen Identitäten}
+\includegraphics[width=15cm]{img/set_identities.png }
+
+
+
+
+\section{Funktionen}
+Wird jedem Element $x$ einer Menge $X$ genau ein Element $y$ einer Menge
+$Y$ zugeordnet, so heisst die Zuordnung \textbf{Funktion}.
+
+
+\subsection{Die ceiling- und floorfunction}
+$\lceil \cdot \rceil$ :  $\mathbb{R} \rightarrow \mathbb{Z}$, $x \mapsto \lceil x \rceil =$ min$\{n \in \mathbb{Z} | x \leq n\}$\\
+$\lfloor \cdot \rfloor$ :  $\mathbb{R} \rightarrow \mathbb{Z}$, $x \mapsto \lfloor x \rfloor =$ max$\{n \in \mathbb{Z} | n \leq x\}$\\
+
+
+\subsection{Injektive Funktionen}
+Eine Funktion heisst injektiv, wenn jedes $x$ auf eine eigenes $y$ zeigt.
+
+\subsection{Surjektive Funktionen}
+Eine Funktion heisst surjektiv, falls für jedes Element $y$ ein Element $x$ existiert, so dass $f(x) = y$ gilt.
+
+\subsection{Bijektive Funktionen}
+Eine Funktion heisst bijektiv, falls sie injektiv und surjektiv ist. Das bedeutet, dass jedes Element $y$ genau
+ein zugehöriges Element $x$ hat.\\
+
+Bijektive Funktionen sind umkehrbar. Man muss einfach die Pfeile umkehren und damit entsteht
+aus $f$ die Umkehrfunktion $f^{-1}$.
+
+
+\subsection{Zusammengesetzte Funktionen}
+Gegeben seien zwei Funktionen, so dass der Wertebereich von $g$ im Definitionsbereich von $f$ enthalten ist.
+Dann kann man die so genannte \textbf{zusammengesetzte Funktion} oder \textbf{Komposition} von $f$
+und $g$ bilden:\\
+$F = f \circ g$ : $X \longmapsto Y$, $x \longmapsto f(g(x))$
+
+
+\subsection{Die Caesar-Chiffre}
+\begin{enumerate}
+    \item \textbf{Kodierung:} Buchstaben auf Zahlen abbilden\\
+    K:\{$a$,$b$,$c$,...,$z$\} $\mapsto$ \{0,1,2,...,25\}, wobei $a \mapsto 0$,$b \mapsto 1$,$c \mapsto 2$,$z \mapsto 25$
+    \item \textbf{Verschlüsseln:} die eigentliche Caesar-Verschlüsselung\\
+    V:\{0,1,2,...,25\} $\mapsto$ \{0,1,2,...,25\}, $m \mapsto c := (m + 3)$ mod 26.
+    \item \textbf{Dekodierung:} Zahlen auf Buchstaben abbilden\\
+    D:\{0,1,2,...,25\} $\mapsto$ \{0,1,2,...,25\}, wobei $0 \mapsto a$,$1 \mapsto b$,$2 \mapsto c$,$25 \mapsto z$
+\end{enumerate}
+
+
+\subsection{Umkehrfunktionen}
+Wenn man die Umkehrfunktion auf das Ergebnis der Ursprungsfunktion mit einem $x$-Wert anwendet
+erhält man wieder $x$. Heisst:\\
+$f^{-1}(f(x)) = x$
+
+
+\newpage
+\section{Folgen}
+\subsection{Definition}
+Eine \textbf{Folge} ist eine Abbildung von $\mathbb{N}$ (oder auch $\mathbb{N}^* = \mathbb{N} \setminus \{0\}$) in eine Menga $A$:\\
+$\{\cdot\}$:$\mathbb{N} \mapsto A$, $n \mapsto a_n$\\
+Man nennt $a_n$ das Glied der Folge mit der Nummer $n$. Die Folge wird auch mit \{$a_n$\} oder ($a_n$) bezeichnet.\\
+
+\textbf{Example:}\\
+Man schreibe die ersten sechs Glieder der Folge auf, deren k. Glied gegeben ist durch $a_k = \frac{1}{k}$. \\
+
+$a_k = \left(1,  \dfrac{1}{2}, \dfrac{1}{3}, \dfrac{1}{4}, \dfrac{1}{5}\dots\right)$
+
+
+\subsection{Die geometrische Folge}
+Bei einer geometrischen Folge ist der Quotient zweier aufeinander folgender Glieder immer
+gleich, nämlich q. Das bedeutet, dass $\frac{a_{k+1}}{a_k}$ immer gleich ist.
+
+
+\subsection{Summen}
+Dank Summenzeichen lassen sich Summen einfacher schreiben:
+\[\sum_{j=m}^{n} a_j = a_m + a_{m+1} + a_{m+2} + \dots + a_n\]
+
+\[\sum_{j=m}^{n} a_j = \sum_{i=0}^{n-m} a_{m+i} = \sum_{k=1}^{n-m+1} a_{m+k-1}\]
+
+
+Addiert man die Glieder einer arithmetischen Folge ($a_k$), entsteht die \textbf{arithmetische Reihe:}
+
+\[\sum_{k=0}^{n-1} a_k = n \frac{a_0 + a_{n-1}}{2}\]
+
+
+\newpage
+\textbf{Nützliche Summenformeln:}
+
+\renewcommand{\arraystretch}{2.5}
+\begin{center}
+    \begin{tabular}{  m{10em} | P{10em} }
+        \hline
+        Summe & geschlossene Form \\
+        \hline
+        $\sum_{k=0}^{n} x^k$                        & $\frac{x^{n + 1} - 1}{x - 1}$               \\ 
+        $\sum_{k=0}^{n} 2^k$                        & $2^{k + 1} - 1$               \\ 
+        $\sum_{k=1}^{n} k$                          & $\dfrac{n(n + 1)}{2}$         \\ 
+        $\sum_{k=1}^{n} k^2$                        & $\dfrac{n(n + 1)(2n + 1)}{6}$ \\ 
+        $\sum_{k=1}^{n} k^3$                        & $\dfrac{n^2(n + 1)^2}{4}$     \\ 
+        $\sum_{k=0}^{\infty} x^k$, $|x| < 1$        & $\dfrac{1}{1 - x}$            \\ 
+        $\sum_{k=1}^{\infty} kx^{k-1}$, $|x| < 1$   & $\dfrac{1}{(1-x)^2}$          \\ 
+        \hline
+    \end{tabular}
+\end{center}
+
+
+\subsection{Produkte}
+Dank dem Produktzeichen lassen sich Produkte einfacher schreiben:\\
+
+
+\[a_m \cdot a_{m+1} \cdot a_{m+2} \dots a_n = \prod_{j=m}^{n} a_j \quad\quad n \geqslant m\]
+
+Die Fakultät lässt sich mithilfe des Produktzeichens wie folgt schreiben:\\
+\[n! = 
+\begin{cases}
+    1 & n=0 \\
+    n(n - 1)(n - 2) \dots 2 \cdot 1 = \prod_{k=1}^{n}k & n > 0
+\end{cases}\]
+
+
+Nützliche Abkürzung:
+\[\prod_{i=1}^{n} i = \frac{n \cdot (n + 1)}{2}\]
+
+
+\newpage
+\section{Algorithmen}
+
+Ein Algorithmus ist eine endliche Menge von präzisen Instruktionen mit deren Hilfe
+eine Berechnung ausgeführt oder ein Problem gelöst wird.
+
+\textbf{Algorithmen haben folgende Eigenschaften:}
+\begin{enumerate}
+    \item einen genau spezifizierten Input und daraus berechneten Output
+    \item die Instruktionen sind präzise, korrekt für jeden möglichen Input und in endlicher Zeit durchführbar
+\end{enumerate}
+
+
+Greedy Algorithmen wählen in jedem Schritt, die zu diesem Zeitpunkt die effizienteste ist.
+
+
+\newpage
+\section{Wachstum von Funktionen}
+
+\subsection{Definition}
+Seien $f$ und $g$ Funktion von $\mathbb{Z}$ oder ($\mathbb{R}$). Dann sagt man "$f(x)$ ist $\mathcal{O}(g(x))$", falls es
+Konstanten $C$ und $k$ gibt, so dass gilt:
+
+$|f(x)| \leq C|g(x)|$, $\forall x > k$ Lies: "f(x) ist gross-O von g(x), man schreibt: $f(x) \in \mathcal{O}(g(x))$.
+
+\begin{itemize}
+    \item Meist ist f eine komplizierte Funktion, wie z.B. $f(x) = (x^2 + 1) ln x + (2^x + x^4)$
+    \item Man möchte für g eine möglichst einfache, nicht zu schnell wachsende Funktion, wie z.B. $x$, $x^2$ \dots
+    \item Ziel ist es herauszufinden, wie sich f(x) für sehr, sehr grosse $x$ verhält, und zwar verglichen mit der einfacheren Funktion $g$.
+    \item k ist der kleinste Wert von $x$, für den die obige Ungleichung noch gilt!
+\end{itemize}
+
+Also wir wollen für sehr grosse $x$, eine einfachere Funktion zu finden.
+
+
+\subsection{Example}
+Für $f(x) = x^2 + 2x + 1$ ist $\mathcal{O}(x^2)$.\\
+Das heisst bei sehr grossen $x$ entspricht die Funktion $f(x) =  x^2$
+
+\includegraphics[width=15cm]{img/wachstum_example_1.png}
+\newpage
+\includegraphics[width=15cm]{img/wachstum_example_2.png}
+
+
+\subsection{Polynome}
+Für das Polynom $\sum_{k=0}^n a_k x^k$ gilt $f(x)$ ist $\mathcal{O}(x^n)$. Das heisst
+die höchste Potenz von x gibt den Ton an.\\
+
+\textbf{Beispiel:}\\
+Es gilt immer: $|a + b| \leq |a| + |b|$\\
+
+$f(x) = 5x^6 - 3x^2 + x - 10$\\
+$|f(x)| \leqslant 5x^6 + 3x^2 + x + 10$\\
+$|f(x)| \leqslant 5x^6 + 3x^6 + x^6 + 10x^6$\\
+$|f(x)| \leqslant 5x^6 + 3x^6 + x^6 + 10x^6$ für $x \geqslant 1$\\
+$|f(x)| = 19x^6$\\
+
+also $f$ ist $\mathcal{O}(x^6)$ mit Zeugen $k=1$ und $C = 19$
+
+
+\newpage
+\section{Zahlen und Division}
+\subsection{Definition}
+Falls $a$, $b \in \mathbb{Z}$ mit $a \neq 0$ dann sagt man: $a$ \textit{teilt} $b$, falls $\exists c (b = ac)$
+in der Universalmenge $\mathbb{Z}$. Dann ist $a$ ein \textit{Faktor} von $b$ und $b$ ein \textit{Vielfaches}
+von $a$. Man schreibt dann $a \mid b$ und anderenfalls $a \nmid b$\\
+
+\textbf{Theorem:}\\
+Falls a, b, c $\in \mathbb{Z}$\\
+(a) $a \mid  b  \land a \mid c \rightarrow a \mid (b + c)$, $\rightarrow 6 \mid 12 \land 6 \mid 24 \rightarrow 6 \mid (12+24)$ \\  
+(b) $a \mid b  \rightarrow \forall c(a \mid bc) $,\\  
+(c) $a \mid b  \land b \mid c \rightarrow a \mid c$,\\  
+
+
+\subsection{ggt kgV}
+Der ggT von a und b beschreibt das grösste $d$ für welches gilt $d \mid a$ und $d \mid b$.\\
+Zwei zahlen sind teilerfremd (relaitv prim) falls ggT(a,b) = 1, dann schreibt man
+$a \perp b$. \\
+
+Das kgV zweier Zahlen $a$ und $b$ ist die kleinste positive Zahl, welche durch
+$a$ und $b$ teilbar ist. Es gilt:\\
+
+ab = ggT(a,b) $\cdot$ kgV(a,b)\\
+
+\textbf{Für ggT finden:}
+\begin{enumerate}
+    \item a und b jeweils in Primfaktoren zerlegen
+    \item alle gemeinsamen Primfaktoren multiplizieren
+\end{enumerate}
+
+
+\subsection{Modulare Arithmetik}
+Sei $m \in \mathbb{N} \backslash \{0\}$, dann nennt man zwei ganze Zahlen a und b kongruent modulo m, falls $m\mid (a - b)$
+Das heisst a und b liegen ein Vielfaches von m auseinander. Man schreibt dann $a \equiv b$ mod $m$ und sagt:
+"a ist kongruent zu b modulo m".\\
+
+$13 \equiv 1$ mod 4 denn $4 \mid (13 - 1)$\\
+$13 \equiv 1$ mod 3 denn $3 \mid (13 - 1)$\\
+$13 \not\equiv  1$ mod 5 denn $5 \nmid (13 - 1)$\\
+
+
+\newpage
+\subsection{Der Euklidische Algorithmus}
+Effiziente Methode um ggT zu finden.
+
+\includegraphics[width=15cm]{img/euqlidic_algorithm.png}
+
+ggT ist jeweils 1 und 3.
+
+\section{Matrizen}
+\subsection{Definition}
+Eine m $\times$ n-Matrix ist eine rechteckige Anordnung von Zahlen in m Zeilen und n
+Spalten.\\
+
+\textbf{A} = 
+$
+\begin{bmatrix}
+    a_{1,1} & a_{1,2} & \cdots & a_{1,n}\\
+    a_{2,1} & a_{2,2} & \cdots & a_{2,n}\\
+    \vdots & \vdots & \ddots & \vdots\\
+    a_{m,1} & a_{m,2} & \cdots & a_{m,n}
+\end{bmatrix}$\\
+
+
+Kurzschreibform: \textbf{A} = [$a_{i,j}$]
+
+
+\subsection{Addition von Matrizen}
+
+Addition von Matrizen erfolgt jeweils durch die Addition der einzelnen Positionen
+
+
+\subsection{Multiplikation mit einer Zahl}
+Einfach jede Zahl multiplizieren.
+
+
+\subsection{Matrixmultiplikation}
+\textbf{C = AB}, wobei die Anzahl Spalten in \textbf{A} gleich der Anzahl Reihen in \textbf{B}
+sein muss
+
+\includegraphics[width=15cm]{img/matrizenmultiplikation.png}
+
+\subsection{Transporierte Matrix}
+Eine transponierte Matrix ist eine, bei der die Spalten und Reihen vertauscht wurden.\\
+
+\includegraphics[width=15cm]{img/transponierte_matrix.png}
+
+\subsection{Matrizen Eigenschaften}
+Keywords: symmetrisch, antisymmetrisch, Einheitsmatrix, k-te Potenz
+
+\includegraphics[width=16cm]{img/matrizen_eigenschaften.png}
+
+TODO: Inverse Matrix und Matrizen Eigenschaften allgemein
+
+\subsection{Null-Eins Matrizen}
 
 
 % tabular example 3 columns
