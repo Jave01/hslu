@@ -1,5 +1,7 @@
 # SPRG
 
+Security is the process to ensure our safety.
+
 ## Administratives
 
 ### Templates

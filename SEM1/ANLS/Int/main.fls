@@ -1,7 +1,14 @@
+<<<<<<< HEAD:ANLS/Int/main.fls
+PWD c:\dev\vscode\hslu\ANLS\Int
+INPUT C:\Users\david\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\dev\vscode\hslu\ANLS\Int\main.tex
+OUTPUT main.log
+=======
 PWD C:\dev\hslu\ANLS\src\Int
 INPUT C:\Users\david\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
 INPUT c:\dev\hslu\ANLS\src\Int\ANLS-Int.tex
 OUTPUT C:\dev\hslu\ANLS\src\Int\out\ANLS-Int.log
+>>>>>>> 4fc882b843b46055b13cf9c4362bb0a7e579e3bb:SEM1/ANLS/Int/main.fls
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrartcl.cls
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrartcl.cls
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrartcl.cls
@@ -670,17 +677,6 @@ INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.s
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\textcase\textcase.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\textcase\textcase.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\textcase\textcase.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\textcase\textcase.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\textcase\textcase.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\textcase\textcase.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\textcase\textcase.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\textcase\textcase.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\textcase\textcase.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\textcase\textcase.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\textcase\textcase.sty
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\xfor\xfor.sty
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\xfor\xfor.sty
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\xfor\xfor.sty
@@ -878,17 +874,6 @@ INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\supertabular\supertabular.sty
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\supertabular\supertabular.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\glossaries\base\glossaries-compatible-307.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\glossaries\base\glossaries-compatible-307.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\glossaries\base\glossaries-compatible-307.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\glossaries\base\glossaries-compatible-307.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\glossaries\base\glossaries-compatible-307.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\glossaries\base\glossaries-compatible-307.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\glossaries\base\glossaries-compatible-307.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\glossaries\base\glossaries-compatible-307.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\glossaries\base\glossaries-compatible-307.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\glossaries\base\glossaries-compatible-307.sty
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\glossaries\base\glossaries-compatible-307.sty
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\tracklang\tracklang.sty
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\tracklang\tracklang.sty
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\tracklang\tracklang.sty
@@ -1408,6 +1393,25 @@ INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+<<<<<<< HEAD:ANLS/Int/main.fls
+INPUT .\main.aux
+INPUT main.aux
+INPUT main.aux
+OUTPUT main.aux
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
+INPUT .\main.out
+INPUT main.out
+INPUT .\main.out
+INPUT main.out
+INPUT .\main.out
+INPUT main.out
+INPUT .\main.out
+INPUT main.out
+INPUT .\main.out
+INPUT .\main.out
+OUTPUT main.out
+OUTPUT main.pdf
+=======
 INPUT C:\dev\hslu\ANLS\src\Int\out\ANLS-Int.aux
 INPUT C:\dev\hslu\ANLS\src\Int\out\ANLS-Int.aux
 INPUT C:\dev\hslu\ANLS\src\Int\out\ANLS-Int.aux
@@ -1425,6 +1429,7 @@ INPUT C:\dev\hslu\ANLS\src\Int\out\ANLS-Int.out
 INPUT C:\dev\hslu\ANLS\src\Int\out\ANLS-Int.out
 OUTPUT C:\dev\hslu\ANLS\src\Int\out\ANLS-Int.out
 OUTPUT ANLS-Int.pdf
+>>>>>>> 4fc882b843b46055b13cf9c4362bb0a7e579e3bb:SEM1/ANLS/Int/main.fls
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\bookmark\bookmark.sty
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\bookmark\bookmark.sty
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\bookmark\bookmark.sty
@@ -1510,9 +1515,15 @@ INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmssbx10.tfm
+<<<<<<< HEAD:ANLS/Int/main.fls
+INPUT .\main.toc
+INPUT main.toc
+INPUT main.toc
+=======
 INPUT C:\dev\hslu\ANLS\src\Int\out\ANLS-Int.toc
 INPUT C:\dev\hslu\ANLS\src\Int\out\ANLS-Int.toc
 INPUT C:\dev\hslu\ANLS\src\Int\out\ANLS-Int.toc
+>>>>>>> 4fc882b843b46055b13cf9c4362bb0a7e579e3bb:SEM1/ANLS/Int/main.fls
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr8.tfm
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr6.tfm
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi8.tfm
@@ -1525,7 +1536,11 @@ INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
+<<<<<<< HEAD:ANLS/Int/main.fls
+OUTPUT main.toc
+=======
 OUTPUT C:\dev\hslu\ANLS\src\Int\out\ANLS-Int.toc
+>>>>>>> 4fc882b843b46055b13cf9c4362bb0a7e579e3bb:SEM1/ANLS/Int/main.fls
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmbx12.tfm
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
@@ -1546,6 +1561,11 @@ INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs7.tfm
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
+<<<<<<< HEAD:ANLS/Int/main.fls
+INPUT main.aux
+INPUT .\main.out
+INPUT .\main.out
+=======
 INPUT .\img\finite-jump.png
 INPUT .\img\finite-jump.png
 INPUT img\finite-jump.png
@@ -1570,6 +1590,7 @@ INPUT .\img\two-poles.png
 INPUT C:\dev\hslu\ANLS\src\Int\out\ANLS-Int.aux
 INPUT C:\dev\hslu\ANLS\src\Int\out\ANLS-Int.out
 INPUT C:\dev\hslu\ANLS\src\Int\out\ANLS-Int.out
+>>>>>>> 4fc882b843b46055b13cf9c4362bb0a7e579e3bb:SEM1/ANLS/Int/main.fls
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
