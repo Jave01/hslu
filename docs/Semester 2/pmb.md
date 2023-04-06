@@ -151,3 +151,32 @@ P-Mitarbeiter unterstehen nach wie vor den Linienvorgesetzten (fachlich, diszipl
 -   **A**ttraktiv
 -   **R**ealisierbar
 -   **T**erminiert
+
+### Meilensteine
+
+**Was ist ein Meilenstein?**  
+Ein Meilenstein ist ein messbares Zwischenergebnis an einem definiertem Zeitpunkt.
+
+**Warum ein Meilenstein?**  
+Um dem Kunden Zwischenergebnisse präsentieren zu können.
+
+Doppelt so oft wie die festgesetzte Reaktionszeit ist. (Schulprojekte: 2-4 Wochen, Wirtschaft: 3-6 Monate)
+
+### Begriffe
+
+-   WBS/PSP - Projektstrukturplan,
+    -   Wichtige Ergebnisse:
+    -   Software (Hauptresultat)
+        -   PoC
+        -   v0.5
+    -   Applikationskonzept (Wie sieht das GUI aus, Datenbankstruktur, ersti Sache definiere haut)
+        -   PoC
+        -   v0.5
+    -   Testkonzept
+    -   Betriebshandbuch
+-   Ablaufplan
+-   Arbeitspaket - In sich geschlossene terminierte Aufgabe. Hat ein Input und Output, zwischendrinn ist AP
+-   Delphi-Verfahren
+-   Aufwand/Arbeit Einheit: Personentage (PT)
+
+Arbeitspackete sollten 2-20 Personentage lang sein.

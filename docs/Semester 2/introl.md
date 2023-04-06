@@ -159,37 +159,6 @@ Subnet and interface are always 64 bits long.
 Für Subnet: 46 bit global routing prefix & 16 bit subnet.  
 Global routing prefix: 0-12bit RIR (registrare), 0-32 bit (ISP), 0-48 bit (site).
 
-```mermaid
-stateDiagram-v2
-
-    state IPv6 {
-        [*] --> Subnet(64bit)
-        [*] --> Address(64bit)
-
-        state Subnet(64bit) {
-            [*] --> RPR
-            [*] --> ISP
-            [*] --> SUB
-
-            state RPR {
-                [*] --> lorem
-            }
-
-            state ISP {
-                [*] --> lorem2
-            }
-
-            state SUB {
-                [*] --> lorem3
-            }
-        }
-
-        state Address(64bit){
-
-        }
-    }
-```
-
 Subnet(64bit) --> RPR
 Subnet(64bit) --> ISP
 Subnet(64bit) --> personal<span> <\span>subnet
@@ -212,9 +181,66 @@ Subnet(64bit) --> personal<span> <\span>subnet
 
 Link-Local funktioniert nur im lokalen LAN (Alternative zu DHCP). For generating Link-Local addresses, SLAAC can be used (like DHCP in IPv4). ARP not required, MAC address is part of SLAAC protocol.
 
-**SLAAC:**
+#### Dynamische Addresszuweisung
+
+kann auf 3 Arten erreicht werden
+
+1. SLAAC
+2. stateless DHCPv6
+3. statefull DHCPv6
+
+Wenn SLAAC zur Zuweisung
+der IPv6-Hostadressen und DHCPv6 zur Zuweisung anderer Netzwerkparameter verwendet wird,
+lautet die Bezeichnung Stateless DHCPv6. Bei Stateful DHCPv6 weist der DHCP-Server alle Infor-
+mationen zu, einschliesslich der Host-IPv6-Adresse. Die Regelung, wie Hosts ihre dynamischen
+IPv6-Adressierungsinformationen erhalten, ist abhängig von den Flag-Einstellungen, die in den
+Router-Advertising (RA)-Meldungen enthalten sind.
+
+##### Packets
+
+Router Advertisement:
+
+-   Managed: get IP from DHCP
+-   Other: get add. information from DHCP
+-   A-flag: use SLAAC
+
+If Managed is 1 all others are obsolete.
+
+##### SLAAC
+
+Kein DHCP Server erforderlich
 
 1. Generate address
 2. Is address used? yes -> go to 1, no -> use address
 
 Hat Sicherheitslücken -> ev. DHCPv6 brauchen.
+
+#### IPv6 over IPv4
+
+Kommt zum Einsatz falls ein Netzwerk nur IPv4 unterstüzt. Dabei wirde eine IPv6 Kommunikation über IPv4 geführt (tunneling, IPv6 inside IPv4).
+
+### Strategie
+
+Strategien oder Vorgehensweisen können auf Mitre Att&ck gefunden werden.
+
+#### Begriffsdefinition
+
+-   Ursprünglich: Kunst der Heeresführung
+-   Eine Vorteilsposition gegenüber Gegnern oder Konkurrenten
+-   Langfrisitge Ausrichtung auf ein Ziel
+
+Strategie vs Taktik:
+
+-   Strategie: Was man langfristig erreichen will
+-   Taktik: Wie man ans Ziel kommt
+
+### Taktiken
+
+In der Wirtschaft:
+
+-   Initiative, first move
+-   Kooperation
+-   Reservenbildung
+-   Beweglichkeit, anpassungsfähig
+-   Informationsüberlegenheit
+-   Überraschung/Täuschung

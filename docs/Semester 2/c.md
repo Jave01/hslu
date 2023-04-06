@@ -126,7 +126,7 @@ char myChar = fgetc(myFile);
 
 returns `EOF` if character could not be read correctly.
 
-for reading a string the `fgets(char* str, int nchars, FILE* fptr)` function can be used, where the arguments are the string (char \*) where it is written to in memory, the length of the string to read and the file. It reads either until a whitespace is detected or nchars are read. If read correctly it returns the pointer to the str otherwise NULL.
+for reading a string the `fgets(char* str, int nchars, FILE* fptr)` function can be used, where the arguments are the string (char \*) where it is written to in memory, the length of the string to read and the file. It reads either until `\0` is detected or nchars are read. If read correctly it returns the pointer to the str otherwise NULL.
 
 ```c title=""
 char* sptr = fgets(myBuffer, 50, myFile);
