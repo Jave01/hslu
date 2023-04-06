@@ -1,0 +1,796 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../c/" rel="prev"/>
+<link href="../db_n_security/" rel="next"/>
+<link href="../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.0.13" name="generator"/>
+<title>CYSECO - Semester notes</title>
+<link href="../../assets/stylesheets/main.ffa9267a.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+                </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="purple" data-md-color-primary="teal" data-md-color-scheme="slate" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#cyseco">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Semester notes" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Semester notes">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Semester notes
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              CYSECO
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+      Startpage
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../Semester%201/isf/">
+        Semester 1
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../c/">
+        Semester 2
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Semester notes" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Semester notes">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    Semester notes
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        Startpage
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Semester 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          Semester 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Semester%201/isf/">
+        ISF
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Semester%201/lios/">
+        LIOS
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Semester%201/netw1/">
+        NETW1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Semester%201/oop/">
+        OOP
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Semester%201/spta/">
+        SPTA
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Semester 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Semester 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../c/">
+        I2C
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          CYSECO
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        CYSECO
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#administratives">
+    Administratives
+  </a>
+<nav aria-label="Administratives" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#bewertung">
+    Bewertung
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#termine">
+    Termine
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#inhalt">
+    Inhalt
+  </a>
+<nav aria-label="Inhalt" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#wann-pressemitteilung">
+    Wann Pressemitteilung?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#management-summary">
+    Management Summary
+  </a>
+<nav aria-label="Management Summary" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ubung-ms">
+    Übung MS
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vorgehen-bei-nicht-zufriedenstellenden-situationen-mangelruge">
+    Vorgehen bei nicht zufriedenstellenden Situationen (Mängelrüge)
+  </a>
+<nav aria-label="Vorgehen bei nicht zufriedenstellenden Situationen (Mängelrüge)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ausgangslage">
+    Ausgangslage
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vertrag-qualifizieren">
+    Vertrag qualifizieren
+  </a>
+<nav aria-label="Vertrag qualifizieren" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#agenturvertrag">
+    Agenturvertrag
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vertrage">
+    Verträge
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#problem-erfassen">
+    Problem erfassen
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#kommunikationsmittel-wahlen">
+    Kommunikationsmittel wählen
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sachverhalt-gemusegrossmarkt">
+    Sachverhalt Gemüsegrossmarkt
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vulnerability-reports">
+    Vulnerability Reports
+  </a>
+<nav aria-label="Vulnerability Reports" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#arten-von-fehler">
+    Arten von Fehler
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schutzgut-vulnerability">
+    Schutzgut &amp; Vulnerability
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#common-vulnerability-scoring-system-cvss">
+    Common Vulnerability Scoring System (CVSS)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lifecycle-vulnerability">
+    Lifecycle Vulnerability
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#iso-standards">
+    ISO Standards
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vulnerability-disclosure-detailed-info">
+    Vulnerability Disclosure detailed info
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vulnerability-discolosure-report-obligatorischer-inhalt">
+    Vulnerability Discolosure Report obligatorischer Inhalt
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#wichtige-dokumente">
+    Wichtige Dokumente
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../db_n_security/">
+        DB&amp;S
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../dmath/">
+        DMATH
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ethik/">
+        ETHIK
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../introl/">
+        INTROL
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../netw2/">
+        NETW2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pmb/">
+        PMB
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../privacy/">
+        PRIVACY
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../sprg/">
+        SPRG
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#administratives">
+    Administratives
+  </a>
+<nav aria-label="Administratives" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#bewertung">
+    Bewertung
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#termine">
+    Termine
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#inhalt">
+    Inhalt
+  </a>
+<nav aria-label="Inhalt" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#wann-pressemitteilung">
+    Wann Pressemitteilung?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#management-summary">
+    Management Summary
+  </a>
+<nav aria-label="Management Summary" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ubung-ms">
+    Übung MS
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vorgehen-bei-nicht-zufriedenstellenden-situationen-mangelruge">
+    Vorgehen bei nicht zufriedenstellenden Situationen (Mängelrüge)
+  </a>
+<nav aria-label="Vorgehen bei nicht zufriedenstellenden Situationen (Mängelrüge)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ausgangslage">
+    Ausgangslage
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vertrag-qualifizieren">
+    Vertrag qualifizieren
+  </a>
+<nav aria-label="Vertrag qualifizieren" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#agenturvertrag">
+    Agenturvertrag
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vertrage">
+    Verträge
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#problem-erfassen">
+    Problem erfassen
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#kommunikationsmittel-wahlen">
+    Kommunikationsmittel wählen
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sachverhalt-gemusegrossmarkt">
+    Sachverhalt Gemüsegrossmarkt
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vulnerability-reports">
+    Vulnerability Reports
+  </a>
+<nav aria-label="Vulnerability Reports" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#arten-von-fehler">
+    Arten von Fehler
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schutzgut-vulnerability">
+    Schutzgut &amp; Vulnerability
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#common-vulnerability-scoring-system-cvss">
+    Common Vulnerability Scoring System (CVSS)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lifecycle-vulnerability">
+    Lifecycle Vulnerability
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#iso-standards">
+    ISO Standards
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vulnerability-disclosure-detailed-info">
+    Vulnerability Disclosure detailed info
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vulnerability-discolosure-report-obligatorischer-inhalt">
+    Vulnerability Discolosure Report obligatorischer Inhalt
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#wichtige-dokumente">
+    Wichtige Dokumente
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="cyseco">CYSECO</h1>
+<h2 id="administratives">Administratives</h2>
+<h3 id="bewertung">Bewertung</h3>
+<ul>
+<li>49%: eingereichte schriftliche Arbeit mit allen 5 Übungen (Gruppennote)</li>
+<li>51%: 40 minütige, schriftliche Abschlussprüfung</li>
+</ul>
+<h3 id="termine">Termine</h3>
+<details class="abstract" open="open">
+<summary>Termine</summary>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input checked="" disabled="" type="checkbox"><span class="task-list-indicator"></span></input></label> 07. März: MS Coaching</li>
+<li class="task-list-item"><label class="task-list-control"><input checked="" disabled="" type="checkbox"><span class="task-list-indicator"></span></input></label> 13. März: Abgabe Management Summary</li>
+<li class="task-list-item"><label class="task-list-control"><input checked="" disabled="" type="checkbox"><span class="task-list-indicator"></span></input></label> 28. März: Abgabe Mängelrüge</li>
+<li class="task-list-item"><label class="task-list-control"><input disabled="" type="checkbox"><span class="task-list-indicator"></span></input></label> 18. April: Abgabe Vulnerability Report</li>
+<li class="task-list-item"><label class="task-list-control"><input disabled="" type="checkbox"><span class="task-list-indicator"></span></input></label> 02. Mai: Abgabe DSG Vorfall</li>
+<li class="task-list-item"><label class="task-list-control"><input disabled="" type="checkbox"><span class="task-list-indicator"></span></input></label> 16. Mai: Abgabe Pressemitteilung</li>
+</ul>
+</details>
+<h2 id="inhalt">Inhalt</h2>
+<h3 id="wann-pressemitteilung">Wann Pressemitteilung?</h3>
+<ul>
+<li>etwas sehr wichtiges (z.B. Unternehmung aufkaufen)</li>
+<li>revolutionierendes Produkt veröffentlichen</li>
+</ul>
+<h3 id="management-summary">Management Summary</h3>
+<p>Das Management Summary (Executive Summary) beschreibt eine Kurzbeschreibung eines längeren Berichts.
+Damit hat man "Macht" um den Leser zu beinflussen, was man ihn wissen lassen will, wenn er nicht die ganze Arbeit liest.<br/>
+Es ist der erste Eindruck der Arbeit -&gt; quasi das Einzige was zählt.</p>
+<details class="abstract">
+<summary>Beim Schreiben beachten</summary>
+<ul>
+<li>Warum wurde diese Arbeit geschrieben?</li>
+<li>Was will die Arbeit erreichen?</li>
+<li>Was ist herausgekommen?</li>
+<li>Welches sind die Eckpunkte der Methodik? (Hat man 7 Experten befragt oder 500 Fragebögen ausgewertet)</li>
+<li>Methodik nach Resultaten präsentieren</li>
+<li>Form - Füllwörter auslassen.</li>
+<li>Kurz - ideal eine Seite lang.</li>
+<li>Resultate sollten den Hauptteil darstellen lassen.</li>
+<li>Fette Wörter vermeiden</li>
+<li>Unterteilungen / Absätze machen</li>
+<li>MAX 2 A4 SEITEN!</li>
+<li>Vorgehen<ol>
+<li>Text lesen</li>
+<li>Inhalt gedanklich rekapitulieren</li>
+<li>Text nochmals lesen, relevante Wörter oder Wortgruppen markieren</li>
+<li>Kernaussagen, die an die Kernwörter gebunden sind, in (eigenen) Worten
+festhalten</li>
+<li>Die Kernaussagen verknüpfen und so die Zusammenfassung des Textes bilden.</li>
+<li>Basissatz voranstellen</li>
+</ol>
+</li>
+<li>Typische Fehler<ol>
+<li>Fachjargon</li>
+<li>Einzelne Punkte zu detailliert</li>
+<li>Es braucht weitere Dokumente statt vollständige Übersicht</li>
+<li>Kein Korrekturlesen</li>
+</ol>
+</li>
+</ul>
+</details>
+<ul>
+<li>Ist das MS zu kurz kann die Fehlerquote zu hoch sein / zu Missverständnissen führen.</li>
+</ul>
+<h4 id="ubung-ms">Übung MS</h4>
+<ul>
+<li>Ist das MS zu kurz kann die Fehlerquote zu hoch sein / zu Missverständnissen führen.</li>
+</ul>
+<h3 id="vorgehen-bei-nicht-zufriedenstellenden-situationen-mangelruge">Vorgehen bei nicht zufriedenstellenden Situationen (Mängelrüge)</h3>
+<ol>
+<li>Ausgangslage</li>
+<li>Vertrag qualifizieren</li>
+<li>Problem erfassen</li>
+<li>Kommunikationsmittel wählen</li>
+<li>Schreiben aufsetzen</li>
+<li>Weiteres Vorgehen</li>
+</ol>
+<h4 id="ausgangslage">Ausgangslage</h4>
+<ul>
+<li>Was wurde im Vertrag definierte</li>
+<li>Was liegt (nicht) vor?</li>
+<li>Was hätte wann und wie geleistet werden sollen</li>
+</ul>
+<p>-&gt; immer W-Fragen stellen</p>
+<h4 id="vertrag-qualifizieren">Vertrag qualifizieren</h4>
+<p>Was für ein Vertrag liegt vor?</p>
+<ul>
+<li>Kaufvertrag</li>
+<li>Arbeitsvertrag</li>
+<li>Werkvertrag</li>
+<li>Einfacher Auftrag</li>
+<li>Agenturvertrag</li>
+<li>Leasing</li>
+<li>Lizenz</li>
+</ul>
+<p>Wenn die Leistung nicht vorliegt, ist das Geld nicht geschuldet.</p>
+<h5 id="agenturvertrag">Agenturvertrag</h5>
+<p>Microsoft -&gt; Agenten (Agenturvertrag)<br/>
+Firma X &lt;-&gt; Microsoft (Lizenz)
+Agenten -&gt; Firma X (Vermittlungsverhältnis)</p>
+<pre class="mermaid"><code>graph LR
+  B --&gt;|Lizenz| C[Firma X];
+  B[Microsoft] --&gt;|Agenturvertrag| A[Agenten];
+  A --&gt;|Vermittlungsverhältnis| C;</code></pre>
+<h5 id="vertrage">Verträge</h5>
+<ul>
+<li>Nutzt Raum für 300.-: Mietvertrag</li>
+<li>Einkaufen für Grossmutter: einfacher Auftrag</li>
+<li>Laptop Kollegin übers Wochenende überlassen: Gebrauchsleihe</li>
+<li>100.- an Kolleg mit Hoffnung auf Rückgabe: Darlehen</li>
+<li>Deine Firma überlässt anderen Firmen Software von Microsoft: Lizenzvertrag</li>
+<li>Garagist meint, dass Autofahren mit einer Finanzierung günstig ist: Leasing</li>
+<li>McDonalds: Franchising</li>
+</ul>
+<h4 id="problem-erfassen">Problem erfassen</h4>
+<ul>
+<li>Das <strong>was</strong> definieren</li>
+<li>Erfüllung / Nichterfüllung / Schlechterfüllung</li>
+</ul>
+<h4 id="kommunikationsmittel-wahlen">Kommunikationsmittel wählen</h4>
+<ul>
+<li>Wer ein Recht geltend machen will, muss den Beweis erbringen.<ul>
+<li>Für alle formlosen Verträge (Art. 11) ist Textkommunikation (zB E-Mail) zulässig (schwierig nachzuweisen, dass E-Mail erhalten/gelesen wurde).</li>
+<li>Präsentationen, Protokolle und Traktandenlisten können helfen ein Verhältnis zu klären.</li>
+<li>Elektronische Kopien sind zugelassen.</li>
+</ul>
+</li>
+<li><strong>Gestaltungsrechte</strong></li>
+</ul>
+<p>Mängel müssen detailliert nach 2 Tagen vorliegen.</p>
+<h4 id="sachverhalt-gemusegrossmarkt">Sachverhalt Gemüsegrossmarkt</h4>
+<p>Vorgehen:</p>
+<ul>
+<li>Erfassen der Ausgangslage</li>
+<li>Aufgabe umfasst folgendes:<ul>
+<li>Gemäss Prüfschema durchgehen (Welche Art von Vertrag liegt vor?)</li>
+<li>Schreiben aufsetzen</li>
+<li>Wie gross sind die Chancen auf eine Rückerstattung?</li>
+</ul>
+</li>
+<li>Coaching Termin gem. Liste</li>
+<li>Abgabe von maximal 4 Seiten an andrehenry.kuhn@hslu.ch</li>
+<li>Abgabetermin: 28. März</li>
+</ul>
+<div class="admonition abstract">
+<p class="admonition-title">Beachten</p>
+<ul>
+<li>Korrektheit der rechtlichen Ausdrücke</li>
+<li>Art des Vertrages bestimmen (kein richtig oder falsch, nur gut begründen)</li>
+</ul>
+</div>
+<h3 id="vulnerability-reports">Vulnerability Reports</h3>
+<p><a href="https://elearning.hslu.ch/ilias/goto.php?target=file_5832238_download&amp;client_id=hslu">Folien</a></p>
+<h4 id="arten-von-fehler">Arten von Fehler</h4>
+<ul>
+<li>Compilerfehler (;)</li>
+<li>Runtime-Fehler</li>
+</ul>
+<h4 id="schutzgut-vulnerability">Schutzgut &amp; Vulnerability</h4>
+<p><strong>Keywords:</strong></p>
+<ul>
+<li>Schutzgut</li>
+<li>Vulnerability</li>
+<li>Schutzgut</li>
+<li>Risiko</li>
+<li>Was braucht es für eine Risiko?</li>
+<li>Exploit</li>
+</ul>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/cyseco_schutzgut.png"><img alt="Cyseco Schutzgut" src="../../assets/cyseco_schutzgut.png"/></a></p>
+<h4 id="common-vulnerability-scoring-system-cvss">Common Vulnerability Scoring System (CVSS)</h4>
+<ul>
+<li>Exploitability<ul>
+<li>Attack Vector</li>
+<li>Attack Complexity</li>
+<li>Privileges Required</li>
+<li>User Interaction</li>
+</ul>
+</li>
+<li>Impact<ul>
+<li>Scope Changed</li>
+<li>Confidentiality</li>
+<li>Integrity</li>
+<li>Availability</li>
+</ul>
+</li>
+</ul>
+<h4 id="lifecycle-vulnerability">Lifecycle Vulnerability</h4>
+<ol>
+<li>Creation</li>
+<li>Discovery</li>
+<li>Exploit</li>
+<li>Disclosure</li>
+<li>Path from vendor</li>
+<li>Patch installed</li>
+</ol>
+<h4 id="iso-standards">ISO Standards</h4>
+<ul>
+<li>ISO 29147</li>
+<li>ISO 30111</li>
+</ul>
+<h4 id="vulnerability-disclosure-detailed-info">Vulnerability Disclosure detailed info</h4>
+<p><a href="https://github.com/ukncsc/Vulnerability-Disclosure">Example on Github</a></p>
+<h4 id="vulnerability-discolosure-report-obligatorischer-inhalt">Vulnerability Discolosure Report obligatorischer Inhalt</h4>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/vulnerability_report_obligatorischer_inhalt.png"><img alt="obligatorischer Inhalt" src="../../assets/vulnerability_report_obligatorischer_inhalt.png"/></a></p>
+<h4 id="wichtige-dokumente">Wichtige Dokumente</h4>
+<p><a href="https://elearning.hslu.ch/ilias/goto.php?target=file_5832238_download&amp;client_id=hslu">Folie</a></p>
+<ul>
+<li>S. 52-54 Beispiel</li>
+<li>S. 56 Zusammenfassung</li>
+<li>S. 57 Bewertung</li>
+</ul>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
