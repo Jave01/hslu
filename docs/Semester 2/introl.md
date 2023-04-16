@@ -159,37 +159,6 @@ Subnet and interface are always 64 bits long.
 Für Subnet: 46 bit global routing prefix & 16 bit subnet.  
 Global routing prefix: 0-12bit RIR (registrare), 0-32 bit (ISP), 0-48 bit (site).
 
-```mermaid
-stateDiagram-v2
-
-    state IPv6 {
-        [*] --> Subnet(64bit)
-        [*] --> Address(64bit)
-
-        state Subnet(64bit) {
-            [*] --> RPR
-            [*] --> ISP
-            [*] --> SUB
-
-            state RPR {
-                [*] --> lorem
-            }
-
-            state ISP {
-                [*] --> lorem2
-            }
-
-            state SUB {
-                [*] --> lorem3
-            }
-        }
-
-        state Address(64bit){
-
-        }
-    }
-```
-
 Subnet(64bit) --> RPR
 Subnet(64bit) --> ISP
 Subnet(64bit) --> personal<span> <\span>subnet

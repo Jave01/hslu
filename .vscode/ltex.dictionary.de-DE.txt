@@ -12,3 +12,6 @@ Faktorregel
 Zerlegungsregel
 schliessen
 folgendermassen
+Bitstring
+Rekursionsbeziehungen
+Bitstrings

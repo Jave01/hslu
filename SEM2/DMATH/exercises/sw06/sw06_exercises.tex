@@ -1,0 +1,191 @@
+\documentclass[12pt]{scrartcl}
+\usepackage[ngerman]{babel}
+
+
+\usepackage{amsmath, amssymb}
+
+\usepackage{array}  % for the tables
+
+\usepackage{nameref}  % for referencing with name
+
+\usepackage{hyperref}  % for hyperlinks
+
+\usepackage{mathrsfs}
+
+\usepackage{graphicx}  % for the images
+
+\usepackage{xcolor, colortbl}
+
+\usepackage{gensymb} % for \degree
+
+\usepackage{pgfplots}
+
+\usepackage{tabto}
+
+\usepackage{ulem} % \uuline
+
+\usetikzlibrary{arrows}
+
+% \usepgfplotslibrary{external}
+
+% \tikzexternalize
+
+\definecolor{Gray}{gray}{0.85}
+
+\setlength{\parindent}{0cm}
+
+\newcommand{\RomanNumeralCaps}[1]
+    {\MakeUppercase{\romannumeral #1}}
+
+% hyperlinks
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\bibliographystyle{IEEetran}
+
+
+
+
+\author{David Jäggli}
+
+\title{Diskrete Mathematik - Übungen SW06}
+
+
+
+% ---------- Begin Main Document ----------- %
+
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+\section{Wahrscheinlichkeitstheorie}
+\textbf{I.)}\\
+Kombinationen mit 2 Würfeln: \{(3,6), (4,5), (5,4), (6,3)\}\\
+Möglichkeiten mit 2 Würfeln: $6^2$\\
+Wahrscheinlichkeit mit 2 Würfeln: $\frac{4}{36} = \frac{1}{9} \approx 11.11\%$\\
+
+Kombinationen mit 3 Würfeln: \{(1,2,6), (1,3,5), (1,4,4), (2,3,4) \dots\}: 25 Kombinationen\\
+Möglichkeiten mit 3 Würfeln: $6^3$\\
+Wahrscheinlichkeit mit 3 Würfeln: $\frac{25}{216} \approx 11.57\%$\\
+
+Antwort: Wahrscheinlichkeit ist höher mit 3 Würfeln.\\
+\vspace{25px}
+
+\textbf{II.)}\\
+Möglichkeiten: $\displaystyle{\binom{90}{10}}$\\
+
+3 verschiedene Fälle wie Resultat erzielt werden kann: 
+\begin{itemize}
+    \item Keine rote Kugel
+    \item Keine weisse Kugel
+    \item Keine blaue Kugel
+\end{itemize}
+
+Fall 1 (keine rote Kugel) dann müssen die 10 Plätze unter weiss und blau ausgehandelt werden.\\
+Für eine der beiden Farben (z.B. weiss) ist die Wahrscheinlichkeit:
+
+\[\binom{30 + 30 + 30}{n}\]
+
+Das bedeutet, dass blau die anderen Plätze ausfüllen muss was in folgendem resultiert:
+
+\[\binom{30 + 30 +30}{10 - n}\]
+
+Wobei n von 0 bis 10 geht.\\
+
+Die Anzahl valide Möglichkeiten ergibt sich aus der Summe der beiden Fälle:
+
+\[\sum_{n=0}^{10} \binom{90}{n} \binom{90}{10 - n}\]
+\newpage
+
+Was in folgender Wahrscheinlichkeit für Rot resultiert:
+\[\frac{\sum_{n=0}^{10} \binom{90}{n} \binom{90}{10 - n}}{\binom{90}{10}}\]
+
+Vandermon: \[\frac{\binom{60}{10}}{\binom{90}{10}} = 0.0132\]
+
+Für den zweiten und dritten Fall gilt genau das Gleiche, heisst die komplette
+Wahrscheinlichkeit ergibt sich aus der Summe der drei Fälle:
+
+$p(A_r) \cup p(A_w) \cup p(A_b) = p(A_r) + p(A_w) + p(A_b) - p(A_r \cap A_w) - p(A_r \cap A_b)$ \\
+$- p(A_w \cap A_b) + p(A_r \cap A_w \cap A_b) = 0.039$\\
+\vspace{20px}
+
+\section{Bedingte Wahrscheinlichkeit und Unabhängigkeit}
+\textbf{III.)}\\
+a) Anzahl Kombinationen 3 gleiche: $\binom{5}{3} = 10$\\
+
+Wahrscheinlichkeit für 3 Jungen = $0.51^3 \cdot 0.49^2 = 0.0319 \Rightarrow 10 * 0.0319 = 31.9\%$\\
+
+b) $1 - 0.49^5 = 97.18\%$\\
+
+c) $1 - 0.51^5 = 96.55\%$\\
+
+d) $0.49^5 + 0.51^5 = 6.28\%$\\
+
+\vspace{20px}
+
+
+\section{Satz von Bayes}
+\textbf{V.)}\\
+a)\\ 
+1. 30\% bei 0.03\\
+2. 70\% bei 0.05\\
+3. Fehlsortierung: gesamt = $0.05 \cdot 0.7 + 0.03 \cdot 0.3 = 0.044$\\
+4. Fehlsortierung von 2: $0.05 \cdot 0.7 = 0.035$
+
+\[\frac{0.035}{0.044} \approx 0.7955 = 79.55\%\]
+
+b)\\
+$1-0.044 = 0.956 = 95.6\%$
+
+% Matrix example
+% \textbf{Korrektur:}\\
+% $\mathbf{A} \odot \mathbf{B} =
+% \begin{bmatrix}
+%     1 & 1 & 1 \\
+%     1 & 1 & 1 \\
+%     1 & 0 & 1 \\
+% \end{bmatrix}
+% $
+
+% tabular example 3 columns
+% \renewcommand{\arraystretch}{1.5}
+% \begin{center}
+%     \begin{tabular}{ | m{12em} | m{12em} | m{12em} | }
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%     \end{tabular}
+% \end{center}
+
+
+% tabular example 2 columns
+% \renewcommand{\arraystretch}{1.5}
+% \begin{center}
+%     \begin{tabular}{ | m{17em} | m{17em} | }
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%     \end{tabular}
+% \end{center}
+
+% \bibliography{}
+
+\end{document}

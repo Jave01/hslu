@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.29)  30 MAR 2023 15:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.29)  12 APR 2023 13:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -701,7 +701,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--155
  []
 
 [5]
-<img/logic_equivalence_rules.png, id=183, 1153.30875pt x 664.4825pt>
+<img/logic_equivalence_rules.png, id=199, 1153.30875pt x 664.4825pt>
 File: img/logic_equivalence_rules.png Graphic file (type png)
 <use img/logic_equivalence_rules.png>
 Package pdftex.def Info: img/logic_equivalence_rules.png  used on input line 202.
@@ -821,12 +821,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 352--353
 
  []
 
-<img/Rechenregeln_mit_mengen.png, id=216, 1241.38782pt x 611.28375pt>
+<img/Rechenregeln_mit_mengen.png, id=232, 1241.38782pt x 611.28375pt>
 File: img/Rechenregeln_mit_mengen.png Graphic file (type png)
 <use img/Rechenregeln_mit_mengen.png>
 Package pdftex.def Info: img/Rechenregeln_mit_mengen.png  used on input line 372.
 (pdftex.def)             Requested size: 426.79134pt x 210.15625pt.
-<img/set_identities.png, id=217, 531.48563pt x 720.44156pt>
+<img/set_identities.png, id=233, 531.48563pt x 720.44156pt>
 File: img/set_identities.png Graphic file (type png)
 <use img/set_identities.png>
 Package pdftex.def Info: img/set_identities.png  used on input line 375.
@@ -868,13 +868,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 485--486
  []
 
 [17] [18]
-<img/wachstum_example_1.png, id=258, 871.00406pt x 472.76625pt>
+<img/wachstum_example_1.png, id=274, 871.00406pt x 472.76625pt>
 File: img/wachstum_example_1.png Graphic file (type png)
 <use img/wachstum_example_1.png>
 Package pdftex.def Info: img/wachstum_example_1.png  used on input line 536.
 (pdftex.def)             Requested size: 426.79134pt x 231.65027pt.
  [19 <./img/wachstum_example_1.png>]
-<img/wachstum_example_2.png, id=265, 852.93657pt x 479.54156pt>
+<img/wachstum_example_2.png, id=281, 852.93657pt x 479.54156pt>
 File: img/wachstum_example_2.png Graphic file (type png)
 <use img/wachstum_example_2.png>
 Package pdftex.def Info: img/wachstum_example_2.png  used on input line 538.
@@ -930,7 +930,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 593--596
  []
 
 [21]
-<img/euqlidic_algorithm.png, id=277, 1042.89626pt x 437.635pt>
+<img/euqlidic_algorithm.png, id=293, 1042.89626pt x 437.635pt>
 File: img/euqlidic_algorithm.png Graphic file (type png)
 <use img/euqlidic_algorithm.png>
 Package pdftex.def Info: img/euqlidic_algorithm.png  used on input line 602.
@@ -945,7 +945,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 612--620
 
  []
 
-<img/matrizenmultiplikation.png, id=278, 1367.1075pt x 320.19624pt>
+<img/matrizenmultiplikation.png, id=294, 1367.1075pt x 320.19624pt>
 File: img/matrizenmultiplikation.png Graphic file (type png)
 <use img/matrizenmultiplikation.png>
 Package pdftex.def Info: img/matrizenmultiplikation.png  used on input line 638.
@@ -955,12 +955,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 641--642
 
  []
 
-<img/transponierte_matrix.png, id=284, 1062.97125pt x 324.21124pt>
+<img/transponierte_matrix.png, id=300, 1062.97125pt x 324.21124pt>
 File: img/transponierte_matrix.png Graphic file (type png)
 <use img/transponierte_matrix.png>
 Package pdftex.def Info: img/transponierte_matrix.png  used on input line 643.
 (pdftex.def)             Requested size: 426.79134pt x 130.1769pt.
-<img/matrizen_eigenschaften.png, id=285, 1096.095pt x 618.31pt>
+<img/matrizen_eigenschaften.png, id=301, 1096.095pt x 618.31pt>
 File: img/matrizen_eigenschaften.png Graphic file (type png)
 <use img/matrizen_eigenschaften.png>
 Package pdftex.def Info: img/matrizen_eigenschaften.png  used on input line 648.
@@ -980,7 +980,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 655--656
 
  []
 
-<img/boolesches_produkt.png, id=293, 837.1275pt x 414.79968pt>
+<img/boolesches_produkt.png, id=309, 837.1275pt x 414.79968pt>
 File: img/boolesches_produkt.png Graphic file (type png)
 <use img/boolesches_produkt.png>
 Package pdftex.def Info: img/boolesches_produkt.png  used on input line 657.
@@ -1005,7 +1005,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 716--718
 
  []
 
-<img/wahrscheinlichkeiten.png, id=304, 973.38657pt x 517.935pt>
+<img/wahrscheinlichkeiten.png, id=320, 973.38657pt x 517.935pt>
 File: img/wahrscheinlichkeiten.png Graphic file (type png)
 <use img/wahrscheinlichkeiten.png>
 Package pdftex.def Info: img/wahrscheinlichkeiten.png  used on input line 729.
@@ -1060,22 +1060,133 @@ Underfull \hbox (badness 10000) in paragraph at lines 792--795
 
  []
 
-[29] [30] (C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 800--803
+
+ []
+
+[29]
+<img/zusammenfassung _verteilungen.png, id=340, 870.25125pt x 526.21594pt>
+File: img/zusammenfassung _verteilungen.png Graphic file (type png)
+<use img/zusammenfassung _verteilungen.png>
+Package pdftex.def Info: img/zusammenfassung _verteilungen.png  used on input line 811.
+(pdftex.def)             Requested size: 426.79134pt x 258.07289pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 813--816
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--820
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 821--825
+
+ []
+
+[30 <./img/zusammenfassung _verteilungen.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 826--832
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 833--834
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 836--839
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 843--845
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 846--849
+
+ []
+
+<img/hypergeometrische Verteilung.png, id=346, 730.22812pt x 388.45125pt>
+File: img/hypergeometrische Verteilung.png Graphic file (type png)
+<use img/hypergeometrische Verteilung.png>
+Package pdftex.def Info: img/hypergeometrische Verteilung.png  used on input line 855.
+(pdftex.def)             Requested size: 426.79134pt x 227.03264pt.
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 857--860
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 863--866
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 867--868
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 876--880
+
+ []
+
+[32 <./img/hypergeometrische Verteilung.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 881--882
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 883--885
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 887--889
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 890--892
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 893--895
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 898--900
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 901--902
+
+ []
+
+[33] (C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.aux)
 Package rerunfilecheck Info: File `Zusammenfassung.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 35032 strings out of 475385
- 833485 string characters out of 2776906
+ 35065 strings out of 475385
+ 834253 string characters out of 2776906
  1396802 words of memory out of 3000000
- 55732 multiletter control sequences out of 15000+600000
+ 55752 multiletter control sequences out of 15000+600000
  479777 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,12n,106p,10675b,674s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\david\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Zusammenfassung.pdf (30 pages, 1869511 bytes).
+Output written on Zusammenfassung.pdf (33 pages, 2213470 bytes).
 PDF statistics:
- 643 PDF objects out of 1000 (max. 8388607)
- 115 named destinations out of 1000 (max. 500000)
- 660 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 701 PDF objects out of 1000 (max. 8388607)
+ 126 named destinations out of 1000 (max. 500000)
+ 734 words of extra memory for PDF output out of 10000 (max. 10000000)
 

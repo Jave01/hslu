@@ -796,10 +796,114 @@ AAAA, AAAO, AAAB, AAOO, AAOB \dots\\
 \[C(n+r-1, r) = \binom{n+r-1}{r}\]
 
 
-\section{Wahrscheinlichkeiten}
+\section{Diskrete Wahrscheinlichkeitsrechnung}
+Wahrscheinlichkeiten werden oft mit $p(A)$ angegeben. Wobei $p$ die Wahrscheinlichkeit allgemein
+beschreibt und $A$ der Output. Heisst $p(A)$ ist die Wahrscheinlichkeit mit der das Ereignis $A$ 
+eintrifft.\\
+
 \subsection{Bedingte Wahrscheinlichkeit}
 \textbf{Definition:} Die Wahrscheinlichkeit, dass ein Ereignis A eintritt, wenn ein Ereignis B eingetreten ist, ist gegeben durch\\
 $p(A|B) = \frac{p(A \cap B)}{p(B)}$ (siehe Beispiel mit Münze in SW06). 
+
+
+
+\subsection{Verteilungsfunktionen}
+\includegraphics[width=15cm]{img/zusammenfassung _verteilungen.png}
+\subsubsection{Bernoulli-Verteilung}
+Zufallsexperiment mit nur 2 möglichen Ergebnissen, wobei die Bernoulli-Verteilung der 
+Wahrscheinlichkeitsverteilung entspricht. Wobei wahr p entspricht und falsch 1-p.
+Die Wahrscheinlichkeiten müssen dabei voneinander unabhänig sein.\\
+
+\textbf{Beispiel:}
+Bitstring mit 3 Bits bei der n-Einsen vorkommen (und wenn man eine 1 Würfelt ist es ein
+Erfolg resp. $p$ oder ein nicht-Erfolg resp. $1-p$ oder $q$).\\
+
+P(k=0) = P(\{000\}) = $1p^0 \cdot (1-p)^3$\\
+P(k=1) = P(\{001\},\{010\},\{010\}) = $3p^1 \cdot (1-p)^2$\\
+P(k=2) = P(\{011\},\{110\},\{101\}) = $3p^2 \cdot (1-p)^1$\\
+P(k=3) = P(\{111\}) = $1p^3 \cdot (1-p)^0$\\
+
+\textbf{Definition durch Binomialverteilung:}\\
+$B(k|n,p) = B_{n,p}(k) = C(n,k)p^k(1-p)^{n-k} = \binom{n}{k}p^k(1-p)^{n-k}$\\
+B: Bernoulli\\
+k: Anzahl Erfolge\\
+n: Anzahl Versuche\\
+p: Wahrscheinlichkeit für Erfolg\\
+
+Mit dieser Formel kann man die Wahrscheinlichkeit ausrechnen für k-Erfolge.\\
+
+
+\textbf{Beispiel für eine Ungleichverteilung:}\\
+Eine 0 wird zu 90\% und eine 1 zu 10\% gewürfelt. Wie wahrscheinlich ist es 8 Nullen bei
+10 Würfen zu erzielen.\\
+
+$B(8|10,0.9) = \binom{10}{8} \cdot 0.9^8 \cdot 0.1^2 = 19.37\%$
+
+\subsubsection{Hypergeometrische Verteilung}
+Binomialverteilung liegt vor, wenn bei einer Stichprobe die Objekte wieder zurückgelegt werden.
+Werden die Objekte nicht wieder zurückgelegt handelt es sich um die Hypergeometrische Verteilung.\\
+
+\textbf{Beispiel:}\\
+Wenn man insgesamt N Objekte hat und M davon sind defekt. Wie gross ist die Wahrscheinlichkeit,
+dass von n gezogenen Objekten k Objekte defekt sind?\\
+
+$\displaystyle{p(k) = \frac{\binom{M}{k} \binom{N-M}{n-k}}{\binom{N}{n}}}$\\
+\vspace{1cm}
+
+
+\textbf{Anschauliches Beispiel:}\\
+\includegraphics[width=15cm]{img/hypergeometrische Verteilung.png}
+
+Grün: Anzahl der Objekte\\
+Rot: Anzahl der Objekte die defekt sind\\
+Schwarz: Anzahl der Objekte die nicht defekt sind\\
+
+
+\subsubsection{Poisson-Verteilung}
+Wenn bei einer Binomialverteilung sehr viele Versuche durchgeführt werden und die Wahrscheinlichkeit 
+sehr klein ist, ist die Annäherung durch die Poisson-Verteilung viel einfacher.\\
+$p \rightarrow 0$ und $n \rightarrow \infty$ dann $\mu = np$:\\
+
+$\displaystyle{p(k) = \frac{\mu^k e^{-\mu}}{k!}}$\\
+
+
+\subsection{Zufallsvariablen}
+Wahrscheinlichkeitsverteilung einer Zufallsvariable $X$ ist die Verteilungsfunktion $F_X(x)$,
+
+
+\section{Fortgeschrittene Zählmethoden}
+\subsection{Rekursionsbeziehungen}
+Rekursionsbeziehungen liegen immer vor, wenn ein Wert $a_n$ von einem anderen Wert $a_{n-1}$ abhängt.\\
+Beispiel für Rekursionsbeziehungen:\\
+Wie viele Bitstrings der Länge $n$ gibt es, die keine zwei aufeinanderfolgende
+Nullen enthalten?\\
+
+$a_n = a_{n-1} + a_{n-2}$\\
+
+Ein Bitstring endet mit einer 1 oder 0. Im ersten Fall kann irgendein Wert davor stehen, davon
+gibt es $a_{n-1}$ Möglichkeiten. Im zweiten Fall muss ein 1 vor der 0 stehen, davon gibt es $a_{n-2}$ Möglichkeiten.\\
+
+
+\textbf{Beispiel Computersystem Passwort:}\\
+Ein Passwort ist korrekt, wenn es eine gerade Anzahl von Nullen hat.\\
+
+$a_{n-1}$ Möglichkeiten bei einer Zahl, welche mit 1-9 endet.\\
+Wenn eine Null steht, dann noch $10^{n-1} - a_{n-1}$ Möglichkeiten.\\
+
+$a_n = 9 \cdot a_{n-1} + 10^{n-1} - a_{n-1}$\\
+$a_n = 8 \cdot a_{n-1} + 10^{n-1}$\\
+
+
+\subsection{Lösen von Rekursionsbeziehungen}
+\textbf{Eigenschaften von Rekursionsbeziehungen:}\\
+$F(a_n, a_{n-1} \dots a_2, a_1) = r(n)$\\
+
+Sie ist homogen, falls $r(n) = 0$\\
+
+Ordnungen von Rekursionsbeziehungen:\\
+Sie ist k-ter Ordnung, falls F höchstens von Gliedern ab $a_{n-k}$ abhängt.
+
+
 
 % Matrix example
 % $
