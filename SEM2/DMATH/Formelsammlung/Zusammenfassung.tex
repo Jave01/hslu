@@ -893,15 +893,53 @@ Wenn eine Null steht, dann noch $10^{n-1} - a_{n-1}$ Möglichkeiten.\\
 $a_n = 9 \cdot a_{n-1} + 10^{n-1} - a_{n-1}$\\
 $a_n = 8 \cdot a_{n-1} + 10^{n-1}$\\
 
+\begin{itemize}
+    \item Sie ist homogen, falls $r(n) = 0$
+    \item Sie ist linear, falls die Variablen von F $a_n$, $a_{n-1}$, $a_{n-2}$ sind.
+    (meistens ist F von der Form $a_n - c_1a_{n-1} - c_2a_{n-2} - \dots - c_ka_{n-k} = 0$)
+    \item Sie ist von k-tem Grade, falls F höchstens von Gliedern ab $a_{n-k}$ abhängt.
+\end{itemize}
 
+\newpage
 \subsection{Lösen von Rekursionsbeziehungen}
 \textbf{Eigenschaften von Rekursionsbeziehungen:}\\
 $F(a_n, a_{n-1} \dots a_2, a_1) = r(n)$\\
 
-Sie ist homogen, falls $r(n) = 0$\\
+Allgemeines Lösen einer linearen RB in drei Schritten:
+\begin{enumerate}
+    \item Bestimme die allgemeine Lösung $\displaystyle{\left\{a_n^{(h)}\right\}}$ der zugehörigen, homogenen
+    Rekursionsbeziehung (RHS gleich null setzen).
+    \item Bestimme eine (einzige) partikuläre Lösung $\displaystyle{\left\{a_n^{(p)}\right\}}$ der zugehörigen, inhomogenen Rekursionsbeziehung
+    \item Dann ist die allgemeine Lösung der inhomogenen RB die Summe der beiden Lösungen:
+    \[\{a_n\} = \left\{a_n^{(h)}\right\} + \left\{a_n^{(p)}\right\}\]
+\end{enumerate}
 
-Ordnungen von Rekursionsbeziehungen:\\
-Sie ist k-ter Ordnung, falls F höchstens von Gliedern ab $a_{n-k}$ abhängt.
+\textbf{1. Schritt:}
+
+Die homogene RB\\
+($a_n - c_1a_{n-1} - c_2a_{n-2} - \dots - c_ka_{n-k} = 0$)\\
+wird durch den folgenden Ansatz gelöst:\\
+$a_k = r^k$, $k = n-k$, $n-k + 1$, \dots, $n$.\\
+
+
+\textbf{Beispiel:}
+
+Setzt man in die lineare, homogene Rekursionsbeziehung $a_n - a_{n-1} - a_{n-2} = 0$
+den Ansatz $a_n = r^n$ ein, erhält man\\
+
+$r^n - r^{n-1} - r^{n-2} = 0$\\
+$r^{n-2} (r^2 - r - 1) = 0$\\
+$r^2 - r - 1 = 0$\\
+
+$\displaystyle{r_1 = \frac{1}{2} \left(1 + \sqrt{5}\right)} \quad\quad\quad r_2 = \frac{1}{2} \left(1 - \sqrt{5}\right)$\\
+
+
+Bei Auflösung der quadratischen Gleichung: \\
+Wenn $D > 0$, dann $a_n^{(h)} = \alpha_1 r_1^n + \alpha_2 r_2^n$
+wobei die Alphas beliebige Konstanten sind.\\
+
+Wenn $D = 0$, dann $a_n^{(h)} = (\alpha_1 + \alpha_2 n) r^n$
+
 
 
 

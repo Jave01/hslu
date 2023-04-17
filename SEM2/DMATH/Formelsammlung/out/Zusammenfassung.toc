@@ -80,5 +80,5 @@
 \contentsline {subsection}{\numberline {15.3}Zufallsvariablen}{32}{subsection.15.3}%
 \contentsline {section}{\numberline {16}Fortgeschrittene Zählmethoden}{32}{section.16}%
 \contentsline {subsection}{\numberline {16.1}Rekursionsbeziehungen}{32}{subsection.16.1}%
-\contentsline {subsection}{\numberline {16.2}Lösen von Rekursionsbeziehungen}{33}{subsection.16.2}%
+\contentsline {subsection}{\numberline {16.2}Lösen von Rekursionsbeziehungen}{34}{subsection.16.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
