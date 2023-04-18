@@ -248,3 +248,35 @@ Components need interfaces
 -   must be interpreted the same way on both sides
 
 Everything should be defined as detailed as possible, everything has to be checked at runtime.
+
+### Secure Programming for a software engineer
+
+must meet the business requirements:
+
+1. Requirements
+    - Business Cases
+    - What to protect
+    - Threat model
+2. Specification
+    - Technical design
+    - Architecture and technologies
+3. Implementation
+    - Prevent coding flaws
+4. Testing
+    - Ensure high test coverage (e.g. pen-testing)
+5. Maintenance
+    - Regular review of threats
+    - Monitoring
+    - Incidenct detection and reaction
+
+Avoid by:
+
+1. Threat modelling (STRIDE)
+2. Scan for vulnerabilities
+    - Code reviews
+    - Monitor vulnerabilites in libraries
+3. Test system components
+    - Unit test
+    - Penetration tests
+
+CVE - Common Vulnerabilities and Exposures
