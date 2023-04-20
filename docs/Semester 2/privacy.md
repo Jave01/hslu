@@ -163,10 +163,21 @@ Webanfragen hinter anderen Crowds Diensbenutzer verbergen. Jeder Benutzer hat ei
 
 #### Mix
 
-Nachricht wird nicht direkt an Empfänger gesendet, stattdessen werden sie über zufällige Mixes gesendet.  
+Nachrichten werden nicht direkt an den Empfänger gesendet, sondern werden über zufällige Mixes gesendet.  
 **Grundfunktionen**:
 
 1. Löschen von Duplikaten
 2. Sammeln von Nachrichten
 3. Umkodierung der Nachrichten
 4. Umsortieren der Nachrichten
+
+### Anonymisierung
+
+#### Generalisieren
+
+**Beispiel PLZ:**  
+4012 4011 4019 -> 401\*
+
+#### k-Anonymität
+
+k-Anonymität tritt immer dann auf wenn ein Eintrag k-mal in einer Liste auftaucht. Beispiel PLZ: für 3-k tritt der Eintrag 401\* drei mal auf.

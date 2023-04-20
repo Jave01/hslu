@@ -144,6 +144,29 @@ P-Mitarbeiter unterstehen nach wie vor den Linienvorgesetzten (fachlich, diszipl
 -   **Scrum Team**  
     Entwickler:innen, die selbstorganisiert und eigenverantwortlich in den Sprints die Software entwerfen, erstellen und testen
 
+### User stories
+
+-   Titel
+-   Beschreibung
+    -   We möchte was
+    -   Welche Funktionalität
+-   Akzeptanzkriterien
+    -   Anforderungen umgesetzt?
+    -   Beantworten was getestet werden soll
+-   ergänzende Beschreibung
+    -   Link auf einen Use Case
+
+**Gute User story**:
+
+-   Independent -> unabhängig von anderen Stories
+-   Negotiable -> Kunden und Entwickler erarbeiten gemeinsam
+-   Valuable -> Liefern einen erkennbaren Mehrwert
+-   Estimatable -> überschaubar
+-   Small -> Kann zu gross sein
+-   Testable -> muss testbar sein
+
+From above: INVEST
+
 ### SMART
 
 -   **S**pezifisch

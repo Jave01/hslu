@@ -1,0 +1,5 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Binomialverteilung und hypergeometrische Verteilung}{2}{section.1}%
+\contentsline {section}{\numberline {2}Poissonverteilung}{2}{section.2}%
+\contentsline {section}{\numberline {3}Zufallsvariablen, Erwartungswerte und Varianzen}{2}{section.3}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

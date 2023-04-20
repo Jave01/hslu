@@ -1,0 +1,229 @@
+\documentclass[12pt]{scrartcl}
+\usepackage[ngerman]{babel}
+
+
+\usepackage{amsmath, amssymb}
+
+\usepackage{array}  % for the tables
+
+\usepackage{nameref}  % for referencing with name
+
+\usepackage{hyperref}  % for hyperlinks
+
+\usepackage{mathrsfs}
+
+\usepackage{graphicx}  % for the images
+
+\usepackage{xcolor, colortbl}
+
+\usepackage{gensymb} % for \degree
+
+\usepackage{pgfplots}
+
+\usepackage{tabto}
+
+\usepackage{ulem} % \uuline
+
+\usetikzlibrary{arrows}
+
+% \usepgfplotslibrary{external}
+
+% \tikzexternalize
+
+\definecolor{Gray}{gray}{0.85}
+
+\setlength{\parindent}{0cm}
+
+\newcommand{\RomanNumeralCaps}[1]
+    {\MakeUppercase{\romannumeral #1}}
+
+% hyperlinks
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\bibliographystyle{IEEetran}
+
+
+
+
+\author{David Jäggli}
+
+\title{Diskrete Mathematik - Übungen SW03}
+
+
+
+% ---------- Begin Main Document ----------- %
+
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+\section{Big-$\mathcal{O}$ Notation}
+\textbf{I.)}\\
+a.)\\
+$n \log(n^2+1) + n^2 \log n \leq n^2 \log(n^2 + 1) + n^2 \log(n^2+1) \quad\quad \forall n \geq 1$\\
+$\leq 2n^2 \log(n^2 + 1) \quad\quad \forall n \geq 1$\\
+$\leq 2n^2 \log(n^3) \quad\quad \forall n \geq 1$\\
+$\leq 6n^2 \log(n) \quad\quad \forall n \geq 1$\\
+
+Also $n \log(n^2+1) + n^2 \log n \in \mathcal{O}(n^2 \log(n))$ mit den Zeugen $C=6$ und $k=1$.\\
+
+\textbf{Korrektur:}\\
+k = 2, wegen $x^2 + 1 \leq n^3$, nur wenn $n \geq 2$.\\
+
+
+b.)\\
+Ganz ehrlich: keine Ahnung, bin auch mit dem Tip auszumultiplizieren nicht aufs richtige Ergebniss
+gekommen.\\
+
+
+c.)\\
+$n^{2^n} + n^{n^2} \leq n^{2^n} + n^{2^n} \quad\quad \forall n \geq 4$\\
+$\leq  2n^{2^n}$\\
+
+Heisst: $n^{2^n} + n^{n^2} \in \mathcal{O}(n^{2^n})$ mit $C = 2$ und $k=4$
+
+
+\section{Zahlen und Divisionen}
+\textbf{II.)}\\
+
+ggT(12345, 54321)=\\
+
+$54321 = 12345 \cdot 5 + 4941$\\
+$12345 = 4941 \cdot 2 + 2463$\\
+$4941 = 2463 \cdot 2 15$\\
+$2463 = 15 \cdot 145 + 3$\\
+$15 = 3 \cdot 5 + 0 $\\
+
+ggT(12345, 54321) = 3\\
+
+
+\newpage
+\section{Matrizen}
+\textbf{III.)}\\
+
+$\begin{bmatrix}
+2 & 3 \\
+1 & 4 \\
+\end{bmatrix} \cdot
+$
+$
+\begin{bmatrix}
+a_{1,1} & a_{1,2} \\
+a_{2,1} & a_{2,2} \\
+\end{bmatrix} =
+$
+$
+\begin{bmatrix}
+3 & 0 \\
+1 & 2 \\
+\end{bmatrix}
+$\\
+
+$2 \cdot a_{1,1} + 3 \cdot a_{1, 2} = 3$\\
+$1 \cdot a_{1,1} + 4 \cdot a_{1, 2} = 1$\\
+$2 \cdot a_{1,2} + 3 \cdot a_{2, 2} = 0$\\
+$1 \cdot a_{2,1} + 4 \cdot a_{2, 2} = 2$\\
+
+
+4 Unbekannte \& 4 Gleichungen $\rightarrow$ Gleichung auflösen, daraus ergibt sich:\\
+$a_{1,1} = \frac{9}{5}$\\
+$a_{1,2} = -\frac{1}{5}$\\
+$a_{2,1} = -\frac{6}{5}$\\
+$a_{2,2} = \frac{4}{5}$\\
+
+
+
+
+\textbf{IV.)}\\
+$\mathbf{A} = 
+\begin{bmatrix}
+1 & 0 & 1 \\
+1 & 1 & 0 \\
+0 & 0 & 1 \\
+\end{bmatrix} \quad
+$ und
+$\quad \mathbf{B} = 
+\begin{bmatrix}
+0 & 1 & 1 \\
+1 & 0 & 1 \\
+1 & 0 & 1 \\
+\end{bmatrix}
+$\\
+
+
+$\mathbf{A} \lor \mathbf{B} =
+\begin{bmatrix}
+    1 & 1 & 1 \\
+    1 & 1 & 1 \\
+    1 & 0 & 1 \\
+\end{bmatrix}
+$,
+$\quad \mathbf{A} \land \mathbf{B} =
+\begin{bmatrix}
+    0 & 0 & 1 \\
+    1 & 0 & 0 \\
+    0 & 0 & 1 \\
+\end{bmatrix}
+$,
+$\quad \mathbf{A} \odot \mathbf{B} =
+\begin{bmatrix}
+    0 & 1 & 1 \\
+    1 & 0 & 1 \\
+    1 & 0 & 1 \\
+\end{bmatrix}
+$\\
+
+\vspace{25px}
+
+\textbf{Korrektur:}\\
+$\mathbf{A} \odot \mathbf{B} =
+\begin{bmatrix}
+    1 & 1 & 1 \\
+    1 & 1 & 1 \\
+    1 & 0 & 1 \\
+\end{bmatrix}
+$
+
+% tabular example 3 columns
+% \renewcommand{\arraystretch}{1.5}
+% \begin{center}
+%     \begin{tabular}{ | m{12em} | m{12em} | m{12em} | }
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%     \end{tabular}
+% \end{center}
+
+
+% tabular example 2 columns
+% \renewcommand{\arraystretch}{1.5}
+% \begin{center}
+%     \begin{tabular}{ | m{17em} | m{17em} | }
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%     \end{tabular}
+% \end{center}
+
+% \bibliography{}
+
+\end{document}

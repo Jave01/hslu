@@ -1,3 +1,4 @@
 {"rule":"GERMAN_SPELLER_RULE","sentence":"^\\QOftmals ist es nicht nötig (zu aufwändig/schwierig) oder gar nicht möglich die exakte Funktion zu berechnen (z.B. ln(x)).\\E$"}
 {"rule":"DE_CASE","sentence":"^\\QEigenschaft Mathematische Bedingung\\E$"}
 {"rule":"EMPFOHLENE_ZUSAMMENSCHREIBUNG","sentence":"^\\QEine Funktion heisst surjektiv, falls für jedes Element \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q ein Element \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q existiert, so dass \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q gilt.\\E$"}
+{"rule":"KOMMA_ZWISCHEN_HAUPT_UND_NEBENSATZ_2","sentence":"^\\QBeispiel: Dominosteine \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q falls der erste fällt, muss der 2. auch fallen.\\E$"}

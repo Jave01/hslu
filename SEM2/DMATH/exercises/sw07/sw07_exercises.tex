@@ -1,0 +1,165 @@
+\documentclass[12pt]{scrartcl}
+\usepackage[ngerman]{babel}
+
+
+\usepackage{amsmath, amssymb}
+
+\usepackage{array}  % for the tables
+
+\usepackage{nameref}  % for referencing with name
+
+\usepackage{hyperref}  % for hyperlinks
+
+\usepackage{mathrsfs}
+
+\usepackage{graphicx}  % for the images
+
+\usepackage{xcolor, colortbl}
+
+\usepackage{gensymb} % for \degree
+
+\usepackage{pgfplots}
+
+\usepackage{tabto}
+
+\usepackage{ulem} % \uuline
+
+\usetikzlibrary{arrows}
+
+% \usepgfplotslibrary{external}
+
+% \tikzexternalize
+
+\definecolor{Gray}{gray}{0.85}
+
+\setlength{\parindent}{0cm}
+
+\newcommand{\RomanNumeralCaps}[1]
+    {\MakeUppercase{\romannumeral #1}}
+
+% hyperlinks
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\bibliographystyle{IEEetran}
+
+
+
+
+\author{David Jäggli}
+
+\title{Diskrete Mathematik - Übungen SW07}
+
+
+
+% ---------- Begin Main Document ----------- %
+
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+\section{Binomialverteilung und hypergeometrische Verteilung}
+\textbf{I.)}\\
+a) $B(10|1000,0.01) = \binom{1000}{10}0.01^{10} \cdot 0.99^{990} = 12.57\%$\\
+b) $\sum_{k=0}^{9}B(k|1000,0.01) = \sum_{k=0}^{9}\binom{1000}{k}0.01^k \cdot 0.99^{1000-k} = 45.8\%$\\
+b) $\sum_{k=0}^{20} 1 - B(k|1000,0.01) = 1 - \sum_{k=0}^{20} \binom{1000}{k}0.01^k \cdot 0.99^{1000-k} = 0.15\%$\\
+
+
+\section{Poissonverteilung}
+\textbf{II.)}\\
+$P(k) = \frac{e^{-\mu} \cdot \mu^k}{k!}$, $\mu = 3$\\
+
+a) $P(k=0) = \frac{3^0}{0!} \cdot e^{-3} = 5\%$\\
+b) $P(k=1) = \frac{3^1}{1!} \cdot e^{-3} = 14.9\%$\\
+c) $P(k \leq 2) = 1 - \sum_{k=0}^{2} \frac{3^k \cdot e^{-3}}{k!} = 42.3\%$\\
+d) $P(k > 2) = 1 - \sum_{k=0}^{2} \frac{3^k \cdot e^{-3}}{k!} = 57.7\%$
+
+\section{Zufallsvariablen, Erwartungswerte und Varianzen}
+\textbf{III.)}\\
+a) Wahrscheinlichkeit für schwarz: $\frac{2}{5}$\\
+
+
+\vspace{1.5cm}
+\textbf{IV.)}\\
+Beispielverteilung für Veranschaulichung bei n=3:
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+    \begin{tabular}{  c | c | c  }
+        & $Y$ & \\ 
+        $X$ & 0 1 2 3 & $P(X)$\\ 
+        \hline
+        0 & 0 0 0 $\frac{1}{8}$ & $\frac{1}{8}$\\ 
+        1 & 0 0 $\frac{3}{8}$ 0 & $\frac{3}{8}$\\ 
+        2 & 0 $\frac{3}{8}$ 0 0 & $\frac{3}{8}$\\ 
+        3 & $\frac{1}{8}$ 0 0 0 & $\frac{1}{8}$\\ 
+        \hline
+        $P(Y)$ & $\frac{1}{8}$ $\frac{3}{8}$ $\frac{3}{8}$ $\frac{1}{8}$ & \\ 
+    \end{tabular}
+\end{center}
+
+$P(X = 0 \land Y = 3) = \frac{1}{8} \neq \frac{1}{8} \cdot \frac{1}{8}$
+
+\newpage
+\textbf{V.)}\\
+Falls $X = $ Würfe bis Augenzahl = 7, dann gilt folgendes:\\
+\[P(X=k) = \left(1-\frac{1}{6}\right)^{k-1} \cdot \frac{1}{6} = \left(\frac{5}{6}\right)^{k-1} \frac{1}{6}\]
+
+
+Die durchschnittliche Anzahl der Würfe bis eine 7 gewürfelt wird ist:
+
+\[E(X) = \sum_{k=0}^{\infty} k \left(\frac{5}{6}\right)^{k-1} \frac{1}{6} = \frac{1}{6} \sum_{k=0}^{\infty} k \left( \frac{5}{6} \right)^{k-1} = \frac{1}{6} \frac{1}{(1-\frac{5}{6})^2} = 6\]
+
+
+
+% Matrix example
+% \textbf{Korrektur:}\\
+% $\mathbf{A} \odot \mathbf{B} =
+% \begin{bmatrix}
+%     1 & 1 & 1 \\
+%     1 & 1 & 1 \\
+%     1 & 0 & 1 \\
+% \end{bmatrix}
+% $
+
+% tabular example 3 columns
+% \renewcommand{\arraystretch}{1.5}
+% \begin{center}
+%     \begin{tabular}{ | m{12em} | m{12em} | m{12em} | }
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%     \end{tabular}
+% \end{center}
+
+
+% tabular example 2 columns
+% \renewcommand{\arraystretch}{1.5}
+% \begin{center}
+%     \begin{tabular}{ | m{17em} | m{17em} | }
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%     \end{tabular}
+% \end{center}
+
+% \bibliography{}
+
+\end{document}

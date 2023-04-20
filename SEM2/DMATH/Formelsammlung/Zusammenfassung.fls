@@ -1,7 +1,7 @@
 PWD C:\dev\hslu\SEM2\DMATH\Formelsammlung
 INPUT C:\Users\david\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\dev\hslu\SEM2\DMATH\Formelsammlung\Formelsammlung.tex
-OUTPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.log
+INPUT c:\dev\hslu\SEM2\DMATH\Formelsammlung\Zusammenfassung.tex
+OUTPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.log
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrartcl.cls
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrartcl.cls
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrartcl.cls
@@ -943,23 +943,23 @@ INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.aux
-INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.aux
-INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.aux
-OUTPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.aux
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.aux
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.aux
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.aux
+OUTPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.aux
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
-INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
-INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
-INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
-INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
-INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
-INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
-INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
-INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
-INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
-INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
-OUTPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
-OUTPUT Formelsammlung.pdf
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.out
+OUTPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.out
+OUTPUT Zusammenfassung.pdf
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\bookmark\bookmark.sty
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\bookmark\bookmark.sty
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\bookmark\bookmark.sty
@@ -1027,9 +1027,9 @@ INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmssbx10.tfm
-INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.toc
-INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.toc
-INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.toc
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.toc
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.toc
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.toc
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
@@ -1045,7 +1045,7 @@ INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-OUTPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.toc
+OUTPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.toc
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmssbx10.tfm
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
@@ -1089,9 +1089,67 @@ INPUT .\img\wachstum_example_2.png
 INPUT .\img\wachstum_example_2.png
 INPUT .\img\wachstum_example_2.png
 INPUT .\img\wachstum_example_2.png
-INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.aux
-INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
-INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
+INPUT .\img\euqlidic_algorithm.png
+INPUT .\img\euqlidic_algorithm.png
+INPUT img\euqlidic_algorithm.png
+INPUT .\img\euqlidic_algorithm.png
+INPUT .\img\euqlidic_algorithm.png
+INPUT .\img\euqlidic_algorithm.png
+INPUT .\img\euqlidic_algorithm.png
+INPUT .\img\matrizenmultiplikation.png
+INPUT .\img\matrizenmultiplikation.png
+INPUT img\matrizenmultiplikation.png
+INPUT .\img\matrizenmultiplikation.png
+INPUT .\img\matrizenmultiplikation.png
+INPUT .\img\matrizenmultiplikation.png
+INPUT .\img\matrizenmultiplikation.png
+INPUT .\img\transponierte_matrix.png
+INPUT .\img\transponierte_matrix.png
+INPUT img\transponierte_matrix.png
+INPUT .\img\transponierte_matrix.png
+INPUT .\img\transponierte_matrix.png
+INPUT .\img\transponierte_matrix.png
+INPUT .\img\transponierte_matrix.png
+INPUT .\img\matrizen_eigenschaften.png
+INPUT .\img\matrizen_eigenschaften.png
+INPUT img\matrizen_eigenschaften.png
+INPUT .\img\matrizen_eigenschaften.png
+INPUT .\img\matrizen_eigenschaften.png
+INPUT .\img\matrizen_eigenschaften.png
+INPUT .\img\matrizen_eigenschaften.png
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
+INPUT .\img\boolesches_produkt.png
+INPUT .\img\boolesches_produkt.png
+INPUT img\boolesches_produkt.png
+INPUT .\img\boolesches_produkt.png
+INPUT .\img\boolesches_produkt.png
+INPUT .\img\boolesches_produkt.png
+INPUT .\img\boolesches_produkt.png
+INPUT .\img\wahrscheinlichkeiten.png
+INPUT .\img\wahrscheinlichkeiten.png
+INPUT img\wahrscheinlichkeiten.png
+INPUT .\img\wahrscheinlichkeiten.png
+INPUT .\img\wahrscheinlichkeiten.png
+INPUT .\img\wahrscheinlichkeiten.png
+INPUT .\img\wahrscheinlichkeiten.png
+INPUT .\img\zusammenfassung _verteilungen.png
+INPUT .\img\zusammenfassung _verteilungen.png
+INPUT img\zusammenfassung _verteilungen.png
+INPUT .\img\zusammenfassung _verteilungen.png
+INPUT .\img\zusammenfassung _verteilungen.png
+INPUT .\img\zusammenfassung _verteilungen.png
+INPUT .\img\zusammenfassung _verteilungen.png
+INPUT .\img\hypergeometrische Verteilung.png
+INPUT .\img\hypergeometrische Verteilung.png
+INPUT img\hypergeometrische Verteilung.png
+INPUT .\img\hypergeometrische Verteilung.png
+INPUT .\img\hypergeometrische Verteilung.png
+INPUT .\img\hypergeometrische Verteilung.png
+INPUT .\img\hypergeometrische Verteilung.png
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.aux
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Zusammenfassung.out
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb

@@ -1,0 +1,215 @@
+\documentclass[12pt]{scrartcl}
+\usepackage[ngerman]{babel}
+
+
+\usepackage{amsmath, amssymb}
+
+\usepackage{array}  % for the tables
+
+\usepackage{nameref}  % for referencing with name
+
+\usepackage{hyperref}  % for hyperlinks
+
+\usepackage{mathrsfs}
+
+\usepackage{graphicx}  % for the images
+
+\usepackage{xcolor, colortbl}
+
+\usepackage{gensymb} % for \degree
+
+\usepackage{pgfplots}
+
+\usepackage{tabto}
+
+\usepackage{ulem} % \uuline
+
+\usetikzlibrary{arrows}
+
+% \usepgfplotslibrary{external}
+
+% \tikzexternalize
+
+\definecolor{Gray}{gray}{0.85}
+
+\setlength{\parindent}{0cm}
+
+\newcommand{\RomanNumeralCaps}[1]
+    {\MakeUppercase{\romannumeral #1}}
+
+% hyperlinks
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\bibliographystyle{IEEetran}
+
+
+
+
+\author{David Jäggli}
+
+\title{Diskrete Mathematik - Übungen SW05}
+
+
+
+% ---------- Begin Main Document ----------- %
+
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+\section{Grundlagen des Zählens}
+\textbf{I.)}\\
+
+$26^4 + 1 = 456'976$\\
+
+\textbf{Falsch, da Wörter auch 1,2 oder 3 lang sein können}\\
+
+$\displaystyle{\sum_{k=0}^{4} 26^j = 475'255}$\\
+\vspace{20px}
+
+\textbf{II.)}\\
+$2^{10-3} + 2^{10-2} = 384$\\
+
+Kann es sein, dass die Lösung hier falsch ist? Weil in der Aufgabenstellung wird von 
+\textit{oder} gesprochen, in der Lösung jedoch werden die beiden Mengen \textit{und} verknüpft.\\
+
+
+\section{Schubfachprinzip}
+\textbf{III.)}\\
+Bei einer Division durch 4 ergeben sich Reste von 0, 1, 2 oder 3. Man hat jedoch
+5 Zahlen, welche sich auf diese 4 Zahlen aufteilen müssen $\rightarrow$ es gibt mindestens
+zwei mal den gleichen Rest.
+
+
+\textbf{IV.)}\\
+Maximal 7. \\
+Worst case: Man nimmt immer abwechslungsweise einen roten dann einen blauen Socken.
+
+ceil(7/2) = 4\\
+
+
+\section{Permutationen und Kombinationen}
+\textbf{V.)}\\
+?\\
+
+
+
+\textbf{VI.)}\\
+Immer 2 Null nach 1 $\rightarrow$ Objekte: 0b100\\
+Anzahl 1: 4\\
+Anzahl 0: 12\\
+
+$4 \cdot 2$ = 8 $\rightarrow$ 4 verschiebbare 0s\\
+
+Objekt: O\\
+
+Mögliche Plätze für Nullen: \text{O\_\_\_\_O\_\_\_\_O\_\_\_\_O\_\_\_\_}\\
+
+Permutation ohne Wiederholung:
+$\frac{4!}{(4-4)!} = 4*3*2*1 = 24$
+
+\textbf{Ke ahnig wasi fausch gmacht ha}\\
+
+
+\textbf{VII.)}\\
+Kann nur 49 geben, wenn 2x 7 und anderenfalls Einsen vorkommen.
+Heisst für $10^1$ Ziffern: 1\\
+für $10^2$ Ziffern: 3\\
+für $10^3$ Ziffern: 6\\
+für $10^4$ Ziffern: 10\\
+für $10^5$ Ziffern: 15\\
+
+ergibt 35
+
+
+\textbf{VIII.)}\\
+Geht nur wenn jede Zahl stimmt, nur Reihenfolge ist egal.
+
+
+12 = 1+11\\
+12 = 2+10\\
+12 = 3+9\\
+12 = 4+8\\
+12 = 5+7\\
+12 = 6+6\\
+12 = 1+2+9\\
+12 = 1+3+8\\
+12 = 1+4+7\\
+12 = 1+5+6\\
+12 = 1+5+6\\
+\dots\\
+12 = 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1\\
+\dots\\
+
+Wenn man jede Ziffer in Zahlen $< 10^6$ als mögliche Stelle ansieht, welche einen
+Wert von 0-9 annehmen kann, ergibt sich folgender Binomialkoeffizient:\\
+$\binom{12+5}{5} = 6188$\\
+
+\textbf{Korrektur:} Randbedingungen\dots 6062
+
+\newpage
+\textbf{IX.)}\\
+W: 2\\
+E: 4\\
+T: 3\\
+B: 2\\
+R: 2\\
+S: 4\\
+
+$n = 17$\\
+
+$\displaystyle{\frac{17!}{4!4!3!2!2!2!}}$
+
+% Matrix example
+% \textbf{Korrektur:}\\
+% $\mathbf{A} \odot \mathbf{B} =
+% \begin{bmatrix}
+%     1 & 1 & 1 \\
+%     1 & 1 & 1 \\
+%     1 & 0 & 1 \\
+% \end{bmatrix}
+% $
+
+% tabular example 3 columns
+% \renewcommand{\arraystretch}{1.5}
+% \begin{center}
+%     \begin{tabular}{ | m{12em} | m{12em} | m{12em} | }
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%     \end{tabular}
+% \end{center}
+
+
+% tabular example 2 columns
+% \renewcommand{\arraystretch}{1.5}
+% \begin{center}
+%     \begin{tabular}{ | m{17em} | m{17em} | }
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%     \end{tabular}
+% \end{center}
+
+% \bibliography{}
+
+\end{document}
