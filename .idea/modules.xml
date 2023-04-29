@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/hslu.iml" filepath="$PROJECT_DIR$/.idea/hslu.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OOP/oop_exercises/oop_exercises.iml" filepath="$PROJECT_DIR$/OOP/oop_exercises/oop_exercises.iml" />
-    </modules>
-  </component>
-</project>
