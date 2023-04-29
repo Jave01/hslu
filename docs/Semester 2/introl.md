@@ -244,3 +244,89 @@ In der Wirtschaft:
 -   Beweglichkeit, anpassungsfähig
 -   Informationsüberlegenheit
 -   Überraschung/Täuschung
+
+### Man in the middle
+
+-   **Physical Layer:** Angreifer emuliert Access Point in Netzwerk
+-   **Network Layer:** ARP Poisoning
+-   **Anwendungs Layer:** DNS spoofing
+
+#### IP forwarding
+
+enable ip forwarding: sysctl net.ipv4.ip_forward=1
+
+### Firewall
+
+-   Limit traffic
+-   Block traffic
+-   Allow traffic
+
+Ist auf Layer 3 und höher.
+
+#### Packetfilter
+
+-   Wedren oft mit Access Lists umgesetzt. Diese werden auf den Routern konfiguriert.
+-   Wenn nicht direkt im Router, dann do nah am Internet wie möglich, technisch gesehen meist vor dem Router.
+-   Schaut Packete auf Netzwerkebene an.
+
+Beispieldefinition einer ACL
+
+-   Ziele
+    -   Zigriff vom Internet ins interne Netz verboten
+    -   Zugriff vom internen Netz ins Internet erlaubt
+
+Darf nicht direkt so umgesetzt werden, da sonst kein HTML zurückkommt. Zum Beispiel mit TCP-Flags realisieren (ACK-Flagged Nachrichten erlauben).
+
+1. Schwierig zu konfigurieren
+2. Probleme mit gewissen Protokollen (z.B. FTP)
+3. Jedes Paket wird einzeln kontrolliert (keine Zusammenhänge zu verhergehenden Paketen)
+4. Probleme mit Protokollen mit dynamischen Port-Nummern
+5. Probleme mit bestimmten Angriffsarten
+    - Pakete mit Source Port 20 (TCP) oder 53 (TCP/UDP)
+      ...
+
+#### Statefull
+
+Auf Layer 3
+
+-   Verbindungsorientiert
+    Schaut sich den gesamten Verbindungsaufbau an und entscheidet dann ob erlaubt oder nicht (wenn der Verbindungsaufbau von innen kommt, lässt sie auch den inkommenden traffic rein).
+
+-   Packetfilter mit "Intelligenz"
+-   Zusammenhänge zwischen Paketen werden berücksichtigt ("Stateful" im Vergleich zu "Stateless", wie bei Paketfilter)
+
+#### Application Layer Gateways
+
+Geht bis auf Application Layer hoch nicht nur Layer 3. Werden auch Proxy genannt.  
+Proxy $\equiv$ Stellvertreter.
+
+-   Einfacher zu konfigurieren
+-   Keine direkte Netzverbindung vom Internet ins interne Netz
+-   Relativ sicher im Vergleich zu Packet Filter.  
+    Aber: Proxy muss sicher sein, sonst ist alles unsicher.
+-   Brauch viel Rechenleistung, ansonsten sehr langsam.
+
+#### Schutz des Perimeters
+
+Perimeter = Übergang zwischen Internet und Intranet. Rein funktional wird dafür nur ein Router benötigt. Meistens ist dies aber nicht ausreichend und es wird zusätzlich eine Firewall verwendet.
+
+#### Regelaufbau
+
+-   Zuunterst: Default Regel (alles blockieren)
+-   Alle Regeln darüber: Erlauben was benötigt wird
+
+#### Web Application Firewalls ("WAF")
+
+-   Schaltest du direkt vor einen Webserver. Ergo schützt deinen Webserver. Kann den Verkehr analysieren, filtern und verändern.
+-   Schutz gegen SQL-Injection, XSS etc.
+-   Wird zusätzlich zum "normalen" Firewalling verwendet.
+-   Je nach Produkt
+    -   Kann als Bridge, Router, Reverse Proxy oder auf dem Server selber installiert werden
+    -   Kann als Blacklist oder Whitelist konfiguriert werden
+    -   Validierung von Cookies, Session State, User, usw.
+-   Pro-aktiver Schutz gegen neue (ev. noch nicht entdeckte) Angriffe möglich.
+
+## Vorbereitung für die Prüfung
+
+-   Alle Hüte anschauen
+-   Sun Chi

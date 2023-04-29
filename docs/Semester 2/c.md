@@ -15,8 +15,8 @@
     strcat(s1, s2); // Concatenate s2 with s1. Does not check if s1 is big enough
     strncat(s1, s2, n); // Concatenate n chars of s2 with s1
 
-    strcmp(s1, s2); // Concatenate s2 with s1. Return value is like .compareTo from java (-1, 0, 1)
-    strncmp(s1, s2, n); // Concatenate n chars of s2 with s1
+    strcmp(s1, s2); // Compare s2 with s1. Return value is like .compareTo from java (-1, 0, 1)
+    strncmp(s1, s2, n); // Compare n-chars of s2 with s1
 
     strchr(str, c); // search char c in string str
     strstr(s1, s2); // search substring s2 string s1
