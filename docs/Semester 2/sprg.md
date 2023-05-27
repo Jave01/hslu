@@ -305,3 +305,59 @@ Three (common) attack possibilities
 -   Frameworks: JSP, JSF, Angular
 -   Input validation
 -   Don't do your own validation
+
+### Secure Programming for a software engineer
+
+must meet the business requirements:
+
+1. Requirements
+    - Business Cases
+    - What to protect
+    - Threat model
+2. Specification
+    - Technical design
+    - Architecture and technologies
+3. Implementation
+    - Prevent coding flaws
+4. Testing
+    - Ensure high test coverage (e.g. pen-testing)
+5. Maintenance
+    - Regular review of threats
+    - Monitoring
+    - Incidenct detection and reaction
+
+Avoid by:
+
+1. Threat modelling (STRIDE)
+2. Scan for vulnerabilities
+    - Code reviews
+    - Monitor vulnerabilites in libraries
+3. Test system components
+    - Unit test
+    - Penetration tests
+
+CVE - Common Vulnerabilities and Exposures
+
+### Software Architecture
+
+#### Model View Control
+
+Get the data from the database, put it into the view and show it to the user.
+
+#### Traditional Web Applications
+
+-   Client sends a request to an URL
+-   Business logics is performed in the model components
+-   The view is rendered and sent back to the client
+
+#### System Architecture Diagram
+
+Shows the components of a system and how they are connected.
+
+### Dynamic Application Security Testing
+
+Vulnerability Scan - without source code, therefore a "blackbox" approach
+
+-   Finds vulnerabilities rather late
+-   Generally for web applications and web services
+-   Scales within limitations

@@ -179,3 +179,43 @@ Recht ist nicht überall gleich.
 
 -   Deontologie (Pflichtenethik): du sollst nicht töten -> überall gleich.
 -   Utilitarismus (Nutzethik)
+
+
+### Filmanalyse
+
+- Grundlegende ethische Frage stellen: "Was soll ich tun bzw. wie sollen wir handeln?"
+- Auch auf Ästethik achten (Video/Ton/Perspektive)
+- Bei Schlüsselmomenten die Zeit aufschreiben.
+
+
+#### Untersuchungsebenen
+
+##### narrative
+
+- individualethsch
+- sozialethisch
+- naturethisch
+- soziale Rollen im Film
+- Was personifiziert der Protagonist
+- Welche Werte repräsentieren die Figuren
+
+##### visuell
+
+- Mit welchen Bildern wird die Geschichte umgesetzt?
+- Einstellungsgrössen
+- Kameraperspektiven
+- Dominiert eine Einstellungsgrösse bzw. Kamerperspektive?
+
+
+##### auditiv
+
+Wie wird Ton, Sprache, Geräusche und Musik eingesetzt?
+
+
+#### Leitfragen
+
+- Was ist das moralische Problem des Films?
+- Was ist das zugrunde liegende moralische Thema des Films - vielleicht prägnant zusammenfassen
+- Welche moralische Aussage transportiert der Film?
+- Welches Menschenbild (welche Idee von Menschen) und welches Gesellschaftsbild (welche Idee von der Gesellschaft) werden im Spielfilm dargestellt?
+- Welches gesellschaftliche Problem wird im Film dargestellt

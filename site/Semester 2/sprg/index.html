@@ -7,9 +7,15 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../privacy/" rel="prev"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
+<<<<<<< HEAD
 <meta content="mkdocs-1.4.2, mkdocs-material-9.1.5" name="generator"/>
 <title>SPRG - Semester notes</title>
 <link href="../../assets/stylesheets/main.7a7fce14.min.css" rel="stylesheet"/>
+=======
+<meta content="mkdocs-1.4.2, mkdocs-material-9.0.13" name="generator"/>
+<title>SPRG - Semester notes</title>
+<link href="../../assets/stylesheets/main.ffa9267a.min.css" rel="stylesheet"/>
+>>>>>>> f18206cf1c929541237ea7452f604124d8ac7ef9
 <link href="../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
@@ -421,6 +427,40 @@
     Interfaces as Special Problems
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#secure-programming-for-a-software-engineer">
+    Secure Programming for a software engineer
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#software-architecture">
+    Software Architecture
+  </a>
+<nav aria-label="Software Architecture" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model-view-control">
+    Model View Control
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#traditional-web-applications">
+    Traditional Web Applications
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#system-architecture-diagram">
+    System Architecture Diagram
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dynamic-application-security-testing">
+    Dynamic Application Security Testing
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -619,6 +659,40 @@
     Interfaces as Special Problems
   </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#secure-programming-for-a-software-engineer">
+    Secure Programming for a software engineer
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#software-architecture">
+    Software Architecture
+  </a>
+<nav aria-label="Software Architecture" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#model-view-control">
+    Model View Control
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#traditional-web-applications">
+    Traditional Web Applications
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#system-architecture-diagram">
+    System Architecture Diagram
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dynamic-application-security-testing">
+    Dynamic Application Security Testing
+  </a>
+</li>
 </ul>
 </nav>
 </li>
@@ -653,7 +727,11 @@
 <h2 id="inhalt">Inhalt</h2>
 <h3 id="data-flow-diagramm">Data flow diagramm</h3>
 <p>4 elements:</p>
+<<<<<<< HEAD
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../assets/dfd.png"><img alt="data flow diagram" src="../../assets/dfd.png"/></a></p>
+=======
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/dfd.png"><img alt="data flow diagram" src="../../assets/dfd.png"/></a></p>
+>>>>>>> f18206cf1c929541237ea7452f604124d8ac7ef9
 <h3 id="approach">Approach</h3>
 <p>Rule of thumb:</p>
 <ul>
@@ -882,7 +960,11 @@ f --&gt; a</code></pre>
 <li>Always write a detailed Threat Model (protocol, port, everything you found out)</li>
 </ul>
 <h4 id="cheat-sheet-different-threats-in-dfd">Cheat Sheet: different threats in DFD</h4>
+<<<<<<< HEAD
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../assets/cheat_sheet_sprg_threats.png"><img alt="asdf" src="../../assets/cheat_sheet_sprg_threats.png"/></a></p>
+=======
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/cheat_sheet_sprg_threats.png"><img alt="asdf" src="../../assets/cheat_sheet_sprg_threats.png"/></a></p>
+>>>>>>> f18206cf1c929541237ea7452f604124d8ac7ef9
 <h4 id="how-to-address-threats">How to address threats</h4>
 <p>4 ways to address threats</p>
 <ol>
@@ -931,6 +1013,68 @@ f --&gt; a</code></pre>
 <li>must be interpreted the same way on both sides</li>
 </ul>
 <p>Everything should be defined as detailed as possible, everything has to be checked at runtime.</p>
+<h3 id="secure-programming-for-a-software-engineer">Secure Programming for a software engineer</h3>
+<p>must meet the business requirements:</p>
+<ol>
+<li>Requirements<ul>
+<li>Business Cases</li>
+<li>What to protect</li>
+<li>Threat model</li>
+</ul>
+</li>
+<li>Specification<ul>
+<li>Technical design</li>
+<li>Architecture and technologies</li>
+</ul>
+</li>
+<li>Implementation<ul>
+<li>Prevent coding flaws</li>
+</ul>
+</li>
+<li>Testing<ul>
+<li>Ensure high test coverage (e.g. pen-testing)</li>
+</ul>
+</li>
+<li>Maintenance<ul>
+<li>Regular review of threats</li>
+<li>Monitoring</li>
+<li>Incidenct detection and reaction</li>
+</ul>
+</li>
+</ol>
+<p>Avoid by:</p>
+<ol>
+<li>Threat modelling (STRIDE)</li>
+<li>Scan for vulnerabilities<ul>
+<li>Code reviews</li>
+<li>Monitor vulnerabilites in libraries</li>
+</ul>
+</li>
+<li>Test system components<ul>
+<li>Unit test</li>
+<li>Penetration tests</li>
+</ul>
+</li>
+</ol>
+<p>CVE - Common Vulnerabilities and Exposures</p>
+<h3 id="software-architecture">Software Architecture</h3>
+<h4 id="model-view-control">Model View Control</h4>
+<p>Get the data from the database, put it into the view and show it to the user.</p>
+<h4 id="traditional-web-applications">Traditional Web Applications</h4>
+<ul>
+<li>Client sends a request to an URL</li>
+<li>Business logics is performed in the model components</li>
+<li>The view is rendered and sent back to the client</li>
+</ul>
+<h4 id="system-architecture-diagram">System Architecture Diagram</h4>
+<p>Shows the components of a system and how they are connected.</p>
+<h3 id="dynamic-application-security-testing">Dynamic Application Security Testing</h3>
+<p>Vulnerability Scan - without source code, therefore a "blackbox" approach</p>
+<ul>
+<li>Finds vulnerabilities rather late</li>
+<li>Generally for web applications and web services</li>
+<li>Scales within limitations</li>
+</ul>
 </article>
 </div>
 </div>
@@ -948,7 +1092,11 @@ f --&gt; a</code></pre>
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<<<<<<< HEAD
 <script src="../../assets/javascripts/bundle.407015b8.min.js"></script>
+=======
+<script src="../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+>>>>>>> f18206cf1c929541237ea7452f604124d8ac7ef9
 <script src="../../javascripts/mathjax.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
