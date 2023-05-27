@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1681749174 "c:/dev/hslu/SEM2/DMATH/exercises/sw08/sw08_exercises.tex" "sw08_exercises.pdf" "sw08_exercises" 1681749174
+["pdflatex"] 1681914519 "c:/dev/hslu/SEM2/DMATH/exercises/sw08/sw08_exercises.tex" "sw08_exercises.pdf" "sw08_exercises" 1681914521
   "C:/Users/david/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1673529487 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/david/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1667138804 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/david/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs5.tfm" 1667138805 684 3a51bd4fd9600428d5264cf25f04bb9a ""
@@ -26,6 +26,7 @@
   "C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
   "C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/tfm/public/latex-fonts/lasy6.tfm" 1136765053 520 4889cce2180234b97cad636b6039c722 ""
   "C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
+  "C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247596667 30251 6afa5cb1d0204815a708a080681d4674 ""
   "C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1247596667 36741 fa121aac0049305630cf160b86157ee4 ""
   "C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247596666 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
@@ -219,12 +220,13 @@
   "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/ulem/ulem.sty" 1578651445 15682 94f55b803e160cf7fb6e4d77d07cfe1d ""
   "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "C:/dev/hslu/SEM2/DMATH/exercises/sw08/out/sw08_exercises.aux" 1681749177 1113 8aac9ccd81c901da4e1a537d7e71daca ""
-  "c:/dev/hslu/SEM2/DMATH/exercises/sw08/sw08_exercises.tex" 1681749165 2448 506f3883b5fda1d9b1758c7a3d001892 ""
-  "out/sw08_exercises.aux" 1681749174 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "C:/dev/hslu/SEM2/DMATH/exercises/sw08/out/sw08_exercises.aux" 1681914521 2420 6e860e05c1982161afa5b3e5f5d10dd5 ""
+  "C:/dev/hslu/SEM2/DMATH/exercises/sw08/out/sw08_exercises.out" 0 -1 0 ""
+  "C:/dev/hslu/SEM2/DMATH/exercises/sw08/out/sw08_exercises.toc" 1681914521 353 bae3bb32543d325629923b78358065df ""
+  "c:/dev/hslu/SEM2/DMATH/exercises/sw08/sw08_exercises.tex" 1681914515 3641 5ac8302dfe7edf01fe3db6f09e0a0554 ""
+  "out/sw08_exercises.aux" 1681914521 2420 6e860e05c1982161afa5b3e5f5d10dd5 "pdflatex"
   "out/sw08_exercises.out" 0 -1 0 "pdflatex"
-  "out/sw08_exercises.toc" 0 -1 0 "pdflatex"
-  "sw08_exercises.toc" 0 -1 0 ""
+  "out/sw08_exercises.toc" 1681914521 353 bae3bb32543d325629923b78358065df "pdflatex"
   (generated)
   "out/sw08_exercises.aux"
   "out/sw08_exercises.log"

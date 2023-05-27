@@ -248,3 +248,60 @@ Components need interfaces
 -   must be interpreted the same way on both sides
 
 Everything should be defined as detailed as possible, everything has to be checked at runtime.
+
+### Injection
+
+Untrusted input gets processed as code.
+
+-   SQL
+-   OS command
+-   LDAP query
+-   XPath query (for XML)
+-   HTTP or File requests
+-   JavaScript injection (XSS)
+
+#### Types of Injection
+
+-   1st order injection
+    -   in-band: results directly returned through same channel (SQL)
+    -   inferential (blind): results returned through a different channel (e.g. error message)
+    -   Out-of-band: results returned through a different channel (e.g. email)
+-   2nd order injection
+    -   Attacker doees not send the malicious payload directly to the target system, but to an intermediate system first.
+    -   Example: inject js code into into a form, it is written to a log file, admin opens log file, js code gets executed.
+-   Lateral injection - Datentypen werden verändert
+
+#### Prevent Injections
+
+-   Input validation (block stuff)
+-   Sanitization (search and remove (possibly dangerous) stuff)
+-   Encoding
+-   Least privilege principle
+-   Optimize SQL Database configuration
+    -   Disable non-standard functions on database (e.g. sleep)
+
+### Cross-Site Scripting (XSS)
+
+-   Exploits vulnerabilities in a web application to inject malicious code into the application (Javascript)
+-   The malicious code is then executed by the victim's browser (privileges of the user)
+
+Goals:
+
+-   Forward sensitive data to malicious server
+-   Force download of malicious files
+-   Download additional malicious scripts from attacker's server
+-   Session hijacking
+-   Overcome CSRF proections
+-   Keylogger
+
+Three (common) attack possibilities
+
+1. Document sink - updates DOM of document.element with data controlled by the attacker
+2. Location sink - zodates document.location with data controlled by the attacker
+3. Execution sink - runs the eval() function with data controlled by the attacker
+
+#### Prevent XSS
+
+-   Frameworks: JSP, JSF, Angular
+-   Input validation
+-   Don't do your own validation

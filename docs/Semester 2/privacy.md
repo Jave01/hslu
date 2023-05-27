@@ -181,3 +181,65 @@ Nachrichten werden nicht direkt an den Empfänger gesendet, sondern werden über
 #### k-Anonymität
 
 k-Anonymität tritt immer dann auf wenn ein Eintrag k-mal in einer Liste auftaucht. Beispiel PLZ: für 3-k tritt der Eintrag 401\* drei mal auf.
+
+### Datenschutz
+
+!!!note "Lernziele"
+
+    1. Ordnen das Recht konkreten digitaleen Sachverhalten zu
+    2. Definieren die Persönlichkeit und entscheiden, ob sie verletzt wurde
+    3. Wenden die Grundzügee im Datenschutzgesetz an
+    4. Unterscheiden die Datenbearbeitung von Behörden und Privaten
+    5. Rechtfertigen Eingriffe in die Persönlichkeit.
+    6. Erkennen die Risiken und nennen die Folgen von unrechtmässigen Eingriffen in die Persönlichkeit.
+    7. Wenden die Erkenntnisse der Vorlesung auf Gruppenarbeiten an
+
+#### Person
+
+Was macht eine Person aus?
+
+-   Natürliche Person: Person aus Fleisch und Blut
+-   Juristische Person: Person die durch Gesetz entsteht (Firma, Verein, Staat)
+
+#### Beiteiligte
+
+1. Betroffene Person - eine identifizierbare lebende Persone deren Daten verarbeitet werden
+2. Datenschutzberater / Datenschutzbeauftragter - wacht über und leitet die Datenbearbeitung in einem Unternehmen
+3. Verantwortlicher / Controller - bestimmt Zweck und Mittel der Datenverarbeitung
+4. Auftragsbearbeiter / Prozessor - verarbeitet Daten im Auftrag des Verantwortlichen
+5. Empfänger - erhält Daten vom Verantwortlichen (maybe)
+6. Vertreter - vertritt den Verantwortlichen im Ausland
+7. Dritte - Jede Partei, an die personenbezogene Daten weitergegeben werden
+
+#### Was schützt das DSG?
+
+-   Persönlichkeit
+-   Privatsphäre
+-   Persönlichkeitsrechte
+
+#### Datenbearbeitung
+
+Jede Bearbeitung von Personendaten
+
+-   Beschaffung
+-   Speicherung
+-   Verwendung
+-   Veränderung
+-   Bekanntgabe
+-   Archivierung
+
+#### Wann ist eine Datenbearbeitung erlaubt
+
+-   Einwilligung der betroffenen Person
+-   Bearbeitung der Daten ist rechtmässig
+    -   Bearbeeitung durch Private
+    -   Bearbeitung durch Behörden
+    -   Bearbeitung durch Organe
+-   Ist die von mir vorgesehene Bearbeitung verhältnismässig
+-   Sind die Daten korrekt
+
+### Datenexport - Geheimnisschutz
+
+---
+
+<p style="color: lightgreen;">Hello</p>

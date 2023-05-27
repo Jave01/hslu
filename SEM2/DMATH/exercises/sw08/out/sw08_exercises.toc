@@ -1,3 +1,5 @@
 \babel@toc {ngerman}{}\relax 
 \contentsline {section}{\numberline {1}Rekursionen}{2}{section.1}%
+\contentsline {section}{\numberline {2}Lösen von linearen Rekursionsbeziehungen}{2}{section.2}%
+\contentsline {section}{\numberline {3}Erweitertes Ein- und Ausschlussprinzip}{3}{section.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -16,3 +16,5 @@ Bitstring
 Rekursionsbeziehungen
 Bitstrings
 Rekursionsbeziehung
+Kongruenzen
+Gradlisten

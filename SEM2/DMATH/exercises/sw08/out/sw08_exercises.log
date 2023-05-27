@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.29)  17 APR 2023 18:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.10.29)  19 APR 2023 16:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -637,6 +637,7 @@ LaTeX Font Info:    ... okay on input line 64.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 64.
 LaTeX Font Info:    ... okay on input line 64.
 Package hyperref Info: Link coloring ON on input line 64.
+ (C:\dev\hslu\SEM2\DMATH\exercises\sw08\out\sw08_exercises.out) (C:\dev\hslu\SEM2\DMATH\exercises\sw08\out\sw08_exercises.out)
 \@outlinefile=\write4
 \openout4 = `sw08_exercises.out'.
 
@@ -698,12 +699,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 67.
  (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-No file sw08_exercises.toc.
+) (C:\dev\hslu\SEM2\DMATH\exercises\sw08\out\sw08_exercises.toc)
 \tf@toc=\write5
 \openout5 = `sw08_exercises.toc'.
 
-[1
+ [1
 
 
 {C:/Users/david/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
@@ -717,59 +717,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--84
  []
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 87.
+Underfull \hbox (badness 10000) in paragraph at lines 86--89
 
-c:/dev/hslu/SEM2/DMATH/exercises/sw08/sw08_exercises.tex:87: Please use \mathaccent for accents in math mode.
-<recently read> \accent 
-                        
-l.87 Wenn mit 1 endet dann gibt es $n^{-1} Mö
-                                              glichkeiten$
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
+ []
 
-c:/dev/hslu/SEM2/DMATH/exercises/sw08/sw08_exercises.tex:87: Missing { inserted.
-<to be read again> 
-                   \fontdimen 
-l.87 Wenn mit 1 endet dann gibt es $n^{-1} Mö
-                                              glichkeiten$
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
 
-c:/dev/hslu/SEM2/DMATH/exercises/sw08/sw08_exercises.tex:87: Missing } inserted.
-<inserted text> 
-                }
-l.87 ...endet dann gibt es $n^{-1} Möglichkeiten$
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+Underfull \hbox (badness 10000) in paragraph at lines 103--110
 
-[2] (C:\dev\hslu\SEM2\DMATH\exercises\sw08\out\sw08_exercises.aux)
+ []
 
-Package rerunfilecheck Warning: File `sw08_exercises.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
 
-Package rerunfilecheck Info: Checksums for `sw08_exercises.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+[3] (C:\dev\hslu\SEM2\DMATH\exercises\sw08\out\sw08_exercises.aux)
+Package rerunfilecheck Info: File `sw08_exercises.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 34788 strings out of 475385
- 828553 string characters out of 2776906
- 1383801 words of memory out of 3000000
- 55619 multiletter control sequences out of 15000+600000
+ 34800 strings out of 475385
+ 828978 string characters out of 2776906
+ 1388801 words of memory out of 3000000
+ 55622 multiletter control sequences out of 15000+600000
  478284 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,8n,106p,10674b,609s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on sw08_exercises.pdf (2 pages, 98921 bytes).
+<C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on sw08_exercises.pdf (3 pages, 117113 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 5 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
+ 37 words of extra memory for PDF output out of 10000 (max. 10000000)
 

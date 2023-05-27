@@ -578,30 +578,52 @@ $a$ und $b$ teilbar ist. Es gilt:\\
 
 ab = ggT(a,b) $\cdot$ kgV(a,b)\\
 
+
 \textbf{Für ggT finden:}
 \begin{enumerate}
     \item a und b jeweils in Primfaktoren zerlegen
     \item alle gemeinsamen Primfaktoren multiplizieren
 \end{enumerate}
 
+\textbf{Eigenschaften:}
+\begin{itemize}
+    \item $ggT(a,0) = |a|$
+    \item $\forall a, b \in \mathbb{Z} (ggT(a,b) = ggT(\pm a, \pm b))$
+    \item ggT(a, b) = ggT(a + b $\cdot$ k, b), k $\in \mathbb{Z}$
+    \item ggT(a, b) = ggT(b, $R_b$(a))
+\end{itemize}
 
 \subsection{Modulare Arithmetik}
-Sei $m \in \mathbb{N} \backslash \{0\}$, dann nennt man zwei ganze Zahlen a und b kongruent modulo m, falls $m\mid (a - b)$
+Sei $m \in \mathbb{N} \backslash \{0\}$, dann nennt man zwei ganze Zahlen a und b kongruent modulo m, falls $m\mid (a - b)$.
 Das heisst a und b liegen ein Vielfaches von m auseinander. Man schreibt dann $a \equiv b$ mod $m$ und sagt:
-"a ist kongruent zu b modulo m".\\
+``a ist kongruent zu b modulo m''.\\
 
 $13 \equiv 1$ mod 4 denn $4 \mid (13 - 1)$\\
 $13 \equiv 1$ mod 3 denn $3 \mid (13 - 1)$\\
 $13 \not\equiv  1$ mod 5 denn $5 \nmid (13 - 1)$\\
 
+Die Schreibweise bedeutet $13 - 1$ (12) ist ein Vielfaches von 4.\\
 
-\newpage
 \subsection{Der Euklidische Algorithmus}
 Effiziente Methode um ggT zu finden.
 
 \includegraphics[width=15cm]{img/euqlidic_algorithm.png}
 
 ggT ist jeweils 1 und 3.
+
+
+\subsection{Erweiterter Euklidische Algorithmus}
+Lösung der Gleichung mit der diophantischen Gleichung.\\
+
+Finde $x$,$y \in \mathbb{Z}$ mit $211 \cdot x + 13 \cdot y = 1$\\ 
+
+\includegraphics[width=14cm]{img/erweiterter_euklidischer_algorithmus.png}
+
+Mit einem nächsten Beispiel: zuerst (blau) der normale euklidische Algorithmus machen
+und danach der erweiterte machen (rot) von unten nach oben. Dann hat man am Schluss
+x und y in der Gleichung.
+
+\includegraphics[width=14cm]{img/erweiterter_euklidischer_algorithmus_beispiel2.png}
 
 \section{Matrizen}
 \subsection{Definition}
@@ -619,7 +641,7 @@ $
 \end{bmatrix}$\\
 
 
-Kurzschreibform: \textbf{A} = [$a_{i,j}$]
+Kurzschreibform: \textbf{A} = [$a_{i,j}$]\\
 
 
 \subsection{Addition von Matrizen}
@@ -941,7 +963,266 @@ wobei die Alphas beliebige Konstanten sind.\\
 Wenn $D = 0$, dann $a_n^{(h)} = (\alpha_1 + \alpha_2 n) r^n$
 
 
+\section{Zahlentheorie}
+\subsection{Lösung Diophantischer Gleichungen}
+$n_1 \cdot x + n_2 \cdot y = n$\\
+Hat immer dann ganzzahligen Lösungen, wenn ggT($n_1$, $n_2$) | $n$ ist. Das heisst, 
+falls ggT($n_1$, $n_2$) ein Teiler von $n$ ist.\\
+Sind $n_1$ und $n_2$ teilerfremd, dann hat die Gleichung immer eine Lösung.\\
 
+\subsection{Modulare Inverse}
+x mal was gibt 1: $3^{-1} \cdot \frac{1}{3} = 1$\\
+
+\includegraphics[width=14cm]{img/modulo inverse_beispiel.png}
+
+
+Das heisst, dass wo immer eine 1 in der Grafik ist, existiert ein modulo inverse.
+Ist die Modulo Zahl eine Primzahl existiert immer ein modulo inverse, andererseits nicht unbedingt.\\
+
+Grundsätzlich mit erweitertem euklidischem Algorithmus lösen.\\
+
+\textbf{Beispiel:}
+Finden Sie ein modulares Inverses von 963 modulo 218.\\
+
+\includegraphics[width=14cm]{img/modulo inverse_beispiel.png}
+
+
+\subsection{Der chinesische Restsatz}
+Seien $m_1,m_2, \dots, m_k$ paarweise teilerfremde Zahlen. Dann hat das System k simultane Kongruenzen\\
+
+\begin{align*}
+    x &\equiv r_1 \mod m_1 \\
+    x &\equiv r_2 \mod m_2 \\
+    \vdots \\
+    x &\equiv r_k \mod m_k \\
+\end{align*}
+
+\textbf{Konstruktionskonzept:}\\
+$m = m_1 \cdot m_2 \cdots m_k$
+\begin{enumerate}
+    \item Dann definieren wir für alle $i = 1,2, \dots, k$:\\
+ 
+    $\displaystyle{M_i = \frac{m}{m_i}}$\\
+
+    Sicher gilt dann ggT($m_i$, $M_i$) = 1. Denn die Voraussetzung ist, dass alle $m_i$ teilerfremd sind.\\
+    \item Für $i = 1,2,\dots k$ hat $M_i$ ein modulares Inverses (erweiterter euklidischer Algorithmus)
+    $y_i$ modulo $m_i$, d.h.\\
+
+    $\displaystyle{M_i \cdot y_i \equiv 1}$ (mod $m_i$)\\
+
+    \item Die simultane Lösung der Kongruenzen ist dann:\\
+    
+    $\displaystyle{x = \sum_{i=0}^{k} r_i \cdot M_i \cdot y_i}$\\
+
+\end{enumerate}
+
+
+\newpage
+\subsection{Eulersche $\phi$-Funktion}
+In der Zahlentheorie und Kryptologie sind folgende Mengen wichtig:\\
+$\mathbb{Z}_n := \{0,1,2,3, \dots, n-1\}$, wobei $|\mathbb{Z}_n| = n$, das heisst: $\mathbb{Z}_4 = \{0, 1, 2, 3\}$ und $|\mathbb{Z}_4| = 4$\\
+$\mathbb{Z}_n^* := \{x \in \mathbb{Z}_n | x > 0 \text{ und } ggT(x,n) = 1\}$ mit $|\mathbb{Z}_n^*|$ := Anzahl Elemente in $\mathbb{Z}_n^*$\\
+
+Die Eulersche $\phi$-Funktion ist definiert als:\\
+
+\indent
+$\phi: \mathbb{N} \rightarrow \mathbb{N}, n \mapsto |\mathbb{Z}_n^*| =: \phi(n)$\\
+
+Sie ordnet jeder natürlichen Zahl $n$ die Anzahl der zu ihr teilerfremden natürlichen Zahlen zu,
+die kleiner als $n$ sind.
+
+
+\subsection{Eigenschaften der Eulerschen $\phi$-Funktion}
+Seien $p$ und $q$ zwei verschiedene Primzahlen, $m = p_1^{r_1} \cdot p_2^{r_2} \cdots p_n^{r_n}$,
+die Primfaktorzerlegung $m \in \mathbb{N}$ und weiter $n \in \mathbb{N}$ teilerfremd zu $m$, dann gilt:
+
+\begin{align*}
+    \phi(p) &= p - 1 \\
+    \phi(p \cdot q) &= (p - 1) \cdot (q - 1) \\
+    \phi(m) &= (p_1 - 1) \cdot p_1^{r1-1} \cdot (p_2 - 1) \cdot p_2^{r_2 - 1} \cdots (p_n - 1) \cdot p_n^{r_n - 1} \\
+    \phi(m \cdot n) &= \phi(m) \cdot \phi(n) \\
+\end{align*}
+
+\includegraphics[width=14cm]{img/example_euler_phi.png}
+
+\newpage
+\subsection{Der kleine Satz von Fermat}
+Sei $p$ eine Primzahl und $m$ eine nicht negative Zahl, dann gilt:\\
+
+$m^p \mod p = m \mod p$\\
+
+
+\subsection{Der Satz von Wilson}
+Eine natürliche Zahl $n > 1$ ist genau dann eine Primzahl, wenn\\
+$(n-1)! + 1 = (n-1) (n-2) \cdots 2 \cdot 1 + 1$ durch $n$ teilbar ist.\\
+
+
+
+\subsection{Relationen}
+Eine Relation R auf einer Menge $A$ ist eine Teilmenge von $A \times A$.\\
+
+$\{1,2,3\}^2 = $
+\begin{align*}
+    \{ &(1,1), (1,2), (1,3) \\
+       &(2,1), (2,2), (2,3) \\
+       &(3,1), (3,2), (3,3)\} \\
+\end{align*}
+
+$R$ ist zum Beispiel = $\{(1,2), (1,3), (2,3)\}$\\
+
+Wenn $A$ die Menge aller Landpunkte auf einem Planet ist, dann ist
+
+$R = \{(x,y) \in A \times A | y$ lässt sich von $x$ aus trockenen Fusses erreichen\}
+
+$R = \{(x,y) \in \mathbb{Z} \times \mathbb{Z}|y \equiv x \mod n\}$
+
+
+\subsubsection{Symmetrische Relationen}
+Eine symmetrische Relation ist, wenn man in der obigen Definitionsformel $x$ und $y$ vertauschen kann.\\
+
+$\forall x,y \in A((x,y) \in R \longrightarrow (y,x) \in R)$.\\
+
+Auf dem Planet, lässt sich von jedem Punkt zu einem Anderen auf der Landmasse der Weg umkehren (rückwärts gehen).
+
+\newpage
+\subsubsection{Transitive Relationen}
+Wenn für jedes Element folgendes gilt: Wenn sich von $x$ aus $y$ erreichen lässt und von $y$ aus lässt sich $z$ erreichen, 
+dann lässt sich von $z$ aus auch $x$ erreichen (ist wahr auf dem Planet, mit der Landmasse), dann ist die Relation transitiv.\\
+
+$x,y,z \in \mathbb{Z} \text{ mit } y \equiv x \mod n$ \textbf{und} $z \equiv y \mod n$ \textbf{und} $z \equiv x \mod n$\\
+
+
+\subsubsection{Äquivalenzrelationen}
+\textbf{Definition:} Falls die Relation auf der Menge $A$ reflexiv, symmetrisch und transitiv ist, dann ist sie 
+eine Äquivalenzrelation.\\
+
+Die Restklassen sind immer die Zahlen, welche in Relation zueinander stehen (kongruent sind).\\
+
+Alle ganzen Zahlen ergeben sich aus den Restklassen $\mathbb{Z} = [0] \cup [1] \cup \dots \cup [n-1]$ dargestellt.\\
+
+\subsection{Modulares Rechnen}
+\subsubsection{Modulare Rechenoperationen}
+\includegraphics[width=14cm]{img/modulare_rechenoperationen.png}
+
+
+\subsubsection{Modulare Rechenregeln}
+\includegraphics[width=14cm]{img/modulare_rechenregeln.png}
+
+\includegraphics[width=14cm]{img/modulare_rechenregeln2.png}
+
+\newpage
+\subsection{Square-and-Multiply-Algorithmus}
+Effizientes potenzieren modulo n.\\
+
+$21 = (10101)_2$\\
+
+\begin{align*}
+    5^{21} \mod 11  &= 5^{(2 \cdot 2 + 1) \cdot 2 \cdot 2 + 1} &\mod 11\\
+                    &= (((5^2)^2 \cdot 5)^2)^2 \cdot 5 &\mod 11\\
+                    &= ((25^2 \cdot 5)^2)^2 \cdot 5 &\mod 11\\
+                    &= (((25)^2 \cdot 5)^2)^2 \cdot 5 &\mod 11\\
+                    &= ((3^2 \cdot 5)^2)^2 \cdot 5 &\mod 11\\
+                    &= (1^2)^2 \cdot 5 &\mod 11\\
+                    &= 5\\
+\end{align*}
+
+Formal:\\
+\begin{itemize}
+    \item Q bedeutet quadrieren und M multiplizieren
+    \item Ersetze in der binären Darstellung des Exponenten jede 1 durch QM und jede 0
+    durch Q $(10101)_2 \rightarrow QMQQMQQM$
+    \item Streiche das erste (links vorkommende) QM\\
+    $QMQQMQQM \rightarrow QQMQQM$
+    \item Das Symbol QQMQQM gibt die Reihenfolge von Quadrieren und Multiplizieren an, um
+    um die Potenz zu berechnen. Nach jeder Operation wird das Ergebnis modulo 11 reduziert.
+\end{itemize}
+
+
+\textbf{Beispiel:}\\
+$5^{21} \mod 11$\\
+$5 \xrightarrow{Q} 25 \equiv 3 \xrightarrow{Q} 9 \xrightarrow{M} \equiv 1 \xrightarrow{Q} 1 \xrightarrow{Q} 1 \xrightarrow{M} 5$\\
+
+
+\subsection{Symmetrische Verschlüsselung}
+Besteht immer aus folgenden Elementen:
+\begin{itemize}
+    \item \textbf{Schlüssel} $k \in K$ (Schlüsselraum)
+    \item \textbf{Klartext} $m \in M$ (Klartextraum)
+    \item \textbf{Geheimtext} $c \in C$ (Geheimtextraum) welcher sich folgendermassen ergibt:
+    $c = f(k, m)$
+\end{itemize}
+
+Dabei muss immer gelten, dass $f$ eine Umkehrfunktion hat, mit welcher sich der Geheimtext
+entschlüsseln lässt.\\
+
+$m = f^*(k, c) = f^*(k, f(k, m))$\\
+
+Auch muss gelten, dass mit unterschiedlichen Schlüsseln niemals der gleiche Geheimtext entsteht.\\
+
+
+\subsection{Asymmetrische Verschlüsselung}
+RSA Algorithmus-Formel:\\
+
+\begin{align*}
+    c &= m^e \mod n\\
+    m &= c^d \mod n\\
+\end{align*}
+
+Wobei gelten muss, dass $e \cdot d \equiv 1 \mod \phi(n)$ resp. $e$ muss zu $\phi(n)$ teilerfremd sein.\\
+
+
+\newpage
+\section{Graphentheorie}
+Graphen bestehen aus Knoten und Kanten.\\
+Wobei Konten Orte im Netz sind und Kanten Verbindungen zwischen Knoten.\\
+
+Ein ungerichteter Graph $G$ besteht aus einer Knotenmenge $V$ und einer Kantenmenge $E$.\\
+
+wobei jeder Kante $e \in E$ zwei (nicht notwendigerweise verschiedene) Knoten aus $V$ zugeordnet sind.\\
+
+Schreibweise: $e = \{u,v\} = \{v,u\}$\\
+Die Knoten $u$ und $v$ heissen dann \textbf{Endknoten} von $e$.\\
+
+Eine Schlinge ist eine Kante, welche einen Knoten mit sich selbst verbindet.\\
+
+Ein Graph, der weder Schlingen noch parallele Kanten enthält, heisst \textbf{einfacher Graph}.\\
+
+
+\textbf{Beispiel:}\\
+\includegraphics[width=15cm]{img/graphentheorie_beispiel.png}\\
+
+
+
+\newpage
+\subsection{Knoten- oder Eckengrad}
+Der Grad eines Knotens ist die Anzahl der Kanten, die in diesem Knoten enden. Schlingen werden doppelt gezählt\\
+Die \textbf{Gesamtsumme} aller Grade ist $2 \cdot |E|$\\
+
+Spezialfälle:\\
+$deg(v) = 0 \rightarrow v$ heiss \textbf{isolierte Ecke}\\
+$deg(v) = 1 \rightarrow v$ heisst \textbf{Endecke}\\
+
+Eine Gradliste $|V|$ ist eine Liste der Knotengrade eines Graphen.\\
+
+Der \textbf{maximale Grad} eines Graphen wird mit $\Delta (G)$ bezeichnet.\\
+Der \textbf{minimale Grad} eines Graphen wird mit $\delta (G)$ bezeichnet.\\
+
+
+
+\subsection{Isomorphe Graphen}
+\textbf{Definition:}\\
+Zwei Graphen $G_1$ und $G_2$ heissen \textbf{isomorph}, wenn es eine Bijektion $f: V_1 \rightarrow V_2$ gibt, so dass für alle $u,v \in V_1$ gilt:\\
+$\{u,v\} \in E \Longleftrightarrow \{f(u),f(v)\} \in E'$
+
+Das heisst, dass für jede Kante und jeden Knoten in $G_1$ ein entsprechendes Äquivalent in $G_2$ existiert.\\
+
+Isomorphe Graden haben also gleich viele Knoten und Kanten und deren Gradlisten sind identisch, die Umkehrung gilt jedoch nicht.
+
+
+
+% \begin{align*}
+%     587 &= 1 \cdot 392 + 195 \\
+% \end{align*}
 
 % Matrix example
 % $

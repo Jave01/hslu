@@ -84,7 +84,47 @@ $2^n + 5 \cdot 3^n = a_n$, $\forall n$\\
 
 
 \textbf{II.)}\\
-Wenn mit 1 endet dann gibt es $n^{-1} Möglichkeiten$
+Wenn mit 1 endet dann gibt es $n^{-1}$ Möglichkeiten.\\
+Es gibt $2^{n-1}$ Bitstrings mit Länge $n-1$ mit $a_{n-1}$ Möglichkeiten für eine gerade Anzahl Nullen.\\
+
+\[a_n = a_{n-1} + (2^{n-1}- a_{n-1}) = 2^{n-1}\]
+
+Daraus folgt, dass $a_{n-1} = 2^{n-2}$
+
+einsetzen: 
+
+\[a_n = a_{n-1} + (2^{n-1}- a_{n-1})\\
+= a_{n-1} + (2^{n-1} - 2^{n-2})\\
+= a_{n-1} + 2^{n-2}\\
+= 2a_{n-1}\]
+
+
+\section{Lösen von linearen Rekursionsbeziehungen}
+\textbf{III.)}\\
+Standardform: $a_n - 4a_{n-1} + 4a_{n-2} = 0$\\
+$a_n = r^n$\\
+$0 = r^n - 4r^{n-1} + 4r^{n-2}$\\
+$0 = r^{n-2} (r^2 - 4r + 4)$\\
+$0 = r^2 - 4r + 4$\\
+$0 = (r-2)^2$\\
+
+$a_n^{(h)} = (\alpha_1 + \alpha_2 n) r^n = (\alpha_1 + \alpha_2n)2^n$
+
+\newpage
+\section{Erweitertes Ein- und Ausschlussprinzip}
+\textbf{IV.)}\\
+Anzahl mögliche Fälle: 
+\[\binom{15}{13} = 105\]
+Nicht-valide Lösungen:\\
+Wenn 1 oder 2 Zahlen $\geq$ 6:
+\[\binom{7 + 3 - 1}{2} = \binom{9}{2} = 36\]\\
+dies gilt pro Zahl/$x_i$, heisst gesamthaft gibt es $36 \cdot 3 = 108$ (- doppelt gerechnete) nicht-valide Lösungen.\\
+
+Zieht man die doppelt gerechneten Fälle ab (wie z.B.) kommt man auf:
+
+\[\binom{1+3-1}{2} = \binom{3}{2} = 3 \cdot 3 = 9\]
+
+Insgesammt valide Fälle: $105 - 108 + 9 = 6$\\
 
 
 % Matrix example

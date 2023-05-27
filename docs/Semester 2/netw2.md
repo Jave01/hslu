@@ -42,6 +42,7 @@ show etherchannel port-channel
 show vlan brief
 show spanning-tree
 show standby # show HSRP
+show port-security interface # show port security
 ```
 
 #### Configuration
@@ -128,7 +129,7 @@ EtherChannel is a technology which allows link aggregation which will not be blo
 
 ### VLAN
 
-Logische Verbindung (kreierung von Netzen) zwischen unterschiedlichen physischen Verbindungen
+Logische Verbindung (Kreation von Netzen) zwischen unterschiedlichen physischen Verbindungen
 
 VLAN configs sind im flash gespeichert (`show flash`)
 
@@ -238,6 +239,7 @@ Cisco server can be configured to provide DHCPv4 services.
 4. Server sends a DHCPACK message to the client
 
 If some clients have a static ip address they can be excluded from the DHCP pool with the `ip dhcp excluded-address` command.
+If you want to exclude a range of ip addresses you can use # excluding range of addresses is `ip dhcp excluded-address <first_ip> <last_ip>`.
 
 #### DHCPv4 Configuration
 
@@ -252,7 +254,7 @@ If no DHCP server is reachable and the client has the configuration "Obtain an I
     ip dhcp pool <pool_name>
     # network address and subnet mask
     network <network_address> <subnet_mask>
-    # default gateway
+    # default gateway of the LAN (ip address of router connected to the clients)
     default-router <ip_address>
     # dns server
     dns-server <ip_address>
@@ -270,6 +272,24 @@ If no DHCP server is reachable and the client has the configuration "Obtain an I
     !!! danger "Reminder"
 
         Don't forget to enable auto-configuration on the client
+
+If hosts are supposed to connect to a DHCP server on a different network, the router in between must be configured as a DHCP relay agent.
+
+This can be done with the `ip helper-address <ip_address>` command.
+
+```sh title="DHCP Relay Agent Configuration" linenums="1"
+int <interface> # interface to LAN with DHCP clients
+ip helper-address <ip_address> # ip address of the DHCP server
+```
+
+For configuring a router as a DHCP client on a specified interface use the `ip address dhcp` command.
+
+```sh title="DHCP Client Configuration" linenums="1"
+int <interface>
+ip address dhcp
+no shutdown
+show ip interface brief # verify the configuration
+```
 
 ### IPv6
 
@@ -343,3 +363,77 @@ Limit the amount of MAC address registering per port.
 interface <int-id>
 switchport port-security maximum <number>
 ```
+
+### Switch Security Configuration
+
+#### Port Security
+
+Limit the amount of MAC addresses per port
+
+```sh title="Port Security" linenums="1"
+# limit the amount of MAC addresses per port
+interface <int-id>
+switchport port-security maximum <number>
+```
+
+#### Port Security Aging
+
+-   Absolute - The secure addresses on the port are deleted after the specified aging time.
+-   Inactivity - The secure addresses on the port are deleted if they are incomplete for the specified time.
+
+```sh title="Port Security Aging" linenums="1"
+# set the aging time
+interface <int-id>
+switchport port-security aging time <time>
+switchport port-security aging type <absolute|inactivity>
+```
+
+#### Port Security Violation
+
+-   Shutdown - The port shuts down and needs to be reenabled by an administrator. **A syslog message is sent**.
+-   Restrict - The port drops packets with unknown source addresses until you remove a sufficient number of secure MAC addresses. **A syslog message is sent**.
+-   Protect - Least secure, the port drops packets with unknown source addresses until you remove a sufficient number of secure MAC addresses. **No syslog message is sent**.
+
+```sh title="Port Security Violation" linenums="1"
+# set the violation action
+interface <int-id>
+switchport port-security violation <shutdown|restrict|protect>
+```
+
+### WLAN Concepts
+
+#### Types of Wireless Networks
+
+-   Wireless Personal-Area Network - Bluetooth
+-   Wireless LAN - Medium sized networks up to about 300 feet.
+-   Wireless MAN - Large geographical area such as city or district
+-   Wireless WAN - Extensive geographical area for national or global communication
+-   Cellular Broadband - Mobile communication
+-   Satellite Broadband - Typically used in rural locations where cable and DSL are unavailable.
+
+#### Wireless Topology Modes
+
+-   **Ad hoc mode** - Peer-to-peer network without an access point.
+-   **Infrastructure mode** - Wireless clients connect to an access point.
+-   **Tethering** - A mobile device shares its internet connection with other devices.
+
+#### Wireless Clieent and AP Association
+
+To achieve successful association, the following parameters must match:
+
+-   **SSID** - Service Set Identifier, name of the wireless network
+-   **Password** - Password to connect to the wireless network
+-   **Network mode** - The 802.11 standard in use
+-   **Security mode** - The security protocol in use e.g. WPA2
+-   **Channel** - The channel the AP is using / Frequenzbereich
+
+### Access Points
+
+#### Basic Network configuration
+
+1. Login to the AP
+2. Change the default administrator password
+3. Login to the AP again
+4. Change the default DHCP IPv4 address.
+5. Renew the IP address
+6. Log in to the router with the new IP address
