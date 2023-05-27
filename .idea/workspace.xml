@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="139fb613-0019-4809-a562-f0656ebb320a" name="Changes" comment="finished sw10">
+      <change afterPath="$PROJECT_DIR$/OOP/oop_exercises/src/main/java/ch/hslu/sw11/temperature/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP/oop_exercises/src/main/java/ch/hslu/sw11/temperature/Temperature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOP/oop_exercises/src/main/java/ch/hslu/sw11/temperature/temperature_values.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANLS/Int/main.fls" beforeDir="false" afterPath="$PROJECT_DIR$/ANLS/Int/main.fls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANLS/Int/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/ANLS/Int/main.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANLS/Int/main.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/ANLS/Int/main.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANLS/Int/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/ANLS/Int/main.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANLS/Int/out/main.aux" beforeDir="false" afterPath="$PROJECT_DIR$/ANLS/Int/out/main.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANLS/Int/out/main.fdb_latexmk" beforeDir="false" afterPath="$PROJECT_DIR$/ANLS/Int/out/main.fdb_latexmk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANLS/Int/out/main.fls" beforeDir="false" afterPath="$PROJECT_DIR$/ANLS/Int/out/main.fls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANLS/Int/out/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/ANLS/Int/out/main.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ANLS/Int/out/main.toc" beforeDir="false" afterPath="$PROJECT_DIR$/ANLS/Int/out/main.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP/oop_exercises/src/main/java/ch/hslu/sw11/streams/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/OOP/oop_exercises/src/main/java/ch/hslu/sw11/streams/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2GOh5FmodXrsNcahKG27cZRw0dX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "full.screen.before.presentation.mode": "false",
+    "last_opened_file_path": "C:/dev/hslu/OOP/oop_exercises",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.editor"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\hslu\OOP\oop_exercises\src\main\java\ch\hslu\sw11\temperature" />
+      <recent name="C:\dev\hslu\OOP\oop_exercises\src\main\java\ch\hslu\sw08" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ch.hslu.sw10.temperature" />
+      <recent name="ch.hslu.sw10" />
+      <recent name="ch.hslu.sw07" />
+      <recent name="ch.hslu.sw06.testing" />
+      <recent name="ch.hslu.sw05.chemistry" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ch.hslu.sw11.temperature" />
+      <recent name="ch.hslu.sw10.temperature" />
+      <recent name="ch.hslu.sw07" />
+      <recent name="sw05.chemistry" />
+      <recent name="sw05.chemics" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main chemistry" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ch.hslu.sw05.chemistry.Main" />
+      <module name="oop_exercises" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemperatureHistoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop_exercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.hslu.sw10.temperature.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.hslu.sw10.temperature" />
+      <option name="MAIN_CLASS_NAME" value="ch.hslu.sw10.temperature.TemperatureHistoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemperatureHistoryTest.testNewMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop_exercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.hslu.sw10.temperature.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.hslu.sw10.temperature" />
+      <option name="MAIN_CLASS_NAME" value="ch.hslu.sw10.temperature.TemperatureHistoryTest" />
+      <option name="METHOD_NAME" value="testNewMax" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemperatureHistoryTest.testNewMaxAfterRemove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop_exercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.hslu.sw10.temperature.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.hslu.sw10.temperature" />
+      <option name="MAIN_CLASS_NAME" value="ch.hslu.sw10.temperature.TemperatureHistoryTest" />
+      <option name="METHOD_NAME" value="testNewMaxAfterRemove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemperatureHistoryTest.testNewMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop_exercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.hslu.sw10.temperature.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.hslu.sw10.temperature" />
+      <option name="MAIN_CLASS_NAME" value="ch.hslu.sw10.temperature.TemperatureHistoryTest" />
+      <option name="METHOD_NAME" value="testNewMin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemperatureHistoryTest.testNewMinAfterRemove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="oop_exercises" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.hslu.sw10.temperature.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.hslu.sw10.temperature" />
+      <option name="MAIN_CLASS_NAME" value="ch.hslu.sw10.temperature.TemperatureHistoryTest" />
+      <option name="METHOD_NAME" value="testNewMinAfterRemove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TemperatureHistoryTest" />
+        <item itemvalue="JUnit.TemperatureHistoryTest.testNewMaxAfterRemove" />
+        <item itemvalue="JUnit.TemperatureHistoryTest.testNewMax" />
+        <item itemvalue="JUnit.TemperatureHistoryTest.testNewMin" />
+        <item itemvalue="JUnit.TemperatureHistoryTest.testNewMinAfterRemove" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="139fb613-0019-4809-a562-f0656ebb320a" name="Changes" comment="" />
+      <created>1666265354188</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666265354188</updated>
+      <workItem from="1666265356448" duration="8891000" />
+      <workItem from="1666779396182" duration="4573000" />
+      <workItem from="1667299587717" duration="3299000" />
+      <workItem from="1667742453504" duration="1068000" />
+      <workItem from="1667987880261" duration="25000" />
+      <workItem from="1668082968198" duration="2615000" />
+      <workItem from="1668086981791" duration="2100000" />
+      <workItem from="1668426781382" duration="2286000" />
+      <workItem from="1668600640426" duration="674000" />
+      <workItem from="1669628953934" duration="7054000" />
+      <workItem from="1669724104613" duration="4740000" />
+      <workItem from="1669813001696" duration="15721000" />
+      <workItem from="1670244026219" duration="1354000" />
+      <workItem from="1670843485219" duration="1499000" />
+      <workItem from="1670936108187" duration="2000" />
+      <workItem from="1670936125115" duration="1467000" />
+    </task>
+    <task id="LOCAL-00001" summary="made sw05">
+      <created>1666274161497</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666274161497</updated>
+    </task>
+    <task id="LOCAL-00002" summary="finished sw05">
+      <created>1666783587585</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666783587585</updated>
+    </task>
+    <task id="LOCAL-00003" summary="mid sw10">
+      <created>1669816701647</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669816701647</updated>
+    </task>
+    <task id="LOCAL-00004" summary="finished sw10">
+      <created>1669828641692</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669828641692</updated>
+    </task>
+    <task id="LOCAL-00005" summary="finished sw10">
+      <created>1669828966068</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669828966068</updated>
+    </task>
+    <task id="LOCAL-00006" summary="finished sw10">
+      <created>1669832087734</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669832087734</updated>
+    </task>
+    <task id="LOCAL-00007" summary="finished sw10">
+      <created>1669838578898</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669838578898</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="made sw05" />
+    <MESSAGE value="finished sw05" />
+    <MESSAGE value="mid sw10" />
+    <MESSAGE value="finished sw10" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished sw10" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
