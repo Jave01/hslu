@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1684089384 "c:/dev/hslu/SEM2/DMATH/exercises/sw12/sw12_exercises.tex" "sw12_exercises.pdf" "sw12_exercises" 1684089386
+["pdflatex"] 1685353951 "c:/dev/hslu/SEM2/DMATH/exercises/sw12/sw12_exercises.tex" "sw12_exercises.pdf" "sw12_exercises" 1685353953
   "C:/Users/david/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1673529487 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/david/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1667138804 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/david/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1667070004 10788011 9288d06f74a40ea21a8f271ca2b42ef9 ""
@@ -203,13 +203,13 @@
   "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/ulem/ulem.sty" 1578651445 15682 94f55b803e160cf7fb6e4d77d07cfe1d ""
   "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/david/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "C:/dev/hslu/SEM2/DMATH/exercises/sw12/out/sw12_exercises.aux" 1684089386 1470 321a1c9284dfc70f0105537b874745d5 ""
+  "C:/dev/hslu/SEM2/DMATH/exercises/sw12/out/sw12_exercises.aux" 1685353953 1470 321a1c9284dfc70f0105537b874745d5 ""
   "C:/dev/hslu/SEM2/DMATH/exercises/sw12/out/sw12_exercises.out" 0 -1 0 ""
-  "C:/dev/hslu/SEM2/DMATH/exercises/sw12/out/sw12_exercises.toc" 1684089386 187 f0676ae3155fe6651e9e31691c0c0096 ""
-  "c:/dev/hslu/SEM2/DMATH/exercises/sw12/sw12_exercises.tex" 1684089383 2279 11e70bc8d6a6a7b855b2abcfd61d7d3a ""
-  "out/sw12_exercises.aux" 1684089386 1470 321a1c9284dfc70f0105537b874745d5 "pdflatex"
+  "C:/dev/hslu/SEM2/DMATH/exercises/sw12/out/sw12_exercises.toc" 1685353953 187 f0676ae3155fe6651e9e31691c0c0096 ""
+  "c:/dev/hslu/SEM2/DMATH/exercises/sw12/sw12_exercises.tex" 1685353946 2279 3e68fa2170eba0b2d848e5994f3ce8b6 ""
+  "out/sw12_exercises.aux" 1685353953 1470 321a1c9284dfc70f0105537b874745d5 "pdflatex"
   "out/sw12_exercises.out" 0 -1 0 "pdflatex"
-  "out/sw12_exercises.toc" 1684089386 187 f0676ae3155fe6651e9e31691c0c0096 "pdflatex"
+  "out/sw12_exercises.toc" 1685353953 187 f0676ae3155fe6651e9e31691c0c0096 "pdflatex"
   (generated)
   "out/sw12_exercises.aux"
   "out/sw12_exercises.log"

@@ -1,7 +1,7 @@
-PWD c:\dev\vscode\hslu\SEM2\DMATH\Formelsammlung
+PWD C:\dev\hslu\SEM2\DMATH\Formelsammlung
 INPUT C:\Users\david\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\dev\vscode\hslu\SEM2\DMATH\Formelsammlung\Formelsammlung.tex
-OUTPUT Formelsammlung.log
+INPUT c:\dev\hslu\SEM2\DMATH\Formelsammlung\Formelsammlung.tex
+OUTPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.log
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrartcl.cls
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrartcl.cls
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrartcl.cls
@@ -943,22 +943,22 @@ INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT .\Formelsammlung.aux
-INPUT Formelsammlung.aux
-INPUT Formelsammlung.aux
-OUTPUT Formelsammlung.aux
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.aux
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.aux
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.aux
+OUTPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.aux
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
-INPUT .\Formelsammlung.out
-INPUT Formelsammlung.out
-INPUT .\Formelsammlung.out
-INPUT Formelsammlung.out
-INPUT .\Formelsammlung.out
-INPUT Formelsammlung.out
-INPUT .\Formelsammlung.out
-INPUT Formelsammlung.out
-INPUT .\Formelsammlung.out
-INPUT .\Formelsammlung.out
-OUTPUT Formelsammlung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
+OUTPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
 OUTPUT Formelsammlung.pdf
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\bookmark\bookmark.sty
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\tex\latex\bookmark\bookmark.sty
@@ -1027,9 +1027,9 @@ INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmssbx10.tfm
-INPUT .\Formelsammlung.toc
-INPUT Formelsammlung.toc
-INPUT Formelsammlung.toc
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.toc
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.toc
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.toc
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
@@ -1045,7 +1045,7 @@ INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-OUTPUT Formelsammlung.toc
+OUTPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.toc
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmssbx10.tfm
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
@@ -1096,6 +1096,20 @@ INPUT .\img\euqlidic_algorithm.png
 INPUT .\img\euqlidic_algorithm.png
 INPUT .\img\euqlidic_algorithm.png
 INPUT .\img\euqlidic_algorithm.png
+INPUT .\img\erweiterter_euklidischer_algorithmus.png
+INPUT .\img\erweiterter_euklidischer_algorithmus.png
+INPUT img\erweiterter_euklidischer_algorithmus.png
+INPUT .\img\erweiterter_euklidischer_algorithmus.png
+INPUT .\img\erweiterter_euklidischer_algorithmus.png
+INPUT .\img\erweiterter_euklidischer_algorithmus.png
+INPUT .\img\erweiterter_euklidischer_algorithmus.png
+INPUT .\img\erweiterter_euklidischer_algorithmus_beispiel2.png
+INPUT .\img\erweiterter_euklidischer_algorithmus_beispiel2.png
+INPUT img\erweiterter_euklidischer_algorithmus_beispiel2.png
+INPUT .\img\erweiterter_euklidischer_algorithmus_beispiel2.png
+INPUT .\img\erweiterter_euklidischer_algorithmus_beispiel2.png
+INPUT .\img\erweiterter_euklidischer_algorithmus_beispiel2.png
+INPUT .\img\erweiterter_euklidischer_algorithmus_beispiel2.png
 INPUT .\img\matrizenmultiplikation.png
 INPUT .\img\matrizenmultiplikation.png
 INPUT img\matrizenmultiplikation.png
@@ -1117,9 +1131,210 @@ INPUT .\img\matrizen_eigenschaften.png
 INPUT .\img\matrizen_eigenschaften.png
 INPUT .\img\matrizen_eigenschaften.png
 INPUT .\img\matrizen_eigenschaften.png
-INPUT Formelsammlung.aux
-INPUT .\Formelsammlung.out
-INPUT .\Formelsammlung.out
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
+INPUT .\img\determinante.png
+INPUT .\img\determinante.png
+INPUT img\determinante.png
+INPUT .\img\determinante.png
+INPUT .\img\determinante.png
+INPUT .\img\determinante.png
+INPUT .\img\determinante.png
+INPUT .\img\determinante_2.png
+INPUT .\img\determinante_2.png
+INPUT img\determinante_2.png
+INPUT .\img\determinante_2.png
+INPUT .\img\determinante_2.png
+INPUT .\img\determinante_2.png
+INPUT .\img\determinante_2.png
+INPUT .\img\boolesches_produkt.png
+INPUT .\img\boolesches_produkt.png
+INPUT img\boolesches_produkt.png
+INPUT .\img\boolesches_produkt.png
+INPUT .\img\boolesches_produkt.png
+INPUT .\img\boolesches_produkt.png
+INPUT .\img\boolesches_produkt.png
+INPUT .\img\wahrscheinlichkeiten.png
+INPUT .\img\wahrscheinlichkeiten.png
+INPUT img\wahrscheinlichkeiten.png
+INPUT .\img\wahrscheinlichkeiten.png
+INPUT .\img\wahrscheinlichkeiten.png
+INPUT .\img\wahrscheinlichkeiten.png
+INPUT .\img\wahrscheinlichkeiten.png
+INPUT .\img\autonummer beispiel.png
+INPUT .\img\autonummer beispiel.png
+INPUT img\autonummer beispiel.png
+INPUT .\img\autonummer beispiel.png
+INPUT .\img\autonummer beispiel.png
+INPUT .\img\autonummer beispiel.png
+INPUT .\img\autonummer beispiel.png
+INPUT .\img\zusammenfassung _verteilungen.png
+INPUT .\img\zusammenfassung _verteilungen.png
+INPUT img\zusammenfassung _verteilungen.png
+INPUT .\img\zusammenfassung _verteilungen.png
+INPUT .\img\zusammenfassung _verteilungen.png
+INPUT .\img\zusammenfassung _verteilungen.png
+INPUT .\img\zusammenfassung _verteilungen.png
+INPUT .\img\hypergeometrische Verteilung.png
+INPUT .\img\hypergeometrische Verteilung.png
+INPUT img\hypergeometrische Verteilung.png
+INPUT .\img\hypergeometrische Verteilung.png
+INPUT .\img\hypergeometrische Verteilung.png
+INPUT .\img\hypergeometrische Verteilung.png
+INPUT .\img\hypergeometrische Verteilung.png
+INPUT .\img\erwartungswert_zufallsvariable.png
+INPUT .\img\erwartungswert_zufallsvariable.png
+INPUT img\erwartungswert_zufallsvariable.png
+INPUT .\img\erwartungswert_zufallsvariable.png
+INPUT .\img\erwartungswert_zufallsvariable.png
+INPUT .\img\erwartungswert_zufallsvariable.png
+INPUT .\img\erwartungswert_zufallsvariable.png
+INPUT .\img\erwartungswert_zufallsvariable2.png
+INPUT .\img\erwartungswert_zufallsvariable2.png
+INPUT img\erwartungswert_zufallsvariable2.png
+INPUT .\img\erwartungswert_zufallsvariable2.png
+INPUT .\img\erwartungswert_zufallsvariable2.png
+INPUT .\img\erwartungswert_zufallsvariable2.png
+INPUT .\img\erwartungswert_zufallsvariable2.png
+INPUT .\img\euqlidic_algorithm.png
+INPUT .\img\euqlidic_algorithm.png
+INPUT img\euqlidic_algorithm.png
+INPUT .\img\euqlidic_algorithm.png
+INPUT .\img\erweiterter_euklidischer_algorithmus.png
+INPUT .\img\erweiterter_euklidischer_algorithmus.png
+INPUT img\erweiterter_euklidischer_algorithmus.png
+INPUT .\img\erweiterter_euklidischer_algorithmus.png
+INPUT .\img\erweiterter_euklidischer_algorithmus_beispiel2.png
+INPUT .\img\erweiterter_euklidischer_algorithmus_beispiel2.png
+INPUT img\erweiterter_euklidischer_algorithmus_beispiel2.png
+INPUT .\img\erweiterter_euklidischer_algorithmus_beispiel2.png
+INPUT .\img\modulo inverse_beispiel.png
+INPUT .\img\modulo inverse_beispiel.png
+INPUT img\modulo inverse_beispiel.png
+INPUT .\img\modulo inverse_beispiel.png
+INPUT .\img\modulo inverse_beispiel.png
+INPUT .\img\modulo inverse_beispiel.png
+INPUT .\img\modulo inverse_beispiel.png
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs7.tfm
+INPUT .\img\example_euler_phi.png
+INPUT .\img\example_euler_phi.png
+INPUT img\example_euler_phi.png
+INPUT .\img\example_euler_phi.png
+INPUT .\img\example_euler_phi.png
+INPUT .\img\example_euler_phi.png
+INPUT .\img\example_euler_phi.png
+INPUT .\img\modulare_rechenoperationen.png
+INPUT .\img\modulare_rechenoperationen.png
+INPUT img\modulare_rechenoperationen.png
+INPUT .\img\modulare_rechenoperationen.png
+INPUT .\img\modulare_rechenoperationen.png
+INPUT .\img\modulare_rechenoperationen.png
+INPUT .\img\modulare_rechenoperationen.png
+INPUT .\img\modulare_rechenregeln.png
+INPUT .\img\modulare_rechenregeln.png
+INPUT img\modulare_rechenregeln.png
+INPUT .\img\modulare_rechenregeln.png
+INPUT .\img\modulare_rechenregeln.png
+INPUT .\img\modulare_rechenregeln.png
+INPUT .\img\modulare_rechenregeln.png
+INPUT .\img\modulare_rechenregeln2.png
+INPUT .\img\modulare_rechenregeln2.png
+INPUT img\modulare_rechenregeln2.png
+INPUT .\img\modulare_rechenregeln2.png
+INPUT .\img\modulare_rechenregeln2.png
+INPUT .\img\modulare_rechenregeln2.png
+INPUT .\img\modulare_rechenregeln2.png
+INPUT .\img\modulare_quadratwurzeln.png
+INPUT .\img\modulare_quadratwurzeln.png
+INPUT img\modulare_quadratwurzeln.png
+INPUT .\img\modulare_quadratwurzeln.png
+INPUT .\img\modulare_quadratwurzeln.png
+INPUT .\img\modulare_quadratwurzeln.png
+INPUT .\img\modulare_quadratwurzeln.png
+INPUT .\img\schluesselwortchiffre.png
+INPUT .\img\schluesselwortchiffre.png
+INPUT img\schluesselwortchiffre.png
+INPUT .\img\schluesselwortchiffre.png
+INPUT .\img\schluesselwortchiffre.png
+INPUT .\img\schluesselwortchiffre.png
+INPUT .\img\schluesselwortchiffre.png
+INPUT .\img\graphentheorie_beispiel.png
+INPUT .\img\graphentheorie_beispiel.png
+INPUT img\graphentheorie_beispiel.png
+INPUT .\img\graphentheorie_beispiel.png
+INPUT .\img\graphentheorie_beispiel.png
+INPUT .\img\graphentheorie_beispiel.png
+INPUT .\img\graphentheorie_beispiel.png
+INPUT .\img\dijkstra_algorithmus.png
+INPUT .\img\dijkstra_algorithmus.png
+INPUT img\dijkstra_algorithmus.png
+INPUT .\img\dijkstra_algorithmus.png
+INPUT .\img\dijkstra_algorithmus.png
+INPUT .\img\dijkstra_algorithmus.png
+INPUT .\img\dijkstra_algorithmus.png
+INPUT .\img\prim_algorithmus.png
+INPUT .\img\prim_algorithmus.png
+INPUT img\prim_algorithmus.png
+INPUT .\img\prim_algorithmus.png
+INPUT .\img\prim_algorithmus.png
+INPUT .\img\prim_algorithmus.png
+INPUT .\img\prim_algorithmus.png
+INPUT .\img\kruskal_algorithmus.png
+INPUT .\img\kruskal_algorithmus.png
+INPUT img\kruskal_algorithmus.png
+INPUT .\img\kruskal_algorithmus.png
+INPUT .\img\kruskal_algorithmus.png
+INPUT .\img\kruskal_algorithmus.png
+INPUT .\img\kruskal_algorithmus.png
+INPUT .\img\adjazenzmatrix.png
+INPUT .\img\adjazenzmatrix.png
+INPUT img\adjazenzmatrix.png
+INPUT .\img\adjazenzmatrix.png
+INPUT .\img\adjazenzmatrix.png
+INPUT .\img\adjazenzmatrix.png
+INPUT .\img\adjazenzmatrix.png
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
+INPUT .\img\inzidenzmatrix.png
+INPUT .\img\inzidenzmatrix.png
+INPUT img\inzidenzmatrix.png
+INPUT .\img\inzidenzmatrix.png
+INPUT .\img\inzidenzmatrix.png
+INPUT .\img\inzidenzmatrix.png
+INPUT .\img\inzidenzmatrix.png
+INPUT .\img\Gradmatrix.png
+INPUT .\img\Gradmatrix.png
+INPUT img\Gradmatrix.png
+INPUT .\img\Gradmatrix.png
+INPUT .\img\Gradmatrix.png
+INPUT .\img\Gradmatrix.png
+INPUT .\img\Gradmatrix.png
+INPUT .\img\kirchhoff.png
+INPUT .\img\kirchhoff.png
+INPUT img\kirchhoff.png
+INPUT .\img\kirchhoff.png
+INPUT .\img\kirchhoff.png
+INPUT .\img\kirchhoff.png
+INPUT .\img\kirchhoff.png
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.aux
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
+INPUT C:\dev\hslu\SEM2\DMATH\Formelsammlung\out\Formelsammlung.out
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
@@ -1144,6 +1359,8 @@ INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmssbx10.pfb
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy6.pfb
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
