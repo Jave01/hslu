@@ -589,6 +589,16 @@ sein muss
 
 \includegraphics[width=15cm]{img/matrizenmultiplikation.png}
 
+
+\subsection{Einheitsmatrix}
+Eine Einheitsmatrix $\mathbf{I_n}$ ist eine Matrix bei der alle Elemente auf
+der Diagonalen Eins und alle anderen Null sind.\\
+
+
+\subsection{Inverse Matrix}
+Das Inverse ($\mathbf{-A}$) ist eine Matrix mit jedem Wert negiert.\\
+
+
 \newpage
 \subsection{Transporierte Matrix}
 Eine transponierte Matrix ist eine, bei der die Spalten und Reihen vertauscht wurden.\\
@@ -599,6 +609,11 @@ Eine transponierte Matrix ist eine, bei der die Spalten und Reihen vertauscht wu
 Keywords: symmetrisch, antisymmetrisch, Einheitsmatrix, k-te Potenz
 
 \includegraphics[width=16cm]{img/matrizen_eigenschaften.png}
+
+
+\newpage
+\subsection{Matrizen Rechenregeln}
+\includegraphics[width=14cm]{img/matrizen_rechenregeln.png}
 
 
 \newpage
@@ -1522,15 +1537,65 @@ Admittanzmatrix ist die Differenz aus Gradmatrix $D(G)$ und Adjazenzmatrix $A(G)
 $L(G) = D(G) - A(G)$
 
 
-% \newpage
+
 \subsection{Admittanzmatrix - Satz von Kirchhoff}
 Es sei $G = (V,E)$ ein Graph und $v \in V$ ein beliebiger Knoten und $L(G)$
 die Admittanzmatrix von $G$. Dann ist die Anzahl der Gerüste dieses Graphen durch
-$t(G) = det(L_v(G))$ bestimmt.\\
+$t(G) = det(L_v(G))$ bestimmt (siehe Determinante-Matrizen).\\
 
 \begin{center}
 \includegraphics[height=6cm]{img/kirchhoff.png}
 \end{center}
+
+
+\subsection{Planare Graphen}
+Ein Graph heisst \textbf{planar}, wenn er sich in der Ebene so zeichnen lässt, dass sich
+die Kanten nicht schneiden.\\
+
+Das kann man überprüfen mit dem eulerschen Polyedersatz.\\
+Wenn $|V| - |E| + |F| = 2$ ist, dann ist der Graph planar.\\
+
+Wobei
+\begin{itemize}
+    \item $|V|$ die Anzahl der Knoten ist
+    \item $|E|$ die Anzahl der Kanten ist
+    \item $|F|$ die Anzahl der Flächen ist
+\end{itemize}
+
+
+\subsection{Färben}
+Die kleinste Zahl der Farben wird \textbf{chromatische Zahl} $\chi(G)$ genannt.\\
+
+\subsubsection{Satz von Brooks}
+Wenn $G$ ein vollständiger Graph ist giltet.\\
+$\chi(K_n) = n$\\
+$\delta(K_n) = n - 1$\\
+
+oder ein Kreis:\\
+$\chi(C_{2k+1}) = 3$\\
+$\chi(C_{2k}) = 2$\\
+
+
+\newpage
+\subsubsection{Chromatische Polynom}
+Das chromatische Polynom $P(G,x)$ eines Graphen $G$ ist die Anzahl der Möglichkeiten,
+wie $G$ eingefärbt werden kann mit höchstens $x$ Farben.\\
+
+Wenn $G$ ein vollständiger Graph ist gilt:\\
+$P(K_n,x) = x(x-1)(x-2) \dots (x-n+1)$\\
+
+Wenn $G$ ein Baum ist, gilt:\\
+$P(T_n,x) = x \cdot (x-1)^{n-1}$\\
+
+
+\subsection{Gerüste / Spannbäume}
+Ein Gerüst oder Spannbaum von $G$ ist ein kreisfreier Untergraph (Baum).\\
+
+Ein Baum besitzt genau ein Gerüst.\\
+
+Die Anzahl Gerüste sind $t(G)$.\\
+
+
 
 % \begin{align*}
 %     587 &= 1 \cdot 392 + 195 \\

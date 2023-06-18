@@ -1117,6 +1117,8 @@ INPUT .\img\matrizenmultiplikation.png
 INPUT .\img\matrizenmultiplikation.png
 INPUT .\img\matrizenmultiplikation.png
 INPUT .\img\matrizenmultiplikation.png
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
 INPUT .\img\transponierte_matrix.png
 INPUT .\img\transponierte_matrix.png
 INPUT img\transponierte_matrix.png
@@ -1131,8 +1133,13 @@ INPUT .\img\matrizen_eigenschaften.png
 INPUT .\img\matrizen_eigenschaften.png
 INPUT .\img\matrizen_eigenschaften.png
 INPUT .\img\matrizen_eigenschaften.png
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
-INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
+INPUT .\img\matrizen_rechenregeln.png
+INPUT .\img\matrizen_rechenregeln.png
+INPUT img\matrizen_rechenregeln.png
+INPUT .\img\matrizen_rechenregeln.png
+INPUT .\img\matrizen_rechenregeln.png
+INPUT .\img\matrizen_rechenregeln.png
+INPUT .\img\matrizen_rechenregeln.png
 INPUT .\img\determinante.png
 INPUT .\img\determinante.png
 INPUT img\determinante.png
@@ -1339,6 +1346,8 @@ INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcr
 INPUT C:\Users\david\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx8.pfb
+INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx8.pfb
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\david\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
