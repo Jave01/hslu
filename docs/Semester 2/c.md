@@ -1,8 +1,6 @@
 # I2C
 
-## Inhalt
-
-### Strings
+## Strings
 
 **Functions from strings.h**:
 
@@ -46,21 +44,27 @@
     tolower()
 ```
 
-### Pointers
+##Pointers
 
 **Void pointers**
 
 -   mostly used for function paramaters, function can accept any data type.
 -   must first be explicitly cast to a data type before use.
 
-### Dynamic Memory
+## Dynamic Memory
 
 If you want to allocate memory on an address without creating a variable, you can manually allocate it with some functions.  
 For example if you want a pointer to an address with some storage without first creating a variable, which allocates the needed storage.
 
-### File handling
+```c title="Three main functions for dynamic memory allocation"
+void* malloc(size_t size) // allocates size bytes of memory and returns a pointer to the first byte
+void* calloc(size_t nitems, size_t size) // allocates nitems of size bytes, sets memory to zero and returns a pointer to the first byte
+void* realloc(void* ptr, size_t size) // reallocates memory pointed to by ptr to size bytes and returns a pointer to the first byte
+```
 
-#### Opening files
+## File handling
+
+### Opening files
 
 opening files ist possible with the `fopen()` function form `stdio.h`. The first argument is a char pointer for the file adress, the second one for the opening mode. The function returns FILE pointer to the first byte of the file or NULL if the file could not be read correctly.
 
@@ -84,7 +88,7 @@ The options for opening files are as follows:
 
     always close the file after usage with the `fclose()` function
 
-#### Renaming files
+### Renaming files
 
 renaming a file is as simple as follows:
 
@@ -94,7 +98,7 @@ rename("old_name", "new_name");
 
 the function returns an error code. Zero for success non-zero for failure.
 
-#### Deleting files
+### Deleting files
 
 files can be deleted with
 
@@ -102,7 +106,7 @@ files can be deleted with
 remove("file_name");
 ```
 
-#### Reading from a file
+### Reading from a file
 
 First of all, all reading is done from the file pointer. When opening a file it points to the first byte of the file. But if you read some data
 the value changes resp. gets incremented. If you want to set it to the beginning again you can either use
@@ -174,7 +178,7 @@ int main(){
 
 ```
 
-#### Reading formatted content
+### Reading formatted content
 
 Reading formatted context from a text file can be done with
 
@@ -222,29 +226,28 @@ the output would be:
     String3: are
     String4: you?
 
-#### Writing to a file
+### Writing to a file
 
+There are different ways of writing to a file, depending on what you want to write.
 If you want to write only one character:
 
 ```c title=""
 fputc(int c, FILE* pfile);
 ```
 
-writing a string:
+or a string:
 
 ```c title=""
 fputs(const char *str, FILE* pfile);
 ```
 
-this will write the string given to the file
-
-#### Write formatted output to file
+or even formatted content:
 
 ```c title=""
 fprintf(FILE *stream, const char* format, ...);
 ```
 
-#### Positioning in file
+### Positioning in file
 
 for knowing where in the file you are currently you can use:
 

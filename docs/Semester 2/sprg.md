@@ -249,10 +249,10 @@ Components need interfaces
 
 Everything should be defined as detailed as possible, everything has to be checked at runtime.
 
+
 ### Secure Programming for a software engineer
-
+---
 must meet the business requirements:
-
 1. Requirements
     - Business Cases
     - What to protect
@@ -270,7 +270,6 @@ must meet the business requirements:
     - Incidenct detection and reaction
 
 Avoid by:
-
 1. Threat modelling (STRIDE)
 2. Scan for vulnerabilities
     - Code reviews
@@ -281,11 +280,13 @@ Avoid by:
 
 CVE - Common Vulnerabilities and Exposures
 
-### Software Architecture
 
+### Software Architecture
+---
 #### Model View Control
 
 Get the data from the database, put it into the view and show it to the user.
+
 
 #### Traditional Web Applications
 
@@ -293,14 +294,87 @@ Get the data from the database, put it into the view and show it to the user.
 -   Business logics is performed in the model components
 -   The view is rendered and sent back to the client
 
+
 #### System Architecture Diagram
 
 Shows the components of a system and how they are connected.
 
-### Dynamic Application Security Testing
 
+### Dynamic Application Security Testing
+---
 Vulnerability Scan - without source code, therefore a "blackbox" approach
 
 -   Finds vulnerabilities rather late
 -   Generally for web applications and web services
 -   Scales within limitations
+
+
+### Session management - stateless
+---
+Indroducing **JSON Web Tokens** (JWT) and stateless sessions.
+- Do not exposte sensitive information in tokens by either 
+	- not including it in tokens or
+	- encrypting tokens
+- Make use of a JWT Library
+- Ensure the signature algorithm "NONE" is not accepted
+	- More specifically, only accept the expected algorithm
+- Implement a "logout"
+
+
+#### JWT Tokens
+Are some tokens sent in the header
+
+
+#### Token Verification
+- JWT Token sent as a http header
+-  Authorization on server side verifies
+	- Token signature
+	- Issuer (iss) and target audience (aud)
+	- Username, subject (sub)
+	- Validity (iat, exp)
+	- Roles (roles)
+
+**JWT Example:**
+```json
+Header:  
+{ 
+	"typ": "JWT",  
+	"alg": "HS256"  
+}  
+Payload:  
+{ 
+	"iss": "https://sso.mydomain.com/"  
+	"aud": "https://targethost.com/"  
+	"sub": "123456789",  
+	"name": "John Doe",  
+	"jti": "5e1b0358-b068-4164-9427-00c248b053c0",  
+	"iat": 1589466636,  
+	"exp": 1589470236  
+	"roles": [
+		"admin",  
+		"superuser"  
+	]  
+}  
+Signature:  
+Signature(base64(header, payload))
+```
+
+
+#### Access Control Issues
+Untrusted data - Attacker can craft their own http request with arbitrary information
+roles stored in cookie (admin)
+hidden input fields containing sensitive data
+
+
+### Insecure Design
+---
+Bei "Insecure Design" geht es darum, dass die Architektur und das Design einer Anwendung von Grund auf unsicher sind. Es handelt sich um fundamentale Schwachstellen. Diese Sicherheitsrisiken können nicht einfach durch eine kleine Änderung im Code behoben werden, sondern erfordern eine Überarbeitung des gesamten Designs.
+
+- Security ist nicht nur ein Implementationsproblem
+- Examples
+	- Plain-text Passwörter
+	- Unsichere Session Verwaltung
+	- Unsichere Datenübertragung
+- Gegenmassnahmen
+	- Secure design patterns
+	- Threat modelling

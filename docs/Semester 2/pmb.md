@@ -5,7 +5,8 @@
 ### MEP
 
 -   30% Übungen
--   70% 50-70 minütige Prüfung
+-   70% 60-80 minütige Prüfung
+-   Ein Doppelseitige Formelsammlung erlaubt.
 
 ### Testat
 

@@ -15,7 +15,7 @@ Gruppenarbeit und Diskussionen mitmachen
 ### Deadlines
 
 -   [x] 13\. März: Diskussion
--   [ ] 7\. April: Festlegung Fragestellung
+-   [x] 7\. April: Festlegung Fragestellung
 -   [ ] 16\. Juni: Positionspapier
 
 ## Inhalt

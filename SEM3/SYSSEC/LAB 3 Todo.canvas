@@ -1,0 +1,42 @@
+{
+	"nodes":[
+		{"id":"82e5da031aa5d3dc","type":"group","x":-690,"y":0,"width":1180,"height":1200,"color":"4","label":"Printing"},
+		{"id":"ef56ce699084e8ba","type":"group","x":-680,"y":-1040,"width":1165,"height":900,"color":"2","label":"Scanning"},
+		{"id":"61f51e5f1aa6f5aa","type":"text","text":"# LSEC","x":-222,"y":-1260,"width":245,"height":100,"color":"1"},
+		{"id":"d279066f447f7fbd","type":"text","text":"## Scanning","x":-230,"y":-1005,"width":260,"height":60,"color":"2"},
+		{"id":"6931b328881b811f","type":"text","text":"- [x] File name\n- [x] Path location\n- [x] Metadata\n\t- [x] Owner:Group\n\t- [x] SUID/GUID\n\t- [x] Size\n\t- [x] Blocks\n\t- [x] file type\n- [ ] Group/World editable folders without sticky bit\n- [ ] Group/World editable directories with executables\n","x":-260,"y":-640,"width":320,"height":355,"color":"2"},
+		{"id":"6b3fa08dd32d03bd","type":"text","text":"## Printing","x":-230,"y":35,"width":260,"height":60},
+		{"id":"dc7653e76f8fca93","type":"text","text":"### General","x":-635,"y":-780,"width":320,"height":60,"color":"2"},
+		{"id":"7882c9a28000e78b","type":"text","text":"### Information Gathering","x":-260,"y":-780,"width":320,"height":60,"color":"2"},
+		{"id":"734b054689e6c633","type":"text","text":"- [ ] Max 64 sub-directories\n- [x] Store in struct \\<name\\>\n- [x] Not including \".\" and \"..\"","x":-635,"y":-640,"width":320,"height":355,"color":"2"},
+		{"id":"a9d6b5c471a5de74","type":"text","text":"- [ ] `lsec [OPTION] [directories]`\n- [ ] options\n\t- [ ] h - help screen\n\t- [ ] t - fancy tree view\n\t- [ ] v - verbose mode\n\t- [ ] c - coloured output\n\t- [ ] s - print summary\n\n","x":105,"y":-645,"width":330,"height":360,"color":"2"},
+		{"id":"8db07eaf83fff356","type":"text","text":"### Input","x":105,"y":-780,"width":330,"height":60,"color":"2"},
+		{"id":"80673f13cc4835a0","type":"text","text":"### Basic Printing","x":-635,"y":260,"width":280,"height":60},
+		{"id":"247c629596b6248a","type":"text","text":"### Tree Printing","x":-225,"y":260,"width":250,"height":60},
+		{"id":"aaa2b028b816c126","type":"text","text":"### Verbose Printing","x":150,"y":260,"width":280,"height":60},
+		{"id":"d3d54060245c5dc7","type":"text","text":"- [ ] Prerequisites:\n\t- [ ] Basic Printing\n- [ ] Goals:\n\t- [ ] Vertical Bars\n\t- [ ] hyphens\n\t- [ ] Apostroph\n","x":-225,"y":400,"width":250,"height":275},
+		{"id":"20a9d47f5b2ea441","type":"text","text":"See [Requisites](https://teaching.csap.snu.ac.kr/iajaeggl/lab-3-lsec#verbose-mode)\n- [ ] Fixed, aligned columns\n\t- [ ] Files cut at pos. 54 and end with three dots\n- [ ] Colouring\n- [ ] Owner / Groups\n- [ ] Security\n\t- [ ] Files / Directories diff\n\t- [ ] Mounted\n\t- [ ] SUID (from root)\n- [ ] Type\n\t- [ ] \\<empty\\> - file\n\t- [ ] d - directory\n\t- [ ] l - link\n\t- [ ] c - character device\n\t- [ ] b - block device\n\t- [ ] f - fifo\n\t- [ ] s - socket\n\t- [ ] M - mount point\n- [ ] Summary\n\t- [ ] Header and Footer\n\t- [ ] File summary\n\t- [ ] Grammatically correct","x":150,"y":400,"width":280,"height":760},
+		{"id":"1cb9920fd0056df7","type":"text","text":"- [x] Differentiate directories & files\n- [x] Indentation\n- [ ] Print access errors as file placeholder\n- [ ] other errors are shown and application terminates","x":-635,"y":400,"width":280,"height":349},
+		{"id":"015942910b2783f8","x":-225,"y":1240,"width":250,"height":60,"type":"text","text":"## Miscellaneous"},
+		{"id":"954d0e92b2919637","x":-225,"y":1360,"width":250,"height":60,"type":"text","text":"- [ ] Print security flaws only"}
+	],
+	"edges":[
+		{"id":"efc5d0d234e9a529","fromNode":"6b3fa08dd32d03bd","fromSide":"bottom","toNode":"247c629596b6248a","toSide":"top"},
+		{"id":"d196300512852bcb","fromNode":"6b3fa08dd32d03bd","fromSide":"bottom","toNode":"80673f13cc4835a0","toSide":"top"},
+		{"id":"a12bd794b73a647b","fromNode":"6b3fa08dd32d03bd","fromSide":"bottom","toNode":"aaa2b028b816c126","toSide":"top"},
+		{"id":"d4787d1ee23a3186","fromNode":"80673f13cc4835a0","fromSide":"bottom","toNode":"1cb9920fd0056df7","toSide":"top"},
+		{"id":"6a46f211abcf8d7c","fromNode":"1cb9920fd0056df7","fromSide":"bottom","toNode":"d3d54060245c5dc7","toSide":"top"},
+		{"id":"b174299436aad94d","fromNode":"247c629596b6248a","fromSide":"bottom","toNode":"d3d54060245c5dc7","toSide":"top"},
+		{"id":"f62bc48d414bab06","fromNode":"aaa2b028b816c126","fromSide":"bottom","toNode":"20a9d47f5b2ea441","toSide":"top"},
+		{"id":"2ccdc3edc4b7b771","fromNode":"dc7653e76f8fca93","fromSide":"bottom","toNode":"734b054689e6c633","toSide":"top"},
+		{"id":"7ad2defc86e8dd2c","fromNode":"d279066f447f7fbd","fromSide":"bottom","toNode":"dc7653e76f8fca93","toSide":"top"},
+		{"id":"92db73abc2ae801e","fromNode":"d279066f447f7fbd","fromSide":"bottom","toNode":"7882c9a28000e78b","toSide":"top"},
+		{"id":"e09f6c82dd94a1f6","fromNode":"d279066f447f7fbd","fromSide":"bottom","toNode":"8db07eaf83fff356","toSide":"top"},
+		{"id":"45b7ad8278798622","fromNode":"7882c9a28000e78b","fromSide":"bottom","toNode":"6931b328881b811f","toSide":"top"},
+		{"id":"bb9574391ea3d607","fromNode":"8db07eaf83fff356","fromSide":"bottom","toNode":"a9d6b5c471a5de74","toSide":"top"},
+		{"id":"aad62d01c95b526d","fromNode":"61f51e5f1aa6f5aa","fromSide":"bottom","toNode":"ef56ce699084e8ba","toSide":"top"},
+		{"id":"cdfc81a09cedffc0","fromNode":"ef56ce699084e8ba","fromSide":"bottom","toNode":"82e5da031aa5d3dc","toSide":"top"},
+		{"id":"973e630a07292f65","fromNode":"82e5da031aa5d3dc","fromSide":"bottom","toNode":"015942910b2783f8","toSide":"top"},
+		{"id":"909f13abca91b3f0","fromNode":"015942910b2783f8","fromSide":"bottom","toNode":"954d0e92b2919637","toSide":"top"}
+	]
+}

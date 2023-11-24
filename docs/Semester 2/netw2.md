@@ -343,3 +343,17 @@ Limit the amount of MAC address registering per port.
 interface <int-id>
 switchport port-security maximum <number>
 ```
+
+### Routing
+
+Every router has a routing table. The routing table contains information about the networks that are directly connected to the router and about the networks that are not directly connected to the router.
+
+>[!warning] Big Warning
+>If you do this you're screwed
+
+>[!Error] Big Failure
+>you're definitely screwed
+
+
+- [ ] Task1
+- [ ] Task 2
