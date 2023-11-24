@@ -215,3 +215,28 @@ Vorgehen:
 -   S. 52-54 Beispiel
 -   S. 56 Zusammenfassung
 -   S. 57 Bewertung
+
+### Medienmitteilung
+
+-   So knapp wie möglich, so ausführlich wie nötig
+-   Faktisch bleiben
+-   Kein Marketing
+
+!!!note "Aufbau"
+
+    1.   **Titel:** Knacikg, aussagekräftig
+    2.   **Lead:** Wichtigste Fakten auf den Punkt gebracht
+    3.   **Fliesstext:** Ausführungen und Zitate (allerwichtigste, nur 2-3 Sätze)
+    4.   **Weiterführende:** Informationen: Bilder, Videos, Studien, etc.
+    5.   **Kontaktangabe:** Fachperson mit Telefonnummer
+
+#### Botschaft
+
+-   **Kurz halten:** 2-5 Sätze, 15-30 Sekunden
+-   **Radikal vereinfachen:** Fachausdrücke vermeiden
+
+3B - behaupten, begründen, bekräftigen
+
+-   Zürich brauch endliche sichere Velorouten
+-   So und so viele verunfallte Velofahrer
+-   Deshalb fordern wir mit der Initiative, dass...

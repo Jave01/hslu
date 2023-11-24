@@ -15,3 +15,9 @@ folgendermassen
 Bitstring
 Rekursionsbeziehungen
 Bitstrings
+Rekursionsbeziehung
+Kongruenzen
+Gradlisten
+Vigenère
+Vigenère-Chiffre
+komplementierend

@@ -1,0 +1,171 @@
+\documentclass[12pt]{scrartcl}
+\usepackage[ngerman]{babel}
+
+
+\usepackage{amsmath, amssymb}
+
+\usepackage{array}  % for the tables
+
+\usepackage{nameref}  % for referencing with name
+
+\usepackage{hyperref}  % for hyperlinks
+
+\usepackage{mathrsfs}
+
+\usepackage{graphicx}  % for the images
+
+\usepackage{xcolor, colortbl}
+
+\usepackage{gensymb} % for \degree
+
+\usepackage{pgfplots}
+
+\usepackage{tabto}
+
+\usepackage{ulem} % \uuline
+
+\usetikzlibrary{arrows}
+
+% \usepgfplotslibrary{external}
+
+% \tikzexternalize
+
+\definecolor{Gray}{gray}{0.85}
+
+\setlength{\parindent}{0cm}
+
+\newcommand{\RomanNumeralCaps}[1]
+    {\MakeUppercase{\romannumeral #1}}
+
+% hyperlinks
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\bibliographystyle{IEEetran}
+
+
+
+
+\author{David Jäggli}
+
+\title{Diskrete Mathematik - Übungen SW08}
+
+
+
+% ---------- Begin Main Document ----------- %
+
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+\section{Rekursionen}
+\textbf{I.)}\\
+Gleichung: $a_n = 2^n + 5 \cdot 3^n$\\
+RB: $a_n = 5a_{n-1} - 6a_{n-2}$\\
+
+Einsetzen:
+
+$5(2^{n-1} + 5 \cdot 3^{n-1}) - 6(2^{n-2} + 5 \cdot 3^{n-2}) = $\\
+$5 \cdot 2^{n-1} + 25 \cdot 3^{n-1} - 6 \cdot 2^{n-2} - 30 \cdot 3^{n-2} = $\\
+$2^{n-2} (5 \cdot 2 - 6) + 3^{n-2} (25 \cdot 3 - 30) = $\\
+$2^{n-2} \cdot 4 + 3^{n-2} \cdot 45 = $\\
+$2^{n-2} \cdot 2^2 + 3^{n-2} \cdot 5 \cdot 3^2 = $\\
+$2^n + 5 \cdot 3^n = a_n$, $\forall n$\\
+
+
+\textbf{II.)}\\
+Wenn mit 1 endet dann gibt es $n^{-1}$ Möglichkeiten.\\
+Es gibt $2^{n-1}$ Bitstrings mit Länge $n-1$ mit $a_{n-1}$ Möglichkeiten für eine gerade Anzahl Nullen.\\
+
+\[a_n = a_{n-1} + (2^{n-1}- a_{n-1}) = 2^{n-1}\]
+
+Daraus folgt, dass $a_{n-1} = 2^{n-2}$
+
+einsetzen: 
+
+\[a_n = a_{n-1} + (2^{n-1}- a_{n-1})\\
+= a_{n-1} + (2^{n-1} - 2^{n-2})\\
+= a_{n-1} + 2^{n-2}\\
+= 2a_{n-1}\]
+
+
+\section{Lösen von linearen Rekursionsbeziehungen}
+\textbf{III.)}\\
+Standardform: $a_n - 4a_{n-1} + 4a_{n-2} = 0$\\
+$a_n = r^n$\\
+$0 = r^n - 4r^{n-1} + 4r^{n-2}$\\
+$0 = r^{n-2} (r^2 - 4r + 4)$\\
+$0 = r^2 - 4r + 4$\\
+$0 = (r-2)^2$\\
+
+$a_n^{(h)} = (\alpha_1 + \alpha_2 n) r^n = (\alpha_1 + \alpha_2n)2^n$
+
+\newpage
+\section{Erweitertes Ein- und Ausschlussprinzip}
+\textbf{IV.)}\\
+Anzahl mögliche Fälle: 
+\[\binom{15}{13} = 105\]
+Nicht-valide Lösungen:\\
+Wenn 1 oder 2 Zahlen $\geq$ 6:
+\[\binom{7 + 3 - 1}{2} = \binom{9}{2} = 36\]\\
+dies gilt pro Zahl/$x_i$, heisst gesamthaft gibt es $36 \cdot 3 = 108$ (- doppelt gerechnete) nicht-valide Lösungen.\\
+
+Zieht man die doppelt gerechneten Fälle ab (wie z.B.) kommt man auf:
+
+\[\binom{1+3-1}{2} = \binom{3}{2} = 3 \cdot 3 = 9\]
+
+Insgesammt valide Fälle: $105 - 108 + 9 = 6$\\
+
+
+% Matrix example
+% \textbf{Korrektur:}\\
+% $\mathbf{A} \odot \mathbf{B} =
+% \begin{bmatrix}
+%     1 & 1 & 1 \\
+%     1 & 1 & 1 \\
+%     1 & 0 & 1 \\
+% \end{bmatrix}
+% $
+
+% tabular example 3 columns
+% \renewcommand{\arraystretch}{1.5}
+% \begin{center}
+%     \begin{tabular}{ | m{12em} | m{12em} | m{12em} | }
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%         1 & 2 & 3\\ 
+%         \hline
+%     \end{tabular}
+% \end{center}
+
+
+% tabular example 2 columns
+% \renewcommand{\arraystretch}{1.5}
+% \begin{center}
+%     \begin{tabular}{ | m{17em} | m{17em} | }
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%         1 & 2\\ 
+%         \hline
+%     \end{tabular}
+% \end{center}
+
+% \bibliography{}
+
+\end{document}

@@ -7,9 +7,9 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../privacy/" rel="prev"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.4.2, mkdocs-material-9.0.13" name="generator"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.1.5" name="generator"/>
 <title>SPRG - Semester notes</title>
-<link href="../../assets/stylesheets/main.ffa9267a.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/main.7a7fce14.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.a0c5b2b5.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
@@ -422,6 +422,39 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#injection">
+    Injection
+  </a>
+<nav aria-label="Injection" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#types-of-injection">
+    Types of Injection
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prevent-injections">
+    Prevent Injections
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cross-site-scripting-xss">
+    Cross-Site Scripting (XSS)
+  </a>
+<nav aria-label="Cross-Site Scripting (XSS)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prevent-xss">
+    Prevent XSS
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#secure-programming-for-a-software-engineer">
     Secure Programming for a software engineer
   </a>
@@ -654,6 +687,39 @@
   </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#injection">
+    Injection
+  </a>
+<nav aria-label="Injection" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#types-of-injection">
+    Types of Injection
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prevent-injections">
+    Prevent Injections
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cross-site-scripting-xss">
+    Cross-Site Scripting (XSS)
+  </a>
+<nav aria-label="Cross-Site Scripting (XSS)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prevent-xss">
+    Prevent XSS
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#secure-programming-for-a-software-engineer">
     Secure Programming for a software engineer
   </a>
@@ -721,7 +787,7 @@
 <h2 id="inhalt">Inhalt</h2>
 <h3 id="data-flow-diagramm">Data flow diagramm</h3>
 <p>4 elements:</p>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/dfd.png"><img alt="data flow diagram" src="../../assets/dfd.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../assets/dfd.png"><img alt="data flow diagram" src="../../assets/dfd.png"/></a></p>
 <h3 id="approach">Approach</h3>
 <p>Rule of thumb:</p>
 <ul>
@@ -950,7 +1016,7 @@ f --&gt; a</code></pre>
 <li>Always write a detailed Threat Model (protocol, port, everything you found out)</li>
 </ul>
 <h4 id="cheat-sheet-different-threats-in-dfd">Cheat Sheet: different threats in DFD</h4>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/cheat_sheet_sprg_threats.png"><img alt="asdf" src="../../assets/cheat_sheet_sprg_threats.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="100%" href="../../assets/cheat_sheet_sprg_threats.png"><img alt="asdf" src="../../assets/cheat_sheet_sprg_threats.png"/></a></p>
 <h4 id="how-to-address-threats">How to address threats</h4>
 <p>4 ways to address threats</p>
 <ol>
@@ -999,6 +1065,68 @@ f --&gt; a</code></pre>
 <li>must be interpreted the same way on both sides</li>
 </ul>
 <p>Everything should be defined as detailed as possible, everything has to be checked at runtime.</p>
+<h3 id="injection">Injection</h3>
+<p>Untrusted input gets processed as code.</p>
+<ul>
+<li>SQL</li>
+<li>OS command</li>
+<li>LDAP query</li>
+<li>XPath query (for XML)</li>
+<li>HTTP or File requests</li>
+<li>JavaScript injection (XSS)</li>
+</ul>
+<h4 id="types-of-injection">Types of Injection</h4>
+<ul>
+<li>1st order injection<ul>
+<li>in-band: results directly returned through same channel (SQL)</li>
+<li>inferential (blind): results returned through a different channel (e.g. error message)</li>
+<li>Out-of-band: results returned through a different channel (e.g. email)</li>
+</ul>
+</li>
+<li>2nd order injection<ul>
+<li>Attacker doees not send the malicious payload directly to the target system, but to an intermediate system first.</li>
+<li>Example: inject js code into into a form, it is written to a log file, admin opens log file, js code gets executed.</li>
+</ul>
+</li>
+<li>Lateral injection - Datentypen werden verändert</li>
+</ul>
+<h4 id="prevent-injections">Prevent Injections</h4>
+<ul>
+<li>Input validation (block stuff)</li>
+<li>Sanitization (search and remove (possibly dangerous) stuff)</li>
+<li>Encoding</li>
+<li>Least privilege principle</li>
+<li>Optimize SQL Database configuration<ul>
+<li>Disable non-standard functions on database (e.g. sleep)</li>
+</ul>
+</li>
+</ul>
+<h3 id="cross-site-scripting-xss">Cross-Site Scripting (XSS)</h3>
+<ul>
+<li>Exploits vulnerabilities in a web application to inject malicious code into the application (Javascript)</li>
+<li>The malicious code is then executed by the victim's browser (privileges of the user)</li>
+</ul>
+<p>Goals:</p>
+<ul>
+<li>Forward sensitive data to malicious server</li>
+<li>Force download of malicious files</li>
+<li>Download additional malicious scripts from attacker's server</li>
+<li>Session hijacking</li>
+<li>Overcome CSRF proections</li>
+<li>Keylogger</li>
+</ul>
+<p>Three (common) attack possibilities</p>
+<ol>
+<li>Document sink - updates DOM of document.element with data controlled by the attacker</li>
+<li>Location sink - zodates document.location with data controlled by the attacker</li>
+<li>Execution sink - runs the eval() function with data controlled by the attacker</li>
+</ol>
+<h4 id="prevent-xss">Prevent XSS</h4>
+<ul>
+<li>Frameworks: JSP, JSF, Angular</li>
+<li>Input validation</li>
+<li>Don't do your own validation</li>
+</ul>
 <h3 id="secure-programming-for-a-software-engineer">Secure Programming for a software engineer</h3>
 <p>must meet the business requirements:</p>
 <ol>
@@ -1078,7 +1206,7 @@ f --&gt; a</code></pre>
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+<script src="../../assets/javascripts/bundle.407015b8.min.js"></script>
 <script src="../../javascripts/mathjax.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>

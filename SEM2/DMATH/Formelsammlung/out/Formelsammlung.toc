@@ -1,0 +1,141 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Allg}{5}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Grundlagen der Logik und Beweise}{5}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Aussagen (Propositionen)}{5}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Operatoren}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Diskunktion}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Implikation}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Bikonditional}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Prioritäten}{7}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Aussagen}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Tautologie und Wiederspruch}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Logische Äquivalenzen}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Logische Äquivalenzregeln}{7}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Quantoren}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Prädikate}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Allquantor}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Existenzquantor}{9}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Verschachtelte Quantoren}{9}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Beweise}{10}{section.5}%
+\contentsline {section}{\numberline {6}Mengen}{11}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Gleichheit, elementare Mengen}{11}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Spezielle Mengen}{11}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Das Kreuzprodukt zweier Mengen / kartesisches Produkt}{12}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Mengenoperationen}{12}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Komplement}{12}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}Durchschnitt}{12}{subsubsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.3}Vereinigung}{12}{subsubsection.6.4.3}%
+\contentsline {subsubsection}{\numberline {6.4.4}Differenz}{13}{subsubsection.6.4.4}%
+\contentsline {subsection}{\numberline {6.5}Set Operatoren}{13}{subsection.6.5}%
+\contentsline {subsubsection}{\numberline {6.5.1}Rechenregeln}{13}{subsubsection.6.5.1}%
+\contentsline {subsubsection}{\numberline {6.5.2}Mengen Identitäten}{14}{subsubsection.6.5.2}%
+\contentsline {section}{\numberline {7}Funktionen}{15}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Injektive Funktionen}{15}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Surjektive Funktionen}{15}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Bijektive Funktionen}{15}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Zusammengesetzte Funktionen}{15}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Umkehrfunktionen}{15}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Folgen}{16}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Definition}{16}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Die geometrische Folge}{16}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Summen}{16}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Produkte}{17}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Wachstum von Funktionen / Big-O}{18}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Definition}{18}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Example}{18}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Polynome}{19}{subsection.9.3}%
+\contentsline {section}{\numberline {10}Zahlen und Division}{20}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Definition}{20}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Modulare Arithmetik}{20}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Der Euklidische Algorithmus}{20}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Erweiterter euklidischer Algorithmus}{21}{subsection.10.4}%
+\contentsline {section}{\numberline {11}Matrizen}{22}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Definition}{22}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Addition von Matrizen}{22}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Multiplikation mit einer Zahl}{22}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}Matrixmultiplikation}{22}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}Einheitsmatrix}{22}{subsection.11.5}%
+\contentsline {subsection}{\numberline {11.6}Inverse Matrix}{22}{subsection.11.6}%
+\contentsline {subsection}{\numberline {11.7}Transporierte Matrix}{23}{subsection.11.7}%
+\contentsline {subsection}{\numberline {11.8}Matrizen Eigenschaften}{23}{subsection.11.8}%
+\contentsline {subsection}{\numberline {11.9}Matrizen Rechenregeln}{24}{subsection.11.9}%
+\contentsline {subsection}{\numberline {11.10}Determinante}{25}{subsection.11.10}%
+\contentsline {subsubsection}{\numberline {11.10.1}2x2 Matrix}{25}{subsubsection.11.10.1}%
+\contentsline {subsubsection}{\numberline {11.10.2}3x3 Matrix}{25}{subsubsection.11.10.2}%
+\contentsline {subsection}{\numberline {11.11}Admittanzmatrix, Adjazenzmatrix, Gradmatrix}{25}{subsection.11.11}%
+\contentsline {subsection}{\numberline {11.12}Null-Eins Matrizen}{26}{subsection.11.12}%
+\contentsline {section}{\numberline {12}Mathematisches Begründen}{27}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Mathematische Induktion}{27}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Rekursiv definierte Funktionen}{27}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Beispiel Türme von Hanoi}{27}{subsection.12.3}%
+\contentsline {section}{\numberline {13}Grundlagen des Zählens}{28}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Zusammenfassung}{28}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Schubfachprinzip}{28}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}Permutationen}{29}{subsection.13.3}%
+\contentsline {subsection}{\numberline {13.4}Permutation nicht unterscheidbarer Objekte}{29}{subsection.13.4}%
+\contentsline {subsection}{\numberline {13.5}Kombinationen}{30}{subsection.13.5}%
+\contentsline {subsection}{\numberline {13.6}Kombinationen mit Wiederholungen}{30}{subsection.13.6}%
+\contentsline {subsection}{\numberline {13.7}Beispiel mit Autonummer}{31}{subsection.13.7}%
+\contentsline {section}{\numberline {14}Diskrete Wahrscheinlichkeitsrechnung}{32}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Allgemein}{32}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}Bedingte Wahrscheinlichkeit}{32}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3}Totale Wahrscheinlichkeit}{33}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4}Satz von Bayes}{34}{subsection.14.4}%
+\contentsline {subsection}{\numberline {14.5}Verteilungsfunktionen}{35}{subsection.14.5}%
+\contentsline {subsubsection}{\numberline {14.5.1}Bernoulli-Verteilung}{35}{subsubsection.14.5.1}%
+\contentsline {subsubsection}{\numberline {14.5.2}Hypergeometrische Verteilung}{36}{subsubsection.14.5.2}%
+\contentsline {subsubsection}{\numberline {14.5.3}Poisson-Verteilung}{37}{subsubsection.14.5.3}%
+\contentsline {subsection}{\numberline {14.6}Zufallsvariablen}{37}{subsection.14.6}%
+\contentsline {subsection}{\numberline {14.7}Erwartungswert einer Zufallsvariablen}{38}{subsection.14.7}%
+\contentsline {section}{\numberline {15}Fortgeschrittene Zählmethoden}{40}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Rekursionsbeziehungen}{40}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}Lösen von Rekursionsbeziehungen}{41}{subsection.15.2}%
+\contentsline {section}{\numberline {16}Zahlentheorie}{42}{section.16}%
+\contentsline {subsection}{\numberline {16.1}Modulare Arithmetik}{42}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}Lösung diophantischer Gleichungen}{42}{subsection.16.2}%
+\contentsline {subsection}{\numberline {16.3}Modulare Inverse}{44}{subsection.16.3}%
+\contentsline {subsection}{\numberline {16.4}Der chinesische Restsatz}{45}{subsection.16.4}%
+\contentsline {subsection}{\numberline {16.5}Eulersche $\phi $-Funktion}{46}{subsection.16.5}%
+\contentsline {subsection}{\numberline {16.6}Eigenschaften der Eulerschen $\phi $-Funktion}{46}{subsection.16.6}%
+\contentsline {subsection}{\numberline {16.7}Der kleine Satz von Fermat}{47}{subsection.16.7}%
+\contentsline {subsection}{\numberline {16.8}Der Satz von Wilson}{47}{subsection.16.8}%
+\contentsline {subsection}{\numberline {16.9}Relationen}{47}{subsection.16.9}%
+\contentsline {subsubsection}{\numberline {16.9.1}Symmetrische Relationen}{47}{subsubsection.16.9.1}%
+\contentsline {subsubsection}{\numberline {16.9.2}Transitive Relationen}{48}{subsubsection.16.9.2}%
+\contentsline {subsubsection}{\numberline {16.9.3}Äquivalenzrelationen}{48}{subsubsection.16.9.3}%
+\contentsline {subsection}{\numberline {16.10}Restklassen}{48}{subsection.16.10}%
+\contentsline {subsection}{\numberline {16.11}Modulares Rechnen}{48}{subsection.16.11}%
+\contentsline {subsubsection}{\numberline {16.11.1}Modulare Rechenoperationen}{48}{subsubsection.16.11.1}%
+\contentsline {subsubsection}{\numberline {16.11.2}Modulare Rechenregeln}{49}{subsubsection.16.11.2}%
+\contentsline {subsection}{\numberline {16.12}Square-and-Multiply-Algorithmus}{50}{subsection.16.12}%
+\contentsline {subsection}{\numberline {16.13}Multiplikative Inverse}{51}{subsection.16.13}%
+\contentsline {subsubsection}{\numberline {16.13.1}Generell}{51}{subsubsection.16.13.1}%
+\contentsline {subsubsection}{\numberline {16.13.2}Mit Primzahlen}{51}{subsubsection.16.13.2}%
+\contentsline {subsection}{\numberline {16.14}Primitive Elemente}{51}{subsection.16.14}%
+\contentsline {subsection}{\numberline {16.15}Einwegfunktionen}{52}{subsection.16.15}%
+\contentsline {subsection}{\numberline {16.16}Modulare Quadratwurzeln}{52}{subsection.16.16}%
+\contentsline {subsection}{\numberline {16.17}Der diskrete Logarithmus}{53}{subsection.16.17}%
+\contentsline {subsection}{\numberline {16.18}Diffie-Hellman-Schlüsselaustausch}{53}{subsection.16.18}%
+\contentsline {section}{\numberline {17}Kryptografie}{54}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Perfekte Sicherheit}{54}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.2}Symmetrische Verschlüsselung}{54}{subsection.17.2}%
+\contentsline {subsection}{\numberline {17.3}Schlüsselwortchiffre}{54}{subsection.17.3}%
+\contentsline {subsection}{\numberline {17.4}Vigenère-Chiffre}{55}{subsection.17.4}%
+\contentsline {subsection}{\numberline {17.5}Asymmetrische Verschlüsselung}{55}{subsection.17.5}%
+\contentsline {section}{\numberline {18}Graphentheorie}{56}{section.18}%
+\contentsline {subsection}{\numberline {18.1}Knoten- oder Eckengrad}{57}{subsection.18.1}%
+\contentsline {subsection}{\numberline {18.2}Isomorphe Graphen}{57}{subsection.18.2}%
+\contentsline {subsection}{\numberline {18.3}Dijkstra Algorithmus}{58}{subsection.18.3}%
+\contentsline {subsection}{\numberline {18.4}Algorithmus von Prim}{59}{subsection.18.4}%
+\contentsline {subsection}{\numberline {18.5}Kruskal Algorithmus}{60}{subsection.18.5}%
+\contentsline {subsection}{\numberline {18.6}Adjazenzmatrix}{61}{subsection.18.6}%
+\contentsline {subsection}{\numberline {18.7}Inzidenzmatrix}{61}{subsection.18.7}%
+\contentsline {subsection}{\numberline {18.8}Gradmatrix}{62}{subsection.18.8}%
+\contentsline {subsection}{\numberline {18.9}Admittanzmatrix}{62}{subsection.18.9}%
+\contentsline {subsection}{\numberline {18.10}Admittanzmatrix - Satz von Kirchhoff}{62}{subsection.18.10}%
+\contentsline {subsection}{\numberline {18.11}Planare Graphen}{63}{subsection.18.11}%
+\contentsline {subsection}{\numberline {18.12}Färben}{63}{subsection.18.12}%
+\contentsline {subsubsection}{\numberline {18.12.1}Satz von Brooks}{63}{subsubsection.18.12.1}%
+\contentsline {subsubsection}{\numberline {18.12.2}Chromatische Polynom}{64}{subsubsection.18.12.2}%
+\contentsline {subsection}{\numberline {18.13}Gerüste / Spannbäume}{64}{subsection.18.13}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
