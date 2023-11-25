@@ -1,5 +1,7 @@
 import os
-
+"""
+Do NOT change
+"""
 
 class Config:
     def __init__(self, cmd_prefix: str, config_fname: str = None, work_dir: str = None, help_msg: str = None) -> None:

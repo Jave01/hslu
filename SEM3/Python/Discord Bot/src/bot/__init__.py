@@ -1,22 +1,31 @@
 import discord
-from bot.responses import handle_resp
+from discord.ext import commands
 from config import Config
+
+CMD_PREFIX = "/"
+
+intents = discord.Intents.default()
+intents.message_content = True
+
+
+bot = commands.Bot(command_prefix=CMD_PREFIX, intents=intents)
+
+
+@bot.event
+async def on_ready():
+    print(f'{bot.user} is now running')
+
+
+@bot.event
+async def on_message(message: discord.message.Message):
+    if message.author == bot.user:
+        return
+
+    if message.content.startswith(CMD_PREFIX):
+        await bot.process_commands(message)
 
 
 def run(token: str, config: Config):
-    intents = discord.Intents.default()
-    intents.message_content = True
-    client = discord.Client(intents=intents)
+    bot.run(token)
 
-    @client.event
-    async def on_ready():
-        print(f'{client.user} is now running')
 
-    @client.event
-    async def on_message(message: discord.message.Message):
-        if message.author == client.user:
-            return
-
-        await handle_resp(message, config=config)
-
-    client.run(token)
