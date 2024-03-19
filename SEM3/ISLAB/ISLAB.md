@@ -43,3 +43,82 @@ Bewertung:
 ## Malwares
 - GootLoader  [(NJCCIC) page on GootLooader](https://www.cyber.nj.gov/alerts-advisories/gootloader-malware-platform-uses-sophisticated-techniques-to-deliver-malware) and [BlackBerry’s Blog on GootLoader](https://blogs.blackberry.com/en/2022/07/gootloader-from-seo-poisoning-to-multi-stage-downloader).
 - GOZ
+
+
+
+
+## Access Management Linux
+
+Berechtigung besteht aus zwei Komponenten:
+- Ressource, auf welche zugegriffen wird
+- die zu berechtigenden Operationen, welche für die Ressource freigegeben werden
+
+
+Directory:
+- read: Dateien mit ls auflisten
+- write: hinzufügen, umbenennen, löschen
+- execute: change directory
+
+
+UID & GID herausfinden: `getent passwd`.
+
+
+
+## Access Management Windows
+
+Active Directory: Eine Möglichkeit Benutzer und Gruppen verschiedene Recte zuzuteilen. Erhöht die Sicherheit.
+
+
+Standardmässige Struktur:
+- Organisationseinheiten (OU's) - Sammlungen, welche mehrere Objekte beinhalten (User, Gruppen, Computer), Objekte werden nach Kategorien gesammelt.
+- Container: beinhaltet eine oder mehrere Active Directory Domains, diese beinhaltet eine hierarchische Struktur an Objekten, Security Services, Regeln und DNS Domain Namen.
+- OU's haben keine Regeln, sind nur zur Aufteilung.
+
+
+## Docker Introduction
+
+- Docker Images: enthalten die Umgebung mit Betriebssystem, Libraries und so weiter, plus die Applikation die danach auf dem Container laufen soll. Mit Ihnen können mithilfe des Docker Daemons Container gestartet werden.
+- Vorteile:
+	- Scalable, 
+	- Portable, sofern das Endgerät eine Docker Engine hat lauft mein Container dort
+	- Deployment vereinfacht.
+- Unterschiede zu VM's:
+	- Virtuelle Maschine hat immer ein GastOS
+	- VM stellt ein komplettes OS zur Verfügung -> man interagiert direkt damit. Bei Docker kommuniziert man mit dem Daemon, der die Images verwaltet.
+- Images isolieren:
+	- Binaries / Libraries
+	- Applikationen
+	- OS
+
+
+Syntax:
+![[Pasted image 20240117102356.png]]
+
+
+## Docker Security
+
+- Control Groups: Bieten eine Möglichkeiten Systemressourcen zu unterteilen
+- User Namespace: ermöglicht es User und Gruppen von Containern und dem System zu trennen. Doppelbelegungen möglich
+
+
+Docker Security Bench: script zum Überprüfen der Sicherheit, anhand von best practices.
+
+Wenn man der Docker Gruppe angehört, hat man automatisch admin Rechte.
+
+Wenn ein kritisches Script in ein allgemein verfügbarer Ordner kopiert wird.
+
+
+## Network Security Monitoring (NSM)
+
+- NIDS: Kontrolliert Netzwerkverkehr auf Schadsoftware
+- Host Intrusion Detection: Snapshot von allen Dateien auf Host, vergleicht ob zwischen zwei Snapshots kritische Dateien verändert wurden.
+
+
+Suricata: Intrusion Detection System, mit den allgemeinen rules-syntax.
+Kibana: Front-end, welches die Logs analysiert.
+
+nftables: Kann gebraucht werden um Packete zu droppen.
+
+
+## Public-Key Infrastructure
+

@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"0e5674f23a79a323","type":"text","text":"# Kryptologie","x":-280,"y":-240,"width":285,"height":60},
+		{"id":"2edc913d7689f2ba","type":"text","text":"## Kryptographie","x":-660,"y":0,"width":250,"height":60},
+		{"id":"a831df9cf2d80a5a","type":"text","text":"### Symmetrische","x":-660,"y":231,"width":250,"height":60},
+		{"id":"6f6b6c66337979be","type":"text","text":"### Asymmetrische","x":-960,"y":231,"width":250,"height":60},
+		{"id":"01400cdde5122453","type":"text","text":"## Kryptoanalyse\n\n- Klassische\n- Differentielle\n- Lineare\n- usw.\n\n","x":160,"y":0,"width":250,"height":201},
+		{"id":"b528ce47e7bc27f0","type":"text","text":"### Protokolle","x":-360,"y":231,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"58cea042365341db","fromNode":"0e5674f23a79a323","fromSide":"bottom","toNode":"01400cdde5122453","toSide":"top"},
+		{"id":"f214ec627a5c4b65","fromNode":"0e5674f23a79a323","fromSide":"bottom","toNode":"2edc913d7689f2ba","toSide":"top"},
+		{"id":"c36b4f04bb198f95","fromNode":"2edc913d7689f2ba","fromSide":"bottom","toNode":"6f6b6c66337979be","toSide":"top"},
+		{"id":"9c22d4c3dfd86599","fromNode":"2edc913d7689f2ba","fromSide":"bottom","toNode":"a831df9cf2d80a5a","toSide":"top"},
+		{"id":"668f0a7654f4a0a8","fromNode":"2edc913d7689f2ba","fromSide":"bottom","toNode":"b528ce47e7bc27f0","toSide":"top"}
+	]
+}

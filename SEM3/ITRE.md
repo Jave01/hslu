@@ -114,7 +114,6 @@ Haben zum Ziel Hardware/Software in bestimmten Intervallen zu unterhalten.
 >[!warning] Wichtig
 >Wichtig für MEP!
 
-#TODO 
 - Tatbestand
 	- Objektiver Tatbestand
 	- Subjektiver Tatbestand
@@ -122,6 +121,7 @@ Haben zum Ziel Hardware/Software in bestimmten Intervallen zu unterhalten.
 - Schuldhaftigkeit
 
 #### Objektiver Tatbestand Beispiel
+
 - Täter - Person X
 - Tatobjekt - Person Y
 - Tathandlung - Verletzung
@@ -129,3 +129,31 @@ Haben zum Ziel Hardware/Software in bestimmten Intervallen zu unterhalten.
 
 #### Subjektiver Tatbestand Beispiel
 
+- Vorsatz oder Fahrlässigkeit?
+
+#### Beispiel Tatbestand
+
+Objektiv: Jemand stiehlt eine Sache.
+Subjektiv: Vorsatz die Sache dauerhaft zu behalten.
+
+
+#### Rechtswidrigkeit
+
+Liegt vor, wenn eine Handlung gegen ein gesetzliches Verbot verstösst. Zum Beispiel ist es rechtswidrig, jemanden zu verletzen.
+
+#### Schuldhaftigkeit
+
+Erfordert, dass der Täter die Tat zumindest fahrlässig begangen hat. Ein Beispiel hierfür wäre, wenn jemand fahrlässig einen Verkehrsunfall verursacht.
+
+
+### Vorsatz
+
+Wirkt sich auf die Strafe aus.
+
+#### Direkter Vorsatz
+
+Liegt vor, wenn der Täter die Tat mit Wissen und Willen ausführt. Ein Beispiel hierfür wäre, wenn jemand gezielt eine andere Person verletzt oder töten will.
+
+#### Eventualvorsatz
+
+Besteht, wenn der Täter die Verwirklichung der Tat für möglich hält und billigend in Kauf nimmt. Ein Beispiel dafür wäre, wenn jemand in Kauf nimmt, dass bei einem Raubüberfall auf eine Bank Menschen verletzt werden könnten.

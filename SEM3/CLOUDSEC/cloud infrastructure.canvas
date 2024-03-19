@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"afdceddf3aecd1ef","type":"group","x":-5180,"y":-3520,"width":1070,"height":1087,"label":"Cloud computing"},
+		{"id":"6805586bf3672392","type":"group","x":-6240,"y":-3520,"width":983,"height":495,"color":"5","label":"Information Lifecycle"},
+		{"id":"2e1959d65a05b4f1","type":"text","text":"Retire","x":-6220,"y":-3356,"width":250,"height":60},
+		{"id":"1fbe6ffc4c281cc5","type":"text","text":"Share","x":-6120,"y":-3120,"width":250,"height":60},
+		{"id":"714732e54e0ffd81","type":"text","text":"Create","x":-5870,"y":-3490,"width":250,"height":60},
+		{"id":"7b54a1665fc6243e","type":"text","text":"Access ","x":-5540,"y":-3356,"width":250,"height":60},
+		{"id":"7931a4bd9f52757c","type":"text","text":"Roam","x":-5620,"y":-3120,"width":250,"height":60},
+		{"id":"d674a1cdc13b453e","type":"text","text":"# Types of Cloud computing\n","x":-4880,"y":-3500,"width":460,"height":67},
+		{"id":"9e96b7b4d6c6e5e0","type":"text","text":"## PaaS\nPlatform as a Service\n- OpenShift\n- AWS\n- Azure\n- Google App Engine\n- AWS Lambda","x":-4800,"y":-3253,"width":300,"height":300,"color":"1"},
+		{"id":"0f0e07e739e2b00f","type":"text","text":"## SaaS\nSoftware as a Service\n- iCloud\n- Google Photos\n- M365","x":-4420,"y":-3253,"width":290,"height":300,"color":"4"},
+		{"id":"a34a54f2cccf4a35","type":"text","text":"## IaaS\nInfrastructure as a Service\n- Amazon EC2\n- Google Compute Engine","x":-5160,"y":-3253,"width":300,"height":300,"color":"6"},
+		{"id":"7c896aa1f41ad3a3","type":"file","file":"SEM3/CLOUDSEC/assets/responsibility_chart.png","x":-4981,"y":-2753,"width":660,"height":285}
+	],
+	"edges":[
+		{"id":"6477b16cbe991db5","fromNode":"7b54a1665fc6243e","fromSide":"bottom","toNode":"7931a4bd9f52757c","toSide":"top"},
+		{"id":"87914ced8caf59fa","fromNode":"714732e54e0ffd81","fromSide":"right","toNode":"7b54a1665fc6243e","toSide":"top"},
+		{"id":"fda958dceb356597","fromNode":"2e1959d65a05b4f1","fromSide":"top","toNode":"714732e54e0ffd81","toSide":"left"},
+		{"id":"f476214dc4d11358","fromNode":"7931a4bd9f52757c","fromSide":"left","toNode":"1fbe6ffc4c281cc5","toSide":"right"},
+		{"id":"17c3a3cf32374586","fromNode":"1fbe6ffc4c281cc5","fromSide":"top","toNode":"2e1959d65a05b4f1","toSide":"bottom"},
+		{"id":"43d189e9155c9d77","fromNode":"d674a1cdc13b453e","fromSide":"bottom","toNode":"a34a54f2cccf4a35","toSide":"top"},
+		{"id":"a4324f78bb73c48b","fromNode":"d674a1cdc13b453e","fromSide":"bottom","toNode":"9e96b7b4d6c6e5e0","toSide":"top"},
+		{"id":"53b0c3f9c9b961b3","fromNode":"d674a1cdc13b453e","fromSide":"bottom","toNode":"0f0e07e739e2b00f","toSide":"top"},
+		{"id":"0208daf4268f8bf4","fromNode":"a34a54f2cccf4a35","fromSide":"bottom","toNode":"7c896aa1f41ad3a3","toSide":"top"},
+		{"id":"a024d743066d58e1","fromNode":"9e96b7b4d6c6e5e0","fromSide":"bottom","toNode":"7c896aa1f41ad3a3","toSide":"top"},
+		{"id":"140209e219b03b3f","fromNode":"0f0e07e739e2b00f","fromSide":"bottom","toNode":"7c896aa1f41ad3a3","toSide":"top"}
+	]
+}

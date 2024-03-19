@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"52f976cda2dd42e5","x":-215,"y":360,"width":718,"height":548,"color":"4","type":"group","label":"CPU"},
+		{"id":"a075c3ebda8f8a11","x":-215,"y":678,"width":718,"height":230,"color":"6","type":"group","label":"1 CPU Core"},
+		{"id":"88acda31d4cac53c","x":-720,"y":72,"width":1010,"height":100,"type":"group","label":"Harvard architecture"},
+		{"id":"c02941c975d30429","x":-740,"y":360,"width":290,"height":260,"type":"group","label":"Neumann architecture"},
+		{"id":"a4c8137f1d5b976e","x":-327,"y":92,"width":250,"height":60,"type":"text","text":"CPU"},
+		{"id":"f35cb92af8a12ef7","x":-700,"y":92,"width":250,"height":60,"type":"text","text":"Instruction memory"},
+		{"id":"75fa01d201a8f31b","x":20,"y":92,"width":250,"height":60,"type":"text","text":"Data Memory"},
+		{"id":"7107f70b3a40616b","x":-720,"y":380,"width":250,"height":60,"type":"text","text":"CPU"},
+		{"id":"87a89731c409e890","x":-720,"y":540,"width":250,"height":60,"type":"text","text":"Data & Instruction memory"},
+		{"id":"949eff5e80a21635","x":-37,"y":380,"width":367,"height":60,"type":"text","text":"L3 Cache"},
+		{"id":"94fa7c148d09fcac","type":"text","text":"CPU Core 1","x":-37,"y":528,"width":160,"height":60},
+		{"id":"1b87cf44e524ffb0","x":170,"y":528,"width":160,"height":60,"type":"text","text":"CPU Core 2"},
+		{"id":"fc5522b82fce906a","x":25,"y":698,"width":250,"height":60,"type":"text","text":"ALU"},
+		{"id":"fce6f23e31ba4f1b","type":"text","text":"L2 Cache","x":25,"y":828,"width":250,"height":60},
+		{"id":"a6904a397ec02728","type":"text","text":"L1 Cache","x":345,"y":698,"width":138,"height":60},
+		{"id":"eb9307f8369ee0f9","x":-195,"y":698,"width":138,"height":60,"type":"text","text":"L1 Cache"}
+	],
+	"edges":[
+		{"id":"3ba30bb88f52dedf","fromNode":"f35cb92af8a12ef7","fromSide":"right","toNode":"a4c8137f1d5b976e","toSide":"left"},
+		{"id":"d8f207904a4343bb","fromNode":"75fa01d201a8f31b","fromSide":"left","toNode":"a4c8137f1d5b976e","toSide":"right"},
+		{"id":"05a4f6e9ae611124","fromNode":"87a89731c409e890","fromSide":"top","toNode":"7107f70b3a40616b","toSide":"bottom"},
+		{"id":"174137c246f75658","fromNode":"fce6f23e31ba4f1b","fromSide":"top","toNode":"fc5522b82fce906a","toSide":"bottom"},
+		{"id":"fd4b9e011566fdf9","fromNode":"eb9307f8369ee0f9","fromSide":"right","toNode":"fc5522b82fce906a","toSide":"left"},
+		{"id":"a1fb89c9e18a088c","fromNode":"eb9307f8369ee0f9","fromSide":"bottom","toNode":"fce6f23e31ba4f1b","toSide":"left"},
+		{"id":"e6dbd9560b5b70d8","fromNode":"a6904a397ec02728","fromSide":"left","toNode":"fc5522b82fce906a","toSide":"right"},
+		{"id":"050bc62cf009d904","fromNode":"a6904a397ec02728","fromSide":"bottom","toNode":"fce6f23e31ba4f1b","toSide":"right"},
+		{"id":"ca63c7b4201006e2","fromNode":"94fa7c148d09fcac","fromSide":"top","toNode":"949eff5e80a21635","toSide":"bottom"},
+		{"id":"88546684ebb7ad9d","fromNode":"1b87cf44e524ffb0","fromSide":"top","toNode":"949eff5e80a21635","toSide":"bottom"},
+		{"id":"5411eceb89993dfe","fromNode":"94fa7c148d09fcac","fromSide":"bottom","toNode":"a075c3ebda8f8a11","toSide":"top"}
+	]
+}

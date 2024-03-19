@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "0ex+Ag0uAo5pdAbyiiMJwH5oQ8lHAHc5v1ue7XXBx5e34auPxa/pMY3/oaEaNU39WPXkjSv4C6dxtBhvnkrRMg==",
+  "success": true,
+  "projectFilePath": "/home/dave/hslu/SEM4/CSA/Excercises/Explorer700Library/Explorer700Library.csproj",
+  "expectedPackageFiles": [
+    "/home/dave/.nuget/packages/iot.device.bindings/3.1.0/iot.device.bindings.3.1.0.nupkg.sha512",
+    "/home/dave/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "/home/dave/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "/home/dave/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "/home/dave/.nuget/packages/microsoft.win32.systemevents/6.0.0/microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "/home/dave/.nuget/packages/runtime.linux-arm.runtime.native.system.io.ports/5.0.0/runtime.linux-arm.runtime.native.system.io.ports.5.0.0.nupkg.sha512",
+    "/home/dave/.nuget/packages/runtime.linux-arm64.runtime.native.system.io.ports/5.0.0/runtime.linux-arm64.runtime.native.system.io.ports.5.0.0.nupkg.sha512",
+    "/home/dave/.nuget/packages/runtime.linux-x64.runtime.native.system.io.ports/5.0.0/runtime.linux-x64.runtime.native.system.io.ports.5.0.0.nupkg.sha512",
+    "/home/dave/.nuget/packages/runtime.native.system.io.ports/5.0.1/runtime.native.system.io.ports.5.0.1.nupkg.sha512",
+    "/home/dave/.nuget/packages/runtime.osx-x64.runtime.native.system.io.ports/5.0.0/runtime.osx-x64.runtime.native.system.io.ports.5.0.0.nupkg.sha512",
+    "/home/dave/.nuget/packages/system.codedom/5.0.0/system.codedom.5.0.0.nupkg.sha512",
+    "/home/dave/.nuget/packages/system.device.gpio/3.1.0/system.device.gpio.3.1.0.nupkg.sha512",
+    "/home/dave/.nuget/packages/system.drawing.common/6.0.0/system.drawing.common.6.0.0.nupkg.sha512",
+    "/home/dave/.nuget/packages/system.io.pipelines/7.0.0/system.io.pipelines.7.0.0.nupkg.sha512",
+    "/home/dave/.nuget/packages/system.io.ports/5.0.1/system.io.ports.5.0.1.nupkg.sha512",
+    "/home/dave/.nuget/packages/system.management/5.0.0/system.management.5.0.0.nupkg.sha512",
+    "/home/dave/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/home/dave/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "/home/dave/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
+    "/home/dave/.nuget/packages/system.text.encodings.web/6.0.0/system.text.encodings.web.6.0.0.nupkg.sha512",
+    "/home/dave/.nuget/packages/system.text.json/6.0.1/system.text.json.6.0.1.nupkg.sha512",
+    "/home/dave/.nuget/packages/unitsnet/5.31.0/unitsnet.5.31.0.nupkg.sha512",
+    "/home/dave/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.3/microsoft.aspnetcore.app.ref.8.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

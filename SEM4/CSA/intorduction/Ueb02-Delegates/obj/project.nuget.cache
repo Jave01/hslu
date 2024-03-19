@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3VidgtRsEbfsy5x0q6jrorvXcxTbLj4UCIITPxHrM3dy3Ip9rdudLXsm0INML1c2GwoXo0IoJAz3vvP7qj3xhg==",
+  "success": true,
+  "projectFilePath": "/home/dave/hslu/SEM4/CSA/intorduction/Ueb02-Delegates/Ueb02-Delegates.csproj",
+  "expectedPackageFiles": [
+    "/home/dave/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.2/microsoft.aspnetcore.app.ref.8.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

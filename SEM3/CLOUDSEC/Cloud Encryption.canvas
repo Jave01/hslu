@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"1769dfa5d2fb480c","type":"group","x":1000,"y":-240,"width":1480,"height":438,"color":"4","label":"GCP"},
+		{"id":"e77d0ad072c6641a","type":"text","text":"# Encryption in transit","x":-240,"y":-260,"width":350,"height":60},
+		{"id":"81088479a7843edd","type":"text","text":"# Encryption at rest","x":-800,"y":-260,"width":340,"height":60},
+		{"id":"c9a7c085d4bcdfc0","type":"text","text":"# Encryption while processing","x":200,"y":-260,"width":460,"height":60},
+		{"id":"cdac45152b3c9a57","type":"text","text":"# Data handling","x":1180,"y":-220,"width":428,"height":60},
+		{"id":"42e4e1827850f3ff","type":"text","text":"Data is uploaded","x":1020,"y":-2,"width":240,"height":60},
+		{"id":"318648f7b0027460","type":"text","text":"Encrypted Chunk","x":1394,"y":-2,"width":250,"height":60},
+		{"id":"65a0cb863a59b720","type":"text","text":"Encrypted Chunk","x":1394,"y":-82,"width":250,"height":60},
+		{"id":"cd8017a0b8df83b8","type":"text","text":"Encrypted Chunk","x":1394,"y":78,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"f6857469ee5a7f18","fromNode":"42e4e1827850f3ff","fromSide":"right","toNode":"65a0cb863a59b720","toSide":"left"},
+		{"id":"4cdf934e5936bf3f","fromNode":"42e4e1827850f3ff","fromSide":"right","toNode":"318648f7b0027460","toSide":"left"},
+		{"id":"a8f4f1396f639eeb","fromNode":"42e4e1827850f3ff","fromSide":"right","toNode":"cd8017a0b8df83b8","toSide":"left"}
+	]
+}

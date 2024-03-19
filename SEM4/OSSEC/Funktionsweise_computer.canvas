@@ -1,0 +1,14 @@
+{
+	"nodes":[
+		{"id":"bdac249026ffb1be","type":"group","x":-480,"y":-60,"width":957,"height":100,"color":"4","label":"Computer"},
+		{"id":"1605ce5c245124ee","type":"text","text":"## Verarbeitungseinheit","x":-180,"y":-40,"width":320,"height":60},
+		{"id":"9d3a10ae5c9025d3","type":"text","text":"## Hauptspeicher","x":200,"y":-40,"width":257,"height":60},
+		{"id":"d902b1e14eae1a24","type":"text","text":"## Ein-/Ausgabe","x":-460,"y":-40,"width":240,"height":60}
+	],
+	"edges":[
+		{"id":"6f904387278c0192","fromNode":"d902b1e14eae1a24","fromSide":"right","toNode":"1605ce5c245124ee","toSide":"left"},
+		{"id":"c07da17139f26abb","fromNode":"1605ce5c245124ee","fromSide":"left","toNode":"d902b1e14eae1a24","toSide":"right"},
+		{"id":"b4ef2c7b88b8c783","fromNode":"1605ce5c245124ee","fromSide":"right","toNode":"9d3a10ae5c9025d3","toSide":"left"},
+		{"id":"698c7f293dc680d3","fromNode":"9d3a10ae5c9025d3","fromSide":"left","toNode":"1605ce5c245124ee","toSide":"right"}
+	]
+}
