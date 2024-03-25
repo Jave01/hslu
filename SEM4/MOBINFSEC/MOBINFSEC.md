@@ -184,7 +184,7 @@ Hidden nodes:
 - A, C hören sich _nicht_, weshalb A,C sich ihrer Interferenz nicht bewusst sind
 
 
-## Kernkonzept der mobilen Kommunikation
+## Mobilfunkgenerationen
 
 ### GSM (2G)
 
@@ -236,6 +236,7 @@ Hidden nodes:
 - --- _GSM Radio Air Interface_ ----
 - **Mobile Station** (mobile phone)
 
+![[GSM_architecture.png]]
 
 #### General Packet Radio Service 
 
@@ -247,15 +248,22 @@ Hidden nodes:
 - GSM mit zusätzlichen Funktionen
 
 
+### UMTS
 
-### SNR
+Universal mobile technologies standard.
+
+Für Referenz zur GSM Architektur siehe [[MOBINFSEC#Struktur und Aufbau|Struktur und Aufbau]]
+
+![[UMTS_architecture.png]]
+
+
+#### SNR
 
 - Signal-to-noise ratio
 - Je höher SNR desto kleiner die Fehlerrate.
 - Bei gleichbleibenden Bedingungen haben schnellere Übertragunsverfahren eine höhere Fehlerrate
 
-
-### Adaptive Modulation
+#### Adaptive Modulation
 
 - Modulationsverfahren anpassen anhand von Bedingung
 - Handy wählt immer Modulationsverfahren, welches die höchstmögliche Übertragungsrate ermöglicht
@@ -263,14 +271,16 @@ Hidden nodes:
 ![[VL5 - 1 - Einfache Aspekte der Funkuebertragung und die UMTS Mobilfunkarchitektur - Grundbegriffe und nkonzepte - Einheit 3 - Adaptive Modulation, Mehrfachzugriff und Power Control.pdf#page=8]]
 
 
-### Zugriffsverfahren
+
+
+#### Zugriffsverfahren
 
 - Regelt Zugriff auf ein Medium für verschiedene Teilnehmer
 - Wichtig, wenn auf einem Medium mehrere Teilnehmer gleichzeitig aktiv sind
 - Jede Mobilfunkgeneration definiert eigenes Zugriffsverfahren
 
 **Verfahren:**
-- Raummultiplexverfahren
+- Raummultiplexverfahren (gerichtete Antennen)
 - Frequenzmultiplexverfahren
 - Zeitmultiplexverfahren
 - Codemultiplexverfahren
@@ -313,17 +323,17 @@ Kombination mit FDMA/TDMA oder CDMA
 
 
 
-### Power Control
+#### Power Control
 
 - Minimierung von Interferenzen durch power control
-- alle Signale gleich stark empfange->
+- alle Signale gleich stark empfangen->
 	- Handys weit weg senden stark
 	- Handys ganz nah senden schwach
 - Power-Down Signal ist dominanter als Power-Up
 
 
 
-### Cell Breathing 
+#### Cell Breathing 
 
 - UMTS, 3. Generation
 - Grösse der Zellen variiert je nach Verkehrslast
@@ -331,3 +341,13 @@ Kombination mit FDMA/TDMA oder CDMA
 - In Verbindung mit off loading: _active cell breathing_
 	- Zell-Grösse wird künstlich reduziert. Stark belastete Zellen werden kleiner, während benachbarte Zellen ihren Versorgungsbereich vergrössern, um dies auszugleichen
 	- überlastete Zellen lagern Teilnehmerverkehr auf benachbarte Zellen aus.
+
+
+
+### Evolution der Mobilfunkarchitektur
+
+Unterschied zu Heimnetze:
+
+![[VL6 - Evolution der Mobilfunkarchitektur.pdf#page=5]]
+
+

