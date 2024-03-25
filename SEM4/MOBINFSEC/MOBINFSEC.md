@@ -245,3 +245,89 @@ Hidden nodes:
 - Gemeinsame Nutzung eines Kanals durch mehrere Nutzer
 - Höhere Datenraten durch parallele Nutzung mehrerer Kanäle
 - GSM mit zusätzlichen Funktionen
+
+
+
+### SNR
+
+- Signal-to-noise ratio
+- Je höher SNR desto kleiner die Fehlerrate.
+- Bei gleichbleibenden Bedingungen haben schnellere Übertragunsverfahren eine höhere Fehlerrate
+
+
+### Adaptive Modulation
+
+- Modulationsverfahren anpassen anhand von Bedingung
+- Handy wählt immer Modulationsverfahren, welches die höchstmögliche Übertragungsrate ermöglicht
+
+![[VL5 - 1 - Einfache Aspekte der Funkuebertragung und die UMTS Mobilfunkarchitektur - Grundbegriffe und nkonzepte - Einheit 3 - Adaptive Modulation, Mehrfachzugriff und Power Control.pdf#page=8]]
+
+
+### Zugriffsverfahren
+
+- Regelt Zugriff auf ein Medium für verschiedene Teilnehmer
+- Wichtig, wenn auf einem Medium mehrere Teilnehmer gleichzeitig aktiv sind
+- Jede Mobilfunkgeneration definiert eigenes Zugriffsverfahren
+
+**Verfahren:**
+- Raummultiplexverfahren
+- Frequenzmultiplexverfahren
+- Zeitmultiplexverfahren
+- Codemultiplexverfahren
+
+#### Frequency Division Multiple Access (FDMA)
+
+- getrennte, nicht überlappende Frequenzbänder
+- Exklusive Zuteilung einer Frequenz für die gesamte Dauer einer Verbindung
+- Frequenzbereich kann auch noch zeitlich unterteilt werden
+
+
+#### FDMA + Time Division Multiple Access (TDMA)
+
+- In Zeitschlitze unterteiltes Frequenzband
+- Kombination aus Zeit- und Frequenzmultiplex
+- Wird in #GSM -Systemen verwendet - kombiniert mit Frequenzsprungverfahren
+
+
+**Frequency hopping:**
+- Wechsel des Frequenzbandes in jedem Zeitrahmen gemäss Sprungsequenz
+- Bessere Robustheit gegen¨über frequenzselektivem Fading und Interferenzen
+- Technisch aufwändig
+
+
+#### Space Division Multiple Access (SDMA)
+
+- Trennendes Medium ist der Raum, wird durch gerichtete Antennen realisiert
+- Steuerung intelligenter Antennen erfolgt elektronisch, nicht mechanisch
+Kombination mit FDMA/TDMA oder CDMA
+
+
+
+#### Code Division Multiple Access (CDMA)
+
+- Verwendet in #UMTS
+- Unterscheidet Signale anhand von Codes
+- Verwendet orthogonale Codes
+- Empfänger filter entsprechendes Signal im Coderaum
+- Signale von anderen Stationen werden als Rauschen wahrgenommen
+
+
+
+### Power Control
+
+- Minimierung von Interferenzen durch power control
+- alle Signale gleich stark empfange->
+	- Handys weit weg senden stark
+	- Handys ganz nah senden schwach
+- Power-Down Signal ist dominanter als Power-Up
+
+
+
+### Cell Breathing 
+
+- UMTS, 3. Generation
+- Grösse der Zellen variiert je nach Verkehrslast
+- Mehr Datenverkehr bedeutet mehr Störungen
+- In Verbindung mit off loading: _active cell breathing_
+	- Zell-Grösse wird künstlich reduziert. Stark belastete Zellen werden kleiner, während benachbarte Zellen ihren Versorgungsbereich vergrössern, um dies auszugleichen
+	- überlastete Zellen lagern Teilnehmerverkehr auf benachbarte Zellen aus.
