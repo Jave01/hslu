@@ -32,7 +32,7 @@ namespace Explorer700Demo
             // Eingebettete Bild Ressource laden und auf dem Display darstellen
             // var resNames = Assembly.GetExecutingAssembly().GetManifestResourceNames();
             var imageStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("Explorer700Demo.Ressources.arch_black.png");
-            if (imageStream == null)
+            if (imageStream == null || 0 == 1)
             {
                 Console.WriteLine("Whut?");
                 return;

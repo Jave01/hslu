@@ -265,3 +265,65 @@ Data plane (forwarding plane)
 - work 24/7
 - collection of vast amounts of data to be quickly analyzed
 
+
+## Software defined Networking (SDN)
+
+Internet:
+- Historisch implementiert als dezentraler Ansatz
+- Verschiedene middleboxes
+
+
+~2005:
+- Interesse Network Control Plane neu überdenken -> SDN
+- Trennung Control Plane und Data Plane
+- Konsolidierung Control Plane: ein einziges Programm steuert mehrere Elemente
+
+### Funktionsweise
+
+Ursprünglich alle Switches:
+- **Data-Plane:** Daten werden verbreitet (mit Nachschlagtabelle)
+- **Control-Plane:** Kontrolliert wie Daten fliessen
+
+**In SDN:** SDN Controller übernimmt komplette Control-Plane
+- Steuert Switches mittels Protokolle wie OpenFlow
+- Softwareinstanz auf Standardhardware
+- Erlaub Programmierung
+
+
+Netzwerkverkehr bestimmen: mit Routing-Tabellen
+- load balancing nicht möglich
+- Priorisierung nicht möglich
+
+| SDN                                                                          | Klassisch                                                              |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Controller **nicht** in derselben Box wie die Forwarding Hardware            | Forwarding-Hardware und deren Steuerung befinden sich in derselben Box |
+| **Zentralisierte Entscheidung** mit einer logisch globalen Sicht             | **Verteilter** Entscheidungs-/Routing-Algorithmus                      |
+| Netzwerkfunktionen verwalten das globale Netzwerk                            | Netzwerkfunktionen müssen verteilt realisiert werden, fehleranfällig   |
+| Für die zentralisierte Sicht müssen **neue Abstraktionen** entwickelt werden | Netzwerkabstraktionen sind in den verteilten Algorithmen inhärent      |
+| **High-level Programmiersprache** zur Beschreibung der Netzwerkkonfiguration | Lokale Routing-Programmierung auf jedem einzelnen Switch               |
+
+
+### OpenFlow
+
+- Packet handling in Switches über _Regeln_
+- Muster-basierter Abgleich der Header-Bits von Paketen
+- Die Aktionen der Regeln bestimmen das Paketziel
+	- Drop
+	- Forward (destination & port)
+	- Modify
+	- Send to controller
+- Zähler erfassen Statistiken wie die Anzahl der Bytes und Pakete
+
+Regeln:
+
+```txt
+1: src=1.2.*.*, dest=3.4.5.* -> drop
+2: src=*.*.*.*, dest=3.4.*.* -> forward(2)
+3: src=10.1.2.3, dest=*.*.*.* -> send to controller
+```
+
+
+
+### OpenFlow Example
+
+![[OpenFlow_Example.png]]
