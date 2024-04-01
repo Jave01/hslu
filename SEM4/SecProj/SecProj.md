@@ -36,5 +36,13 @@
 1. Hint to guest user in robots.txt
 2. Anonymous ftp (hint to HEAD-request)
 3. guest credentials
-4. (some privilege escalation to drax - maybe with python script)
-5. drax password in bash_history - some false paths in drax home directory
+4. (some privilege escalation to Groot - maybe with python script)
+5. Drax password in bash_history - some false paths in drax home directory
+6. ...
+7. Cronjob executes Starlords file
+8. Reverse engineer password manager
+9. Master password is `05448718094`.
+10. EGO's password is stored in password manager
+11. Elevate to EGO
+12. EGO has root access
+13. Break out of Container with socket

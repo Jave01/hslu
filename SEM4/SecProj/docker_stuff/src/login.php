@@ -3,8 +3,9 @@ session_start();
 
 $valid_pass = 'Ju57_4_R4nd0m_1337_57r1n9';
 
-$uname = $_POST['uname'];
-$psw = $_POST['password'];
+$uname = isset($_POST['uname']) ? $_POST['uname'] : '';
+$psw = isset($_POST['password']) ? $_POST['password'] : '';
+$error = 0;
 
 // check hardcoded credentials
 if ($uname == 'guest' && $psw == $valid_pass) {
@@ -14,7 +15,7 @@ if ($uname == 'guest' && $psw == $valid_pass) {
 } else if ($uname != '') {
   $error = 'Invalid credentials or insufficient permissions';
 }
-header('pwd: ' . $valid_pass);
+header('5-head:' . $valid_pass);
 ?>
 
 
@@ -23,7 +24,7 @@ header('pwd: ' . $valid_pass);
 <html>
 
 <head>
-  <title>Login</title>
+  <title>Guardians Gallery - Login</title>
   <!-- Include Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>

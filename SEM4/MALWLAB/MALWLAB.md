@@ -72,3 +72,98 @@ Free sandbox analysis:
 
 ## Static analysis
 
+- Binary Ninja for the win
+
+
+
+## Anti-Analyse Techniken
+
+- Make analysis more time consuming
+- can often be bypassed given enough time and skills
+
+
+### Packing and Multiple Stages
+
+Hide real malicious code in multi-staged layers
+- download payload from the internet
+- extract (encrypted / encoded) parts from the same file
+- build malicious code at runtime
+
+>[!hint]
+>Can often be resolved dynamically.
+
+
+### Anti-Debug techniques
+
+Detect if debugger is present and execute non-suspicious code if so.
+
+- insertion of garbage bytes to confuse debuggers
+- detection via timing
+- detection via debugger APIs (`IsDebuggerPresent` or `Ptrace`)
+
+
+
+### VM Detection
+
+- searching for VM artifacts (network devices, CPU information, special instructions)
+- timing checks (doesn't work well)
+
+
+
+>[!note]
+>VM Detection and Anti-Debug techniques can be patched easily
+>For example in binary ninja always follow the branch as if no debugger is present
+
+
+
+### Checksumming
+
+**Techniques to detect code modifications**
+
+- calculation of hashsums over code or 
+- #TODO 
+
+
+
+
+### Code obfuscation
+
+- encrypt/encode code
+- make code harder to read/understand
+- looks different, computes the same
+- e.g
+
+```python
+def f1(x, y):
+	return x + y
+
+def f2(x, y):
+	return (x ^ y) + 2 * (x & y)
+```
+
+or stuff like this (opaque predicate, control flow gets complicated):
+
+```python
+int Foo(x, y):
+	if 1 == 2:
+		return x - y
+	elif 2x % 2 == 1:
+		return 2x
+	else:
+		return x + y
+
+```
+
+
+
+- Control flow flattening:
+	- That weird stuff in the while loop instead of direct if-statements
+- Mixed boolean algebra
+
+
+### Patching
+
+- overwrite instruction bytes with different assembly instructions
+
+
+

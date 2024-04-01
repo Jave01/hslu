@@ -6,12 +6,10 @@ if (!isset ($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     exit;
 }
 
+$msg = 0;
 
 if (isset ($_FILES["pngToUpload"])) {
-    $target_dir = "uploads/";
-    if (!file_exists($target_dir)) {
-        mkdir($target_dir, 0777, true);
-    }
+    $target_dir = "images/";
 
     $filename = basename($_FILES["pngToUpload"]["name"]);
     $ext = explode('.', $filename)[1];
@@ -40,7 +38,7 @@ $alertType = $uploadOk ? 'success' : 'danger';
 <html>
 
 <head>
-    <title>Upload file</title>
+    <title>Guardians Gallery - Upload</title>
     <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
 </head>
 
@@ -49,7 +47,7 @@ $alertType = $uploadOk ? 'success' : 'danger';
 <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <h2 class="text-center mt-5">Upload File</h2>
+                <h2 class="text-center mt-5">Upload Picture</h2>
                 <hr class="my-4">
                 <?php if ($msg) { ?>
                     <p class="alert alert-<?php echo $alertType; ?>"><?php echo $msg; ?></p>

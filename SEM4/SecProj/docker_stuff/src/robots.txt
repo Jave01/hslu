@@ -7,5 +7,5 @@ Sitemap: https://www.example.com/sitemap.xml
 Allow: /public
 Disallow: /private
 
-// Disallow /login:guest
+// Disable /login guest:*
 

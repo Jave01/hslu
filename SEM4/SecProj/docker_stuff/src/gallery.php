@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Guardians Gallery</title>
 
     <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
 </head>
@@ -18,7 +18,7 @@
 
             <?php
 
-            $directory = 'uploads/';
+            $directory = 'images/';
             $files = scandir($directory);
 
             foreach ($files as $file) {

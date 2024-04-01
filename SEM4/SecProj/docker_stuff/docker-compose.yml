@@ -1,42 +1,38 @@
-version: "3.9"
 services:
-    nginx:
-      build: ./nginx/
-      ports:
-        - 80:80
-    
-      volumes:
-          - ./src/:/var/www/html/
-
-    php:
-      build: ./src/
-      expose:
-        - 9000
-      volumes:
+  nginx:
+    container_name: nginx
+    build: ./nginx/
+    ports:
+      - 80:80
+    volumes:
         - ./src/:/var/www/html/
 
-    # ftp-server:
-    #   container_name: ftp-server
-    #   environment:
-    #     - FTP_PASS=123
-    #     - FTP_USER=user
-    #     - PASSV_ADDRESS=0.0.0.0
-    #   image: garethflowers/ftp-server
-    #   ports:
-    #     - '20-21:20-21/tcp'
-    #     # - '40000-40009:40000-40009/tcp'
-    #   volumes:
-    #     - './ftp-data:/home/user'
+  php:
+    container_name: php
+    build: ./src/
+    expose:
+      - 9000
+    volumes:
+      - ./src/:/var/www/html/
 
-  # ftp-server:
-  #   build: ./ftp/
-  #   image: garethflowers/ftp-server
-  #   container_name: ftp
-  #   environment:
-  #     - FTP_PASS=123
-  #     - FTP_USER=user
-  #   ports:
-  #     - "20-21:20-21/tcp"
-  #     # - "40000-40009:40000-40009/tcp"
-  #   volumes:
-  #     - /data:/home/user
+  ssh:
+    container_name: ssh-user-space
+    build: ./ssh/
+    ports:
+      - 2222:22
+    volumes:
+      - ./ssh/home:/home/
+
+  vsftpd:
+    image: fauria/vsftpd
+    container_name: ftp-server
+    environment:
+      FTP_USER: "anonymous"
+      FTP_PASS: "anonymous"
+      PASV_ADDR_RESOLVE: "YES"
+    ports:
+      - 20:20
+      - 21:21
+    volumes:
+      - ./ftp/pub:/home/vsftpd
+      - /var/log/ftp:/var/log/vsftpd

@@ -37,7 +37,7 @@ Note:
 ## Terminologie
 
 - **HMAC:** hashing message authentication code -> input wird zusammen mit einem key gehasht -> Origin authentication
-- **mitigation** reduce risks
+- **Mitigation:** reduce risks
 - **attack vector:** attacker abuses vulnerability
 - **IOS (cisco version):** internet operating system
 
@@ -48,7 +48,7 @@ Note:
 ### ACL Basics (Juicy part)
 
 - **Standard ACL:** only filter at Layer 3 using the source IPv4 **only**. (used rarely)
-- **Extended ACL:** filter at Layer 3 using source **and** destination IP. They can also filter at Layer 4 using TPC/UDP ports
+- **Extended ACL:** filter at Layer 3 using source **and** destination IP. They can also filter at Layer 4 using TCP/UDP ports
 
 
 What:
