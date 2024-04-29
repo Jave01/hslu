@@ -148,6 +148,102 @@ Information Security Management System
 ![[02-ISM_Standards-Frameworks_MB_230922.pdf#page=20]]
 
 
+## The 5 Functions from NIST
 
+- Identify
+- Protect
+- Detect
+- Respond
+- Recover
+
+![[04-ISM_Frameworks_MB_071022.pdf#page=7]]
+
+
+
+
+
+## Angewandtes ISM - Security Operation Center
+
+xcom -> executive committee
+
+**Vorstand:**
+- Globale Funktionen:
+	- CFO -> finance 
+	- CSO -> asdf -> CO2 Ziele eingehalten
+	- CTO -> technology
+	- CDO -> digital
+	- CISO -> information security
+
+
+**Nicht-Vorstand:**
+- HR
+- ...
+
+
+### Security is more than IT
+
+>[!note]
+>Im Zentrum stehen immer primäre und sekundäre Assets
+>- People
+>- Tools
+>- Processes
+>
+>Aussen rum sind alle Controls
+
+4 Säulen der Security Organisation:
+- Engagement
+	- Kommunikation
+	- Security Awareness
+	- Was
+	- Community & Management Cycle
+- Offices
+	- Product Owner der Security
+	- Group Security Officer -> zuständig für asset Klassen
+		- OT
+		- Netzwerk
+		- Daten
+		- ID AM
+	- Area Security Officer (21)
+		- Kronjuwelen
+		- Sind High-End zertifiziert
+		- füehle sech krass
+- Consulting
+- Security Operation
+
+
+### Entscheidungsebenen
+
+- Entlang der Linie
+- Komitees
+- Direkt auf Fachebene
+- Mittelbar durch Stakeholder
+	- Jemand will mehr Security, wendet sich an Stakeholder?
+- Indirekt via Lobbying
+
+
+### Entscheidungsfaktoren
+
+- Vorbereitung -> Why
+- What if ...? Was passiert wenn nicht
+	- Best-case
+	- Worst-case
+- Lobbying
+	- Zuerst mit Stakeholder befassen
+	- Zuerst mit allen reden
+- Stakeholder Management
+	- Quasi wie Lobbying nur besser
+	- Wer entscheidet wie wo und warum
+- Drei Optionen
+	- Beste
+	- Schrott
+	- Zu teuer
+	- 5 Head
+- Auftreten
+	- Angemessen
+	- Kleidungsstil
+
+
+>[!Warning] Remember
+>Standards anwenden ist nur 10%
 
 

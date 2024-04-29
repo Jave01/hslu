@@ -167,3 +167,50 @@ int Foo(x, y):
 
 
 
+## Android
+
+- Good for reverse engineering because most applications are written in java or Kotlin.
+	- Bytecode can be (almost) perfectly be decompiled to source code
+- APK is just a zip file
+
+
+>[!note]
+>Analysis is mostly done statically
+
+
+Disassemble `.class` files:
+```bash
+javap -c HelloWorld.class
+```
+
+
+Good decompilers:
+- CFR
+- Procyon
+- FernFlower
+
+
+>[!warning]
+>JD(-GUI) apparently gets recommended a lot but seems to be crap
+
+
+>[!note] Nice to know
+>Go to [apkmirror.com](apkmirror.com) for Android APK's
+
+
+- convert dex files to java files
+```bash
+dex2jar holy.dex
+java -jar holy.jar --outputdir yay
+```
+
+
+
+>[!tip] Tools
+>- `dex2jar`
+>- `apktool` - `dex2jar` integrated
+
+```bash
+apktool d app.apk
+```
+

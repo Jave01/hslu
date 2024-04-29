@@ -5,34 +5,39 @@ services:
     ports:
       - 80:80
     volumes:
-        - ./src/:/var/www/html/
+        - ./web-server/src/:/var/www/html/
 
   php:
     container_name: php
-    build: ./src/
+    build: ./web-server/
     expose:
       - 9000
     volumes:
-      - ./src/:/var/www/html/
+      - ./web-server/src/:/var/www/html/
 
   ssh:
     container_name: ssh-user-space
     build: ./ssh/
     ports:
       - 2222:22
-    volumes:
-      - ./ssh/home:/home/
 
-  vsftpd:
-    image: fauria/vsftpd
-    container_name: ftp-server
-    environment:
-      FTP_USER: "anonymous"
-      FTP_PASS: "anonymous"
-      PASV_ADDR_RESOLVE: "YES"
+  ftp:
+    build: ./ftp/
     ports:
-      - 20:20
-      - 21:21
+      - "20:20"
+      - "21:21"
     volumes:
-      - ./ftp/pub:/home/vsftpd
-      - /var/log/ftp:/var/log/vsftpd
+      - ./ftp/pub:/home/ftpusers
+
+  # vsftpd:
+  #   image: fauria/vsftpd
+  #   container_name: ftp-server
+  #   environment:
+  #     FTP_ANONYMOUS: "true"
+  #     PASV_ADDR_RESOLVE: "YES"
+  #   ports:
+  #     - 20:20
+  #     - 21:21
+  #   volumes:
+  #     - ./ftp/pub:/var/vsftpd
+  #     - /var/log/ftp:/var/log/vsftpd

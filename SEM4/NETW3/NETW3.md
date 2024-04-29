@@ -36,11 +36,20 @@ Note:
 
 ## Terminologie
 
-- **HMAC:** hashing message authentication code -> input wird zusammen mit einem key gehasht -> Origin authentication
-- **Mitigation:** reduce risks
-- **attack vector:** attacker abuses vulnerability
-- **IOS (cisco version):** internet operating system
+#TODO
 
+| Begriff                 | Definition                                                                                                |
+| ----------------------- | --------------------------------------------------------------------------------------------------------- |
+| **HMAC:** <br><br>      | hashing message authentication code -> input wird zusammen mit einem key gehasht -> Origin authentication |
+| **Mitigation:** <br>    | reduce risks                                                                                              |
+| **attack vector**       | attacker abuses vulnerability                                                                             |
+| **IOS (cisco version)** | internet operating system                                                                                 |
+|                         |                                                                                                           |
+| **LSA**                 |                                                                                                           |
+| **LSR**                 |                                                                                                           |
+| **LSU**                 |                                                                                                           |
+| **OSPF**                | ... Basically Dijkstra on a network                                                                       |
+|                         |                                                                                                           |
 
 
 ## ACL
@@ -327,3 +336,336 @@ Regeln:
 ### OpenFlow Example
 
 ![[OpenFlow_Example.png]]
+
+
+
+## OSPFv2 Basics
+
+- Link-state routing protocol
+	- Link
+		- Interface on a router
+		- Network segment
+		- Stub network
+	- Link-state
+		- Network prefix, prefix length and cost
+		- **The same on all routers**
+	- Areas
+		- Division of the routing domain to help control routing update traffic
+		- see [[#Areas]]
+	- Alternative for RIP (Routing Information Protocol)
+		- Faster convergence
+		- Scaling to larger network implementations
+
+
+
+### Databases and Tables
+
+| Database                   | Table          | Description  |
+| -------------------------- | -------------- | ------------ |
+| Adjacency Database         | Neighbor Table | #TODO unique |
+| Link-state Database (LSDB) | Topology Table | Global       |
+| Forwarding Database        | Routing Table  |              |
+
+
+
+
+### Process
+
+1. Router gathers information about routers it can reach -> into Neighbor Table
+2. Router build the Topology Table with all routers in OSPF Area
+3. Router performs Dijkstra Shortes-Path First (SPF) algorithm on the routers in the Topology Table
+
+
+
+### Areas
+
+group of routers that share the same link-state information in their LSDB's.
+
+OSPF can be implemented as
+- Single-Area OSPF
+- Multiarea
+	- Multiple ares, **hirarchical**
+	- all areas must connect to backbone area (area 0)
+	- Adv.
+		- Smaller routing tables
+		- reduced link-state update overhead
+		- Reduced frequency of SPF calculations
+
+
+
+### OSPFv3
+
+- Is meant for IPv6
+- But includes support for both IPv4 & IPv6
+- Same functionality as OSPFv2
+- Also used SPF algorithm
+- Has separate processes from OSPFv2
+
+
+### OSPF Packets
+
+- 1. **Hello packet**
+	- Discover OSPF neighbors and establish neighbor adjacencies.
+	- advertise parameters on which two routers must agree to become neighbors
+		- Area ID
+		- Auth-Type
+		- Network Mask
+		- Hello Interval
+		- Dead Interval
+	- Elect the **Designated Router** (DR) and **Backup Designated Router** (BDR) on multi-access networks like Ethernet.
+		- Not required in Point-to-point links
+- 2. **Database Description (DBD)**
+- 3. Something
+- 4. **Link-State Update (LSU)**
+	- Include OSPF routing updates
+	- 11 different types of OSPFv2 Link-State Advertisements (LSAs)
+	- LSU and LSA are often used interchangeably, but the correct hierarchy is LSU packets contain LSA messages.
+- 5. Something
+
+
+
+### Designated Router
+
+**Issues**:
+- Creation of multiple adjacencies on shared media.
+- Extensive flooding of LSAs (OSPF init, topology change)
+
+
+**Solution**:
+- BDR also elected (in case the DR fails)
+- All other routers become DROTHER
+- DR only used for the dissemination of LSAs. It still uses best next-hop router for packet routing.
+
+
+
+## OSPFv2: Additional Concepts
+
+- Router ID
+	- 32-bit value represented as an IPv4 address
+	- uniquely identifies an OSPF router
+	- outer with the highest router ID will be the master in the adjacency -> sends their database descriptor (DBD) packets first (Exchange State)
+	- Used for the DR and BDR election
+	- Can be assigned manually or automatically
+	- Can be a loopback interface
+
+
+![[SW07-NETW3-ENSA-1+2.pdf#page=22]]
+
+
+### Questions
+
+- 15 - What will an OSPF router prefer to use first
+- 22 - Default OSPF cost
+- 23 - What is the OSPF cost
+- 26 - Command to produce output
+- 27 - Command is used to verify OSPF is enabled
+- 34. method to make the new router ID effective
+- 37. Which task has to be performed on Router 1
+- 40. Match OSPF state
+- 41. router is unreachable
+- 42. three states are involved
+- 5. faciliate hirarchical routing
+- 
+
+## WAN Concepts
+
+A WAN is a telecommunications network that spans over a relatively large geographical area and is required to connect beyond the boundary of the LAN.
+
+
+### Terminology
+
+- **Private WAN** - WAN dedicated to one user
+- **CE** - Custom Edge -> router in an end-LAN
+- **PE** - makes connection into MPLS cloud
+
+
+### Purpose
+
+
+- interconnect remote users, networks and sites
+- owned and managed by internet service / providers
+- WAN services are provided for a fee
+- provide low to high bandwidth speeds over long distances
+
+
+### Topologies
+
+- **Point-to-Point**
+	- point-to-point circuit between two endpoints.
+	- involves Layer 2 through service provider network.
+	- transparent to customer network.
+- **Hub-and-Spoke**
+	- single interface on hub router to be shared by all spoke circuits
+	- can be interconnected through hub router using virtual circuits
+	- routers can only communicate with each other through the hub router
+	- *single point of failure*
+- **Dual-homed**
+	- enhanced redundancy, load balancing, ability to implement backup service provider
+	- more expensive than single-homed
+	- More difficult, additional configuration
+- **Fully Meshed**
+	- most fault-tolerant topology
+	- virtual circuits to connect all sites
+- **Partially Meshed**
+	- Connects many but not all sites
+
+
+
+### Layers
+
+Most WAN's focus on Layer 1 and Layer 2 in OSI.
+
+**Layer 1 Protocols:**
+- Yeah, well...
+- dinner > class
+
+
+**Layer 2 Protocols:**
+- Broadband
+- Wireless
+- Ethernet WAN
+- Multiprotocol Label Switching (MPLS)
+- -- _below are less used_ -- 
+- Point-to-Point (PPP)
+- high-Level Data Link
+- Frame Relay
+- Asynchronous Transfer Mode (ATM)
+
+
+### WAN Devices
+
+- Voiceband Modem - uses telephone lines
+- DSL Modem  - known as broadband modems, can be connected to DTE over Ethernet
+- CSU/DSU - leased lines, connects digital device to digital line
+- Optical Converter
+- Wireless Router - wirelessly connect to WAN provider
+- WAN Core devices - backbone, Layer 3 switches
+
+
+### Global not global whatver
+
+From PC:
+- Inside global: other-side interface of router on PC LAN
+- Outside global: Server
+- Inside local: PC
+
+### Questions
+
+- 10 - From perspective of users behind the NAT router
+- 22 - Which two types of VPNs are examples of enterprise-managed remote access VPNs
+- 39 - What has to be done in order to complete the static NAT configuration
+
+
+
+## QoS
+
+Give packets priority.
+
+### Network Transmission Quality
+
+How network transmission characteristics impact quality.
+
+- Too much traffic across the network -> queue hold) the packets in memory until resources become available
+- Queuing causes delay
+- If packets stack up, memory fills up until packets are dropped
+- One technique can help with classifying data into multiple queues
+
+**Begriffe:**
+- Congestion (Verstopfung) - more traffic than interface can handle -> causes delay
+- Jitter - non-consistent delay, adjust with buffer, is on networking device
+
+
+>[!note]
+>digital signal processor (DSP) makes up for little losses. If Jitter exceeds what DSP can handle, audio problems are heard.
+
+### Traffic Characteristics
+
+Minimum network requirements for voice, video and data traffic
+
+
+
+**Stats for good Audio:**
+- delay < 150 ms
+- Jitter < 30 ms
+- loss < 1%
+
+**Good video:**
+- delay < 200-400 ms
+- Jitter < 30-50 ms
+- loss < 1% (3% is still enough)
+
+
+
+### Queuing Algorithms
+
+Queuing algorithms used by networking devices
+#TODO 
+
+
+
+
+### QoS Models
+
+Describe the different QoS models.
+
+**Differentiated Services:**
+- DiffServ divides network traffic into classes. Classes can be assigned level
+- Each device identifies class of packet and prioritize based of it
+
+Avoid loss:
+- Increase link capacity
+- Guarantee enough bandwidth and increase buffer space for bursts
+	- Can guarantee bandwidth and prioritize drop-sensitive applications:
+	- WFQ
+	- CBWFQ
+	- LLQ
+- Drop lower-priority packets before congestion occurs.
+
+
+### QoS Implementation Techniques
+
+Explain how QoS uses mechanisms to ensure transmission quality
+
+**Tools:**
+- ja
+- nei
+- villech
+
+
+**Marking at Layer 2:**
+- in VLAN 802.1Q
+- 3 bits
+- The higher the number the higher the priority
+
+
+**Marking at Layer 3:
+- v4 and v6 specify an 8 bit field
+- IPv4: Type of Service (TOS)
+- IPv6: 
+
+
+
+## Network Design
+
+### Hierarchical Networks
+
+Evolving organizations require networks that can scale and support:
+- Converged network traffic
+- critical applications
+- diverse business needs 
+- centralized administrative control
+
+
+- Access Layer: provides access to the user
+- Distribution Switch: somewhere in the building
+- Core Layer: in the server-room
+
+
+### Scalable Networks
+
+
+
+### Switch Hardware
+
+
+### Router Hardware

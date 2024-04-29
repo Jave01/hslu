@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/UXBh7NfONMZiP/sbXkULN2Wz6ozZXRwCTHz65EkWZ3cb0d4uvCrm/jtzwdgisja6Vpb0DUZzDhZIN0gc2KOdg==",
+  "success": true,
+  "projectFilePath": "/home/dave/hslu/SEM4/CSA/Excercises/Threads/LostSignals/LostSignals.csproj",
+  "expectedPackageFiles": [
+    "/home/dave/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.4/microsoft.aspnetcore.app.ref.8.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

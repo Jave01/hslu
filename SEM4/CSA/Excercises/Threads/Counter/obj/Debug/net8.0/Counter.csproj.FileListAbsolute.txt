@@ -1,0 +1,15 @@
+/home/dave/hslu/SEM4/CSA/Excercises/Threads/Counter/bin/Debug/net8.0/Counter
+/home/dave/hslu/SEM4/CSA/Excercises/Threads/Counter/bin/Debug/net8.0/Counter.deps.json
+/home/dave/hslu/SEM4/CSA/Excercises/Threads/Counter/bin/Debug/net8.0/Counter.runtimeconfig.json
+/home/dave/hslu/SEM4/CSA/Excercises/Threads/Counter/bin/Debug/net8.0/Counter.dll
+/home/dave/hslu/SEM4/CSA/Excercises/Threads/Counter/bin/Debug/net8.0/Counter.pdb
+/home/dave/hslu/SEM4/CSA/Excercises/Threads/Counter/obj/Debug/net8.0/Counter.GeneratedMSBuildEditorConfig.editorconfig
+/home/dave/hslu/SEM4/CSA/Excercises/Threads/Counter/obj/Debug/net8.0/Counter.AssemblyInfoInputs.cache
+/home/dave/hslu/SEM4/CSA/Excercises/Threads/Counter/obj/Debug/net8.0/Counter.AssemblyInfo.cs
+/home/dave/hslu/SEM4/CSA/Excercises/Threads/Counter/obj/Debug/net8.0/Counter.csproj.CoreCompileInputs.cache
+/home/dave/hslu/SEM4/CSA/Excercises/Threads/Counter/obj/Debug/net8.0/Counter.sourcelink.json
+/home/dave/hslu/SEM4/CSA/Excercises/Threads/Counter/obj/Debug/net8.0/Counter.dll
+/home/dave/hslu/SEM4/CSA/Excercises/Threads/Counter/obj/Debug/net8.0/refint/Counter.dll
+/home/dave/hslu/SEM4/CSA/Excercises/Threads/Counter/obj/Debug/net8.0/Counter.pdb
+/home/dave/hslu/SEM4/CSA/Excercises/Threads/Counter/obj/Debug/net8.0/Counter.genruntimeconfig.cache
+/home/dave/hslu/SEM4/CSA/Excercises/Threads/Counter/obj/Debug/net8.0/ref/Counter.dll

@@ -117,3 +117,136 @@ Memory wird in sichere und unsichere "Welt" unterteilt.
 Selbst höher privilegierte Software, einschliesslich Betriebssystem, kann nicht auf TrustZone zugreifen.
 
 Verbindung findet über Monitor-Call statt.
+
+
+
+## Authentisierung und Autorisierung
+
+- Nachweis einer Person, dass sie die Person ist, die sie vorgibt zu sein
+- Auch anwendbar für Objekte, Tiere, Dienste usw.
+
+
+**Authentisierung:**
+- Erfolg durch Vorlegen eines Nachweises, der die Identität bestätigen soll
+	- geheime Informationen
+	- Identifizierungsgegenstand
+	- Identifizierungsobjekt
+- Starke Authentisierung: Kombination dieser Verfahren
+
+
+**Authentifizierung:**
+- Prüfung (Verifikation)
+- Überprüfen auf Echtheit
+- Findet nach Authentisierung statt
+
+
+**Autorisierung:**
+- Einräumung von speziellen Rechten
+- Prüfung der Rechte und Konsequenz
+- Erfolgreiche Identifikation heisst nicht automatisch erlaubte Nutzung der Zugriff auf bereitgestellte Dienste, Leistungen oder Ressourcen
+
+
+
+### Nachvollziehbarkeit & Claims
+
+**Nachvollziehbarkeit**
+- Definiert das Mass wie viel aufgezeichnet wird
+
+**Claim**
+- Eigenschaft einer Identität, die für Zugriff entscheidend ist
+
+
+### Identity Management
+
+- Erstellung, Speicherung, Synchronisation & Löschung von Identitäten
+- organisatorischer Stuff ist schwieriger als technisch
+- Tools:
+	- LDAP
+	- Meta-directory
+
+
+### Access Management
+
+- Regelt Zugriff eines Subjekts auf ein Objekt
+- Beinhaltet Authentisierung und Autorisierung
+- Zugriff auf Ressourcen muss gesteuert werden
+- Protokolle
+	- SAML
+	- Kerberos
+
+
+### Identity and Access Management
+
+- **Governance**
+	- Definition Policy
+	- Festlegung Organistation, Domänen, Akteuere & Prozesse
+	- Treffen von Entscheidungen in Bezug auf Strategie
+- **Risikomanagement**
+	- Analysieren und Behandeln der Risiken im Zusammenhang mit IAM
+- **Compliance**
+	- Sicherstellen der Einhaltung der regulatorischen Rahmenbedingungen
+	- Prüfen der Einhaltungen
+
+
+
+### Verwaltung von Identitäten
+
+- Zu klären:
+	- Wer-wem-welche
+	- Umgang mit "Externen"
+	- Umgang mit Personalwechsel
+	- Abgabe von Schlüsseln
+	- Sperren von Konten
+	- Vergessene Zugangscodes
+- Primär ein Problem der richtigen Prozesse
+
+
+## Kapselung
+
+>[!note]
+>Java might not run on a System, just because it runs in the JVM -> libraries might be platform specific
+
+
+### Docker image
+
+- So schlank wie möglich
+- Systembibliothek verläuft konservativ -> Abhängigkeiten werden an Container ausgelagert
+- Eine Anwendung kann in derselben Umgebung übersetzt werden,, in der sie später laufen soll
+
+
+
+### Übung
+
+**Härtung**
+- Container Host: Angriffsvektoren minimieren, Zugriffskontrolle
+- Runtime: Status Baselines, (normal, sicher) Fokus auf Absichern der Apps
+- Registry: Server absichern, Zugriffsrichtlinien etablieren, Image-Scanner einsetzen
+- Images: Minimum an Code, Single Purpose
+- Orchestrator: aus offizieller Quelle
+- Persistent Storage: Schreibzugriff auf Shared Storage nötig?
+
+
+
+### Vorteile
+
+- Nutzer müssen nur wenige Kommandos für Installation kennen
+- Installation ist minimalinvasiv
+- Abhängigkeiten der Applikation vom Zielsystem sind auf Systemaufrufe reduziert
+- Anwendung bringt ihre eigenen Bibliotheken mit
+- Gute Performance
+
+
+### Nachteile
+
+- GUI-Ausgaben schwierig
+- Geschwindigkeit nicht gleich wie nativ
+- Permanente Speicherung - alle Daten zerstört nach shutdown
+
+
+### Some stuff for Docker
+
+- Kubernetes
+	- Container Verwaltung
+	- containerisierte Anwendung auf einzelne Knoten verteilen
+	- JSON config files
+	- besteht aus Diensten die auf die Hosts verteilt sind

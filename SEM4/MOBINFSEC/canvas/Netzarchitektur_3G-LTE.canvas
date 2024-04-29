@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"7ec8fb12bb5fd3cd","type":"group","x":-343,"y":0,"width":290,"height":480,"color":"4","label":"3G UMTS"},
+		{"id":"b4873222e0d4c7ea","type":"group","x":60,"y":0,"width":290,"height":480,"color":"5","label":"LTE"},
+		{"id":"8d3b001a4d426387","type":"text","text":"## GGSN","x":-323,"y":40,"width":250,"height":60,"color":"4"},
+		{"id":"07faf9e2239afea4","type":"text","text":"## SGSN","x":-323,"y":160,"width":250,"height":60,"color":"4"},
+		{"id":"bd11ab1955c0bc1e","type":"text","text":"## RNC","x":-323,"y":280,"width":250,"height":60,"color":"4"},
+		{"id":"096b74cd3755f53b","type":"text","text":"## Node B","x":-323,"y":400,"width":250,"height":60,"color":"4"},
+		{"id":"4cc77c0023b3adbf","type":"text","text":"## Serving / PDN gateway","x":80,"y":40,"width":250,"height":100,"color":"5"},
+		{"id":"b1832d724b33920f","type":"text","text":"## MME","x":80,"y":160,"width":250,"height":60,"color":"5"},
+		{"id":"d5bb79e28fa05d28","type":"text","text":"## eNode B","x":80,"y":400,"width":250,"height":60,"color":"5"}
+	],
+	"edges":[
+		{"id":"003403b4212e6aea","fromNode":"8d3b001a4d426387","fromSide":"bottom","toNode":"07faf9e2239afea4","toSide":"top"},
+		{"id":"032ca0ee3d297b4c","fromNode":"07faf9e2239afea4","fromSide":"bottom","toNode":"bd11ab1955c0bc1e","toSide":"top"},
+		{"id":"b5c7b3b7d354e154","fromNode":"4cc77c0023b3adbf","fromSide":"bottom","toNode":"b1832d724b33920f","toSide":"top"},
+		{"id":"033499033761b8ca","fromNode":"7ec8fb12bb5fd3cd","fromSide":"right","toNode":"b4873222e0d4c7ea","toSide":"left"},
+		{"id":"0e227b7a069afe69","fromNode":"b1832d724b33920f","fromSide":"bottom","toNode":"d5bb79e28fa05d28","toSide":"top"},
+		{"id":"462a1653ffdb8674","fromNode":"bd11ab1955c0bc1e","fromSide":"bottom","toNode":"096b74cd3755f53b","toSide":"top"}
+	]
+}

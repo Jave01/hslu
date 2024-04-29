@@ -4,6 +4,7 @@
 
 - **MANET:** mobile ad hoc networks
 - **VANET:** vehicular ad hoc networks (sub group of MANET)
+- **MIMO:** Multiple Input Multiple Output (Mehrantennentechnik)
 
 
 ## History
@@ -119,7 +120,7 @@ Dreifarbenproblem:
 
 ## Terminologie
 
-- **home network:** permanentes "Zuhause" des Handys (z.B. Swisscom)
+- **home network:** permanentes "Zuhause" des Handys (z.B. Swisscom) -> hat Vertrag gespeichert
 - **Heim-Adresse:** Adresse unter der das Handy erreichbar ist (z.B. SIM-ID)
 - **Home-agent:** Führt Mobilitätsfunktionen im Namen des Handys durch, wenn sich Handy entfern
 - _wechselt Netzwerk_
@@ -186,7 +187,7 @@ Hidden nodes:
 
 ## Mobilfunkgenerationen
 
-### GSM (2G)
+### 2G - GSM
 
 #### Allgemeine Eigenschaften
 
@@ -220,7 +221,7 @@ Hidden nodes:
 - --- _Signaling systems_ ----
 - **GMSC**
 	- Authentication Center (AUC)
-	- Home Location Register (Datenbank mit Benutzer, grundlegende Teilnehmerdaten)
+	- Home Location Register #HLR (Datenbank mit Benutzer, grundlegende Teilnehmerdaten)
 	- Visitor Location Register (Datenbank, Informationen über TN die vorübergehen MSC besuchen)
 - **Mobile Switching Center**
 	- connects to BSC
@@ -248,7 +249,10 @@ Hidden nodes:
 - GSM mit zusätzlichen Funktionen
 
 
-### UMTS
+### 3G - UMTS
+
+#TODO zu wenig wissen
+#TODO Data plane / control plane
 
 Universal mobile technologies standard.
 
@@ -256,7 +260,7 @@ Für Referenz zur GSM Architektur siehe [[MOBINFSEC#Struktur und Aufbau|Struktur
 
 ![[UMTS_architecture.png]]
 
-
+#MSC = Mobile Switching Center
 #### SNR
 
 - Signal-to-noise ratio
@@ -268,7 +272,7 @@ Für Referenz zur GSM Architektur siehe [[MOBINFSEC#Struktur und Aufbau|Struktur
 - Modulationsverfahren anpassen anhand von Bedingung
 - Handy wählt immer Modulationsverfahren, welches die höchstmögliche Übertragungsrate ermöglicht
 
-![[VL5 - 1 - Einfache Aspekte der Funkuebertragung und die UMTS Mobilfunkarchitektur - Grundbegriffe und nkonzepte - Einheit 3 - Adaptive Modulation, Mehrfachzugriff und Power Control.pdf#page=8]]
+![[adaptive Modulation.png]]
 
 
 
@@ -350,4 +354,268 @@ Unterschied zu Heimnetze:
 
 ![[VL6 - Evolution der Mobilfunkarchitektur.pdf#page=5]]
 
+
+## 4G - Long Term Evolution (LTE)
+
+Why?
+- Viel mehr Geräte im Mobilfunknetz
+- Industrie sagt 1000-facher Datenverkehr
+- Netflix in UHD streamen
+
+
+How?
+- **Massiv mehr Antennen** - kleinere Zellen
+- Funkspektrum erhöhen (10 MHz, 20 MHz), vorhandenes Spektrum ( #TODO wie gross?) wurde mit UMTS bereits gut ausgenutzt.
+- Störungen und Interferenzen
+- Genauer:
+	- Neues Frequenzzuteilungsschema
+	- Neue multiplexing-Technik: OFDMA
+	- MIMO-Technologie, Mehrpunkt-Übertragung und -Empfang
+	- Relaying
+	- **Small Cells, Home Base Stations**
+	- WLAN integrieren, ...
+
+
+
+### Der Standard
+
+- Highspeed für Mobiltelefone
+- Basierend auf GSM und UMTS
+- **LTE** = Long Term Evolution
+- **MIMO** = Mehrpunkt-Funk
+- Ausbaustufen
+	- LTE: 3GPP Release 8
+	- LTE Advanced: 3GPP Release > 10
+- Erstes LTE Netz: NA 2010
+
+
+### Geschichte
+
+![[5) - 4G Long-Term Evolution (LTE).pdf#page=9]]
+
+![[5) - 4G Long-Term Evolution (LTE).pdf#page=10]]
+
+
+### Architektur
+
+![[Netzarchitektur_3G-LTE.canvas|Netzarchitektur_3G-LTE]]
+
+- RNC wurde integriert in die Node B (Basisstation)
+- MME übernimmt das Accounting
+
+
+**Luftschnittstelle**
+- Mobile Device (UE - User equipment)
+- Base station (enhanced Node B)
+**ALL-IP Enhanced Packet Core (EPC)**
+- Mobility Management Entity (MME) (oft vereint mit HSS)
+- Packet gateway
+- Serving gateway
+
+
+
+>[!note]
+>Route:
+>Base station -> Serving Gateway (S-GW) -> Packet Gateway (P-GW) -> Internet
+
+
+**Elemente in der 4G-LTE Architektur**
+- Basisstation
+	- Empfängt die Funksignale der Smartphones
+	- verwaltet drahtlose Funkressourcen (Zelle)
+	- koordiniert Geräteauthentifizierung mit anderen Elementen
+	- ähnlich wie WiFi AP, aber:
+		- aktive Rolle bei der Benutzermobilität
+		- Koordinaten mit fast Basisstationen, um die funknutzung zu optimieren
+	- LTE-Jargon: eNode-B
+- Home Subscriber Service (HSS)
+	- Speichert Informationen über Mobilgeräte
+	- Home Network
+	- Speichert alle vertraglichen Sachen
+	- arbeitet mit Geräteauthentifizierung
+- Serving Gateway, S-GW
+	- Tunnel zu P-GW und Base station
+- PDN Gateway, P-GW (Packet Gateway?)
+	- Schnittstelle zum Internet
+	- Stellt NAT-Dienste bereit
+- Mobile Management Entitiy (MME)
+	- Handover zwischen Zellen
+	- Authentifizierung
+	- Pfadaufbau (Tunneling) von UE zu P-GW
+
+
+### Advanced Features
+
+- Mehrantennentechnik
+	- Bessere Ausnutzung der Funkressourcen
+	- Hohe Datenraten
+	- Störungsanfälligkeit
+
+
+
+## Mobility
+
+>[!note] Vergleich
+>- **Keine Mobilität:** Nutzer ist stationär und nutzt immer gleichen Access Point
+>
+>- **Mitte:** Beim Bewegen wird die Verbindung getrennt und neu aufgebaut
+>	- IP Adresse wechselt
+>	- Verbindung wird unterbrochen
+>
+>- **Hohe Mobilität:** (ab GSM) Mobiler Benutzer, der mehrere Zugriffspunkte/Netzwerke durchläuft und gleichzeitig Verbindungen aufrechterhält 
+
+Von oben nach unten:
+- Steigender Aufwand -> benötigt Funktionalität
+- Steigender Komfort für den Nutzer (kein Verbindungsunterbruch)
+
+Repetition:
+- Home network -> Vertrag (z.B. Swisscom)
+- Visited network -> jedes andere
+- SIM-Karte: globale Identifikationsmerkmale
+- Swisscom und Sunrise brauchen Vertrag für Roaming
+
+
+### Mobility in GSM (2G)
+
+indirect routing to mobile:
+
+![[indirect_routing_to_mobile.png]]
+
+1. Correspondent calls a number -> number identifies user not location
+2. Call goes to public switched telephone network
+3. Call routed to home network (with MSC)
+4. MSC consults #HLR -> gets roaming number of mobile in visited network
+5. Home MSC sets up 2nd leg of call to MSC in visited network
+6. Mobile Switching Center determines base station
+7. #MSC in visited network completes call through base station to mobile
+
+
+#### Handoff: switch between base stations #BSS
+
+>[!note]
+>Handoff goal:
+>route call via new base station (without interruption)
+>reasons:
+>- stronger signal to/from new BSS
+>- load balance
+>- GSM doesn't mandate why to perform handoff
+>
+>Handoff is initiated by old #BSS
+>
+>Handoff between cells is controlled by #MSC 
+
+#TODO Maybe study detailed hand-off between BSS [[Mobility_in_GSM_LTE_UMTS.pdf#page=11|Slide p.11]]
+
+
+
+
+#### Handoff between MSC's
+
+#MSC Handoff
+- _anchor MSC:_ first MSC visited during call
+	- call remains routed through anchor MSC
+- new MSC's add on to end of MSC chain as mobile moves to new MSC
+- optional path minimization step to shorten multi-MSC chain
+
+
+
+### Mobility in UMTS (3G)
+#UMTS 
+
+Handovers:
+- Hard: Break Before Make, link between NodeB & UE
+- Soft: mobile station is connected to several NodeB's
+- Softer: mobile station is connected to several sectors of one NodeB
+
+
+#### Soft Handover
+
+![[soft_handover.png]]
+
+
+- Phone aims for hysteresis
+- _PilotE_ - "Pilotsignal" -> momentan stärkstes Signal
+- Y-Achse: Verhältnis momentan stärkstes Signal zu den anderen Antennen 
+- Wenn Verhältnis unter die untere Hysterese-Achse fällt, wird die Antenne in das AS (Active Set) aufgenommen -> kann sich bei Gelegenheit damit verbinden.
+
+
+
+### Mobility in LTE (4G)
+
+**5 Mobility Tasks:**
+- identifying itself, home network
+- control-plane configuration -> MME, home HSS establish control-plane state
+- data-plane configuration
+- mobile handover
+
+
+![[mobility_tasks.png]]
+
+
+>[!tip]
+>Tunnel bedeutet etwas über etwas anderes überleiten (overlay)
+>**Vorteile:**
+>- Daten abgetrennt vom restlichen Netz
+>- Einfach umleitbar
+>
+>Vergleich mit VPN-Tunnel
+
+S-GW to BS tunnel: when mobile changes base stations, simply change endpoint IP address
+S-GW to home P-GW tunnel
+
+
+**Arten von Handovers:**
+- Intra-Cell - andere Frequenz oder Zeitschlitz in derselben Zelle
+- Inter-Cell - Zu Nachbarzelle
+- Inter-BSC - Zu Nachbarszelle, welche anderen BSC aber gleicher MSC hat
+- Inter-MSC - Zu Nachbarzelle, welcher anderer BSC und MSC hat
+- Inter-PLMN - In zelle aus anderem Mobilfunk
+- Inter-System - In Zelle mit anderer Mobilfunktechnik (e.g. GSM -> UMTS)
+
+
+
+## What happens when I turn on my phone?
+
+#MS = Mobile station (Phone)
+#BTS = Base transceiver station (Zelle / Antenne)
+#BSC = Base station controller
+
+1. processors boot up
+2. Hardware gets initialized
+3. Network selection (ARFCN = Absolute Radio Frequency Channel Number)
+4. Phone quick scans all ARFCN, writes down received energy
+	1. Create prioritized list
+6. Align with carrier frequency -> adjust quartz
+7. Get to know the time slots / decode the time-slots
+8. Get to know the Distributor
+	1. Decode BCCH (Broadcast common control channel)
+	2. These information only get sent in a fairly big interval
+	3. Decode IMSI-Network (first 5 numbers)
+9. Do it for all slots (967) - mostly only the best 10 until valid found
+
+
+
+
+### GSM
+
+Communicates with time-slots
+
+When boots up it tries to communicate with FDD (Frequency Division something)
+
+Prüft 967 Kanäle auf Energie
+
+**Automatische Netzauswahl:**
+- Anhand von IMSI (erste 5 Stellen der IMSI) im Heimnetz
+	- Für Schweiz-Salt: 22803
+- Anschliessend Registrierung beim ersten PLMN
+
+
+**Location update:**
+- Sub-layer in Layer 3
+- If location of MS changes
+- used to update location/presence information of the network
+
+### UMTS
+
+Communicates with TDMA (Time Division Multiple Access)
 

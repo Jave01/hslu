@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XLNgoh5CZPib+lrH++wKk6vpFn02RYWizugiIt7EalwGRfR0kXqgTZZRCCARFHiykRAx7SrBVIqv1jCE5Wqk0g==",
+  "success": true,
+  "projectFilePath": "/home/dave/hslu/SEM4/CSA/Excercises/Threads/WaitPool/WaitPool.csproj",
+  "expectedPackageFiles": [
+    "/home/dave/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.4/microsoft.aspnetcore.app.ref.8.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

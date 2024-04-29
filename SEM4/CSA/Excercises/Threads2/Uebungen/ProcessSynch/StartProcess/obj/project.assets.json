@@ -1,0 +1,134 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "AddNumbers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/AddNumbers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AddNumbers.dll": {}
+        }
+      },
+      "FindMinMaxNumber/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/FindMinMaxNumber.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FindMinMaxNumber.dll": {}
+        }
+      },
+      "RandomCounter/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/RandomCounter.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RandomCounter.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AddNumbers/1.0.0": {
+      "type": "project",
+      "path": "../AddNumbers/AddNumbers.csproj",
+      "msbuildProject": "../AddNumbers/AddNumbers.csproj"
+    },
+    "FindMinMaxNumber/1.0.0": {
+      "type": "project",
+      "path": "../FindMinMaxNumber/FindMinMaxNumber.csproj",
+      "msbuildProject": "../FindMinMaxNumber/FindMinMaxNumber.csproj"
+    },
+    "RandomCounter/1.0.0": {
+      "type": "project",
+      "path": "../RandomCounter/RandomCounter.csproj",
+      "msbuildProject": "../RandomCounter/RandomCounter.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "AddNumbers >= 1.0.0",
+      "FindMinMaxNumber >= 1.0.0",
+      "RandomCounter >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\zadiehl\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\CSA_F24\\Praktikum\\CSA_F24\\Threads\\Uebungen\\ProcessSynch\\StartProcess\\StartProcess.csproj",
+      "projectName": "StartProcess",
+      "projectPath": "E:\\CSA_F24\\Praktikum\\CSA_F24\\Threads\\Uebungen\\ProcessSynch\\StartProcess\\StartProcess.csproj",
+      "packagesPath": "C:\\Users\\zadiehl\\.nuget\\packages\\",
+      "outputPath": "E:\\CSA_F24\\Praktikum\\CSA_F24\\Threads\\Uebungen\\ProcessSynch\\StartProcess\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\zadiehl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "E:\\CSA_F24\\Praktikum\\CSA_F24\\Threads\\Uebungen\\ProcessSynch\\AddNumbers\\AddNumbers.csproj": {
+              "projectPath": "E:\\CSA_F24\\Praktikum\\CSA_F24\\Threads\\Uebungen\\ProcessSynch\\AddNumbers\\AddNumbers.csproj"
+            },
+            "E:\\CSA_F24\\Praktikum\\CSA_F24\\Threads\\Uebungen\\ProcessSynch\\FindMinMaxNumber\\FindMinMaxNumber.csproj": {
+              "projectPath": "E:\\CSA_F24\\Praktikum\\CSA_F24\\Threads\\Uebungen\\ProcessSynch\\FindMinMaxNumber\\FindMinMaxNumber.csproj"
+            },
+            "E:\\CSA_F24\\Praktikum\\CSA_F24\\Threads\\Uebungen\\ProcessSynch\\RandomCounter\\RandomCounter.csproj": {
+              "projectPath": "E:\\CSA_F24\\Praktikum\\CSA_F24\\Threads\\Uebungen\\ProcessSynch\\RandomCounter\\RandomCounter.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

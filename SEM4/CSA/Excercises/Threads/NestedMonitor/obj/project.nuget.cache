@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gIbNjEnfmJz9GsTune5mWaYXewt0Pi75ie8zwcrPq0LfveRE+pH6yYdNCpVcaTCxju7sATAWuntk9xCl+tnqhg==",
+  "success": true,
+  "projectFilePath": "/home/dave/hslu/SEM4/CSA/Excercises/Threads/NestedMonitor/NestedMonitor.csproj",
+  "expectedPackageFiles": [
+    "/home/dave/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.4/microsoft.aspnetcore.app.ref.8.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/e/NZf2eLNPm4hXoUplmFTRSEJLZU8lzOB0enYzqY6ovIpZyD7KtzuFwea9SlIC4RSXYvAFe3d5WE5XTI4QljQ==",
+  "success": true,
+  "projectFilePath": "/home/dave/hslu/SEM4/CSA/Excercises/Threads/Latch/Latch.csproj",
+  "expectedPackageFiles": [
+    "/home/dave/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.4/microsoft.aspnetcore.app.ref.8.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -102,7 +102,7 @@ AuthorizedKeysFile	.ssh/authorized_keys
 #PermitTunnel no
 #ChrootDirectory none
 #VersionAddendum none
-# AllowUsers root Rocket
+AllowUsers root Groot Drax Rocket Gamora Starlord EGO
 
 # no default banner path
 #Banner none
@@ -111,8 +111,8 @@ AuthorizedKeysFile	.ssh/authorized_keys
 Subsystem	sftp	/usr/lib/ssh/sftp-server
 
 # Example of overriding settings on a per-user basis
-#Match User anoncvs
-#	X11Forwarding no
-#	AllowTcpForwarding no
-#	PermitTTY no
-#	ForceCommand cvs server
+# Match User root
+# 	X11Forwarding no
+# 	AllowTcpForwarding no
+# 	PermitTTY no
+# 	ForceCommand cvs server

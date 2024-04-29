@@ -19,6 +19,17 @@
 - **Kryptos:** "verstecken"
 - **Graphie:** "schreiben"
 - **Perfekte Sicherheit:** unendliche viele Ressourcen sind equivalent zu raten.
+- **Unkeyed Kryptographie:** Hashfunktionen
+	- Hashfunktionen
+	- **Mit** trapdoor: Ist Geheimniss bekannt, kann Umkehrfunktion berechnet werden
+		- RSA
+	- **Ohne** Trapdoor: Selbst wenn Geheimnis bekannt, kann Umkehrfunktion nicht berechnet werden
+		- Diffie-Hellman
+- **Symmetrische Kryptographie**
+	- Beide Partner besitzen den geheimen Schlüssel
+	- $\mathcal{O}(n²)$
+- **Asymetrische Kryptographie**
+	- $\mathcal{O}(n)$
 
 
 
@@ -35,6 +46,8 @@
 - Sich für jemanden anders ausgeben (Masquerade)
 - Abstreiten die Meldung geschickt zu haben (Non repudiation of origin)
 - Abstreiten die Meldung erhalten zu haben (Non repudiation of receipt)
+
+
 
 ### Angreifer
 
@@ -157,3 +170,85 @@ Gewährt:
 
 
 ![[hmac.png]]
+
+
+## Public-Key
+
+### RSA: e-te Wurzle mod N berechnen
+
+- Das Potenzieren $y = f(x) \equiv x^{e} \mod N$ ist rechenintensiv aber einfach
+- Das Inverse $x \equiv f^{-1}(x) \equiv y^{1/e} \equiv \sqrt[\leftroot{-2}\uproot{2}e]{y} \mod N$ ist extrem schwierig.
+- Dabei ist das Berechnen von der e-ten Wurzel mod N nur das Eine und N = p * q das andere Problem. Ist das eine bekannt kann der Algorithmus gebrochen werden.
+
+
+
+## Elliptische Kurven
+
+- EC = Elliptic Curve
+- ECC = Elliptic Curve Cryptography
+
+
+- Was: mathematische Objekte, die man als Public-Key Kr. verwenden kann
+- Warum: 
+	- wenige und schnelle Operationen (statt viele langsame wie RSA)
+	- wenig Speicherplatz
+	- Es gibt Standards
+	- Patent-freie Algorithmen
+
+
+**Allgemeine Form:**
+
+$$y² = x³ + ax + b$$
+
+>[!important] Wichtig
+>NICHT von der form $y = f(x)$
+
+Nichtsingularitätsbedingung:
+$$4a³ + 27b² \neq 0$$
+Diese muss erfüllt sein, ansonsten gibt es mehrere Wurzeln (Ergebnisse)
+
+### Neutrales und Inverses Element
+
+Inverses Element resp. Spiegelung an der x-Achse:
+$$P'(x,-y) = -P(x,y)$$
+Punktaddition:
+$$P' + P = P + P' = \mathcal{O}$$
+
+Das neutrale Element ist der Punkt im unendlichen, also
+$$\mathcal{O}(x,\infty)$$
+
+Dann einfach noch die einzelnen Koordinaten mit $p$ modulo rechnen.
+
+### Allgemeine Form & Zusammenfassung:
+
+- E = Zusammenfassung aller Punkte, welche diese Bedingung erfüllen
+- P muss zwischen 256 und 512 Bit sein
+- A & B können beliebig sein, müssen aber die beiden Gesetze erfüllen
+
+Bereich der Punkte: 
+$$p+1 - 2 \sqrt{p} \leq |E| \leq p + 1 + 2 \sqrt{p}$$
+
+
+### Formel zur Addition von 2 Punkten
+
+Zuerst Steigung berechnen
+$$s \equiv \frac{y_2 - y_1}{x_2 - x_1} \mod p$$
+dann:
+$x_3 \equiv s² -x_1 -x_2 \mod p$
+$y_3 \equiv s(x_1 - x_3) - y_1 \mod p$
+
+
+Falls man P + P rechnen muss, resp wenn $x_1 = x_2;y_1 = y_2$ dann ändert sich die Steigungsformel zu:
+$$s \equiv \frac{3 \cdot x_1² + a}{2 \cdot y_1} \mod p$$
+### Double and add Algorithmus
+
+Analog kann zum Square and Multiply Algorithmus effizient gerechnet werden.
+
+Beispiel: 28 * P
+
+- 28 = 16 + 8 + 4 = 2⁴ + 2³ + 2² = 11100
+- Mit der ersten 1 macht man nichts
+- wegen 1: p -> 2p -> 2p + p = 3p | double and add
+- wegen 1: 3p -> 6p -> 6p + p = 7p | double and add
+- wegen 0: 7p -> 14p
+- wegen 0: 14p -> 28p
