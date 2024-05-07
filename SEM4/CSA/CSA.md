@@ -108,3 +108,62 @@ class Model {
 	public void Change() {... notify(("Model"));}
 }
 ```
+
+
+## Sockets
+
+```c#
+using System.IO
+```
+
+
+**Drei Operationen:**
+- In Stream schreiben
+	- Welche Art, bestimmt der Typ des Streams
+	- Es werden Bytes geschrieben
+- Aus Stream lesen
+	- Es werden Bytes gelesen
+- Wahlfreier Zugriff auf Dateninformationen in einen Stream
+	- Ganzer Stream auszuwerten ist nicht immer nötig
+
+
+Types
+- Base-Streams - direkt aus Strom Daten lesen oder schreiben
+- Pass-Through-Streams - ergänzen Base-Stream um spezielle Funktionalitäten
+
+
+>[!tip]
+>Handle streams inside a `using` statement like this:
+>```csharp
+>using (StreamWriter sw = new StreamWriter("data.txt"), System.Text.Encoding.UTF8){
+>	sw.WriteLine("Hello there");
+>}
+>```
+>Then the memory gets properly free'd
+
+>[!note]
+>`System.Text.Encoding.UTF8` ensures proper encoding
+
+
+
+### Socket Prinzip
+
+- Ist Ende-zu-Ende Kommunikation
+- Stellen Abstraktion eines Datenendpunktes dar
+
+
+**Funktionalitäten:**
+- Verbindung zu Prozess aufbauen
+- Daten senden
+- Daten empfangen
+- Verbindung beenden
+- Einen Port / Applikation binden
+- An einem Port auf Verbindungswunsch hören
+- Verbindungswunsch akzeptieren / ablehnen
+
+
+>[!note]
+>Wir bewegen uns nur auf dem logischen Pfad (Applikation zu Applikation)
+>Physischer Pfad beinhaltet noch die anderen Layers
+
+

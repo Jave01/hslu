@@ -247,3 +247,61 @@ xcom -> executive committee
 >Standards anwenden ist nur 10%
 
 
+## Security Incident Management
+
+### Warum
+
+- Digitalisierung und Vernetzung
+- Neue Technologien als Treiber
+- Fachkräftemangel
+- Lieferketten erhöhen Komplexität
+- Mangel an Visibilität
+
+
+**Arten von Incidents:**
+- Vorsätzlich
+	- Phishing
+	- Ransomware
+	- ...
+- Nicht vorsätzlich
+	- Naturgewalten
+	- Ausfall von Strom
+	- technische Pannen
+	- etc.
+
+
+### Security Incident Management Modelle
+
+Alle Modelle sagen, dass wir das Ereignis identifiziere, analysieren um die geeigneten Gegenmassnahmen zu bestimmen.
+
+
+**Cyber Killchain**
+1. Recon
+2. Weaponize
+3. Deliver
+4. Exploit
+5. Install
+6. C²
+7. Action on Objective
+
+>[!note] Detection
+>Der erste und wichtigste Schritt is das Problem zu entdecken.
+
+
+**Schritte:**
+1. **Detection** 
+2. **Response** - hängt von Art des Angriffs ab, "Blutung stoppen"
+3. **Mitigation** - Nachdem Blutung gestoppt, Bedrohung eindämmen, Schaden minimieren
+4. #TODO irgendöppis fäut hie
+5. **Remediation** - Stärkung der Cyber Security Massnahmen, MFA einführen
+6. **Lessons learned** - Alle Reaktionsziele erreicht und Ursache identifiziert?
+
+
+
+### Wie?
+
+- Incident Management Policy
+	- Definiert Rollen und Verantwortlichkeiten in der Organisation
+	- Kommunikationswege und -verhalten
+- Incident Response Plan
+	- Definiert im Detail wie vorgegangen wird

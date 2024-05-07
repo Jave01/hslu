@@ -669,3 +669,34 @@ Evolving organizations require networks that can scale and support:
 
 
 ### Router Hardware
+
+
+
+## Device Discovery
+
+>[!note]
+>CDP - Cisco
+>LLDP - every other
+
+
+Some useful commands
+
+```bash
+lldp run
+show lldp neighbors [detail]
+```
+
+
+## Logs
+
+NTP - Network Time Protocol
+
+
+### SNMP
+
+- Can be used to observe CPU utilization
+
+
+### Syslog
+
+- Every message contains a severity level and facility - smaller numbers are higher priority

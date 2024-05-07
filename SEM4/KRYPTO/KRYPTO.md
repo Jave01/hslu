@@ -252,3 +252,13 @@ Beispiel: 28 * P
 - wegen 1: 3p -> 6p -> 6p + p = 7p | double and add
 - wegen 0: 7p -> 14p
 - wegen 0: 14p -> 28p
+
+
+
+## Blinde Signaturen
+
+Anna weis nicht WAS sie unterschrieben hat, aber DASS sie es unterschrieben hat.
+
+>[!note]
+>Weitergeführt im LaTex Dokument
+

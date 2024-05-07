@@ -1,1 +1,0 @@
-/etc/system/couple/random.sh

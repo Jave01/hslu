@@ -19,7 +19,9 @@ services:
     container_name: ssh-user-space
     build: ./ssh/
     ports:
-      - 2222:22
+      - 22:22
+    volumes:
+      - /var/run/docker.sock:/tmp/mimimi/docker.sock
 
   ftp:
     build: ./ftp/
@@ -29,15 +31,3 @@ services:
     volumes:
       - ./ftp/pub:/home/ftpusers
 
-  # vsftpd:
-  #   image: fauria/vsftpd
-  #   container_name: ftp-server
-  #   environment:
-  #     FTP_ANONYMOUS: "true"
-  #     PASV_ADDR_RESOLVE: "YES"
-  #   ports:
-  #     - 20:20
-  #     - 21:21
-  #   volumes:
-  #     - ./ftp/pub:/var/vsftpd
-  #     - /var/log/ftp:/var/log/vsftpd

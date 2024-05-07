@@ -5,6 +5,9 @@
 - **MANET:** mobile ad hoc networks
 - **VANET:** vehicular ad hoc networks (sub group of MANET)
 - **MIMO:** Multiple Input Multiple Output (Mehrantennentechnik)
+- **IMSI:** International Mobile Subscription Identifier -> identify the subscription
+- **IMEI:** International Mobile Equipment Identifier -> identify the phone
+- **AUC:** Authentication Center
 
 
 ## History
@@ -618,4 +621,114 @@ Prüft 967 Kanäle auf Energie
 ### UMTS
 
 Communicates with TDMA (Time Division Multiple Access)
+
+
+## Sicherheitsarchitekturen
+
+- Message Authentication Codes - #MAC
+
+**Besonderheiten:**
+- Übertragung über öffentliches Medium (Luft)
+- Teilnehmer sind mobil und Verbindungen sind nicht festgelegt
+- Mobiler Endnutzer verwendet unterschiedliche Basisstationen und Übertragunsressourcen
+
+**Lösungen:**
+- Eindeutige Identifikation eines Teilnehmers
+- Eindeutige Identifikation eines Geräts
+- Tracking des Nutzers über Location Identifier über Basisstation hinweg
+- Mobilfunk-Anker: Heimnetzwerk-Provider
+
+
+### Angriffsvektoren
+
+- **Strecke zwischen MS und Einspeisung in das Festnetz**
+	- Risiken
+		- Abhören
+		- Unautorisierte Übertragung
+	- Sicherheitstechniken
+		- SIM-Karte mit Identifikationsnummer und -schlüssel
+		- Verschlüsselung der Kommunikation
+		- Positionsanonymisierung
+
+
+### MAC's
+
+#MAC Definition
+
+- Message Authentication Codes
+- Werden genutzt für Authentifizierung
+- Integrität sicherstellen
+- Ähnlich zu Signaturen
+- Kryptografische Prüfsumme
+
+Ziel:
+- Prüfsumme errechnen mit symmetrischen Schlüssel $m = MAC_k(x)$
+
+
+### Challenge-Response Verfahren
+
+- Authentifizierungsverfahren
+
+Schritte:
+1. Identifikation von Alice
+2. Bob erzeugt Zufallszahl und schickt Alice
+3. Alice verschlüsselt mit festgelegtem Verschlüsselungsverfahren
+4. Alice schickt verschlüsselte Zufallszahl an Bob
+5. Bob entschlüsselt und prüft Passwort
+
+
+**Angriffsvektoren:**
+- Zufallszahl über unsicheren Kanal
+- Response über unsichere Kanal
+- Angreifer kann aus RAND und C den Schlüssel ableiten
+- Bob muss Schlüssel von Alice sicher und lange aufbewahren
+
+
+>[!tip]
+>Just use asymetric encryption
+
+
+
+### GSM-Sicherheitsmerkmale
+
+TMSI: Temporary IMSI, für die Verschleierung des Nutzers, wird von VLR vergeben.
+
+Authentifizierung und Integritätsalgorithmen: COMP-128
+- Authentifikation: A3 -> #AUC
+- Verschlüsselung: A5, Satz von symmetrischen Verschlüsselungsverfahren-> #MSC
+- Schlüsselgenerierung: A8 -> #AUC 
+- Individual Subscriber Authentification Key - $k_i$ - 128 bit, private key -> #AUC 
+- Source-Code wurd 1998 reverse-engineert
+- Seit 2006 können alle Versionen in Echtzeit gebrochen werden.
+- $k_i$ ist auch im Authentication Center gespeichert
+
+
+Detaillierte Schritte:
+
+0. Pin wird vom Nutzer eingegeben
+1. A3 - Authentifizieren / Einbuchen
+2. AC erstellt Zufallszahl (Challenge)
+3. A3 erstellt mit privatem Schlüssel und Zufallszahl die Response für Authentifikation
+4. Sendet Response -> Authentifikation abgeschlossen
+5. A8 erstellt mit der Zufallszahl und privatem Schlüssel einen session key
+6. A5 verschlüsselt payload $m$ mit dem Session Key
+
+
+### Sicherheitsmerkmale bei LTE
+
+- Auf SIM:
+	- IMSI
+	- Pre-Shared Key K
+- Eingeschränkter Zugriff auf die UICC über API
+- Führt kryptographische Vorgänge zur Authentifizierung durch
+
+#EAP - Extensible Authentication Protocol
+
+
+3 Algorithmen:
+- SNOW 3G
+- AES
+- ZUC
+
+Laut 3GPP ist Verschlüsseln optional
 
