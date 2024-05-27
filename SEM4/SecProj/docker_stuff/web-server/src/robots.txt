@@ -7,5 +7,5 @@ Sitemap: https://www.example.com/sitemap.xml
 Allow: /public
 Disallow: /private
 
-// Disable /login guest:*
+// TODO: remove guest login
 

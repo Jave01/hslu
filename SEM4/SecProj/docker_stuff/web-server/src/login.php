@@ -15,7 +15,7 @@ if ($uname == 'guest' && $psw == $valid_pass) {
 } else if ($uname != '') {
   $error = 'Invalid credentials or insufficient permissions';
 }
-header('5-head:' . $valid_pass);
+header('definitely_not_a_pw:' . $valid_pass);
 ?>
 
 

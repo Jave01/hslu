@@ -465,7 +465,6 @@ OSPF can be implemented as
 - 41. router is unreachable
 - 42. three states are involved
 - 5. faciliate hirarchical routing
-- 
 
 ## WAN Concepts
 
@@ -700,3 +699,108 @@ NTP - Network Time Protocol
 ### Syslog
 
 - Every message contains a severity level and facility - smaller numbers are higher priority
+
+
+## Troubleshooting
+How to troubleshoot lol
+
+### Network Documentation
+
+Required to effectively monitor and troubleshoot networks.
+
+Usually includes the following:
+
+- Physical and logical network topology programs
+- Network device documentation that records all pertinent device information
+- Network performance baseline documentation
+
+>[!note]
+>Most of the time only the logical documentation is needed for troubleshooting
+
+Network baseline:
+- A network baseline is used to establish normal network performance to determine the "personality" of a network under normal conditions.
+- Establishing a network performance baseline requires collecting performance data from the ports and devices that are essential to network operation
+
+**What Data to collect:**
+- Start with few variables.
+- Start simple, fine-tune along the way.
+- CPU is a good starting point.
+
+
+### Troubleshooting Process
+
+- Structure Troubleshooting
+- Several processes to solve a problem
+
+>[!tip]
+>Giga command: `show tech-support`
+
+**Seven-Step Troubleshooting Process:**
+
+1. Define the Problem
+2. Gather Information
+3. Analyze Information
+4. Eliminate Possible Causes
+5. Propose Hypothesis
+6. Test Hypothesis
+7. Solve the Problem
+
+
+### Troubleshooting Tools
+
+
+
+### Symptoms and Causes of Network Problems
+
+
+
+### Troubleshooting IP Connectivity
+
+
+### Questions
+
+- 21. Term describes set of instruction for execution by the tool Puppet? -> Manifest
+- 38. When is partner API appropriate? -> vacation service interacting with hotel databases
+- Purpose of key in API's? -> Authentication of requesting source
+- 23. Public API? -> can be used without restrictions
+- 31. What is REST? -> architecture style for designing web service applications
+- 26. Technology that virtualizes nw control place to centralized controller -> SDN
+- 8. What pre-populates the FIB that use CEF to process packets? -> routing table
+- 6. Whcih is a characteristic of a Type 1 hypervisor? -> installed directly on a server
+- 
+
+
+
+>[!warning] TODO
+>- Hypervisor types?
+>- REST
+>- routing-/neighbour tables
+
+
+## Final exam questions
+
+- 49. ODPF cost
+- OSPF not working command no passive serial0/1
+- WAN service to description (CPE, DCE, DTE, local loop)
+- 193. Component of WAN connection to its description
+- 170. ACL's
+- 28. ACL's 2
+- 55.
+- 166.
+- 7.
+- 3. 
+- 144.
+- 210 QoS technique
+- 111. Step in link-state routing process
+- 86. ACL's deny accessing media
+- 33. Functionality mGRE DMVPN
+- 66. two benefits of SNMP traps
+- 197. command NAT or PAT
+- 101. Protocol synchronizes with master clock
+- 18. R2 for static NAT
+- 21. Represents inside global address
+- default hello packet delay: 80 seconds
+- Control vs Data plane in SDN
+
+
+What in the fuck are hypervisors

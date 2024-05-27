@@ -21,6 +21,7 @@ ls
 cd ~/Documents
 mkdir Project
 cd Project
+
 touch main.py
 vim main.py
 python3 main.py

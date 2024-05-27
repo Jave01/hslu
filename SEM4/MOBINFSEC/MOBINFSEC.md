@@ -718,7 +718,7 @@ Detaillierte Schritte:
 
 - Auf SIM:
 	- IMSI
-	- Pre-Shared Key K
+	- Pre-Shared Key $k$
 - Eingeschränkter Zugriff auf die UICC über API
 - Führt kryptographische Vorgänge zur Authentifizierung durch
 
@@ -732,3 +732,185 @@ Detaillierte Schritte:
 
 Laut 3GPP ist Verschlüsseln optional
 
+
+## Überwachung von Telekommunikationsanlagen
+
+Was darf, kann die Polizei
+
+### Rechtliche Grundlagen
+
+**BÜPF** - Bundesgesetz betreffend die Überwachung des Post- und Fernmeldeverkehrs
+
+Wann darf gebraucht werden:
+- Im Rahmen eines Strfaverfahrens
+- zum Vollzug eines Rechtshilfeersuchens
+- im Rahmen der Suche nach vermissten Personen
+- Im Rahmen der Fahndung nach Personen, die zu einer Freiheitsstrafe verurteilt wurden oder gegen die eine freiheitsentziehende Massnahme angeordnet wurde
+
+
+**Pflichten der Anbieter von Fernmeldediensten:**
+- Fernmeldediensten (Art. 26)
+    - Swisscom
+    - Sunrise
+    - Salt
+- Anbieter abgeleiteter Kommunikationsdienste (Art. 27)
+    - Threema
+    - Protonmail
+- Betreiber von internet Fernmeldenetzen (Art. 28)
+    - HSLU (public WLAN)
+    - Uni Bern
+- Personen, die Zugang zu einem öff. Fernmeldenetz zur Verfügung stellen (Art. 29(
+    - McDonalds
+- Professionelle Wiederverkäufer von Zugangskarten (Art. 30)
+    - Bahnhofskiosk
+
+
+#### Artikel 26
+
+Pflichten:
+- Daten liefern
+- Daten 6 Monate aufbewahren
+- Notwendige technische Daten liefern
+- Überwachung dulden
+- Verschlüsselung entfernen
+- Bundesrat kann Dienste von geringer Wichtigkeit von gewissen Pflichten entbinden
+
+#### Artikel 27
+
+Bundesrat kann wichtige ienste gewissen Pflichten gem. Art. 26 unterstellen
+
+#### Artikel 27-29
+
+Pflichten:
+- KEINE Aufbewahrungspflicht
+- Zugang zu Anlagen gewähren
+- Notwendige technische Daten liefern
+- Verfügbare Randdaten liefern
+
+#### Artikel 30
+
+Benutzeridentifikation des Käufers muss sichergestellt werden.
+
+
+### Auskünfte
+
+- Einfache Auskunft:
+    - Warum einfach? simple Datenbank Einträge, verfügbar innerhalb von Minuten
+    - Telefonbuch- & IP-Anfragen
+    - Auskünfte über IMEI, Nutzerinformationen, IP-Anschlüsse, Telefonnummern etc.
+- Komplexe Auskunft:
+    - Ausweiskopien
+    - Vertragsdaten
+
+
+Verwendung:
+ - Wem gehört ein gefundenes Gerät / SIM?
+ - Welche Geräte hat eine bestimmte Person?
+ - Wer ist die Person, die eine bestimmte SIM erworben hat?
+ - In welchen Geräten (IMSI) befand sich eine bestimmte SIM (IMEI)
+
+
+### Rückwirkende Überwachung
+
+Target: Ein Teilnehmer (= SIM)
+
+- Nur Metadaten zu Ein- und Ausgehende Anrufe und SMS
+    - Partner
+    - Zeitpunkt
+    - Dauer
+- Data-Verbindungen
+- ID, Standort der Antenne und Azimut der Antenne
+
+
+### Echtzeitüberwachung
+
+- Die Daten aller ein- und ausgehenden Kommunikationen (Anruf, SMS & Data) werden abgefangen.
+    - Metadaten
+    - Inhalt der Kommunikation
+- ID, Standort und Azimut der Antenne
+- Muss durch Zwangsmassnahmengericht angeordnet werden!
+
+
+Verwendung:
+- Wird verwendet für Dinge die in Zukunft passieren werden
+- Für organisierte Kriminalität
+    - Menschenhandel 
+    - Terrorismus
+    - Schmuggler
+- Identifikation des Netzwerkes
+- Finden von Drop-Off-Punkten, Lager, Verstecke
+- Wird nur gemacht, wenn sehr guter Grund vorhanden ist
+    - Hohe rechtliche Hürde
+    - Sehr hohe Kosten
+    - Auswertung sehr aufwendig
+    
+
+### Personensuche
+
+Was ist eine Notsuche?
+-> Persone finden, die verschollen ist
+-> verschollen: Aufenthalt unbekannt/schwVertragsdatener zu ermitteln oder Annahme für Gefährdung der Gesundheit oder Leben.
+
+Was ist Fahndung?
+-> Suche nach verurteilten Personen
+
+
+Vorgehen:
+1. Ist ein bestimmtes Gerät aktiv? (Versand einer leeren SMS)
+    1. Ja -> Auf welcher Antenne befindet sich das Gerät zurzeit?
+    2. Nein -> Welches war die letzte Antenne, mit der das Gerät verbunden war.
+2. Wo befindet sich das Gerät?
+    1. Resultat: Antennen-ID -> Gerät befindet sich in Bereich, welcher von Antenne abgedeckt
+    2. Abdeckung der Antenne ist ziemlich random.
+
+
+### Antennensuchlauf
+
+Es wird kein Endgerät überwacht sondern eine Antenne für einen Zeitraum von 2h
+
+**Antennenauswahl:**
+- Mit welchen Antennen hat sich Gerät verbunden
+- Karte mit Antennen
+
+
+**Mit welcher Antenne verbindet sich Endgerät:**
+- Theorie
+    - Variiert je nach Technologie
+    - Dominierender Faktor: Signalstärke
+    - Hypothese: Gerät verbindet sich mit nächster Antenne
+- Praxis
+    - Nicht alle Antennen senden gleich stark
+    - Umfeld kann Signal schwächen
+    - Welche Antennen sind verfügbar?
+    - Welche Antenne ist an einem Ort effektiv am stärksten
+    - Hypothese: Gerät verbindet sich mit dem stärksten Signal
+
+Bester Ansatz: Messen
+
+
+## 5G Mobile Networks
+
+- 2018 erster release des Standards
+- 2020 erste kommerzielle erhältlichkeit
+- 2022 mehr als 2 Samsung Phones mit 5G
+
+
+Ziel
+- 10-fache Erhöhung Spitzenrate
+- 10-fache Verringerung der Latenz
+- 100-fache Erhöhung der Verkehrskapazität gegenüber 4G
+- Zelldurchmesser: 10-100m
+- 5G-NR (New Radio): mmWaves, Verbesserungen zur aktuellen Schnittstelle
+
+
+### Vollständiges 5G netzwerk
+
+Umfasst:
+- eMBB (erweiterter mobile Breitbandzugang): Internet für alle über 5G wie Glasfaser
+- URLLC (Ultra Reliable Low Latency Communications): Release 16, Verbesserungen vor allem im Kernnetz: Latenz und Verlässlichkeit
+- mMTC (Massive Machine Type Communications): Release 16, Ommunikation von Gleingeräten untereinander (IoT)
+
+
+>[!todo]
+>- [ ] Unterschiede allgemein GSM, UMTS, LTE (Advanced), 5G
+>- [ ] Warum ist LTE 3.9

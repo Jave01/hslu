@@ -11,6 +11,3 @@ Abschlusspräsentation: 45 min
 - 10 min Fragen
 - ...
 
-
-
-

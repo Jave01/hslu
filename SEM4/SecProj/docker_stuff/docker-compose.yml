@@ -28,6 +28,3 @@ services:
     ports:
       - "20:20"
       - "21:21"
-    volumes:
-      - ./ftp/pub:/home/ftpusers
-

@@ -45,23 +45,24 @@ $alertType = $uploadOk ? 'success' : 'danger';
 <body>
 
 <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <h2 class="text-center mt-5">Upload Picture</h2>
-                <hr class="my-4">
-                <?php if ($msg) { ?>
-                    <p class="alert alert-<?php echo $alertType; ?>"><?php echo $msg; ?></p>
-                <?php } ?>
-                <form action="upload.php" method="post" enctype="multipart/form-data">
-                    <div class="form-group">
-                        <label for="pngToUpload">Select picture to upload:</label>
-                        <input type="file" class="form-control-file" id="pngToUpload" name="pngToUpload">
-                    </div>
-                    <button type="submit" class="btn btn-primary" name="submit">Upload File</button>
-                </form>
-            </div>
-        </div>
-    </div>
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<h2 class="text-center mt-5">Upload Picture</h2>
+				<hr class="my-4">
+				<?php if ($msg) { ?>
+					<p class="alert alert-<?php echo $alertType; ?>"><?php echo $msg; ?></p>
+				<?php } ?>
+				<form action="upload.php" method="post" enctype="multipart/form-data">
+					<div class="form-group">
+						<label for="pngToUpload">Select picture to upload:</label>
+						<input type="file" class="form-control-file" id="pngToUpload" name="pngToUpload">
+					</div>
+					<button type="submit" class="btn btn-primary" name="submit">Upload File</button>
+				</form>
+			<a class="btn btn-primary mt-3" href="gallery.php" name="View photos">View gallery</a>
+			</div>
+		</div>
+	</div>
 
     <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
 </body>

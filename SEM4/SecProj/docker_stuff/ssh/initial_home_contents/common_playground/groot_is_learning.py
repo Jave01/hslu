@@ -2,5 +2,7 @@ import random
 
 groots = ["Groot", "Grooot", "Groot?", "Groot!"]
 
-print("I am" + groots[random.randint(0, len(groots) - 1)])
+with open("I am Groot.txt", 'w') as f:
+    for _ in range(4):
+        f.write("I am " + groots[random.randint(0, len(groots) - 1)] + '\n')
 

@@ -167,3 +167,73 @@ Types
 >Physischer Pfad beinhaltet noch die anderen Layers
 
 
+Erzeugen:
+```csharp
+TcpClient the Client;
+try {
+	theClient = new TcpClient(String host, int port);
+}
+catch (ArgumentOutOfRangeException) {
+	// Port ausserhalb des erlaubten Bereichs
+}
+catch (SocketException) {
+	// Fehler beim Zugriff auf Socket
+    Console.WriteLine("No: {0}", somevar);
+}
+```
+
+
+Informationen:
+
+```csharp
+try {
+	var theClient = new TcpClient("localhost", 2);
+	Socket s = theClient.Client;
+	s.LocalEndpoint;
+	s.RemoteEndpoint;
+	s.ProtocolType;
+}
+catch (Exception e){
+	Console.WriteLine("sucks");
+}
+```
+
+
+Server socket (Deprecated):
+```csharp
+try {
+	TcpListener listen = new TcpListener(port);
+	listen.Start();
+
+	while(...){
+		var client = listen.AcceptTcpClient();// wait for client to connect
+		// Kommunikation mit client
+		client.Close();
+	}
+}
+catch (Exception e){
+	Console.WriteLine("You suck");
+}
+```
+
+>[!warning]
+>Above code is deprecated see recommended below
+
+
+Server Socket (Recommended):
+```csharp
+try {
+	IPAddress ip = Dns.GetHostEntry("raspberrypi").AddressList[0];
+	TcpListener listen = new TcpListener(ip, 420);
+	listen.Start();
+	while (true){
+		TcpClient client = listen.AcceptTcpclient();
+		Console.WriteLine("Verbindung zu {0} aufgebaut", client.Client.RemoteEndPoint);
+		TextWriter tw = new StreamWriter(client.GetStream());
+		tw.Write(DateTime.Now.ToString());
+		tw.Flush();
+		client.Close();
+	}
+}
+```
+
