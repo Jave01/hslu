@@ -1,5 +1,43 @@
 # C Sharp in Action
 
+## MEP
+
+- Schriftlich
+- 2 Seiten Notizen
+- Nicht open-book
+- Grundlagen wichtig:
+    - Properties
+    - Indexer
+    - Delegates
+    - Event-Handling
+    - Remote Debugging
+    - Einfache Linux Administration
+    - Hardwarenahe Softwareentwicklung
+- Multithreading
+    - Lebenszyklus eines Threads
+    - Erzeugen, starten, beenden und stoppen
+    - Einfache Synchronisation mit einfacher Blockierung und lock-Konstrukt
+    - Synchronisierungsereignisse: WaitHandle, Mutex, Semaphore und Monitor mit Wait und Pulse
+- Kommunikation mit C# Datenströmen
+    - Ein- und Ausgabe-Streams
+    - Verknüpfung von Ein- und Ausgabe-Streams mit Quellen und Senken
+- Kommunikation mit Sockets
+    - Socket Prinzip
+    - Einsatz und Eigenschafter der Sockets, bzwe TcpClient
+    - Server Socket, bzw. TcpListener
+    - das Client-Server Modell und das Konzept, iterativer und nebenläufiger Server
+    - http-Server
+
+>[!tip] Kommt garantiert vor
+>Sockets, spezifisch TcpClient und TcpListener
+>Mögliche Aufgabe: man bekommt iterativer Server und muss nebenläufiger Server erstellen
+
+>[!tip]
+>Demoprüfung auf Illias anschauen
+>Aufgabe 2 kommt definitiv in dieser Art vor
+>Aufgabe 3 ebenfalls
+
+
 ## Einführung SW2
 
 Struct vs Objects:

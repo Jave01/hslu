@@ -19,4 +19,6 @@
 \contentsline {subsubsection}{\numberline {7.3.2}Many to one}{5}{subsubsection.7.3.2}%
 \contentsline {subsection}{\numberline {7.4}Paralellsession Attacke}{6}{subsection.7.4}%
 \contentsline {section}{\numberline {8}Quantenkryptographie}{7}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Polarization}{7}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Quantum Key Exchange}{7}{subsection.8.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

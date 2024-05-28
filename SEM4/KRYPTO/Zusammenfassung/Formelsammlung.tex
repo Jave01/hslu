@@ -68,7 +68,7 @@
 
 \definecolor{Gray}{gray}{0.85}
 
-% \setlength{\parindent}{0cm}
+\setlength{\parindent}{0cm}
 
 % hyperlinks
 \hypersetup{
@@ -272,6 +272,44 @@ kann kopiert werden.
 
 \newpage
 \section{Quantenkryptographie}
+
+Quantenkryptographie und Quantencomputer sind zwei verschiedene Dinge.
+
+\subsection{Polarization}
+
+4 Zustände, jedem muss 1 oder 0 zugewiesen werden.
+
+\begin{itemize}
+    \item Senkrecht
+    \item Wagrecht
+    \item Schräg links
+    \item Schräg rechts
+\end{itemize}
+
+Darauf basierend können Filter kreiert werden. Sollte filter nicht auf Teilchen
+passen, ist es 50/50 in welchem Zustand es durchgelassen wird.
+
+
+\subsection{Quantum Key Exchange}
+
+\begin{enumerate}
+    \item Sender Alice wählt zufällige Bits
+    \item Alice sendet Photonen mit gewählter Polarization
+    \item Empfänger Bob wählt zufällige Filter
+    \item Bob erhlält gefilterte Photonen
+    \item Bob kennt die Kodierung und ordnet 1 oder 0 zu
+    \item Bob sendet zurück, welche Filter er benutzt hat
+    \item Alice sagt, welche Filter korrekt waren
+\end{enumerate}
+
+
+Im statistischen Mittle werden in 50\% die falschen Filter gewählt. Deshalb
+müssen doppelt so viele Photonen gesendet werden, wie benötigt werden. \\
+
+
+Key-takeaway: immer die Bits verwenden, welche durch den Filter nicht verändert werden. Alle
+anderen haben einen nicht vorhersagbaren Zustand.
+
 
 
 
