@@ -911,6 +911,20 @@ Umfasst:
 - mMTC (Massive Machine Type Communications): Release 16, Ommunikation von Gleingeräten untereinander (IoT)
 
 
+### Funkübertragung und Funkzugansnetz
+
+5G-NR -> eine Reihe von Standards, erweiterung von LTE
+Wurde entwickelt um Verbindung zu schaffen die Glasfaser entspricht.
+
+Anforderungen:
+- Mobilität 
+- IoT - Muss IoT unterstützen
+- Schlankes Design - Signale nur bei Bedarf
+- Adaptivität - auf geringere Bandbreite mit kleinerem Stromverbrauch verwenden
+- Strikte Vorgaben
+
 >[!todo]
 >- [ ] Unterschiede allgemein GSM, UMTS, LTE (Advanced), 5G
 >- [ ] Warum ist LTE 3.9
+>- [ ] Bilder
+
