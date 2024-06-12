@@ -10,11 +10,8 @@ RUN apt-get update && \
     unzip \
 	netcat-openbsd \
 	ca-certificates
-    # apt-transport-https \
-    # ca-certificates \
-    # software-properties-common \
-    # gnupg-agent 
 
+# install docker
 RUN install -m 0755 -d /etc/apt/keyrings
 RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
 RUN chmod a+r /etc/apt/keyrings/docker.asc
@@ -27,19 +24,6 @@ RUN echo \
 RUN apt-get update
 
 RUN apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-
-# install docker
-# RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
-# 
-# RUN add-apt-repository \
-#    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-#    $(lsb_release -cs) \
-#    stable"
-# 
-# RUN apt-get update && \
-#     apt-get install -y docker-ce docker-ce-cli containerd.io
-# 
-# RUN chmod 750 /usr/bin/docker
 
 # sshd configurations
 COPY sshd_config /etc/ssh/sshd_config
@@ -69,6 +53,8 @@ RUN chmod +x /home/Rocket/get_the_juice.sh
 # root settings
 RUN echo "1_4m_th3_r00t_0f_4ll_3v1l" > /root/flag.txt
 RUN echo "root:very_long_passwd_lol_4321"  | chpasswd
+RUN mkdir /tmp/mimimi
+RUN chmod 750 /tmp/mimimi
 # RUN echo 'root:root' | chpasswd
 
 EXPOSE 22

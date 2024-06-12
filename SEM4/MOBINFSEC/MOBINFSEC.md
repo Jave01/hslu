@@ -927,4 +927,10 @@ Anforderungen:
 >- [ ] Unterschiede allgemein GSM, UMTS, LTE (Advanced), 5G
 >- [ ] Warum ist LTE 3.9
 >- [ ] Bilder
+>- [ ] Kryptographischen Ablauf
+>- [ ] Immer Bilder zeichnen können
 
+
+>[!notes] Notes für MEP
+>Wir bekommen IPad, würfeln um Startthema
+>Grundsätzlich nur 1 max 2 Thema
