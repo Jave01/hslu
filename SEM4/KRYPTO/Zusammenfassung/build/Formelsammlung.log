@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.3)  12 JUN 2024 16:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.6.3)  15 JUN 2024 15:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -729,217 +729,257 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \openout5 = `Formelsammlung.toc'.
 
  [2]
-Overfull \hbox (11.81451pt too wide) in paragraph at lines 116--147
+Overfull \hbox (11.81451pt too wide) in paragraph at lines 116--153
  [] 
  []
 
-[3]
-<img/mechanismus_vs_sicherheitsdienst.png, id=148, 843.90282pt x 541.27219pt>
+[3] [4{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+<img/mechanismus_vs_sicherheitsdienst.png, id=168, 843.90282pt x 541.27219pt>
 File: img/mechanismus_vs_sicherheitsdienst.png Graphic file (type png)
 <use img/mechanismus_vs_sicherheitsdienst.png>
-Package pdftex.def Info: img/mechanismus_vs_sicherheitsdienst.png  used on input line 158.
+Package pdftex.def Info: img/mechanismus_vs_sicherheitsdienst.png  used on input line 207.
 (pdftex.def)             Requested size: 448.13095pt x 287.43451pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--181
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
 
  []
 
-[4{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./img/mechanismus_vs_sicherheitsdienst.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 189--191
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 221--227
+[5 <./img/mechanismus_vs_sicherheitsdienst.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 260--264
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 265--267
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 285--286
+Underfull \hbox (badness 10000) in paragraph at lines 270--276
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
+Underfull \hbox (badness 10000) in paragraph at lines 309--313
 
  []
 
-<img/ofb_mode.png, id=180, 1116.42094pt x 469.00218pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--316
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 381--382
+
+ []
+
+<img/ofb_mode.png, id=198, 1116.42094pt x 469.00218pt>
 File: img/ofb_mode.png Graphic file (type png)
 <use img/ofb_mode.png>
-Package pdftex.def Info: img/ofb_mode.png  used on input line 345.
+Package pdftex.def Info: img/ofb_mode.png  used on input line 394.
 (pdftex.def)             Requested size: 448.13095pt x 188.25594pt.
-[8]
-<img/ctr_mode.png, id=189, 1020.06094pt x 415.5525pt>
+[9]
+<img/ctr_mode.png, id=206, 1020.06094pt x 415.5525pt>
 File: img/ctr_mode.png Graphic file (type png)
 <use img/ctr_mode.png>
-Package pdftex.def Info: img/ctr_mode.png  used on input line 375.
+Package pdftex.def Info: img/ctr_mode.png  used on input line 424.
 (pdftex.def)             Requested size: 448.13095pt x 182.55832pt.
-<img/klartext_fehler_nach_manipulation.png, id=190, 1154.06157pt x 301.125pt>
+<img/klartext_fehler_nach_manipulation.png, id=207, 1154.06157pt x 301.125pt>
 File: img/klartext_fehler_nach_manipulation.png Graphic file (type png)
 <use img/klartext_fehler_nach_manipulation.png>
-Package pdftex.def Info: img/klartext_fehler_nach_manipulation.png  used on input line 389.
+Package pdftex.def Info: img/klartext_fehler_nach_manipulation.png  used on input line 438.
 (pdftex.def)             Requested size: 448.13095pt x 116.92824pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--400
+Underfull \hbox (badness 10000) in paragraph at lines 448--449
 
  []
 
-[9 <./img/ofb_mode.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 401--402
+[10 <./img/ofb_mode.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 450--451
 
  []
 
-[10 <./img/ctr_mode.png> <./img/klartext_fehler_nach_manipulation.png>]
-Overfull \hbox (50.31473pt too wide) in paragraph at lines 414--425
+[11 <./img/ctr_mode.png> <./img/klartext_fehler_nach_manipulation.png>]
+Overfull \hbox (50.31473pt too wide) in paragraph at lines 463--474
  [] 
  []
 
-[11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 486--488
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
 
  []
 
-[13]
-<img/elliptic_curve_addition.png, id=225, 706.89093pt x 616.55344pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 498--500
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 501--503
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 505--511
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 512--514
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 515--516
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--528
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 529--531
+
+ []
+
+[13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 582--584
+
+ []
+
+[15]
+<img/elliptic_curve_addition.png, id=247, 706.89093pt x 616.55344pt>
 File: img/elliptic_curve_addition.png Graphic file (type png)
 <use img/elliptic_curve_addition.png>
-Package pdftex.def Info: img/elliptic_curve_addition.png  used on input line 511.
+Package pdftex.def Info: img/elliptic_curve_addition.png  used on input line 607.
 (pdftex.def)             Requested size: 448.13095pt x 390.86734pt.
- [14 <./img/elliptic_curve_addition.png>]
-<img/elliptic_curve_mod.png, id=232, 992.20688pt x 539.76656pt>
+ [16 <./img/elliptic_curve_addition.png>]
+<img/elliptic_curve_mod.png, id=254, 992.20688pt x 539.76656pt>
 File: img/elliptic_curve_mod.png Graphic file (type png)
 <use img/elliptic_curve_mod.png>
-Package pdftex.def Info: img/elliptic_curve_mod.png  used on input line 538.
+Package pdftex.def Info: img/elliptic_curve_mod.png  used on input line 634.
 (pdftex.def)             Requested size: 448.13095pt x 243.78221pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 543--546
+Underfull \hbox (badness 10000) in paragraph at lines 639--642
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 547--548
+Underfull \hbox (badness 10000) in paragraph at lines 643--644
 
  []
 
-[15 <./img/elliptic_curve_mod.png>] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 618--619
-
- []
-
-[17]
-<img/bestimung_aller_punkte.png, id=247, 1148.79187pt x 335.00156pt>
-File: img/bestimung_aller_punkte.png Graphic file (type png)
-<use img/bestimung_aller_punkte.png>
-Package pdftex.def Info: img/bestimung_aller_punkte.png  used on input line 639.
-(pdftex.def)             Requested size: 448.13095pt x 130.68074pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 644--651
-
- []
-
-[18 <./img/bestimung_aller_punkte.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 657--658
+[17 <./img/elliptic_curve_mod.png>] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 714--715
 
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 683--684
+<img/bestimung_aller_punkte.png, id=270, 1148.79187pt x 335.00156pt>
+File: img/bestimung_aller_punkte.png Graphic file (type png)
+<use img/bestimung_aller_punkte.png>
+Package pdftex.def Info: img/bestimung_aller_punkte.png  used on input line 735.
+(pdftex.def)             Requested size: 448.13095pt x 130.68074pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 740--747
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 685--686
-
- []
-
-
-Overfull \hbox (45.32343pt too wide) detected at line 717
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 723--724
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 727--728
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 733--734
-
- []
-
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 736--738
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 746--749
+[20 <./img/bestimung_aller_punkte.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 753--754
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 755--757
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--759
-
- []
-
-[22] [23] [24] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 890--894
+Underfull \hbox (badness 10000) in paragraph at lines 781--782
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 895--898
+Overfull \hbox (45.32343pt too wide) detected at line 813
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 819--820
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 899--901
+Underfull \hbox (badness 10000) in paragraph at lines 823--824
 
  []
 
-<img/blinde_signatur.png, id=345, 809.27344pt x 587.94656pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 829--830
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 832--834
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 842--845
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 851--853
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 854--855
+
+ []
+
+[24] [25] [26] [27]
+Underfull \hbox (badness 10000) in paragraph at lines 986--990
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 991--994
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 995--997
+
+ []
+
+<img/blinde_signatur.png, id=360, 809.27344pt x 587.94656pt>
 File: img/blinde_signatur.png Graphic file (type png)
 <use img/blinde_signatur.png>
-Package pdftex.def Info: img/blinde_signatur.png  used on input line 906.
+Package pdftex.def Info: img/blinde_signatur.png  used on input line 1002.
 (pdftex.def)             Requested size: 403.31511pt x 293.01262pt.
-[26 <./img/blinde_signatur.png>] [27]
-Underfull \hbox (badness 10000) in paragraph at lines 951--953
+[28 <./img/blinde_signatur.png>] [29]
+Underfull \hbox (badness 10000) in paragraph at lines 1047--1049
 
  []
 
-[28] [29] [30] [31]
-<img/paralell_session_attack.png, id=389, 1518.67375pt x 747.79375pt>
+[30] [31] [32] [33]
+<img/paralell_session_attack.png, id=409, 1518.67375pt x 747.79375pt>
 File: img/paralell_session_attack.png Graphic file (type png)
 <use img/paralell_session_attack.png>
-Package pdftex.def Info: img/paralell_session_attack.png  used on input line 1051.
+Package pdftex.def Info: img/paralell_session_attack.png  used on input line 1167.
 (pdftex.def)             Requested size: 448.13095pt x 220.6543pt.
- [32 <./img/paralell_session_attack.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1090--1093
+ [34 <./img/paralell_session_attack.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1206--1209
 
  []
 
-[33] (build/Formelsammlung.aux)
+[35] (build/Formelsammlung.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -948,18 +988,18 @@ Package rerunfilecheck Info: File `Formelsammlung.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 37218 strings out of 476023
- 856604 string characters out of 5791583
+ 37233 strings out of 476023
+ 856755 string characters out of 5791583
  1944187 words of memory out of 5000000
- 58571 multiletter control sequences out of 15000+600000
+ 58579 multiletter control sequences out of 15000+600000
  568971 words of font info for 78 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  108i,11n,107p,10980b,686s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on build/Formelsammlung.pdf (33 pages, 1483884 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on build/Formelsammlung.pdf (35 pages, 1500307 bytes).
 PDF statistics:
- 684 PDF objects out of 1000 (max. 8388607)
- 601 compressed objects within 7 object streams
- 202 named destinations out of 1000 (max. 500000)
- 538 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 727 PDF objects out of 1000 (max. 8388607)
+ 640 compressed objects within 7 object streams
+ 209 named destinations out of 1000 (max. 500000)
+ 586 words of extra memory for PDF output out of 10000 (max. 10000000)
 

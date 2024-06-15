@@ -88,7 +88,7 @@
 
 \author{David Jäggli}
 
-\title{Formelsammlung Krypto}
+\title{Zusammenfassung Krypto}
 
 
 
@@ -141,11 +141,60 @@ Allgemeine Begriffe und Definitionen.
         \hline
         \textbf{CA}                     & Certificate Authority                                     \\
         \hline
-        \textbf{CRL}                     & Certificate Revocation List - Zertifikatssperrliste                                     \\
+        \textbf{CRL}                    & Certificate Revocation List - Zertifikatssperrliste                                     \\
+        \hline
+        \textbf{Mutual}                 & Two-way Authentication. Beide Parteien authentifizieren sich                                     \\
+        \hline
+        \textbf{EWF (mit) Trapdoor}     & Es existert Geheimnis (Trapdoor) mit der sich $f^{-1}(y)$ 
+                                            einfach berechnen lässt. Die Sicherheit ist, dass dieser "Trick" \space
+                                            nur einer Partei bekannt ist.                                     \\
         \hline
     \end{tabular}
 \end{center}
 
+
+\newpage
+\subsection{Trapdoor Weiterführung}
+
+Untenstehend sind die Unterschiede von Einwegfunktionen mit und ohne Trapdoor näher 
+erläutert.
+
+\subsubsection{Einwegfunktion ohne Trapdoor}
+
+Beispiele und Erläuterungen für Einwegfunktionen ohne Trapdoor:
+
+\begin{itemize}
+    \item Diffie-Hellman $y = f(x) = a^x \mod p$.
+    \begin{itemize}
+        \item $p$ prim ist rechenintensiv aber einfach.
+        \item Das Inverse (disk. Log.) $x \equiv f^{-1}(x) \equiv \log_a(y) \mod p$ 
+        ist für alle schwierig.
+    \end{itemize}
+    \item Elliptische Kurven
+    \begin{itemize}
+        \item Multiplikation $Q = k \cdot P$, $k$ eine unbekannte Zahl, $P$,$Q$ bekannte
+        Punkte.
+        \item Das Bestimmen von $k$ aus $Q = k \cdot P$ ist für alle schwierig.
+        \item Die Punkt-Division von $\displaystyle{k = \frac{Q}{P}}$ gibt es in diesem Sinne nicht.
+    \end{itemize}
+\end{itemize}
+
+
+
+\subsubsection{Einwegfunktion mit Trapdoor}
+
+Beispiele und Erläuterungen für Einwegfunktionen mit Trapdoor:
+
+\begin{itemize}
+    \item Bei RSA: Die e-te Wurzel mod N berechnen: Trapdoor
+    \begin{itemize}
+        \item Das Potenzieren $y = f(x) \equiv x^e \mod N$ ist rechenintensiv aber einfach.
+        \item Das Inverse $x \equiv f^{-1}(x) \equiv y^{1/e} \equiv \sqrt[e]{y} \mod N$ ist extrem schwierig.
+        \item Das Berechnen der ``e-ten Wurzel mod N''  ist das eine Problem, das
+                Faktorisieren von $N = p \cdot q$ das andere. Der RSA kann gebrochen werden, wenn
+                nur eines der zwei Probleme gelöst ist. 
+    \end{itemize}
+\end{itemize}
 
 
 
@@ -432,6 +481,53 @@ Sicherheit mit Quantencomputer:
     \item Für DL bei ECC von $k$-Bits brauchts ca. $K \approx 5k + 8 \sqrt{k} + 4 \cdot \log_2(k)$ Qubits
 \end{enumerate}
 
+
+
+\newpage
+\subsection{Einwegpermutationen}
+
+RSA, ECC und Diffie-Hellman sind genau genommen Einwegpermutationen.\\
+
+Die Farben blau, grün und rot kann man auf 3! = 6 Arten anordnen:
+
+\begin{center}
+    (B, G, R), (B, R, G), (G, B, R), (G, R, B), (R, B, G), (R, G, B)    
+\end{center}
+
+
+Im RSA-System: \\
+$N = 3 \cdot 11$ und $e = 13 \Rightarrow d = 13^{-1} \mod \varphi(N) = 17 = 13^{-1} \mod 20$ \\
+
+Nun kann man alle Werte $x \in \mathbb{Z}_{33} = \{0, \dots, 32\}$ mit $y \equiv x^{13} \mod 33$ berechnen
+verschlüsseln.\\
+
+\vspace{0.5cm}
+\textbf{Beispielaufgabe:}\\
+Die 3-stellige Zahl $x$ wird mit der Formel $y \equiv (a \cdot x + b ) \mod N$ verschlüsselt. Die 
+Entschlüsselungsfunktion lautet: $x \equiv a^{-1} \cdot (y - b) \mod N$. Dabei ist $N = 11 \cdot 23 \cdot 41$ 
+ein Produkt von drei Primzahlen; der Wert $N$ ist öffentlich bekannt. Die Werte $a$ und $b$ bilden in der Form $(a; b)$ 
+den geheimen Schlüssel. Die Werte $a$ und $b$ sind für die Verschlüsselung und Entschlüsselung geeignete Werte aus
+der Menge $\{2; 3; \dots ; N - 1\}$\\
+
+Aus wie vielen möglichen Schlüsseln der Form $(a; b)$ können bei dieser Verschlüsselung ausgewählt werden? 
+Es ist die exakte Zahl anzugeben.\\
+
+Allgemein:\\
+\begin{itemize}
+    \item Für $b$ sind alle möglichen Werte aus der Menge $\{2;3;\dots;N-1\}$ erlaubt. Das sind $N-2$ Möglichkeiten.
+    \item Für $a$ sind aus der Menge $\{2;3;\dots;N-1\}$ alle Werte erlaubt, die teilerfremd zu $N$ sind. Da die Zahl 1
+            aber nicht drin sein darf lautet die Anzahl der möglichen Werte für a somit:
+            $\varphi(N) - 1 = \varphi(r \cdot s \cdot t) - 1 = \varphi(r) \cdot \varphi(s) \cdot \varphi(t) - 1 = (r-1) \cdot (s-1) \cdot (t-1) - 1$
+    \item somit gibt es total $(N-2) \cdot [(r-1) \cdot (s-1) \cdot (t-1) - 1]$ Möglichkeiten
+\end{itemize}
+
+
+\vspace{0.5cm}
+Mit Zahlen:\\
+$r = 11; s = 23; t = 41 \Rightarrow N = 11 \cdot 23 \cdot 41 = 10'373$\\
+
+$\Rightarrow N -2 = 10'371$\\
+$\Rightarrow \varphi(N) - 1 = \varphi(r \cdot s \cdot t) -1 = (11 - 1) \cdot (23 - 1) \cdot (41 - 1) - 1 = 10 \cdot 22 \cdot 40 - 1 = 8'799$\\
 
 
 \newpage
@@ -765,19 +861,19 @@ Bei EC ist gleichung $Q = k \cdot P$ schwerz auf $k$ zu schliessen.\\
 
 Diffie-Hellman (K = Secret): 
 
-\begin{align}
+\begin{align*}
     A &= g^a \mod p \\
     B &= g^b \mod p \\
     K &= A^b = B^a = g^{ab} \mod p    
-\end{align}
+\end{align*}
 
 EC Key exchange (K = Secret):
 
-\begin{align}
+\begin{align*}
     A &= a_{Alice} \cdot P = a_A \cdot P\\
     B &= b_{Bob} \cdot P = b_B \cdot P \\
     K &= b_B \cdot A = (b_B \cdot a_A) \cdot P = a_A \cdot B = (a_A \cdot b_B) \cdot P
-\end{align}
+\end{align*}
 
 
 \newpage
@@ -792,7 +888,7 @@ EC Key exchange (K = Secret):
         \item Einem Punkt $P$ der eine zyklische Untergruppe der Primordnung $q$ erzeugt.
         \item $d$ wählen wobei $ 0 < d < q $ und 512 Bit lang
         \item Berechne $Q = d \cdot P$
-        \item Damit sind di Beiden Schlüssel erzeugt:
+        \item Damit sind die Beiden Schlüssel erzeugt:
         \begin{itemize}
             \item[] $K_{pub} = (p, a, b, q, P, Q)$ 
             \item[] $K_{priv} = d$
@@ -994,6 +1090,26 @@ Technisches vorgehen:
     \item Hash signieren
     \item Signitierter Hash + Zertifikatsinhalt $\rightarrow$ Zertifikat
 \end{enumerate}
+
+
+\newpage
+\subsubsection{Installation eines neues (Root-)Zertifikates}
+
+\begin{enumerate}
+    \item Root-CA-Zertifikat Echtheit überprüfen
+    \item Echtheitsprüfung wird mit Fingerprint gemacht
+    \item Lokal angezeigter Fingerprint wird mit vertrauenswürdiger Referenzquelle verglichen
+\end{enumerate}
+
+
+\subsubsection{Überprüfung der Echtheit eines Zertifikates vom Betriebssystem}
+
+\begin{enumerate}
+    \item Applikation überprüft Signatur auf Zertifikat mithilfe des Root-CA-Zertifikates.
+    \item Zertifizierungsstelle muss im System hinterlegt sein; sie wird zum Trust Anchor
+\end{enumerate}
+
+
 
 \subsubsection{Zertifikatsklassen}
 

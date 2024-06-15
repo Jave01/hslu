@@ -1,62 +1,68 @@
 \babel@toc {ngerman}{}\relax 
 \contentsline {section}{\numberline {1}Allg}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Terminologie}{3}{subsection.1.1}%
-\contentsline {section}{\numberline {2}Schutzmechanismen}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Sicherheitsanforderungen}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Geheimhaltung / Verschlüsselung}{5}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Authentizität}{5}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Symmetrische Kryptographie}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Blockschiffren}{6}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Blockschiffren Eig.}{6}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Good to know}{7}{subsubsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}Stromchiffren}{7}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}One-Time-Pad (OTP)}{8}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}XOR}{8}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Beurteilung von Stromchiffren}{8}{subsubsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.3}Blockchiffren}{8}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}ECB-Modus für mehrere Blöcke}{8}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}CBC-Modus für mehrere Blöcke}{8}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}OFB-Modus = Output Feedback Mode}{9}{subsubsection.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.4}CTR-Modus (Counter Mode)}{9}{subsubsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.4}Auswirkungen bei Bit Manipulation im Chiffretext}{10}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Integritätsschutzmechanismen}{10}{subsection.3.5}%
-\contentsline {section}{\numberline {4}Asymmetrische Kryptographie}{11}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Allgemein}{11}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Elliptic Curve Cryptography (ECC)}{12}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Requirements}{13}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Punktaddition}{14}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Neutrales und Inverses Element}{14}{subsubsection.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.4}Allgemeine Form \& Zusammenfassung:}{16}{subsubsection.4.2.4}%
-\contentsline {subsubsection}{\numberline {4.2.5}Formel zur Addition von 2 Punkten}{16}{subsubsection.4.2.5}%
-\contentsline {subsubsection}{\numberline {4.2.6}Double and add Algorithmus}{17}{subsubsection.4.2.6}%
-\contentsline {subsubsection}{\numberline {4.2.7}Bestimmung aller Punkte}{18}{subsubsection.4.2.7}%
-\contentsline {subsubsection}{\numberline {4.2.8}Bestimmung ob Punkt auf Graf ist}{19}{subsubsection.4.2.8}%
-\contentsline {subsection}{\numberline {4.3}RSA}{20}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Anzahl der Primzahlen 1-x}{20}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Anzahl n-stelligen Primzahlen}{20}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Dezimalstellen ausrechnen:}{21}{subsubsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.4}Diskreter Logarithmus bei ECC}{22}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Key exchange}{22}{subsubsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.5}Verschlüsselung mit EC nach Volker Müller}{23}{subsection.4.5}%
-\contentsline {section}{\numberline {5}Blinde Signaturen}{24}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Beweis der Korrektheit}{25}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Beispiel mit Zahlen}{26}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Basis-Test}{27}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Einführung in die Public-Key Infrastruktur (PKI)}{28}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Verschlüsseln und Signieren (repetition)}{28}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Verschlüsseln}{28}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Signieren}{28}{subsubsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.2}Zertifikate}{29}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Herstellung eines Zertifikats}{29}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Zertifikatsklassen}{30}{subsubsection.6.2.2}%
-\contentsline {section}{\numberline {7}Protokolle}{31}{section.7}%
-\contentsline {subsection}{\numberline {7.1}User Authentication}{31}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}False-rates}{31}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Verifikationen}{31}{subsection.7.3}%
-\contentsline {subsubsection}{\numberline {7.3.1}One to many}{31}{subsubsection.7.3.1}%
-\contentsline {subsubsection}{\numberline {7.3.2}Many to one}{31}{subsubsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.4}Paralellsession Attacke}{32}{subsection.7.4}%
-\contentsline {section}{\numberline {8}Quantenkryptographie}{33}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Polarization}{33}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Quantum Key Exchange}{33}{subsection.8.2}%
+\contentsline {subsection}{\numberline {1.2}Trapdoor Weiterführung}{4}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Einwegfunktion ohne Trapdoor}{4}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Einwegfunktion mit Trapdoor}{4}{subsubsection.1.2.2}%
+\contentsline {section}{\numberline {2}Schutzmechanismen}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Sicherheitsanforderungen}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Geheimhaltung / Verschlüsselung}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Authentizität}{6}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Symmetrische Kryptographie}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Blockschiffren}{7}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Blockschiffren Eig.}{7}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Good to know}{8}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Stromchiffren}{8}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}One-Time-Pad (OTP)}{9}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}XOR}{9}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Beurteilung von Stromchiffren}{9}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}Blockchiffren}{9}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}ECB-Modus für mehrere Blöcke}{9}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}CBC-Modus für mehrere Blöcke}{9}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}OFB-Modus = Output Feedback Mode}{10}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}CTR-Modus (Counter Mode)}{10}{subsubsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.4}Auswirkungen bei Bit Manipulation im Chiffretext}{11}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Integritätsschutzmechanismen}{11}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Asymmetrische Kryptographie}{12}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Allgemein}{12}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Einwegpermutationen}{13}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Elliptic Curve Cryptography (ECC)}{14}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Requirements}{15}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Punktaddition}{16}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Neutrales und Inverses Element}{16}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Allgemeine Form \& Zusammenfassung:}{18}{subsubsection.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.5}Formel zur Addition von 2 Punkten}{18}{subsubsection.4.3.5}%
+\contentsline {subsubsection}{\numberline {4.3.6}Double and add Algorithmus}{19}{subsubsection.4.3.6}%
+\contentsline {subsubsection}{\numberline {4.3.7}Bestimmung aller Punkte}{20}{subsubsection.4.3.7}%
+\contentsline {subsubsection}{\numberline {4.3.8}Bestimmung ob Punkt auf Graf ist}{21}{subsubsection.4.3.8}%
+\contentsline {subsection}{\numberline {4.4}RSA}{22}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Anzahl der Primzahlen 1-x}{22}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Anzahl n-stelligen Primzahlen}{22}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Dezimalstellen ausrechnen:}{23}{subsubsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.5}Diskreter Logarithmus bei ECC}{24}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}Key exchange}{24}{subsubsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.6}Verschlüsselung mit EC nach Volker Müller}{25}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Blinde Signaturen}{26}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Beweis der Korrektheit}{27}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Beispiel mit Zahlen}{28}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Basis-Test}{29}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Einführung in die Public-Key Infrastruktur (PKI)}{30}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Verschlüsseln und Signieren (repetition)}{30}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Verschlüsseln}{30}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Signieren}{30}{subsubsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.2}Zertifikate}{31}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Herstellung eines Zertifikats}{31}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Installation eines neues (Root-)Zertifikates}{32}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Überprüfung der Echtheit eines Zertifikates vom Betriebssystem}{32}{subsubsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.4}Zertifikatsklassen}{32}{subsubsection.6.2.4}%
+\contentsline {section}{\numberline {7}Protokolle}{33}{section.7}%
+\contentsline {subsection}{\numberline {7.1}User Authentication}{33}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}False-rates}{33}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Verifikationen}{33}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}One to many}{33}{subsubsection.7.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.2}Many to one}{33}{subsubsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.4}Paralellsession Attacke}{34}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Quantenkryptographie}{35}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Polarization}{35}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Quantum Key Exchange}{35}{subsection.8.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
