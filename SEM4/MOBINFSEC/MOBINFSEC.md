@@ -135,12 +135,12 @@ Dreifarbenproblem:
 
 
 **Ansätze:**
-- Netzwerk:** 
+- **Netzwerk:** 
 	- "Das Protokoll soll das regeln"
 	- globaler Table mit routing von IP zu Location
 	- keine Änderungen an Endsystemen
 	- nicht skalierbar
-- **End-System
+- **End-System**
 	- "functionality at the edge"
 	- **Indirektes Routing:** Kommunikation vom Kommunikationspartner zum Mobiltelefon geht über das Heimnetzwerk und dessen Heim-Adresse und wird dann ins _visited network_ weitergeleitet
 	- **Direktes Routing:** Kommunikationspartner erhält Adresse des Handys im _visited network_ und sendet direkt ans Handy

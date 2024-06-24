@@ -172,6 +172,9 @@ Meistens gebraucht:
 - Dynamic: dynamic port translation
 
 
+![[static_NAT.png]]
+
+
 ### Important commands
 
 [[SW03-NETW3-ENSA-6+8.pdf|SW03 slides]] p.25
@@ -214,17 +217,25 @@ AWS & Azure können alles sein
 ### Hypervisor Types
 
 Type 1: 
-- AWS
-- Azure
-- etc
+- bare-metal
+- run directly on host's hardware without OS
+- Better performance
+- Enhanced security
+- Enterprise level virtualisation
+- AWS, Azure, etc
 
 Type 2:
+- Installed on Host OS
+- Access hardware through host OS
+- Easier to set up and manage
+- more flexible with various hardware
 - Has OS
+- personal use, testing
 - VirtualBox
 
 
 
-### Virtualization
+### Virtualisation
 
 - **Software-Defined Networking (SDN)** - virtualises the network
 - **OpenFlow** - manage traffic between routers, switches & AP
@@ -341,6 +352,9 @@ Regeln:
 
 ## OSPFv2 Basics
 
+Open shortest path first
+
+- Designed for efficient and scalable routing within large enterprise networks
 - Link-state routing protocol
 	- Link
 		- Interface on a router
@@ -360,18 +374,42 @@ Regeln:
 
 ### Databases and Tables
 
-| Database                   | Table          | Description  |
-| -------------------------- | -------------- | ------------ |
-| Adjacency Database         | Neighbor Table | #TODO unique |
-| Link-state Database (LSDB) | Topology Table | Global       |
-| Forwarding Database        | Routing Table  |              |
+| Database                   | Table          | Description                                                                                                        |
+| -------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Adjacency Database         | Neighbor Table | information about directly connected devices. Used for Layer 2 to Layer 3 address mapping #neighbour_table_purpose |
+| Link-state Database (LSDB) | Topology Table | Global                                                                                                             |
+| Forwarding Database        | Routing Table  | unique, information about destinations and how to reach them #routing_table_purpse                                 |
+
+#routing_table_purpse
+Core component for making routing decisions. Is the information about network destinations and how to reach them. Used for making forwarding decisions across the network.
+
+Contains:
+- Destination network
+- Subnet mask
+- Next-hop IP address or exit interface
+- Route source (connected, static, OSPF ...)
+- Cost of route
 
 
+#neighbour_table_purpose
+
+information about directly connected devices. Used for Layer 2 to Layer 3 address mapping. Used for direct communication 
+
+Contains:
+- Address Resolution Protocol (ARP) for IPv4
+- Neigbor Descover Protocol (NDP) for IPv6
+- Dynamic routing protocols
+
+Content:
+- IP address of neighbour
+- MAC address of neighbour
+- Interface through which neighbour is reachable
+- State of neighbour relationship
 
 
 ### Process
 
-1. Router gathers information about routers it can reach -> into Neighbor Table
+1. Router gathers information about routers it can reach -> into Neighbour Table
 2. Router build the Topology Table with all routers in OSPF Area
 3. Router performs Dijkstra Shortes-Path First (SPF) algorithm on the routers in the Topology Table
 
@@ -541,19 +579,27 @@ Most WAN's focus on Layer 1 and Layer 2 in OSI.
 - WAN Core devices - backbone, Layer 3 switches
 
 
-### Global not global whatver
+### Global not global local not local
 
 From PC:
 - Inside global: other-side interface of router on PC LAN
 - Outside global: Server
 - Inside local: PC
 
+![[global_local_netw.png.png]]
+
+In the network above from the perspective of users behind the NAT:
+- **Inside global**: public address of internal hosts: 209.165.201.1
+- **Inside local:** host inside the network - Host A
+- **Outside local:** address of outside server - (I think:) 10.0.0.121
+- **Outside global:** usually same as OL unless NAT - (I think:) 209.165.201.2
+
+
+
+
 ### Questions
 
-- 10 - From perspective of users behind the NAT router
 - 22 - Which two types of VPNs are examples of enterprise-managed remote access VPNs
-- 39 - What has to be done in order to complete the static NAT configuration
-
 
 
 ## QoS
@@ -763,18 +809,21 @@ Network baseline:
 - 38. When is partner API appropriate? -> vacation service interacting with hotel databases
 - Purpose of key in API's? -> Authentication of requesting source
 - 23. Public API? -> can be used without restrictions
-- 31. What is REST? -> architecture style for designing web service applications
 - 26. Technology that virtualizes nw control place to centralized controller -> SDN
 - 8. What pre-populates the FIB that use CEF to process packets? -> routing table
-- 6. Whcih is a characteristic of a Type 1 hypervisor? -> installed directly on a server
-- 
+- 6. Which is a characteristic of a Type 1 hypervisor? -> installed directly on a server
 
 
+### REST
 
->[!warning] TODO
->- Hypervisor types?
->- REST
->- routing-/neighbour tables
+Representational State Transfer Application Programming Interface
+
+- architecture style for designing web service applications
+- rules and conventions for building web services
+- stateless communication
+	- each request from client must contain all the information needed
+- unique identifier for each resource
+
 
 
 ## Final exam questions
@@ -802,5 +851,3 @@ Network baseline:
 - default hello packet delay: 80 seconds
 - Control vs Data plane in SDN
 
-
-What in the fuck are hypervisors
